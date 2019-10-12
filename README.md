@@ -1,4 +1,5 @@
 # Deokti.github.io
+<base target="_blank">
 
 Данный GitHub Pages был создан для размещения свёрстанных работ. Каждая из них будет дополнена небольшим описанием, состоящим приблизительно из трёх пунктов. 
 <ol>
@@ -9,8 +10,7 @@
 </ol>  
 
 
-
-<h2>GRANIT</h2>
+<h2 style="text-align: center">GRANIT</h2>
 <ol>
   <li>Сайт называется <a target="_blank" href="https://deokti.github.io/GRANIT/" target="_blank">GRANIT</a>;</li>
   <br>
