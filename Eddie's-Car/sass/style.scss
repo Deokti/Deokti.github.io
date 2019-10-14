@@ -1,0 +1,17 @@
+@import 'base/bootstrap-reboot.min';
+@import 'base/fonts';
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/price';
+@import 'blocks/wait';
+@import 'blocks/details';

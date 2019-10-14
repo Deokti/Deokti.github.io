@@ -1,0 +1,24 @@
+.button {
+    width: 170px;
+    height: 50px;
+    background-color: #1669b3;
+    border: none;
+
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;   
+    text-transform: uppercase;  
+    &_email-price {
+        width: 370px;
+        height: 80px;
+        font-size: 17px;
+    }
+    &_details-price {
+        width: 370px;
+        height: 70px;
+        background-color: #f7b516;
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
