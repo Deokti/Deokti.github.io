@@ -7,7 +7,10 @@
     color: #ffffff;
     font-size: 12px;
     font-weight: 700;   
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    &:hover {
+        background-color: #0c4c87;
+    }  
     &_email-price {
         width: 370px;
         height: 80px;
@@ -20,5 +23,9 @@
         font-size: 17px;
         font-weight: 700;
         text-transform: uppercase;
+        &:hover {
+            background-color: #bd7c04;
+        }  
     }
+
 }

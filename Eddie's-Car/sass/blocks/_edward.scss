@@ -1,0 +1,119 @@
+.edward {
+    min-height: 770px;
+    background-color: #0b3554;
+    padding: 100px 0;
+    color: #ffffff;
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 900;
+    }
+    &__subtitle {
+        margin-top: 13px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__wrapper {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        text-align: left;
+    }
+    &-list {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 700;
+        &__item {
+            margin-bottom: 45px;
+            padding-left: 30px;
+        }
+        &__link-color {
+            color: #ffffff;
+            border-bottom: 1px solid #a4b4bf;
+            &:hover {
+                color: #a4b4bf;
+                text-decoration: none
+            }
+            &_active {
+                color: #579eff;
+                border: none;
+                &:hover {
+                    color: #579eff;
+                    border: none;
+                }
+            }
+        }
+    }
+    &__link {
+        margin-left: 30px;
+        position: relative;
+        color: #ffffff;
+        border-bottom: 1px solid #a4b4bf;
+        &:hover {
+            color: #a4b4bf;
+            text-decoration: none;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 20px;
+            left: -48px;
+            top: 64%;
+            transform: translateY(-50%);
+            background: url('../img/icons/reloader.svg');
+        }
+    }
+}
+
+.square {
+    display: none;
+    position: relative;
+    top: 14px;
+    left: 0px;
+    width: 330px;
+    min-height: 147px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+    background-color: #ffffff;
+    padding: 13px 33px 1px 15px;
+    &__triangle {
+        position: absolute;
+        top: -20px;
+        left: 10px;
+        border: 10px solid transparent;
+        border-bottom: 11px solid #ffffff;
+    }
+    p {
+        line-height: 17px;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    &__close {
+        position: absolute;
+        color: #000;
+        font-size: 30px;
+        right: 14px;
+        top: 0px;
+        cursor: pointer;
+    }
+    &_active {
+        display: block;
+        animation: appearanceDown 0.6s;
+    }
+
+}
+
+@keyframes appearanceDown {
+    from {
+        transform: translate3d(0, -6%, 0);
+    }
+    
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}

@@ -1,0 +1,35 @@
+.convenience {
+    min-height: 571px;
+    padding: 100px 0;
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 900;     
+    }
+    &__subtitle {
+        margin-top: 11px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__wrapper {
+        text-align: center;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+    &__item {
+        width: 222px;
+        height: 222px
+    }
+    &__description {
+        max-width: 220px;
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        span {
+            display: block;
+        }
+    }
+}
