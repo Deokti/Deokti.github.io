@@ -1,0 +1,32 @@
+@import 'base/bootstrap-reboot.min';
+@import 'base/fonts';
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+.container {
+    max-width: 1200px; //изначальный размер 1170. Но за счёт паддингов прибавили на 30px
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/price';
+@import 'blocks/wait';
+@import 'blocks/details';
+@import 'blocks/guarantee';
+@import 'blocks/bonuses';
+@import 'blocks/edward';
+@import 'blocks/convenience';
+@import 'blocks/warehouse';
+@import 'blocks/repeat';
+@import 'blocks/diagnostics';
+@import 'blocks/free-consultation';
+@import 'blocks/office';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/media';
+

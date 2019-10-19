@@ -1,0 +1,36 @@
+//Заголовки
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 0;
+    span {
+        display: block;
+    }
+    &_diagnostics {
+        display: block;
+        margin: 0 auto;
+        max-width: 835px
+    }
+    &_30px {
+        font-size: 30px;
+    }
+}
+
+//подзаголовки
+.subtitle {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    span {
+        display: block;
+    }
+    &_warehouse {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 650px;
+    }
+}
+
