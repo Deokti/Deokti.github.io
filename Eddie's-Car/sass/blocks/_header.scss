@@ -39,6 +39,7 @@
     }
     &__relation {
         display: flex;
+        align-items: end
     }
 }
 
@@ -63,10 +64,8 @@
     line-height: 30px
 }
 
-
-
 .yellow-wrapper {
-    width: 570px;
+    max-width: 570px;
     max-height: 860px;
     padding: 100px 124px 125px 100px;
     background-color: #f7b516;

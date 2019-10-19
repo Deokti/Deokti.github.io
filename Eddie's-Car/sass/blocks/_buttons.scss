@@ -1,5 +1,5 @@
 .button {
-    width: 170px;
+    width: 100%;
     height: 50px;
     background-color: #1669b3;
     border: none;
@@ -10,7 +10,10 @@
     text-transform: uppercase;
     &:hover {
         background-color: #0c4c87;
-    }  
+    }
+    &_header {
+        width: 170px;
+    }
     &_email-price {
         width: 370px;
         height: 80px;
@@ -29,3 +32,4 @@
     }
 
 }
+

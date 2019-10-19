@@ -23,8 +23,7 @@
         text-align: left;
     }
     &-list {
-        margin: 0;
-        padding: 0;
+        padding-left: 18px;
         font-size: 16px;
         font-weight: 700;
         &__item {
@@ -48,7 +47,11 @@
             }
         }
     }
+    .extra {
+        padding-left: 18px;
+    }
     &__link {
+        font-size: 14px;
         margin-left: 30px;
         position: relative;
         color: #ffffff;
@@ -103,7 +106,7 @@
     }
     &_active {
         display: block;
-        animation: appearanceDown 0.6s;
+        animation: appearanceDown 0.3s;
     }
 
 }
@@ -117,3 +120,27 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
+
+.edward-right {
+    position: relative;
+    width: 570px;
+    height: 390px;
+    &__additionally {
+        position: relative;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__description {
+        position: absolute;
+        width: 230px;
+        left: 0;
+        bottom: 0px;
+        padding: 12px 29px 11px 19px;
+        font-size: 14px;
+        font-weight: 400;
+        background: rgba(4, 21, 33, 0.8);
+    }
+}
+

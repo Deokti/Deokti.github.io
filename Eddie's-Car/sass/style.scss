@@ -6,7 +6,9 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px; //изначальный размер 1170. Но за счёт паддингов прибавили на 30px
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;
 }
 
@@ -23,3 +25,8 @@ body {
 @import 'blocks/repeat';
 @import 'blocks/diagnostics';
 @import 'blocks/free-consultation';
+@import 'blocks/office';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/media';
+
