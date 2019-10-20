@@ -1,0 +1,40 @@
+@media screen and (max-width: 1000px) {
+    /* ----- Верхняя часть с логотипом и номерами и кнопкой ----- */
+    .header-top__time {
+        padding-left: 30px;
+    }
+
+    /* ----- Секция под названием wait, которая идёт следом за price ----- */
+    .wait-wrapper {
+        flex-wrap: wrap;
+    }
+    .wait-wrapper__items {
+        margin: 15px 15px;
+        flex-wrap: wrap;
+    }
+
+    /* Секция bonuses */
+    .bonuses-items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+    .bonuses-items__wrapper {
+        padding: 0 5px;
+        margin-top: 40px;
+    }
+    .bonuses-items__description {
+        width: 250px;
+        span {
+            display: inline-block;
+        }
+    }
+
+    /* Секция convenience */
+    .convenience__wrapper {
+        flex-wrap: wrap;
+    }
+    .convenience__item {
+        margin: 0 9px;
+    }
+}

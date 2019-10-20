@@ -16,5 +16,3 @@ $(document).ready(function() {
    appearanceSquare('.edward-list__link-color');
    appearanceSquare('.square__close');
 });
-
-

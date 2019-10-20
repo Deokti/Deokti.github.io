@@ -1,0 +1,30 @@
+@media screen and (max-width: 1170px) {
+    /* Секция под названием details */
+    .details-form {
+        input {
+            width: 350px;
+        }
+    }
+    .button_details-price {
+        max-width: 350px;
+    }
+
+    /* Секция warehouse*/ 
+    .warehouse__wrapper {
+        margin-top: 90px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .warehouse__img {
+        margin: 10px 10px;
+    }
+
+    /* Секция diagnostics*/ 
+    .diagnostics__wrapper {
+        margin-top: 70px;
+        flex-wrap: wrap;
+    }
+    .diagnostics__items {
+        margin: 30px 10px;
+    }
+}

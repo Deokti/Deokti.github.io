@@ -1,0 +1,24 @@
+@media screen and (max-width: 780px) {
+    /* ----- Верхняя часть с логотипом и номерами и кнопкой ----- */
+    .header-top__time {
+        display: none;
+    }
+
+    /* ----- Секция под названием wait, которая идёт следом за price ----- */
+    .wait-wrapper {
+        justify-content: center;
+        p {
+            margin-top: 20px;
+        }
+    }
+
+    /* Секция consultation*/
+    .button_consultation {
+        width: 350px;
+    }
+    .consultation-form {
+        input {
+            width: 350px;
+        }
+    }
+}

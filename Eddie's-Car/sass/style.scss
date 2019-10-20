@@ -12,6 +12,7 @@ body {
     margin: 0 auto;
 }
 
+//Секции
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/price';
@@ -28,5 +29,22 @@ body {
 @import 'blocks/office';
 @import 'blocks/map';
 @import 'blocks/footer';
-@import 'blocks/media';
 
+//Медия-запросы
+@import 'media/media1170';
+@import 'media/media1100';
+@import 'media/media1099';
+@import 'media/media1000';
+@import 'media/media970';
+@import 'media/media940';
+@import 'media/media910';
+@import 'media/media820';
+@import 'media/media780';
+@import 'media/media750';
+@import 'media/media700';
+@import 'media/media650';
+@import 'media/media590';
+@import 'media/media480';
+@import 'media/media420';
+@import 'media/media410';
+@import 'media/media340';

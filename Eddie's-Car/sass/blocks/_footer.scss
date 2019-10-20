@@ -8,6 +8,12 @@
         justify-content: space-between;
         align-items: center;
     }
+    &__logo {
+        width: 191px;
+        img {
+            width: 100%;
+        }
+    }
     &__description {
         display: flex;
     }
