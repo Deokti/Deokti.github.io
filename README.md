@@ -38,7 +38,7 @@
 <hr>
 <h2>ADVOGRAND</h2>
 <ol>
-  <li>Сайт называется <a href="https://deokti.github.io/ADVOGRAND/" target="blank">Eddie's-Car</a></li>
+  <li>Сайт называется <a href="https://deokti.github.io/ADVOGRAND/" target="blank">ADVOGRAND</a></li>
  	<li>Третий макет, который начал верстать.;</li>
  	<li>Пока сказать не чего;</li>
  <li>Вёрстка началась 21.10.2019. На данный момент потрачено 2 часа и 35 минут;</li>
