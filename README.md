@@ -11,6 +11,7 @@
 
 <p>Известны на текуший момент "технологии": HTML, CSS, препроцессор SASS, FlexBox.</p>
 
+<hr>
 <h2>GRANIT</h2>
 <ol>
   <li>Сайт называется <a href="https://deokti.github.io/GRANIT/" target="blank">GRANIT</a></li>
@@ -22,7 +23,7 @@
     <a href="https://t.me/glo_academy">ссылка на телеграмм-канал откуда взят макет;</a></li>
 </ol>  
 
-
+<hr>
 <h2>Eddie's-Car</h2>
 <ol>
   <li>Сайт называется <a href="https://deokti.github.io/Eddie's-Car/" target="blank">Eddie's-Car</a></li>
@@ -34,7 +35,7 @@
     <a href="https://t.me/glo_academy">ссылка на телеграмм-канал откуда взят макет;</a></li>
 </ol>  
 
-
+<hr>
 <h2>ADVOGRAND</h2>
 <ol>
   <li>Сайт называется <a href="https://deokti.github.io/ADVOGRAND/" target="blank">Eddie's-Car</a></li>
