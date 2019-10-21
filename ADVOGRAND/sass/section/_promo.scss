@@ -1,0 +1,27 @@
+.promo {
+    min-height: 610px;
+    padding: 130px 0;
+    background: url('../img/background/subscription-bg.jpg') center center no-repeat /cover;
+    color: #ffffff;
+    &__title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 50px;
+        span {
+            text-transform: uppercase;
+            display: block;
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+    &__description {
+        width: 380px;
+        margin-top: 65px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 32px;
+        span {
+            font-weight: 700;
+        }
+    }
+}
