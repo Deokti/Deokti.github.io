@@ -1,7 +1,8 @@
 .price {
     min-height: 500px;
     padding: 100px 0 92px 0;
-    background: url('../img/bg/price-bg.jpg') center no-repeat /cover;
+    background: url('../img/bg/price-bg.jpg') center no-repeat;
+    background-size: cover;
     &__position {
         text-align: right;
     }

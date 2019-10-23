@@ -1,7 +1,8 @@
 .free-consultation {
     position: relative;
     min-height: 470px;
-    background: url('../img/bg/free-consultation.jpg') center center no-repeat /cover;
+    background: url('../img/bg/free-consultation.jpg') center center no-repeat;
+    background-size: cover;
     background-color: #0d324d;
     padding: 100px 0;
     color: #ffffff;

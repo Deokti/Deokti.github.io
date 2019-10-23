@@ -1,7 +1,8 @@
 .details {
     min-height: 580px;
     padding: 100px 0 98px 0;
-    background: url('../img/bg/details-bg.jpg') center center no-repeat /cover;
+    background: url('../img/bg/details-bg.jpg') center center no-repeat;
+    background-size: cover;
     color: #ffffff;
     &__title {
         text-align: center;
