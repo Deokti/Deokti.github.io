@@ -1,0 +1,27 @@
+.button {
+    width: 140px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c91111;
+
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    &:hover {
+        background-color: #9c0c0c;
+    }
+    &_navigation {
+        margin-right: 6px;
+    }
+    &_promo {
+        margin-top: 66px;
+
+        width: 299px;
+        height: 65px;
+        background-image: linear-gradient(to top, #c10b0b 0%, #e42626 100%);
+
+        font-size: 18px;
+    }
+}

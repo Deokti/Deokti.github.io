@@ -1,0 +1,13 @@
+.phone {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14px;
+    color: #000000;
+    &:hover {
+        color: #000000;
+    }
+    &_subheader {
+        font-size: 18px;
+        letter-spacing: 0.18px;
+    }
+}
