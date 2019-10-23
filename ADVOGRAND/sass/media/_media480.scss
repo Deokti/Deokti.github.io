@@ -1,0 +1,64 @@
+
+@media screen and (max-width: 480px) {
+    /* ----- Верхняя часть с логотипом и номерами и кнопкой ----- */
+    .header-top__wrapper {
+        flex-direction: column;
+    }
+    .header-top__relation {
+        flex-direction: column;
+    }
+    .header-top__logo {
+        max-width: 191px;
+        margin-bottom: 10px;
+    }
+    .header-top__phone {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+    }
+    .button_header {
+        width: 170px;
+        height: 50px;
+    }
+
+    /* ----- Одна из верхних секций. Секция с рекламой, то есть Promo*/
+    .yellow-wrapper {
+        padding: 100px 30px 125px 30px;
+    }
+
+    /* ----- Секция под названием wait, которая идёт следом за price ----- */
+    .wait-wrapper {
+        margin-top: 80px;
+        flex-direction: column;
+        align-items: center;
+        p {
+            margin-top: 20px;
+        }
+    }
+    .wait-wrapper__items {
+        margin: 20px 0;
+    }
+
+    .title_wait {
+        font-size: 33px;
+    }
+    .subtitle_wait {
+        font-size: 18px;
+    }
+
+    /* Секция под названием details */
+    .title_details {
+        font-size: 33px;
+    }
+    .subtitle_details {
+        font-size: 18px;
+    }
+
+
+    .title_guarantee {
+        font-size: 28px;
+        span {
+            display: inline-block;;
+        }
+
+    }
+}

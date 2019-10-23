@@ -1,0 +1,97 @@
+.price {
+    min-height: 500px;
+    padding: 100px 0 92px 0;
+    background: url('../img/bg/price-bg.jpg') center no-repeat;
+    background-size: cover;
+    &__position {
+        text-align: right;
+    }
+    &__title {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 60px;
+        span {
+            display: block;
+        }
+    }
+}
+
+.price-form {
+    input {
+        width: 370px;
+        height: 70px;
+        background-color: #f2f2f2;
+        border: none;
+
+        color: #818181;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 30px;
+        padding-right: 60px;
+        outline-color: #d9d9d9;
+        &:nth-child(1) {
+            margin-left: 15px;
+        }
+    }
+    &__top-position{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__bottom-position {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__before-email {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 3;
+            width: 20px;
+            height: 18px;
+            right: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url('../img/icons/e-mail.svg') center center no-repeat;
+            background-size: cover;
+        }
+    }
+    &__before-phone {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 3;
+            width: 20px;
+            height: 20px;
+            right: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url('../img/icons/tele.svg') center center no-repeat;
+            background-size: cover;
+        }
+    }
+    &__five {
+        position: relative;
+        width: 290px;
+        font-size: 14px;
+        font-weight: 700;
+        padding-right: 90px;
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 3;
+            width: 30px;
+            height: 30px;
+            right: 40px;
+            top: 6px;
+            background: url('../img/icons/time.svg') center center no-repeat;
+            background-size: cover;
+        }
+    }
+}

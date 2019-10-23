@@ -1,0 +1,29 @@
+@media screen and (max-width: 1100px) {
+    /* ----- Верхняя часть с логотипом и номерами и кнопкой ----- */
+    .header-top__time {
+        padding-left: 70px;
+    }
+
+    /* Секция под названием details */
+    .details-form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .details-form__phone {
+        padding: 0 10px;
+    }
+
+    /* Секция под названием guarantee */
+    .guarantee-items__wrapper {
+        padding: 0 20px;
+    }
+
+    /* Секция edward */
+    .edward-right {
+        width: 500px;
+    }
+    .edward-list__item {
+        margin-bottom: 39px;
+    }
+
+}

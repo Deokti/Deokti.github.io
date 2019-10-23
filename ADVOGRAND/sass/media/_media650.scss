@@ -1,0 +1,70 @@
+@media screen and (max-width: 650px) {
+    /* ----- Верхняя часть с логотипом и номерами и кнопкой ----- */
+    .header-top__phone {
+        margin-right: 10px;
+    }
+
+    /* ----- Секция под названием price, идёт следом за header ----- */
+    .price__title {
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .price-form__top-position {
+        flex-direction: column;
+        align-items: center;
+    }
+    .price-form__before-email, .price-form__before-phone {
+        &::after {
+            top: 55%;
+            right: 30px
+        }
+    }
+    .price-form {
+        input {
+            width: 355px;
+            &:nth-child(1) {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+    .price-form__bottom-position {
+        justify-content: center;
+    }
+
+    .price-form__bottom-position {
+        margin-top: 20px;
+    }
+
+    .price-form__five {
+        display: none;
+    }
+
+    /* Секция diagnostics*/ 
+    .title_diagnostics {
+        font-size: 30px;
+    }
+
+    /* Секция consultation*/
+    .consultation-form {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .consultation-form {
+        input {
+            margin: 10px 0;
+            width: 370px;
+        }
+    }
+    .consultation-form__phone {
+        &::after {
+            right: 30px;
+        }
+    }
+    .button_consultation {
+        width: 370px;
+    }
+
+}

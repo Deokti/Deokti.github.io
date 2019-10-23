@@ -1,0 +1,19 @@
+.warehouse {
+    min-height: 670px;
+    background-color: #0b3554;
+    padding: 100px 0;
+    color: #ffff;
+    &__img {
+        width: 370px;
+        max-height: 270px;
+        img {
+            width: 100%;
+        }
+    }
+    &__wrapper {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
