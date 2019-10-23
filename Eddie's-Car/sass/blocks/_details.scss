@@ -64,7 +64,8 @@
             right: 30px;
             top: 50%;
             transform: translateY(-50%);
-            background: url('../img/icons/tele.svg') center center no-repeat /cover;
+            background: url('../img/icons/tele.svg') center center no-repeat;
+            background-size: cover;
         }
     }
 }

@@ -45,7 +45,8 @@
 
 .promo {
     max-height: 860px;
-    background: url('../img/bg/promo-bg.jpg') center (center/cover) no-repeat;
+    background: url('../img/bg/promo-bg.jpg') center center no-repeat;
+    background-size: cover;
 }
 
 .main-title {

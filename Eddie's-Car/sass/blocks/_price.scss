@@ -57,7 +57,8 @@
             right: 35px;
             top: 50%;
             transform: translateY(-50%);
-            background: url('../img/icons/e-mail.svg') center center no-repeat /cover;
+            background: url('../img/icons/e-mail.svg') center center no-repeat;
+            background-size: cover;
         }
     }
     &__before-phone {
@@ -71,7 +72,8 @@
             right: 35px;
             top: 50%;
             transform: translateY(-50%);
-            background: url('../img/icons/tele.svg') center center no-repeat /cover;
+            background: url('../img/icons/tele.svg') center center no-repeat;
+            background-size: cover;
         }
     }
     &__five {
@@ -88,7 +90,8 @@
             height: 30px;
             right: 40px;
             top: 6px;
-            background: url('../img/icons/time.svg') center center no-repeat /cover;
+            background: url('../img/icons/time.svg') center center no-repeat;
+            background-size: cover;
         }
     }
 }
