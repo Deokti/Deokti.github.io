@@ -1,0 +1,16 @@
+//изменение текста по наведению. Используется в header
+@mixin hover-text {
+    &:hover {
+        color: #ffff;
+        text-decoration: none;
+        border-bottom: 1px solid #fff;
+    }
+}
+
+//изменение цветов кнопки при новедении. 
+@mixin hover-button {
+    &:hover {
+        color: #fb0275;
+        background: #ffffff;
+    }
+}

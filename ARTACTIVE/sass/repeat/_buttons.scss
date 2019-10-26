@@ -1,0 +1,75 @@
+.button {
+    background: transparent;
+    width: 165px;
+    height: 34px;
+    border-radius: 17px;
+    border: 2px solid #ffffff;
+
+    color: #ffff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.57px;
+    transition: 0.4s all;
+    &_header-nav {
+        color: #ffffff; //иначе в IE не отображается цвет
+        &:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+    }
+    &_main {
+        width: 247px;
+        height: 48px;
+        border: none;
+        border-radius: 24px;
+        background-color: #fb0275;
+
+        font-size: 16px;
+        font-weight: 700;
+        @include hover-button;
+    }
+    &_service {
+        width: 171px;
+        height: 48px;
+        border-radius: 24px;
+        border: none;
+        background-color: #fb0275;
+
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        @include hover-button; 
+    }
+}
+
+//фон кнопки, и текст внутри. Используется в секции service.
+.button {
+    &__background {
+        width: 473px;
+        height: 117px;
+        box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+        border-radius: 10px;
+        background-color: #883eca;
+        &_service {
+            margin-top: 70px;
+            padding: 35px 37px 36px 38px;
+        } 
+    }
+    &__position {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__block {
+        color: #ffffff;
+    }
+    &__question {
+        font-size: 13px;
+        font-style: italic;
+        line-height: 24px;
+    }
+    &__consultation {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,33 @@
+@import 'base/bootstrap-reboot.min';
+@import 'base/mixins';
+@import 'base/animations';
+@import 'base/fonts';
+
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    background: url('../img/line.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+//Повторяющиеся элементы
+@import 'repeat/buttons';
+@import 'repeat/title';
+@import 'repeat/subtitle';
+@import 'repeat/description';
+
+
+//Секциии
+@import 'section/header';
+@import 'section/aboutus';
+@import 'section/service';
+
+
+
