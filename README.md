@@ -36,9 +36,9 @@
 </ol>  
 
 <hr>
-<h2>ADVOGRAND</h2>
+<h2>ARTACTIVE</h2>
 <ol>
-  <li>Сайт называется <a href="https://deokti.github.io/ADVOGRAND/" target="blank">ADVOGRAND</a></li>
+  <li>Сайт называется <a href="https://deokti.github.io/ARTACTIVE/" target="blank">ARTACTIVE</a></li>
  	<li>Третий макет, который начал верстать.;</li>
  	<li>Пока сказать не чего;</li>
  <li>Вёрстка началась 26.10.2019. На данный момент потрачено 9 часов и 19 минут;</li>
