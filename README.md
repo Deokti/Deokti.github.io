@@ -36,15 +36,13 @@
 </ol>  
 
 <hr>
-<h2>ADVOGRAND</h2>
+<h2>ARTACTIVE</h2>
 <ol>
-  <li>Сайт называется <a href="https://deokti.github.io/ADVOGRAND/" target="blank">ADVOGRAND</a></li>
+  <li>Сайт называется <a href="https://deokti.github.io/ARTACTIVE/" target="blank">ARTACTIVE</a></li>
  	<li>Третий макет, который начал верстать.;</li>
  	<li>Пока сказать не чего;</li>
- <li>Вёрстка началась 21.10.2019. На данный момент потрачено 2 часа и 35 минут;</li>
- <li>Макет был взят из телеграмм-канала, создателем которого является Артём Исламов, автор ютуб-канала Glo Academy: 
-    <a href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg/featured">ссылка на YouTube-канал</a> и 
-    <a href="https://t.me/glo_academy">ссылка на телеграмм-канал откуда взят макет;</a></li>
+ <li>Вёрстка началась 24.10.2019. На данный момент потрачено 9 часов и 19 минут;</li>
+ <li>Макет был взят из неизвестного источника;</a></li>
 </ol>  
 
 
