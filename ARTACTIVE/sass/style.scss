@@ -1,6 +1,5 @@
 @import 'base/bootstrap-reboot.min';
 @import 'base/mixins';
-@import 'base/slick';
 @import 'base/animations';
 @import 'base/fonts';
 
@@ -18,20 +17,27 @@ html, body {
     padding-right: 15px;
     padding-left: 15px;
 }
-//Повторяющиеся элементы
-@import 'repeat/buttons';
-@import 'repeat/title';
-@import 'repeat/subtitle';
-@import 'repeat/description';
-@import 'repeat/vergical-line';
-@import 'repeat/shadows-number';
-@import 'repeat/arrows';
-
 
 //Секциии
 @import 'section/header';
+
+//Повторяющиеся элементы
+@import 'repeat/buttons';
+
+
+//Секциии
 @import 'section/aboutus';
+
+//Повторяющиеся элементы
+@import 'repeat/title';
+@import 'repeat/subtitle';
+@import 'repeat/description';
+
+
+//Секциии
 @import 'section/service';
 
-
-
+//Повторяющиеся элементы
+@import 'repeat/vergical-line';
+@import 'repeat/shadows-number';
+@import 'repeat/arrows';
