@@ -9,13 +9,24 @@
         justify-content: space-around;
         align-items: baseline;
     }
+    &__logo-link {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.9px; 
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        } 
+    }
     &__links {
         list-style-type: none;
         display: flex;
         li {
             margin: 0 25px;
             a {
-                color: #ffff;
+                color: #fff;
                 font-size: 13px;
                 font-weight: 400;
                 text-transform: uppercase;
@@ -28,7 +39,7 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.8px;
-        color: #ffff;
+        color: #fff;
         @include hover-text;
     }
     &__position {
@@ -44,7 +55,6 @@
         }
     }
     &__right {
-        color: #ffffff; //иначе не отображается цвет в IE. 
         margin-left: 40%; // или 450px
         margin-top: 110px;
         span {
@@ -53,7 +63,7 @@
 
     }
     &__title {
-        color: #ffff;
+        color: #fff;
         font-family: "Muller";
         font-size: 60px;
         font-weight: 700;
@@ -62,7 +72,7 @@
     }
     &__subtitle {
         margin-top: 30px;
-        color: #ffffff;
+        color: #fff;
         font-size: 32px;
         font-weight: 400;
         line-height: 40px;
@@ -77,8 +87,8 @@
     }
     &__description {
         margin-left: 30px;
-        color: #ffff;
-        width: 206px;
+        color: #fff;
+        width: 210px;
         font-size: 16px;
         font-weight: 400;
     }

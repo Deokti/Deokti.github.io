@@ -1,0 +1,23 @@
+.vergical__line {
+    position: absolute;
+    display: block;
+    width: 2px;
+    background-color: #883eca;
+    left: 50%;
+    height: 84px;
+    transform: translateX(-50%);
+    &_service {
+        top: -55px;
+        span {
+            width: 2px; 
+            height: 84px;
+            background-color: #883eca;
+            border-radius: 10px;
+            &:first-child {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+            }
+        }
+    }
+}

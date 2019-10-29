@@ -1,5 +1,6 @@
 @import 'base/bootstrap-reboot.min';
 @import 'base/mixins';
+@import 'base/slick';
 @import 'base/animations';
 @import 'base/fonts';
 
@@ -22,6 +23,9 @@ html, body {
 @import 'repeat/title';
 @import 'repeat/subtitle';
 @import 'repeat/description';
+@import 'repeat/vergical-line';
+@import 'repeat/shadows-number';
+@import 'repeat/arrows';
 
 
 //Секциии

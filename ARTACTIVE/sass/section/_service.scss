@@ -1,5 +1,57 @@
 .service {
+    position: relative;
     padding: 103px 0 122px 0;
     min-height: 850px;
     background-color: #faf8fb;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__left {
+        z-index: 10;
+    }
+    &__right {
+        position: relative;
+        max-width: 591px;
+        img {
+            width: 100%;
+        }
+        
+    }
+    &__items {
+        position: relative;
+        color: #5e606a;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__lenina {
+        position: absolute;
+        bottom: -54px;
+        right: 130px;
+    }
+    &__right {
+        z-index: 10;
+        box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+    }
+    &__carousel {
+        z-index: 10;
+    }
+    &__speck {
+        position: relative;
+        .scopeTwo {
+            z-index: 1;
+            position: absolute;
+            top: -13px;
+            left: 26px;
+        }
+        .scopeThree {
+            z-index: 0;
+            position: absolute;
+            top: -27px;
+            left: 40px;
+        }
+    }
+   
 }
