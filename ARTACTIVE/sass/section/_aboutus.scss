@@ -10,26 +10,26 @@
         &__linear {
             position: relative;
             top: 89px;
-            left: 15px;
+            left: 151px;
         }
         &__circle {
             text-align: center;
             position: absolute;
             &_one {
                 top: 20px;
-                right: 86px;
+                right: -48px;
             }
             &_two {
                 top: 147px;
-                right: -143px;
+                right: -280px;
             }
             &_three {
                 bottom: 148px;
-                left: -108px;
+                left: 25px;
             }
             &_four {
                 bottom: 2px;
-                right: 51px;
+                right: -85px;
             }
         }
         &__item {
@@ -53,7 +53,7 @@
     }
     &__right {
         max-width: 500px;
-        padding-left: 50px;
+        margin-left: auto;
     }
 
 }

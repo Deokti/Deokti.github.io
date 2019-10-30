@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.service__carousel').slick({
+    $('.service-one__carousel').slick({
         dots: false,
         infinite: true,
         speed: 500,

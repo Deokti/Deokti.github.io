@@ -1,0 +1,23 @@
+.service-two {
+    min-height: 955px;
+    padding: 133px 0 58px 0;
+    &__wrapper {
+       max-width: 546px;
+       margin-left: auto;
+    }
+    &__items {
+        position: relative;
+    }
+    &__tulip {
+        position: absolute;
+        bottom: -215px;
+        left: -215px;
+    }
+    &__sofa {
+        position: absolute;
+        top: 80px;
+        right: 135px;
+    }
+
+
+}

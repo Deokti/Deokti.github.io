@@ -35,9 +35,12 @@ html, body {
 
 
 //Секциии
-@import 'section/service';
+@import 'section/service-one';
+@import 'section/service-two';
+@import 'section/service-three';
 
 //Повторяющиеся элементы
 @import 'repeat/vergical-line';
 @import 'repeat/shadows-number';
 @import 'repeat/arrows';
+@import 'repeat/form';

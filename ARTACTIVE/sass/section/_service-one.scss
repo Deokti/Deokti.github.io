@@ -1,4 +1,4 @@
-.service {
+.service-one {
     position: relative;
     padding: 103px 0 122px 0;
     min-height: 850px;
@@ -17,7 +17,7 @@
         img {
             width: 100%;
         }
-        
+
     }
     &__items {
         position: relative;
@@ -50,8 +50,8 @@
             z-index: 0;
             position: absolute;
             top: -27px;
-            left: 40px;
+            left: 44px;
         }
     }
-   
+
 }

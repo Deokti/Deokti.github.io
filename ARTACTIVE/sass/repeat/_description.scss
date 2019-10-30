@@ -22,4 +22,14 @@
             }
         }
     }
+    &_service-three {
+        max-width: 585px;
+        p {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
 }

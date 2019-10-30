@@ -1,0 +1,15 @@
+.service-three {
+    min-width: 824px;
+    padding: 85px 0 90px 0;
+    background-color: #faf8fb;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__right {
+        img {
+            width: 100%;
+        }
+    }
+}
