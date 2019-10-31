@@ -1,7 +1,7 @@
 //изменение текста по наведению. Используется в header
 @mixin hover-text {
     &:hover {
-        color: #ffff;
+        color: #fff;
         text-decoration: none;
         border-bottom: 1px solid #fff;
     }
@@ -11,6 +11,22 @@
 @mixin hover-button {
     &:hover {
         color: #fb0275;
-        background: #ffffff;
+        background: #fff;
+    }
+}
+
+
+//миксин для vergical-line. Преобразование span и создание второй линии
+@mixin line-span {
+    span {
+        width: 2px; 
+        height: 84px;
+        background-color: #883eca;
+        border-radius: 10px;
+        &:first-child {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+        }
     }
 }

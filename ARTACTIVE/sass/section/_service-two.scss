@@ -1,9 +1,11 @@
 .service-two {
-    min-height: 955px;
-    padding: 133px 0 58px 0;
+    min-height: 1000px;
+    padding: 100px 0 138px 0;
     &__wrapper {
-       max-width: 546px;
-       margin-left: auto;
+        position: relative;
+        max-width: 546px;
+        margin-left: auto;
+        z-index: 5;
     }
     &__items {
         position: relative;

@@ -6,18 +6,12 @@
     left: 50%;
     height: 84px;
     transform: translateX(-50%);
-    &_service {
+    &_service-one {
         top: -55px;
-        span {
-            width: 2px; 
-            height: 84px;
-            background-color: #883eca;
-            border-radius: 10px;
-            &:first-child {
-                position: absolute;
-                left: 10px;
-                top: 50%;
-            }
-        }
+        @include line-span;
+    }
+    &_service-three {
+        top: -60px;
+        @include line-span;
     }
 }

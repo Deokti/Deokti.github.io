@@ -1,6 +1,16 @@
 .shadows-title {
     position: absolute;
-    top: 170px;
-    left: 280px;
     z-index: -1;
+    &_service-one {
+        top: 170px;
+        left: 280px;
+    }
+    &_service-two {
+        top: -50px;
+        left: -90px;
+    }
+    &_service-three {
+        top: 95px;
+        left: -80px;
+    }
 }
