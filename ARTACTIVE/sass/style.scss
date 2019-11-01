@@ -5,6 +5,7 @@
 
 
 html, body {
+    position: relative;
     font-family: 'Open Sans', sans-serif;
     background: url('../img/line.jpg');
     background-position: center;
@@ -12,10 +13,10 @@ html, body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1220px;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 //Секциии
@@ -39,6 +40,11 @@ html, body {
 @import 'section/service-two';
 @import 'section/service-three';
 @import 'section/comment';
+@import 'section/faq';
+@import 'section/map';
+@import 'section/footer';
+@import 'section/modal';
+@import 'section/press-up';
 
 //Повторяющиеся элементы
 @import 'repeat/vergical-line';

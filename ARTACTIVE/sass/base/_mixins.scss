@@ -12,6 +12,7 @@
     &:hover {
         color: #fb0275;
         background: #fff;
+        text-decoration: none;
     }
 }
 
@@ -29,4 +30,16 @@
             top: 50%;
         }
     }
+}
+
+
+//миксин для картинок в блоке карты. Отвечает за базовые настройки для позиционирования 
+@mixin map-before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+
 }

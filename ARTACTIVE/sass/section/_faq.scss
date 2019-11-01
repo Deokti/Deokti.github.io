@@ -1,0 +1,41 @@
+.faq {
+    position: relative;
+    padding: 0 0 170px 0;
+    min-height: 936px;
+    &__wrapper {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &-block {
+        margin-top: 40px;
+        max-width: 525px;
+        &__question {
+            color: #383d52;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30.1px;
+        }
+        &__answer {
+            margin-top: 25px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}
+
+.ellipse {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.linear-gradient {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
