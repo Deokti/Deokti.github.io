@@ -1,0 +1,33 @@
+.button {
+    border-radius: 5px;
+    background-color: #c91111;
+    color: #fff;
+    border: none;
+    overflow: hidden;
+    transition: .3s ease-out;
+    &_nav-bar {
+        margin-left: 20px;
+
+        width: 140px;
+        height: 30px;
+
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 22px;
+        @include hover-button-white;
+        
+    }
+    &_promo {
+        z-index: 2;
+        position: relative;
+        margin-top: 65px;
+
+        font-size: 18px;
+        line-height: 26px;
+
+        width: 299px;
+        height: 65px;
+        background-image: linear-gradient(to top, #c10b0b 0%, #e42626 100%);
+        @include hover-button-animate;
+    }
+}

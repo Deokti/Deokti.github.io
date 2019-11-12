@@ -1,0 +1,77 @@
+.header {
+    width: 100%;
+    min-height: 130px;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    /* padding: 10px 475px; */
+    /* padding: 10px 486px; */
+    padding: 10px 477px;
+    left: 0;
+    height: 50px;
+    background-color: #fff;
+    z-index: 999;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        list-style-type: none;
+        margin: 0 13px;
+        a {
+            color: #1c1c1c;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0.14px;
+            text-decoration: none;
+            &:hover {
+                border-bottom: 1px solid #1c1c1c;
+            }
+        }
+    }
+}
+
+.subheader {
+    color: #1c1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding-top: 70px;
+    &__personal-lawyer {
+        margin-left: 90px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.14px;
+    }
+    &__relation {
+        display: flex;
+        align-items: center;
+    }
+    &__messenger {
+        display: flex;
+        margin-left: 24px;
+    }
+    &__border-messenger {
+        margin: 0 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #e42626;
+    }
+    &__apple {
+        margin-right: 0;
+    }
+}

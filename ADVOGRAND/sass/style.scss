@@ -1,0 +1,29 @@
+//БАЗА
+@import 'base/bootstrap-reboot.min';
+@import 'base/font';
+@import 'base/mixins';
+
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+.container {
+    max-width: 980px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+//Повторяющиеся элементы
+@import 'repeat/phone';
+@import 'repeat/buttons';
+@import 'repeat/title';
+
+//секции
+@import 'section/header';
+@import 'section/promo';
+@import 'section/provide-service';
+@import 'section/about-service';
+@import 'section/render-service';
+

@@ -1,0 +1,54 @@
+.about-service {
+    min-height: 600px;
+    padding: 100px 0;
+    background-image: url('../img/background/service-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrapper {
+        color: #fff;
+        margin-top: 80px;
+    }
+    &__description {
+        max-width: 889px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0.16px;
+        p {
+            &:nth-child(2) {
+                margin-top: 20px;
+            }
+        }
+    }
+    &__items {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: center;
+    }
+    &__number {
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.48px;
+        &_24px {
+            font-size: 24px;
+        }
+    }
+    &__detailed {
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0.16px;
+        span {
+            display: block;
+        }
+    }
+
+}
+
+

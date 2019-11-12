@@ -1,0 +1,46 @@
+@mixin hover-button-white {
+    &:hover {
+        border: 1px solid red;
+        color: #000;
+        background: #fff;
+    }
+}
+
+@mixin hover-button-animate {
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        transition: .6s all;
+
+        width: 500px;
+        height: 500px;
+
+        background: #fff;
+        border-radius: 50%;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    &::before {
+        top: -20%;
+        left: -170%;
+    }
+    &::after {
+        bottom: 48%;
+        right: -170%;
+    }
+    &:hover {
+        background-image: none;
+        transition: 1s all;
+        color: #000;
+        box-shadow:0 3px 10px rgb(255, 0, 0);
+        &::before {
+            left: 0;
+        }
+        &::after {
+            bottom: -10%;
+            right: 0;
+        }
+    }
+    
+}
