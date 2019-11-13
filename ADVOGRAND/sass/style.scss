@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 980px;
+    max-width: 971px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -22,6 +22,7 @@ body {
 
 //секции
 @import 'section/header';
+@import 'section/subheader';
 @import 'section/promo';
 @import 'section/provide-service';
 @import 'section/about-service';

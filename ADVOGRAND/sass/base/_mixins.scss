@@ -1,3 +1,11 @@
+@mixin hover-phone {
+    &:hover {
+        text-decoration: none;
+        color: #1c1c1c;
+        border-bottom: 1px solid #1c1c1c;
+    }
+}
+
 @mixin hover-button-white {
     &:hover {
         border: 1px solid red;

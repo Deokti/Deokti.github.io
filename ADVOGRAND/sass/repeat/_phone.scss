@@ -3,11 +3,7 @@
     font-weight: 800;
     line-height: 22px;
     letter-spacing: 0.14px;
-    &:hover {
-        text-decoration-line: none;
-        color: #1c1c1c;
-        border-bottom: 1px solid #1c1c1c;
-    }
+    @include hover-phone;
     &_nav {
         font-size: 14px;
     }
