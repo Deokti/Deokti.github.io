@@ -30,4 +30,12 @@
         background-image: linear-gradient(to top, #c10b0b 0%, #e42626 100%);
         @include hover-button-animate;
     }
+    &_advantage-use {
+        margin-top: 23px;
+
+        width: 300px;
+        height: 65px;
+        background-image: linear-gradient(to top, #c11717 0%, #e42626 100%);
+        @include hover-button-white;
+    }
 }

@@ -8,4 +8,16 @@
     &_about-service {
         color: #fff;
     }
+    &_advantage {
+        line-height: 32px;
+        span {
+            display: block;
+        }
+    }
+    &_free-consultation {
+        max-width: 466px;
+        text-align: left;
+        color: #fff;
+        line-height: 35px;
+    }
 }
