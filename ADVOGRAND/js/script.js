@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).load(function () {
 
     //табы на секции comment
     $('ul.comment__tabs').on('click', 'li:not(.comment__tab_active)', function () {
