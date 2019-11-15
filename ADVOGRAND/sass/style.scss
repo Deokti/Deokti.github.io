@@ -1,4 +1,5 @@
 //БАЗА
+@import 'base/slick';
 @import 'base/bootstrap-reboot.min';
 @import 'base/font';
 @import 'base/mixins';
@@ -29,3 +30,8 @@ body {
 @import 'section/render-service';
 @import 'section/advantage';
 @import 'section/free-consultation';
+@import 'section/comment';
+
+
+//Повторяющиеся элементы
+@import 'repeat/arrows';

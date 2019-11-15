@@ -1,0 +1,22 @@
+.arrow__left,
+.arrow__right {
+    position: absolute;
+
+    border: none;
+    background: transparent;
+    right: -70px;
+    top: 39%;
+    transform: translateY(-50%);
+}
+
+.arrow__left {
+    left: -82px;
+    &:hover {
+        .arrow-normal {
+            display: none;
+        }
+        .arrow__left_comment-hover {
+            display: block;
+        }
+    }
+}

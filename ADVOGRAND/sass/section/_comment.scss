@@ -1,0 +1,107 @@
+.comment {
+    min-height: 660px;
+    background-color: #f5f5f5;
+    padding: 100px 0 110px 0;
+    &__block {
+        font-family: "Muller", sans-serif;
+        margin-top: 90px;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        list-style: none;
+        color: #313131;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        padding-left: 0; //отключает базовый отступ ul
+    }
+    &__tab {
+        cursor: pointer;
+        margin: 0 15px;
+        &:hover {
+            color: #e50000;
+        }
+        &_active {
+            color: #e50000;
+            font-weight: 700;
+            line-height: 34px; //выравнивает текст относительно овала
+           /*  display: flex;
+            justify-content: center;
+            align-items: center; */
+            /* width: 89px; */
+            /* padding: 0 13px; */
+            padding: 0px 13px;
+            height: 35px;
+            border-radius: 5px;
+            border: 2px solid #e42626;
+        }
+        &:first-child { //убаре внешний отступ у первого ребёнка, то есть Здравоохранение
+            margin-left: 0;
+        }
+        &:last-child { //убаре внешний отступ у последнего ребёнка, то есть Все
+            margin-right: 0;
+        }
+    }
+    &__inner {
+        flex-wrap: wrap;
+        margin-top: 70px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    &__content {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        &:first-child { //убаре внешний отступ у первого ребёнка
+            margin-left: 0;
+        }
+        &:last-child { //убаре внешний отступ у последнего ребёнка
+            margin-right: 0;
+        }
+
+    }
+    &__img {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url('../img/play-icon.svg');
+            width: 25px;
+            height: 25px;
+
+            top: 165px;
+            left: 20px;
+            z-index: 20;
+        }
+    }
+    &__text {
+        cursor: pointer;
+        margin-top: 20px;
+
+        color: #313131;
+        font-size: 13px;
+        font-weight: 400;
+        &:hover {
+            color: #e42626;;
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+
+.comment__inner {
+    display: none;
+}
+
+.comment__inner_active  {
+   display: flex;
+}
