@@ -1,5 +1,5 @@
 //БАЗА
-@import 'base/slick';
+@import 'base/tiny-slider';
 @import 'base/bootstrap-reboot.min';
 @import 'base/font';
 @import 'base/mixins';
@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    position: relative;
     max-width: 971px;
     padding-left: 15px;
     padding-right: 15px;
