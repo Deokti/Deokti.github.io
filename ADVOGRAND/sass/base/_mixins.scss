@@ -9,7 +9,7 @@
 @mixin hover-button-white {
     &:hover {
         border: 1px solid red;
-        color: #000;
+        color: red;
         background: #fff;
     }
 }
@@ -52,3 +52,60 @@
     }
     
 }
+
+
+//базовые настройки кнопок в секциях comment, partner. Находятся в base/mixins
+@mixin section-arrows {
+    position: absolute;
+    border: none;
+    background: transparent;
+}
+
+//миксин отвечает за стркутуру кнопок в секции tariff. Находится в repeat/buttons
+@mixin buttons-tariff {
+    width: 200px;
+    height: 55px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: "Muller", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+//кнопки в секции tariff. Находится в section/tariff
+@mixin hover-buy {
+    &:hover {
+        border: 1px solid #9a9a9a;;
+        color: #9a9a9a;;
+        background: #fff;
+    }
+}
+
+@mixin hover-consultation-personal {
+    &:hover {
+        border: 1px solid #ff2e00;
+        color: #ff2e00;
+        background: transparent;
+        background-image: none;
+    }
+}
+
+@mixin hover-consultation-family {
+    &:hover {
+        border: 1px solid #008e00;
+        color: #008e00;
+        background: transparent;
+        background-image: none;
+    }
+}
+
+@mixin hover-consultation-business {
+    &:hover {
+        border: 1px solid #001c67;
+        color: #001c67;
+        background: transparent;
+        background-image: none;
+    }
+}
+

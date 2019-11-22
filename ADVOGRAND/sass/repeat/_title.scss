@@ -20,4 +20,19 @@
         color: #fff;
         line-height: 35px;
     }
+    &_tariff {
+        text-align: left;
+    }
+}
+
+.subtitle {
+    margin-top: 40px;
+
+    color: #313131;
+    font-family: "Muller", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    &_tariff {
+        max-width: 630px;
+    }
 }

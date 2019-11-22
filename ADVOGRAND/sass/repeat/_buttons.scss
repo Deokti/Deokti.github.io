@@ -38,4 +38,37 @@
         background-image: linear-gradient(to top, #c11717 0%, #e42626 100%);
         @include hover-button-white;
     }
+    &_mini-consultation {
+        display: block;
+        margin: 0 auto;
+        background-color: transparent;
+        //форма и текст
+        @include buttons-tariff;
+        &_personal {
+            background-image: linear-gradient(to top, #ff2e00 0%, #ff4c25 100%);
+            background-color: #ff2e00;
+            @include hover-consultation-personal;
+        }
+        &_family {
+            background-image: linear-gradient(to top, #008e00 0%, #00a300 100%);
+            background-color: #008e00;
+            @include hover-consultation-family;
+        }
+        &_business {
+            background-image: linear-gradient(to top, #001c67 0%, #02388f 100%);
+            background-color: #001c67;
+            @include hover-consultation-business;
+        }
+
+    }
+    &_mini-buy {
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        background-color: #9a9a9a;
+        //форма и текст
+        @include buttons-tariff;
+        //при наведении
+        @include hover-buy;
+    }
 }

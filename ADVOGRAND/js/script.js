@@ -8,6 +8,8 @@ $(window).load(function () {
     });
     //-----/табы на секции comment-----
 
+
+
     //-----СЛАЙДЕР НА СЕКЦИИ comment-----
 
     //первый 
@@ -107,4 +109,32 @@ $(window).load(function () {
         });
 
     //------/СЛАЙДЕР НА СЕКЦИИ comment------
+
+
+    //------СЛАЙДЕР НА СЕКЦИИ partner------
+    const sliderPartner = tns({
+        container: '.partner__inner',
+        items: 4,
+        slideBy: 'page',
+        speed: 900,
+        nav: false,
+        controls: false,
+        });
+        document.querySelector('.arrow-left__partner').addEventListener('click', function() {
+            sliderPartner.goTo('prev');
+        });
+        document.querySelector('.arrow-right__partner').addEventListener('click', function() {
+            sliderPartner.goTo('next');
+        });
+    //------/СЛАЙДЕР НА СЕКЦИИ partner------
+
+    //-----табы на секции tariff-----
+    $('ul.tariff-block__tabs').on('click', 'li:not(.tariff-block__tab_active)', function () {
+        $(this)
+            .addClass('tariff-block__tab_active').siblings().removeClass('tariff-block__tab_active')
+            .closest('div.tariff-block').find('div.tariff-block__inner').removeClass('tariff-block__inner_active').eq($(this).index()).addClass('tariff-block__inner_active');
+    });
+    //-----/табы на секции tariff-----
+
+    
 });
