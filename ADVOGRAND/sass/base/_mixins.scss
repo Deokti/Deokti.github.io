@@ -70,7 +70,6 @@
     font-family: "Muller", sans-serif;
     font-size: 18px;
     font-weight: 700;
-
 }
 
 //кнопки в секции tariff. Находится в section/tariff
@@ -84,8 +83,8 @@
 
 @mixin hover-consultation-personal {
     &:hover {
-        border: 1px solid #ff2e00;
-        color: #ff2e00;
+        border: 1px solid red;
+        color: red;
         background: transparent;
         background-image: none;
     }
@@ -109,3 +108,12 @@
     }
 }
 
+//Миксин для МОДАЛЬНЫХ ОКОН
+@mixin close-modal {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: #000;
+    font-size: 36px;
+}

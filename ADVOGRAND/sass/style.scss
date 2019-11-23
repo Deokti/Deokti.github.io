@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Proxima Nova', sans-serif;
+    background-color: #f5f5f5;
 }
 
 .container {
@@ -22,6 +23,8 @@ body {
 @import 'repeat/buttons';
 @import 'repeat/title';
 @import 'repeat/arrows';
+@import 'repeat/modal';
+@import 'repeat/arrow-top';
 
 
 //секции
@@ -36,4 +39,29 @@ body {
 @import 'section/comment';
 @import 'section/partner';
 @import 'section/tariff';
+@import 'section/contacts';
+@import 'section/footer';
 
+//медия запросы
+@import 'media/media1099';
+@import 'media/media970';
+@import 'media/media919';
+@import 'media/media890';
+@import 'media/media850';
+@import 'media/media809';
+@import 'media/media790';
+@import 'media/media775';
+@import 'media/media750';
+@import 'media/media700';
+@import 'media/media650';
+@import 'media/media629';
+@import 'media/media590';
+@import 'media/media549';
+@import 'media/media524';
+@import 'media/media490';
+@import 'media/media485';
+@import 'media/media449';
+@import 'media/media440';
+@import 'media/media410';
+@import 'media/media390';
+@import 'media/media340';

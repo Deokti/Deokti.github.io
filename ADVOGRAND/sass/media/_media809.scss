@@ -1,0 +1,27 @@
+@media screen and (max-width: 809px) {
+    //СЕКЦИЯ PROVIDE-SERVICE
+    .provide-service__service-wrapper {
+        justify-content: space-around;  
+    }
+    .provide-service__service-item {
+        width: 210px;
+        &:last-child {
+            justify-content: center;
+        }
+    }
+
+    //СЕКЦИЯ PARTNER
+    .partner__wrapper {
+        width: 670px;
+    }
+    .arrow-right__partner,
+    .arrow-left__partner {
+        top: 54%;
+    }
+    .arrow-right__partner {
+        right: -35px;
+    }
+    .arrow-left__partner {
+        left: -40px;
+    }
+}

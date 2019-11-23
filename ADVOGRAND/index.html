@@ -17,14 +17,21 @@
                 <div class="nav__wrapper">
                     <a href="tel:+74993228580" class="phone phone_nav">+7 499 322-85-80</a>
                     <ul class="nav__list">
-                        <li class="nav__link"><a href="#">Как мы работаем</a></li>
-                        <li class="nav__link"><a href="#">Преимущества</a></li>
-                        <li class="nav__link"><a href="#">Отзывы</a></li>
-                        <li class="nav__link"><a href="#">Партнеры</a></li>
-                        <li class="nav__link"><a href="#">Тарифы</a></li>
-                        <li class="nav__link"><a href="#">Контакты</a></li>
+                        <li class="nav__link nav-link__render-service"><a href="#">Как мы работаем</a></li>
+                        <li class="nav__link nav-link__advantage"><a href="#">Преимущества</a></li>
+                        <li class="nav__link nav-link__comment"><a href="#">Отзывы</a></li>
+                        <li class="nav__link nav-link__partner"><a href="#">Партнеры</a></li>
+                        <li class="nav__link nav-link__tariff"><a href="#">Тарифы</a></li>
+                        <li class="nav__link nav-link__contacts"><a href="#">Контакты</a></li>
                     </ul>
-                    <button class="button button_nav-bar">Перезвоните мне</button>
+                    <button data-modal="callback" class="button button_nav-bar">Перезвоните мне</button>
+
+                    <div class="hamburger">
+                        <input type="checkbox" class="hamburger__menu">
+                        <span class="hamburger__line hamburger__line_one"></span>
+                        <span class="hamburger__line hamburger__line_two"></span>
+                        <span class="hamburger__line hamburger__line_three"></span>
+                    </div>
                 </div>    
             </div>    
         </nav>
@@ -58,7 +65,7 @@
         <div class="container">
             <h1 class="promo__title">Годовой абонемент на услуги <span>«личного юриста»</span></h1>
             <h3 class="promo__subtitle">24 часа в сутки Ваш личный юрист – <span>Advogrand</span> на связи <br>всего <span>за 12 рублей в день</span></h3>
-            <button class="button button_promo">Хочу «личного юриста»!</button>
+            <button data-modal="question-consultation" class="button button_promo">Хочу «личного юриста»!</button>
         </div>
     </section>
     <!-- /PROMO -->
@@ -72,47 +79,47 @@
 
                 <div class="provide-service__service-item">
                     <img src="img/icon-service/1.svg" alt="Консультация" class="provide-service__service-icon">
-                    <div class="provide-service__service-descr">Устные <span>консультации</span></div>
+                    <div data-modal="oral-consultation" class="provide-service__service-descr">Устные <span>консультации</span></div>
                 </div>
 
                 <div class="provide-service__service-item">
                     <img src="img/icon-service/2.svg" alt="Телефонная трубка" class="provide-service__service-icon">
-                    <div class="provide-service__service-descr">Звонок <span>юриста</span></div>
+                    <div data-modal="oral-consultation" class="provide-service__service-descr ">Звонок <span>юриста</span></div>
                 </div>
 
                 <div class="provide-service__service-item">
                     <img src="img/icon-service/3.svg" alt="Листы договора" class="provide-service__service-icon">
-                    <div class="provide-service__service-descr">Модели <span>договора</span></div>
+                    <div data-modal="oral-consultation" class="provide-service__service-descr">Модели <span>договора</span></div>
                 </div>
 
-                <div class="provide-service__service-item provide-service__service-item_mt70">
+                <div class="provide-service__service-item ">
                     <img src="img/icon-service/4.svg" alt="Консультация" class="provide-service__service-icon">
-                    <div class="provide-service__service-descr">Устные <span>бизнес-консультации</span></div>
+                    <div data-modal="oral-consultation" class="provide-service__service-descr">Устные <span>бизнес-консультации</span></div>
                 </div>
 
-                <div class="provide-service__service-item provide-service__service-item_mt70">
+                <div class="provide-service__service-item">
                     <img src="img/icon-service/5.svg" alt="Люди за столом" class="provide-service__service-icon">
-                    <div class="provide-service__service-descr">Содействие <span>в переговорах</span></div>
+                    <div data-modal="oral-consultation" class="provide-service__service-descr">Содействие <span>в переговорах</span></div>
                 </div>
 
-                <div class="provide-service__service-item provide-service__service-item_mt70">
+                <div class="provide-service__service-item">
                     <img src="img/icon-service/6.svg" alt="Конституция" class="provide-service__service-icon">
-                    <div class="provide-service__service-descr">Обзор изменений <span>в законодательстве</span></div>
+                    <div data-modal="oral-consultation" class="provide-service__service-descr">Обзор изменений <span>в законодательстве</span></div>
                 </div>
 
-                <div class="provide-service__service-item provide-service__service-item_mt70">
+                <div class="provide-service__service-item">
                     <img src="img/icon-service/7.svg" alt="Письмо" class="provide-service__service-icon">
-                    <div class="provide-service__service-descr">Письменные <span>консультации</span></div>
+                    <div data-modal="oral-consultation" class="provide-service__service-descr">Письменные <span>консультации</span></div>
                 </div>
 
-                <div class="provide-service__service-item provide-service__service-item_mt70">
+                <div class="provide-service__service-item">
                     <img src="img/icon-service/8.svg" alt="Нарисованный человек" class="provide-service__service-icon">
-                    <div class="provide-service__service-descr">Консультации <span>в отношении третьих лиц</span></div>
+                    <div data-modal="oral-consultation" class="provide-service__service-descr">Консультации <span>в отношении третьих лиц</span></div>
                 </div>
 
-                <div class="provide-service__service-item provide-service__service-item_mt70">
+                <div class="provide-service__service-item">
                     <img src="img/icon-service/9.svg" alt="Весы" class="provide-service__service-icon">
-                    <div class="provide-service__service-descr">Все области <span>права</span></div>
+                    <div data-modal="oral-consultation" class="provide-service__service-descr">Все области <span>права</span></div>
                 </div>
 
             </div>
@@ -181,7 +188,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!-- /.render-service -->
 
     <!-- advantage -->        
@@ -190,7 +197,7 @@
             <h2 class="title title_advantage">Преимущество сервиса Advogrand <span>по сравнению с другими юридическими компаниями</span></h2>
 
             <div class="advantage__wrapper">
-                <!-- advantage-description -->
+                <!--  advantage-description -->
                 <div class="advantage-description">
                     <ul class="advantage-description__list">
                         <li>Одна консультация</li>
@@ -199,11 +206,11 @@
                         <li>Время работы</li>
                         <li>Оплата</li>
                     </ul>
-                </div>
+                </div> 
                 <!-- /.advantage-description -->
 
                 <!-- advantage__inner -->
-                <div class="advantage__inner">
+               <div class="advantage__inner"> 
 
                     <!-- advantage-characteristic -->  
                     <div class="advantage-characteristic advantage-characteristic_we">
@@ -228,7 +235,7 @@
                             <li>С 9:00 до 18:00</li>
                             <li>Каждый раз  при обращении</li>
                         </ul>
-                    </div>
+                    </div> 
                     <!-- /.advantage-characteristic-->  
 
                 </div>
@@ -241,35 +248,26 @@
                     <div class="advantage-use__item">
                         <img src="img/advantage/1.svg" alt="Иконка с мужчиной" class="advantage-use__img">
                         <div class="advantage-use__text"><span>208 000</span> - мужчин</div>
-                        <!-- /.advantage-use__text -->
-                    </div>
+                    </div> 
 
-                    <!-- /.advantage-use__item -->
-                    <div class="advantage-use__item">
+                     <div class="advantage-use__item">
                         <img src="img/advantage/2.svg" alt="Иконка с женщиной" class="advantage-use__img">
                         <div class="advantage-use__text"><span>137 000</span> - женщин</div>
-                        <!-- /.advantage-use__text -->
                     </div>
 
-                    <!-- /.advantage-use__item -->
                     <div class="advantage-use__item">
                         <img src="img/advantage/3.svg" alt="Иконка с мужчиной и женщиной" class="advantage-use__img">
                         <div class="advantage-use__text"><span>63 000</span> - семейных пар</div>
-                        <!-- /.advantage-use__text -->
                     </div>
 
-                    <!-- /.advantage-use__item -->
                     <div class="advantage-use__item">
                         <img src="img/advantage/4.svg" alt="Человек с часами вместо головы" class="advantage-use__img">
                         <div class="advantage-use__text"><span>13 500</span> - предпринимателей</div>
-                        <!-- /.advantage-use__text -->
                     </div>
-                    <!-- /.advantage-use__item -->
 
-                    <button class="button button_advantage-use">Узнать больше!</button>
+                    <button data-modal="callback" class="button button_advantage-use">Узнать больше!</button>
                 </div>
                 <!-- /.advantage-use -->
-                
             </div>
         </div>
     </section>
@@ -316,7 +314,7 @@
                 <!-- comment__wrapper -->
                 <div class="comment__wrapper">
                     <!-- comment__inner -->
-                    <div class="comment__inner comment__inner_active">
+                    <div class="comment__inner comment__inner_active"> 
 
                         <div class="comment__content">
                             <a href="" class="comment__img"><img src="img/comment/1.png" alt="девушка берёт интервью у мужчины"></a>
@@ -355,7 +353,7 @@
                     <!-- ./comment__inner -->
     
                     <!-- comment__inner -->
-                    <div class="comment__inner comment__inner_two">
+                   <div class="comment__inner comment__inner_two">
 
                         <div class="comment__content">
                             <a href="" class="comment__img"><img src="img/comment/1.png" alt="девушка берёт интервью у мужчины"></a>
@@ -578,10 +576,9 @@
                     <!-- ./comment__inner -->   
 
                     <button type="button" class="arrow__left arrow__left_comment"><img src="img/left-arrow.svg" alt="стрелка влево" class="hover-arrow__left"></button>
-                    <button type="button" class="arrow__right arrow__right_comment"><img src="img/right-arrow.svg" alt="стрелка вправо" class="hover-arrow__right"></button>
+                    <button type="button" class="arrow__right arrow__right_comment"><img src="img/right-arrow.svg" alt="стрелка вправо" class="hover-arrow__right"></button> 
                 </div>
                 <!-- ./comment__wrapper -->
-
             </div>
         </div>
     </section>
@@ -672,10 +669,10 @@
 
                 <div class="tariff__wrapper">
                     <!-- tariff-block__inner -->
-                    <div class="tariff-block__inner"> <!-- класс с активом здесь(сейчас она на второй) -->
+                    <div class="tariff-block__inner tariff-block__inner_one"> <!-- класс с активом здесь(сейчас она на второй) -->
 
                         <div class="tariff-block__content">
-                            <div class="tariff-block__position"><!-- Позволяет нормально разбросать информацию и цену -->
+                            <div class="tariff-block__position"> <!-- Позволяет нормально разбросать информацию и цену -->
                                 <h5 class="tariff-block__title">Персональная карта <span>для Вас</span></h5>
                                 <img src="img/tariff/personal.png" alt="Персональная карта" class="tariff-block__tariff-img">
                                 <ul class="tariff-block__items">
@@ -689,7 +686,7 @@
                             <div class="tariff-block__bottom">
                                 <div class="tariff-block__price">Цена: <span>65 $ за год</span></div>
                                 <div class="tariff-block__buttons">
-                                    <button class="button button_mini-consultation button_mini-consultation_personal">Консультация</button>
+                                    <button data-modal="callback" class="button button_mini-consultation button_mini-consultation_personal">Консультация</button>
                                     <button class="button button_mini-buy">Купить</button>
                                 </div>
                             </div>
@@ -711,7 +708,7 @@
                             <div class="tariff-block__bottom">
                                 <div class="tariff-block__price">Цена: <span>130 $ за год</span></div>
                                 <div class="tariff-block__buttons">
-                                    <button class="button button_mini-consultation button_mini-consultation_family">Консультация</button>
+                                    <button data-modal="callback" class="button button_mini-consultation button_mini-consultation_family">Консультация</button>
                                     <button class="button button_mini-buy">Купить</button>
                                 </div>
                             </div>
@@ -735,7 +732,7 @@
                             <div class="tariff-block__bottom">
                                 <div class="tariff-block__price">Цена: <span>265 $ за год</span></div>
                                 <div class="tariff-block__buttons">
-                                    <button class="button button_mini-consultation button_mini-consultation_business">Консультация</button>
+                                    <button data-modal="callback" class="button button_mini-consultation button_mini-consultation_business">Консультация</button>
                                     <button class="button button_mini-buy">Купить</button>
                                 </div>
                             </div>
@@ -745,7 +742,7 @@
                     <!-- /.tariff-block__inner -->
 
                     <!-- tariff-block__inner -->
-                    <div class="tariff-block__inner tariff-block__inner_active"> <!-- класс с активом здесь-->
+                    <div class="tariff-block__inner tariff-block__inner_two tariff-block__inner_active"> <!-- класс с активом здесь-->
 
                         <div class="tariff-block__content tariff-block__horizontal-block">
                             <div class="tariff-block__position"><!-- Позволяет нормально разбросать информацию и цену -->
@@ -762,7 +759,7 @@
                             <div class="tariff-block__bottom">
                                 <div class="tariff-block__price">Цена: <span>65 $ за год</span></div>
                                 <div class="tariff-block__buttons">
-                                    <button class="button button_mini-consultation button_mini-consultation_personal">Консультация</button>
+                                    <button data-modal="callback" class="button button_mini-consultation button_mini-consultation_personal">Консультация</button>
                                     <button class="button button_mini-buy">Купить</button>
                                 </div>
                             </div>
@@ -785,12 +782,11 @@
                             <div class="tariff-block__bottom">
                                 <div class="tariff-block__price">Цена: <span>130 $ за год</span></div>
                                 <div class="tariff-block__buttons">
-                                    <button class="button button_mini-consultation button_mini-consultation_family">Консультация</button>
+                                    <button data-modal="callback" class="button button_mini-consultation button_mini-consultation_family">Консультация</button>
                                     <button class="button button_mini-buy">Купить</button>
                                 </div>
                             </div>
                         </div>
-
                         <div class="tariff-block__content tariff-block__horizontal-block">
                             <div class="tariff-block__position"><!-- Позволяет нормально разбросать информацию и цену -->
                                 <h5 class="tariff-block__title tariff-block__title_align-left">Карта <span>для бизнеса</span></h5>
@@ -807,7 +803,7 @@
                             <div class="tariff-block__bottom">
                                 <div class="tariff-block__price">Цена: <span>265 $ за год</span></div>
                                 <div class="tariff-block__buttons">
-                                    <button class="button button_mini-consultation button_mini-consultation_business">Консультация</button>
+                                    <button data-modal="callback" class="button button_mini-consultation button_mini-consultation_business">Консультация</button>
                                     <button class="button button_mini-buy">Купить</button>
                                 </div>
                             </div>
@@ -815,14 +811,137 @@
 
                     </div>
                     <!-- /.tariff-block__inner -->
-                    
                 </div>
-
 
             </div>
         </div>
     </section>
     <!-- /.tariff -->
+
+    <!-- contacts -->
+   <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper"> 
+                <!-- contacts-form -->
+                <div class="contacts-form">
+                    <h3 class="contacts-form__title">Напишите нам письмо или задайте свой вопрос</h3>
+                    <form action="#" class="contacts-form__feedback">
+                        <div class="contacts-form__name">
+                            <div class="contacts-form__enter">Введите своё имя</div>
+                            <input name="name" type="text" class="contacts-form__input-name" required>
+                        </div>
+
+                        <div class="contacts-form__phone">
+                            <div class="contacts-form__enter">Ваш номер телефона</div>
+                            <input name="phone" type="tel" class="contacts-form__input-phone" required>
+                        </div>                        
+
+                        <div class="contacts-form__message">
+                            <div class="contacts-form__enter">Сообщение или вопрос</div>
+                            <textarea name="textarea" maxlength="200" wrap="soft"></textarea>
+                        </div>
+
+                        <button class="button button_contacts-form">Заказать звонок консультанта</button>
+                        <div class="contacts-form__call-back">Перезвоним вам в течении 5 минут</div>
+                    </form>
+                </div>
+                <!-- /.contacts-form -->
+
+                <!-- contacts-information -->
+                <div class="contacts-information">
+                    <h2 class="contacts-information__title">Контакты</h2>
+
+                    <div class="contacts-information__detailed">
+                        <div class="contacts-information__tel">
+                            Телефон для покупки карт: <a href="tel:+74993228580">+7 499 322-85-80</a>
+                        </div>
+
+                        <div class="contacts-information__email">
+                            Email: <span><a href="mailto:info@advogrand.net">info@advogrand.net</a></span>
+                        </div>
+                        
+                        <div class="contacts-information__work-time">
+                            Время работы:
+                            <p class="contacts-information__desciption">С понедельника по пятницу: <span>9:00 — 22:00</span></p>
+                            <p class="contacts-information__desciption">В праздничные и выходные дни: только телефонные консультации <span>10:00 — 20:00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.contacts-information -->
+
+            </div>
+        </div>
+    </section>
+    <!-- /.contacts -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#" class="footer__logo"><img src="img/footer/logo-white.svg" alt="Advogrand"></a>
+                <div class="footer-info">
+                    <div class="footer-info__developer">Разработка сайта:</div>
+                    <a href="#" class="footer-info__kangaroo"><img src="img/footer/webkangaroo.svg" alt="webkangaroo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.footer -->
+
+    <div class="overlay">
+        <div class="detailed-information__provide-service">
+            <div class="detailed-information__close">×</div>
+            <h3 class="detailed-information__title">Бездействуют государственные органы?</h3>
+            <img src="img/modal/oral-consultation.png" alt="зал совещаний" class="detailed-information__img">
+            <p class="detailed-information__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="detailed-information__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div class="write-letter">
+            <div class="write-letter__close">×</div>
+            <h3 class="write-letter__title">Напишите нам письмо или задайте свой вопрос</h3>
+            <form action="#" class="modal-form__feedback">
+                <div class="modal-form__name">
+                    <div class="modal-form__enter">Введите своё имя</div>
+                    <input name="name" type="text" class="modal-form__input-name" required>
+                </div>
+
+                <div class="modal-form__phone">
+                    <div class="modal-form__enter">Ваш номер телефона</div>
+                    <input name="phone" type="tel" class="modal-form__input-phone" required>
+                </div>                        
+
+                <div class="modal-form__message">
+                    <div class="modal-form__enter">Сообщение или вопрос</div>
+                    <textarea name="textarea" maxlength="200" wrap="soft"></textarea>
+                </div>
+
+                <button class="button button_contacts-form button_modal-form">Заказать звонок консультанта</button>
+                <div class="modal-form__call-back">Перезвоним вам в течении 5 минут</div>
+            </form>
+        </div>
+
+        <div class="we-contact">
+            <div class="we-contact__close">×</div>
+            <h3 class="we-contact__title">Оставьте свой номер и мы свяжемся с вами</h3>
+            <form action="#" class="modal-form__feedback">
+                <div class="modal-form__name">
+                    <div class="modal-form__enter">Введите своё имя</div>
+                    <input name="name" type="text" class="modal-form__input-name" required>
+                </div>
+
+                <div class="modal-form__phone">
+                    <div class="modal-form__enter">Ваш номер телефона</div>
+                    <input name="phone" type="tel" class="modal-form__input-phone" required>
+                </div>                        
+
+                <button class="button button_contacts-form button_modal-form">Заказать звонок консультанта</button>
+                <div class="modal-form__call-back">Перезвоним вам в течении 5 минут</div>
+            </form>
+        </div>
+    </div>
+
+    <div class="arrow-top"></div>
 
 
     <script src="js/jquery.min.js"></script>

@@ -1,0 +1,29 @@
+.footer {
+    height: 135px;
+    background-color: #0e0e0e;
+    padding: 40px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Muller", sans-serif;
+    }
+    &__logo {
+        max-width: 190px;
+        img {
+            width: 100%;
+        }
+    }
+    &-info {
+        display: flex;
+        align-items: center;
+        &__developer {
+            color: #fff;
+            padding-right: 30px;
+            
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}

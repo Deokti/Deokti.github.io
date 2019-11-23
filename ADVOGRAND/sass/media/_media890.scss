@@ -1,0 +1,28 @@
+@media screen and (max-width: 890px) {
+    //СЕКЦИЯ HEADER > NAV
+    .nav__link {
+        margin: 0 13px;
+    }
+    .phone_nav {
+        display: none;
+    }
+    .subheader__personal-lawyer {
+        margin-left: 0;
+    }
+
+    //СЕКЦИЯ PARTNER
+    .partner__wrapper {
+        width: 720px;
+        margin: 0 auto;
+    }
+    .arrow-right__partner,
+    .arrow-left__partner {
+        top: 54%;
+    }
+    .arrow-right__partner {
+        right: -40px;
+    }
+    .arrow-left__partner {
+        left: -40px;
+    }
+}

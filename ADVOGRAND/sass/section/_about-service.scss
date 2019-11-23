@@ -24,11 +24,16 @@
         }
     }
     &__items {
-        margin-top: 80px;
+        margin-top: 50px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         text-align: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-top: 30px;
+        width: 165px;
     }
     &__number {
         font-size: 48px;

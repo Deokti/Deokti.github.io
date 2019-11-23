@@ -7,9 +7,10 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
     &-description {
-        margin-top: 52px;
+        margin-top: 52px; //Отодвигает текст ниже, чтобы он сравнялся с текстом в таблице сравнений
         &__list {
             padding-left: 0;
 
@@ -24,6 +25,8 @@
     }
     &__inner {
         display: flex;
+        flex-wrap: wrap;
+        margin: 0px 5px;
     }
     &-characteristic {
         width: 210px;

@@ -1,0 +1,37 @@
+@media screen and (max-width: 629px) {
+    //СЕКЦИЯ ADVANTAGE
+    .advantage__wrapper {
+        justify-content: center;
+    }
+    .advantage-description__list {
+        display: none;
+    }
+    .advantage__inner {
+        margin: 0;
+    }
+    .advantage-use {
+        display: block;
+        margin-top: 40px;
+    }
+
+     //СЕКЦИЯ CONTACTS
+     .contacts__wrapper {
+         flex-direction: column-reverse;
+         align-items: center;
+     }
+     .contacts-form {
+         margin-top: 30px;
+     }
+     .contacts-form__feedback, 
+     .button_contacts-form  {
+         width: 290px;
+         input, textarea {
+             width: 290px;
+         }
+     }
+
+     //СЕКЦИЯ FOOTER
+     .footer-info__developer {
+         display: none;
+     }
+}

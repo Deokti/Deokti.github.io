@@ -1,0 +1,21 @@
+@media screen and (max-width: 1099px) {
+    //СЕКЦИЯ COMMENT
+    .arrow__right {
+        right: -50px;
+    }
+    .arrow__left {
+        left: -50px;
+    }
+    .comment__wrapper {
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    //СЕКЦИЯ PARTNER
+    .partner__wrapper {
+        width: 720px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+}

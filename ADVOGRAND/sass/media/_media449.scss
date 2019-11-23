@@ -1,0 +1,23 @@
+@media screen and (max-width: 449px) {
+
+    //СЕКЦИЯ PROVIDE-SERVICE
+    .provide-service__service-wrapper {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .provide-service__service-item {
+        width: 260px;
+        margin-top: 70px;
+        /* margin-left: 40px; */
+        margin-left: 80px;
+        &:last-child {
+            justify-content: end;
+        }
+    }
+
+    //СЕКЦИЯ ADVANTAGE
+    .advantage__inner {
+        justify-content: inherit;
+    }
+}

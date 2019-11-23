@@ -1,0 +1,48 @@
+@media screen and (max-width: 390px) {
+    .title {
+        font-size: 24px;
+    }
+
+    //СЕКЦИЯ PROMO
+    .promo__title {
+        font-size: 20px;
+        span {
+            font-size: 26px;
+        }
+    }
+    .promo__subtitle {
+        font-size: 20px;
+    }
+
+    //СЕКЦИЯ PROVIDE-SERVICE
+    .provide-service__service-item {
+        width: 260px;
+        margin-left: 20px;
+    }
+
+    //СЕКЦИЯ ABOUT-SERVICE
+    .about-service__items {
+        justify-content: center;
+    }
+
+    //СЕКЦИЯ FREE-CONSULTATION
+    .free-consultation__list {
+        width: 280px;
+    }
+
+    //СЕКЦИЯ COMMENT
+    .comment__wrapper {
+        max-width: 290px;
+    }
+    .arrow__right,
+    .arrow__left {
+        top: 40px;
+    }
+     .arrow__right {
+        right: -5px;
+    }
+    .arrow__left {
+        left: -5px;
+    }
+
+}

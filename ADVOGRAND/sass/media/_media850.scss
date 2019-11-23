@@ -1,0 +1,23 @@
+@media screen and (max-width: 850px) {
+    //СЕКЦИЯ TARIFF
+    .tariff__wrapper {
+        margin-top: 20px;
+    }
+    .tariff-block__content {
+        margin-top: 20px;
+    }
+    .tariff-block__horizontal-block {
+        display: none;
+    }
+    .tariff-block__tab {
+        display: none;
+    }
+    .tariff-block__inner_one { //сравнение тарифов
+        display: flex;
+        justify-content: space-around;
+    }
+    .tariff-block__inner_two { 
+        display: none;
+    }
+ 
+}

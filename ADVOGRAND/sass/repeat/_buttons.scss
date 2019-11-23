@@ -4,7 +4,7 @@
     color: #fff;
     border: none;
     overflow: hidden;
-    transition: .3s ease-out;
+    transition: .4s all;
     &_nav-bar {
         margin-left: 20px;
 
@@ -46,7 +46,7 @@
         @include buttons-tariff;
         &_personal {
             background-image: linear-gradient(to top, #ff2e00 0%, #ff4c25 100%);
-            background-color: #ff2e00;
+            background-color: red;
             @include hover-consultation-personal;
         }
         &_family {
@@ -70,5 +70,22 @@
         @include buttons-tariff;
         //при наведении
         @include hover-buy;
+    }
+    &_contacts-form {
+        margin-top: 30px;
+
+        width: 320px;
+        height: 65px;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, #cc0000 0%, #d00000 100%);
+
+        font-family: "Muller", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 40px;
+        @include hover-consultation-personal;
+    }
+    &_modal-form {
+        margin-top: 20px;
     }
 }

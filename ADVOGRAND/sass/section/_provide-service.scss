@@ -1,20 +1,19 @@
 .provide-service {
     padding: 100px 0;
     min-height: 630px;
+    background-color: #fff;
     &__service-wrapper {
-        margin-top: 80px;
+        /* margin-top: 20px; */
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
     }
     &__service-item {
+        margin-top: 85px;
         width: 260px;
         display: flex;
         align-items: flex-start;
-        &_mt70 {
-            margin-top: 70px;
-        }
     }
     &__service-descr {
         cursor: pointer;

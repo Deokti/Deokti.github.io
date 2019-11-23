@@ -2,14 +2,17 @@
     min-height: 500px;
     padding: 100px 0;
     &__items {
-        margin-top: 100px;
+        margin-top: 60px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        flex-wrap: wrap;
     }
     &__item {
-        min-width: 270px;
         margin: 0 auto;
+        margin-top: 40px;
+
+        min-width: 270px;
         color: #1c1c1c;
         text-align: center;
     }

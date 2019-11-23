@@ -1,0 +1,21 @@
+@media screen and (max-width: 490px) {
+    //СЕКЦИЯ PROMO
+    .promo__title {
+        text-align: center;
+        font-size: 29px;
+        span {
+            font-size: 35px;
+        }
+    }
+    .promo__subtitle {
+        margin-top: 50px;
+        text-align: center;
+        max-width: none;
+        font-size: 22px;
+    }
+    .button_promo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,26 @@
+@media screen and (max-width: 790px) {
+    //СЕКЦИЯ HEADER > NAV
+    .nav {
+        background-color: transparent;
+    }
+    .subheader__personal-lawyer {
+        display: none;
+    }
+    .nav__list {
+        display: none;
+    }
+    .button_nav-bar {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    //СЕКЦИЯ COMMENT
+    .arrow__right {
+        right: -30px;
+    }
+    .arrow__left {
+        left: -30px;
+    }
+}

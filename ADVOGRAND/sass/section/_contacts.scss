@@ -1,0 +1,120 @@
+.contacts {
+    padding: 70px 0;
+    min-height: 630px;
+    font-family: "Muller", sans-serif;
+    &__wrapper {
+        display: flex;
+        color: #000;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.contacts-form {
+    &__title {
+        max-width: 302px;;
+        font-size: 18px;
+        text-align: left;
+        font-weight: 800;
+        line-height: 23px;
+    }
+    &__enter {
+        padding-bottom: 10px;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    &__feedback {
+        margin-top: 30px;
+        input, textarea {
+            width: 320px;
+            height: 50px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: #858585;
+            font-style: italic;
+            border: 1px solid #dddddd;
+            background-color: #ffffff;
+        }
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+    }
+    &__phone,
+    &__message {
+        margin-top: 20px;
+    }
+    &__call-back {
+        margin-top: 20px;
+
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
+.contacts-information {
+    max-width: 280px;
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    &__detailed {
+        margin-top: 60px;
+    }
+    &__tel {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        a {
+            margin-top: 8px;
+            display: inline-block;
+            color: #000;
+            font-size: 17px;
+            font-weight: 700;
+            @include hover-phone;
+        }
+    }
+    &__email {
+        margin-top: 20px;
+
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        span {
+            display: block;
+            a {
+                display: inline-block;
+                margin-top: 8px;
+                color: #000;
+                font-size: 17px;
+                font-weight: 700;
+                @include hover-phone;
+            }
+        }
+    }
+    &__work-time {
+        margin-top: 25px;
+
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+       
+    }
+    &__desciption {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22px;
+        &:nth-child(1) {
+            margin-top: 8px;
+        }
+        span {
+            display: block;
+        }
+    }
+
+}  
