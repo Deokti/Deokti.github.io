@@ -26,6 +26,14 @@
                     </ul>
                     <button data-modal="callback" class="button button_nav-bar">Перезвоните мне</button>
 
+                    <ul class="menu-hamburger">
+                        <li class="menu-hamburger__link nav-link__render-service"><a href="#">Как мы работаем</a></li>
+                        <li class="menu-hamburger__link nav-link__advantage"><a href="#">Преимущества</a></li>
+                        <li class="menu-hamburger__link nav-link__comment"><a href="#">Отзывы</a></li>
+                        <li class="menu-hamburger__link nav-link__partner"><a href="#">Партнеры</a></li>
+                        <li class="menu-hamburger__link nav-link__tariff"><a href="#">Тарифы</a></li>
+                        <li class="menu-hamburger__link nav-link__contacts"><a href="#">Контакты</a></li>
+                    </ul>
                     <div class="hamburger">
                         <input type="checkbox" class="hamburger__menu">
                         <span class="hamburger__line hamburger__line_one"></span>
@@ -841,7 +849,7 @@
                             <textarea name="textarea" maxlength="200" wrap="soft"></textarea>
                         </div>
 
-                        <button class="button button_contacts-form">Заказать звонок консультанта</button>
+                        <button class="button button_contacts-form button_contacts-form_footer">Заказать звонок консультанта</button>
                         <div class="contacts-form__call-back">Перезвоним вам в течении 5 минут</div>
                     </form>
                 </div>
@@ -888,6 +896,7 @@
     </footer>
     <!-- /.footer -->
 
+    <!-- modal window -->
     <div class="overlay">
         <div class="detailed-information__provide-service">
             <div class="detailed-information__close">×</div>
@@ -916,7 +925,7 @@
                     <textarea name="textarea" maxlength="200" wrap="soft"></textarea>
                 </div>
 
-                <button class="button button_contacts-form button_modal-form">Заказать звонок консультанта</button>
+                <button class="button button_contacts-form button_contacts-form_modal button_modal-form">Заказать звонок консультанта</button>
                 <div class="modal-form__call-back">Перезвоним вам в течении 5 минут</div>
             </form>
         </div>
@@ -935,14 +944,12 @@
                     <input name="phone" type="tel" class="modal-form__input-phone" required>
                 </div>                        
 
-                <button class="button button_contacts-form button_modal-form">Заказать звонок консультанта</button>
+                <button class="button button_contacts-form button_contacts-form_modal button_modal-form">Заказать звонок консультанта</button>
                 <div class="modal-form__call-back">Перезвоним вам в течении 5 минут</div>
             </form>
         </div>
     </div>
-
-    <div class="arrow-top"></div>
-
+    <!-- /.modal window -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/tiny-slider.js"></script>

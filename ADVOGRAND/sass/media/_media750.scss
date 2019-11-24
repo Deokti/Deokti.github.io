@@ -1,10 +1,14 @@
 @media screen and (max-width: 750px) {
     //СЕКЦИЯ COMMENT
+    .arrow__right,
+    .arrow__left {
+        top: 15%;
+    }
     .arrow__right {
-        right: -35px;
+        right: -2px;
     }
     .arrow__left {
-        left: -35px;
+        left: -2px;
     }
     .comment__wrapper {
         width: 620px;

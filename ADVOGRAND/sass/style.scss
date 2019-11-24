@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #f5f5f5;
 }
 
@@ -24,7 +24,6 @@ body {
 @import 'repeat/title';
 @import 'repeat/arrows';
 @import 'repeat/modal';
-@import 'repeat/arrow-top';
 
 
 //секции
@@ -58,10 +57,12 @@ body {
 @import 'media/media590';
 @import 'media/media549';
 @import 'media/media524';
+@import 'media/media-modal';
 @import 'media/media490';
 @import 'media/media485';
 @import 'media/media449';
 @import 'media/media440';
 @import 'media/media410';
+@import 'media/media400';
 @import 'media/media390';
 @import 'media/media340';

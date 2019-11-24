@@ -3,5 +3,28 @@
     .comment__wrapper {
         width: 310px;
     }
+    .arrow__right,
+    .arrow__left {
+        top: 50%;
+    }
+    .arrow__right {
+        right: -40px;
+    }
+    .arrow__left {
+        left: -40px;
+    }
+
+    //СЕКЦИЯ TARIFF
+    .tariff-block__tabs {
+        display: none;
+    }
+    .title_tariff,
+    .subtitle_tariff,
+    .tariff-block__selected-card {
+        text-align: center;
+    }
+    .tariff-block__selected-card {
+        margin: 0 auto;
+    }
 
 }

@@ -374,5 +374,16 @@ $(window).load(function () {
             scrollTop: 0
         });
       });
+
+      //Гамбургер меню, вылезающее, начная с 790px
+      $('.hamburger').on('click', function(e) {
+          e.preventDefault();
+          $('.hamburger').toggleClass('hamburger_active');
+          $('.menu-hamburger').toggleClass('menu-hamburger_active');
+      });
+      $('.menu-hamburger__link').on('click', function() {
+        $('.menu-hamburger').removeClass('menu-hamburger_active');
+        $('.hamburger').toggleClass('hamburger_active');
+      });
 });
 

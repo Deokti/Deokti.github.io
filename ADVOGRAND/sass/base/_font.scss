@@ -1,11 +1,12 @@
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('../font/ProximaNova/ProximaNova-Light.eot');
-    src: url('../font/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
-    url('../font/ProximaNova/ProximaNova-Light.woff') format('woff'),
-    url('../font/ProximaNova/ProximaNova-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+	font-family: 'Raleway';
+	src: url('../font/Raleway/Raleway-Light.eot');
+	src: local('Raleway Light'), local('Raleway-Light'),
+		url('../font/Raleway/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+		url('../font/Raleway/Raleway-Light.woff') format('woff'),
+		url('../font/Raleway/Raleway-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
 }
 
 @font-face {
@@ -19,17 +20,16 @@
     font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('../font/ProximaNova/ProximaNova-Regular.eot');
-    src: url('../font/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../font/ProximaNova/ProximaNova-Regular.woff') format('woff'),
-    url('../font/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Raleway';
+	src: url('../font/Raleway/Raleway-Regular.eot');
+	src: local('Raleway'), local('Raleway-Regular'),
+		url('../font/Raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/Raleway/Raleway-Regular.woff') format('woff'),
+		url('../font/Raleway/Raleway-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
-
 
 @font-face {
     font-family: 'Muller';
@@ -53,13 +53,14 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('../font/ProximaNova/ProximaNova-Bold.eot');
-    src: url('../font/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../font/ProximaNova/ProximaNova-Bold.woff') format('woff'),
-    url('../font/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+	font-family: 'Raleway';
+	src: url('../font/Raleway/Raleway-Bold.eot');
+	src: local('Raleway Bold'), local('Raleway-Bold'),
+		url('../font/Raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/Raleway/Raleway-Bold.woff') format('woff'),
+		url('../font/Raleway/Raleway-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
@@ -71,4 +72,11 @@
     font-weight: 700;
     font-style: normal;
 }
+
+/* ------------------------------------------------------------------------------ */
+
+
+
+
+
 
