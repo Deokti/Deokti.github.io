@@ -1,0 +1,33 @@
+.array-left, 
+.array-right {
+    position: absolute;
+    border: 1px solid #fff;
+
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    &:hover {
+        background-color: #ffc222;
+    }
+}
+
+.array-left {
+    background-image: url('../img/arrow-left.svg');
+    @include no-repeai-img;
+    background-size: auto;
+}
+.array-right {
+    background-image: url('../img/arrow-right.svg');
+    @include no-repeai-img;
+    background-size: auto;
+    left: auto;
+    right: 0;
+}
+
+.array-left_promo,
+.array-right_promo {
+    top: 67%;
+}

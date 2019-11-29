@@ -1,0 +1,82 @@
+.header-top__button {
+    width: 262px;
+    height: 45px;
+    background-color: #ffc222;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #323232;
+    &:hover {
+        background-color: #ffd000;
+    }
+    span {
+        position: relative;
+        padding-left: 22px;
+        &:before {
+            @include icon-left;
+            left: -3px;
+            width: 15px;
+            height: 14px;
+            background-image: url('../img/icons/briefcase.svg');
+        }
+    }
+}
+
+.button {
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #ffc222;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    transition: .3s all;
+    z-index: 1;
+    overflow: hidden;
+    padding-right: 27px; //ставит текст на место, посередине
+    span {
+        position: absolute;
+        height: 40px;
+        width: 21px;
+        border-right: 21px solid #ffc222;
+        top: 0;
+        right: 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        top: -1px;
+        right: -215px;
+        width: 200px;
+        height: 40px;
+        background: #ffc222;
+        z-index: -1;
+        transition: .3s all;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../img/arrow-right.svg');
+        width: 5px;
+        height: 9px;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+    &:hover {
+        &:after {
+            right: 0px;
+        }
+        padding-right: 11px;
+    }
+    &_promo {
+        margin: 0 auto;;
+        margin-top: 50px;
+        color: #fff;
+
+    }
+}

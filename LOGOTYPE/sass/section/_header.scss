@@ -1,0 +1,87 @@
+.header {
+    position: relative;
+    &-top {
+        width: 100%;
+        background-color: #303030;
+        min-height: 45px;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__list {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+                margin: 0 26px;
+                position: relative;
+                &:nth-child(1) {
+                    &:before {
+                        @include icon-left;
+                        width: 13px;
+                        height: 13px;
+                        background-image: url('../img/icons/phone.svg');
+                    }
+                }
+                &:nth-child(2) {
+                    &:before {
+                        @include icon-left;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url('../img/icons/envelope.svg');
+                    }
+                }
+                a {
+                    color: #d3d2d2;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 0.35px;
+                    font-weight: 400;
+                    @include hover-link-header;
+                }
+            }
+        }
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-navigation {
+        min-height: 90px;
+        background-color: #fff;
+        padding: 33px 0;
+        &__wrapper {
+            display: flex;
+            align-items: baseline;    
+            justify-content: space-between;
+        }
+        &__nav {
+            ul {
+                display: flex;
+                padding-left: 0;
+                list-style: none;
+                margin-bottom: 0;
+                li {
+                    padding: 0 5px;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    a {
+                        color: #323232;
+                        font-size: 16px;
+                        font-weight: 400;
+                        border: 1px solid transparent;
+                        padding-right: 17px;
+                        padding-left: 17px;
+                        transition: .2s all;
+                        @include hover-nav-bar;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,31 @@
+//базовые файлы
+@import 'base/bootstrap-reboot.min';
+@import 'base/tiny-slider';
+@import 'base/vegas.min';
+@import 'base/mixins';
+
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'PT Serif', serif; */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+
+//повторяющиеся элементы
+@import 'repeat/buttons';
+@import 'repeat/arrow';
+
+
+//секции
+@import 'section/header';
+@import 'section/promo'

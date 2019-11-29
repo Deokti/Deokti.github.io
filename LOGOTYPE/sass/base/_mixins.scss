@@ -1,0 +1,32 @@
+@mixin hover-link-header {
+    &:hover {
+        color: #f8c721;
+        text-decoration: none;
+        border-bottom: 1px solid #f8c721;
+    }
+}
+
+@mixin icon-left {
+    content: '';
+    position: absolute;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+}
+
+@mixin hover-nav-bar {
+    &:hover {
+        text-decoration: none;
+        border: 1px solid #ffc222;
+        padding: 8px 17px;
+    }
+}
+
+@mixin no-repeai-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
