@@ -55,7 +55,17 @@
 
 <hr>
 
-
+<h2>LOGOTYPE</h2>
+<ol>
+  <li>Сайт называется <a href="https://deokti.github.io/LOGOTYPE/" target="_blank">LOGOTYPE</a></li>
+  <li><a href="https://cloud.mail.ru/public/2gPQ/32BTYQzM5" target="_blank">Ссылка на внешний вид макета</a>;</li>
+ 	<li>Четвёртый макет, который начал верстать;</li>
+ 	<li>Пока сказать не чего;</li>
+ <li>Вёрстка началась 18.11.2019. На проект потрачено 5 часов и 57 минут;</li>
+ <li>Макет был взят с ютуб-канала, создателем которого является Вадим Прокопчук, автор ютуб-канала От 0 до 1: 
+    <a href="https://www.youtube.com/channel/UCE_w6FxGfRKH2fU76raVeog/videos">ссылка на YouTube-канал</a> и 
+    <a href="https://www.youtube.com/watch?v=Q2zxQNQGcU8&t=4823s">ссылка на видео в котором макет;</a></li>
+</ol>  
 
 
 
