@@ -48,6 +48,29 @@
         }
     }
     &-theme {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            background-image: url('../img/arrow-down.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            pointer-events: none;
+
+            width: 9px;
+            height: 5px;
+
+            right: 15px;
+            top: 70%;
+            transform: translateY(-50%);
+            transition: .3s all;
+        }
+        &_checked {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
         &__title {
             margin-top: 15px;
             font-size: 14px;
@@ -57,6 +80,31 @@
         &__list {
             padding-left: 0;
             list-style: none;
+        }
+        select {
+            appearance: none;
+            width: 264px;
+            height: 40px;
+            padding: 8px 13px;
+            border: 1px solid #e6e6e6;
+
+            font-size: 14px;
+            font-weight: 400;
+        }
+        option {
+            font-size: 14px;
+            font-weight: 400;
+            span {
+                border-bottom: 1px solid #cdcdcd;
+                width: 44px;
+                height: 1px;
+                background: #cdcdcd;
+
+            }
+        }
+        &__option-one {
+            color: #cdcdcd;
+            background-color: #cdcdcd;
         }
     }
 }

@@ -1,5 +1,5 @@
-.array-left, 
-.array-right {
+.arrow-left, 
+.arrow-right {
     position: absolute;
     border: 1px solid #fff;
 
@@ -14,12 +14,12 @@
     }
 }
 
-.array-left {
+.arrow-left {
     background-image: url('../img/arrow-left.svg');
     @include no-repeai-img;
     background-size: auto;
 }
-.array-right {
+.arrow-right {
     background-image: url('../img/arrow-right.svg');
     @include no-repeai-img;
     background-size: auto;
@@ -27,7 +27,27 @@
     right: 0;
 }
 
-.array-left_promo,
-.array-right_promo {
+.arrow-left_promo,
+.arrow-right_promo {
     top: 67%;
+}
+
+.arrow-left_event-company, 
+.arrow-right_event-company {
+    top: auto;
+    background-image: url('../img/arrow-left-gray.png');
+    border: 1px solid #dadada;
+    @include no-repeai-img;
+    background-size: auto;
+    bottom: -95px;
+    &:hover {
+        background-image: url('../img/arrow-left.svg')
+    }
+}
+.arrow-left_event-company {
+    right: 60px;
+    left: auto;
+}
+.arrow-right_event-company {
+    transform: rotate(180deg) translateY(20px);
 }

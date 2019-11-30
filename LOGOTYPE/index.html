@@ -55,8 +55,8 @@
                 <div class="promo__position">
                     <h1 class="promo__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</h1>
                     <h3 class="promo__subtitle">Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.</h3>
-                    <button data-modal="previous" class="array-left array-left_promo"></button>
-                    <button data-modal="next" class="array-right array-right_promo"></button>    
+                    <button data-modal="previous" class="arrow-left arrow-left_promo"></button>
+                    <button data-modal="next" class="arrow-right arrow-right_promo"></button>    
                     <button type="button" class="button button_promo">Оставить заявку<span></span></button>
                 </div>
             </div>
@@ -152,6 +152,7 @@
             <div class="consultate__block">
                 <form action="#" class="consultate__form">
 
+                    <!-- consultate-left -->
                     <div class="consultate-left">
                         <div class="consultate-left__email">
                             <p class="consultate-left__title consultate-left__title_email">E-mail </p>
@@ -170,17 +171,17 @@
     
                         <div class="consultate-theme">
                             <p class="consultate-theme__title">Тема вопроса</p>
-                            <input type="text" placeholder="Здесь будет выпадающий список!">
-                            <!-- <ul class="consultate-theme__list">
-                                <li class="consultate-theme__link">Здесь должен быть выбор!</li>
-                                <li class="consultate-theme__link">Здесь должен быть выбор!</li>
-                                <li class="consultate-theme__link">Здесь должен быть выбор!</li>
-                            </ul> -->
+                            <select name="theme" class="consultate-theme__select consultate-theme__select_checked">
+                                <option value="consultate-theme__option-one">------------</option>
+                                <option value="consultate-theme__option-two">Здесь должен быть выбор!</option>
+                                <option value="consultate-theme__option-three">Здесь должен быть выбор!</option>
+                                <option value="consultate-theme__option-four">Здесь должен быть выбор!</option>
+                            </select>
                         </div>
-
                     </div>
+                    <!-- /.consultate-left -->
 
-
+                    <!-- consultate-right -->
                     <div class="consultate-right">
                         <div class="consultate-right__message">
                             <p class="consultate-right__title">Сообщение</p>
@@ -188,13 +189,108 @@
                         </div>
                         <button type="submit" class="button button_consultate">Получить консультацию<span></span></button>
                     </div>
-                    
+                    <!-- /.consultate-right -->
                 </form>
                 <img class="consultate__woman" src="img/consultate/consultate-woman.png" alt="Девушка в педжаке и с папкой">
             </div>
         </div>
     </section>
     <!-- /.consultate -->
+
+    <!-- description -->
+    <section class="description">
+        <div class="container">
+            <div class="description__wrapper">
+                
+                <div class="description-block">
+                    <img src="img/description/square.png" alt="Квадрат с галочкой внутри" class="description-block__img-square">
+                    <h4 class="description-block__title">Десятки добровольных ликвидаций ежемесячно</h4>
+                    <p class="subtitle subtitle_description-block">Мы умеем минимизировать все риски в процессе добровольной ликвидации юридических лиц.</p>
+                </div>
+
+                <div class="description-block">
+                    <img src="img/description/square.png" alt="Квадрат с галочкой внутри" class="description-block__img-square">
+                    <h4 class="description-block__title">Отличное знание законов в сфере банкротства </h4>
+                    <p class="subtitle subtitle_description-block">Позволяют нам эффективно отстаивать как интересы кредиторов, так и интересы собст- венников проблемной организации.</p>
+                </div>
+
+                <div class="description-block">
+                    <img src="img/description/square.png" alt="Квадрат с галочкой внутри" class="description-block__img-square">
+                    <h4 class="description-block__title">Большой опыт сопровождения банкротства</h4>
+                    <p class="subtitle subtitle_description-block">Мы обладаем большим опытом сопровождения процедур банкротства предприятий.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.description -->
+
+    <div class="event-company">
+        <div class="container">
+
+            <div class="event-company__top">
+                <div class="title-subtitle__inner">
+                    <h2 class="title title_event-company">Новости Компании</h2>
+                    <p class="subtitle subtitle_event-company">Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов во всех судебных инстанциях.</p>
+                </div>
+                <button class="button-transparent button-transparent_event-company">Открыть все новости</button>
+            </div>
+
+            <!-- event-company__wrapper -->
+            <div class="event-company__wrapper">
+                
+                <!-- event-company__left -->
+                <div class="event-company__left">
+                    <div class="event-company__left-slider">
+                        <div class="event-company__slider">
+                            <div class="event-company__background-yellow"></div>
+                            <h5 class="event-company__title-left">Банкротство и ликвидация предприятия в Украине</h5>
+                            <p class="event-company__subtitle-left">«На сегодняшний день, коллектив компании объединяет высоко- профессиональных экспертов имеющих специализации в отдель- ных областях права. На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов имеющих спе- циализации в отдельных областях права. На сегодняшний день, коллектив компании объединяет высокопрофессиональных экс- пертов имеющих специализации в отдельных областях права...»</p>
+                            <p class="event-company__detailed-autors">Андрей Ворошилов, генеральный директор компании Bankom</p>
+                        </div>
+    
+                        <div class="event-company__slider">
+                            <div class="event-company__background-yellow"></div>
+                            <h5 class="event-company__title-left">Банкротство и ликвидация предприятия в Украине</h5>
+                            <p class="event-company__subtitle-left">«На сегодняшний день, коллектив компании объединяет высоко- профессиональных экспертов имеющих специализации в отдель- ных областях права. На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов имеющих спе- циализации в отдельных областях права. На сегодняшний день, коллектив компании объединяет высокопрофессиональных экс- пертов имеющих специализации в отдельных областях права...»</p>
+                            <p class="event-company__detailed-autors">Андрей Ворошилов, генеральный директор компании Bankom</p>
+                        </div>
+    
+                        <div class="event-company__slider">
+                            <div class="event-company__background-yellow"></div>
+                            <h5 class="event-company__title-left">Банкротство и ликвидация предприятия в Украине</h5>
+                            <p class="event-company__subtitle-left">«На сегодняшний день, коллектив компании объединяет высоко- профессиональных экспертов имеющих специализации в отдель- ных областях права. На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов имеющих спе- циализации в отдельных областях права. На сегодняшний день, коллектив компании объединяет высокопрофессиональных экс- пертов имеющих специализации в отдельных областях права...»</p>
+                            <p class="event-company__detailed-autors">Андрей Ворошилов, генеральный директор компании Bankom</p>
+                        </div>
+                    </div>
+                    
+                    <button data-modal="slider-previous" class="arrow-left arrow-left_event-company"></button>
+                    <button data-modal="slider-next" class="arrow-right arrow-right_event-company"></button>   
+                </div>
+                <!-- /.event-company__left -->
+
+                <!-- event-company__right -->
+                <div class="event-company__right">
+                    <div class="event-company__content">
+                        <div class="event-company__background-yellow event-company__background-yellow_right">03.04</div>
+                        <img src="img/event-company/1.png" alt="Здание компании" class="event-company__right-img">
+                        <h5 class="event-company__title-right">Новость компании </h5>
+                        <p class="event-company__subtitle-right">На сегодняшний день, коллектив компании объединяет высокопрофес- сиональных экспертов имеющих специализации в отдельных областях права...»</p>
+                    </div>
+
+                    <div class="event-company__content">
+                        <div class="event-company__background-yellow event-company__background-yellow_right">03.04</div>
+                        <img src="img/event-company/2.png" alt="Очки на бумаге" class="event-company__right-img">
+                        <h5 class="event-company__title-right">Новость компании </h5>
+                        <p class="event-company__subtitle-right">На сегодняшний день, коллектив компании объединяет высокопрофес- сиональных экспертов имеющих специализации в отдельных областях права...»</p>
+                    </div>
+                </div>
+                <!-- /.event-company__right -->
+            </div>
+            <!-- /.event-company__wrapper -->
+
+        </div>
+    </div>
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/vegas.min.js"></script>

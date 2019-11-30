@@ -1,0 +1,128 @@
+.event-company {
+    min-width: 660px;
+    padding: 68px 0 100px 0; //33
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__wrapper {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    } 
+    &__slider { //левая часть, там где слайдер
+        position: relative;
+        max-width: 554px;
+        height: 341px;
+
+        background-color: #ffffff;
+        box-shadow: 0 5px 15px 1px rgba(128, 127, 127, 0.13);
+
+        padding: 62px 37px 47px 71px;
+    }
+    &__background-yellow {
+        position: absolute;
+        width: 65px;
+        height: 31px;
+        background-color: #ffc222;
+        top: 0;
+        left: 70px;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../img/event-company/comma.svg');
+            width: 15px;
+            height: 13px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &_right { //жёлтый фон на картинках в правой стороне
+            padding-top: 25px;
+            color: #f9f9f9;
+            font-family: "PT Serif";
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            width: 47px;
+            height: 54px;
+            top: 0;
+            left: 10px;
+            &:after {
+                display: none;
+               
+            }
+        }
+    }
+    &__left {
+        position: relative;
+        width: 554px; //делает размеры слайдера, иначе тот становится слишком огромным
+    }
+    &__title-left {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.9px;
+    }
+    &__subtitle-left {
+        margin-top: 13px;
+
+        color: #5e5e5e;
+        font-family: "PT Serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.14px;
+
+        margin-bottom: 0;
+    }
+    &__detailed-autors {
+        margin-top: 30px;
+
+        color: #212020;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.14px;
+
+        margin-bottom: 0;
+    } // левая часть заканчивается
+
+    &__right { // начинается правая часть, где две картинки
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__content {
+        margin: 0px 15px;
+        position: relative;
+    }
+    &__title-right {
+        margin-top: 13px;
+
+        color: #242424;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+    }
+    &__subtitle-right {
+        margin-top: 12px;
+        width: 256px;
+
+        color: #5e5e5e;
+        font-family: "PT Serif";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.14px;
+
+        margin-bottom: 0;
+    }
+
+
+
+
+}   

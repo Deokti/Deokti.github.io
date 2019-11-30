@@ -71,16 +71,18 @@
         &:after {
             right: 0px;
         }
-        padding-right: 8px;
+        padding-right: 13px; //11
     }
     &_promo {
         margin: 0 auto;;
         margin-top: 50px;
         color: #fff;
-
     }
     &_ours-services {
         width: 145px;
+        &:hover {
+            padding-right: 8px;
+        }
     }
     &_about-company {
         margin-top: 35px;
@@ -91,5 +93,8 @@
         font-weight: 400;
         width: 230px;
         margin-left: auto;
+        &:hover {
+            padding-right: 14px;
+        }
     }
 }
