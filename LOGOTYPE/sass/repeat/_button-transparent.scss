@@ -1,0 +1,19 @@
+.button-transparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 223px;
+    height: 40px;
+    border: 3px solid #e6e6e6;
+    background: transparent;
+
+    color: #373636;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    transition: .3s all;
+    &:hover {
+        background: #e6e6e6;
+    }
+} 

@@ -24,8 +24,14 @@ body {
 //повторяющиеся элементы
 @import 'repeat/buttons';
 @import 'repeat/arrow';
+@import 'repeat/title';
+@import 'repeat/subtitle';
+@import 'repeat/button-transparent';
 
 
 //секции
 @import 'section/header';
-@import 'section/promo'
+@import 'section/promo';
+@import 'section/ours-services';
+@import 'section/about-company';
+@import 'section/consultate';

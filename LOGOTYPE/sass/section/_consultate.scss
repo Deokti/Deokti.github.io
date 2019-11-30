@@ -1,0 +1,62 @@
+.consultate {
+    min-height: 515px;
+    padding: 45px 0 42px 0;
+    &__block {
+        position: relative;
+        margin-top: 40px;
+        color: #282828;
+    }
+    &__woman {
+        position: absolute;
+        right: 0;
+        bottom: -42px;
+    }
+    &__form {
+        display: flex;
+        input, textarea {
+            width: 264px;
+            height: 40px;
+            border: 1px solid #e6e6e6;
+            padding: 8px 15px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        textarea {
+            width: 557px;
+            height: 195px;
+            resize: none;
+        }
+    }
+    &-left {
+        margin-right: 28px; //отталкивает в правую сторону кнопку вместе с "сообщением"
+        &__title {
+            margin-top: 15px;
+
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 3px;   
+            &_email {
+                margin-top: 0;
+            }
+        }
+    }
+    &-right {
+        &__title {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 3px;  
+        }
+    }
+    &-theme {
+        &__title {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 3px;  
+        }
+        &__list {
+            padding-left: 0;
+            list-style: none;
+        }
+    }
+}

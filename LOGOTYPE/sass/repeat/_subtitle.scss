@@ -1,0 +1,23 @@
+.subtitle {
+    color: #5e5e5e;
+    font-family: "PT Serif";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.14px;
+    &_ours-services {
+        max-width: 380px;
+    }
+    &_about-company {
+        margin-top: 26px;
+        max-width: 610px;
+
+        color: #d3d2d2;
+        line-height: 24px;
+        letter-spacing: 0.14px;
+    }
+    &_consultate {
+        margin-top: 12px;
+        max-width: 380px;
+    }
+}

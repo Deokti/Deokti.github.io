@@ -1,0 +1,28 @@
+.title {
+    position: relative;
+    color: #212020;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 106px;
+        height: 2px;
+        background-color: #ffc222;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -140px;
+    }
+    &_about-company {
+        color: #fff;
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.title-subtitle__inner {
+    padding-left: 140px;
+}
