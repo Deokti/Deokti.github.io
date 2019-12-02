@@ -1,0 +1,14 @@
+@media screen and (max-width: 570px) {
+    //Глобальный файл в repeat/title
+    .title_ours-services {
+        &::before {
+            display: none;
+        }
+    }
+    .title-subtitle__inner {
+        padding-left: 0;
+        
+    }
+
+
+}

@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    //---NAV---
+    .relation-list_header {
+        li {
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+    .header-navigation__nav {
+        display: none; //позже здесь будет гамбургер
+    }
+
+}

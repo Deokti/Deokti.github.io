@@ -21,6 +21,8 @@ body {
 }
 
 //повторяющиеся элементы
+@import 'repeat/button-yellow';
+@import 'repeat/relation-list';
 @import 'repeat/buttons';
 @import 'repeat/arrow';
 @import 'repeat/title';
@@ -36,3 +38,18 @@ body {
 @import 'section/consultate';
 @import 'section/description';
 @import 'section/event-company';
+@import 'section/map';
+@import 'section/footer';
+
+
+//медия-запросы
+@import 'media/media1169px';
+@import 'media/media1140px';
+@import 'media/media800px';
+@import 'media/media700px';
+@import 'media/media680px';
+@import 'media/media600px';
+@import 'media/media570px';
+@import 'media/media500px';
+@import 'media/media420px';
+@import 'media/media375px';

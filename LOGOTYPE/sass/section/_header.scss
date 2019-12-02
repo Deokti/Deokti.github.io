@@ -9,40 +9,6 @@
             justify-content: space-between;
             align-items: center;
         }
-        &__list {
-            display: flex;
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 0;
-            li {
-                margin: 0 26px;
-                position: relative;
-                &:nth-child(1) {
-                    &:before {
-                        @include icon-left;
-                        width: 13px;
-                        height: 13px;
-                        background-image: url('../img/icons/phone.svg');
-                    }
-                }
-                &:nth-child(2) {
-                    &:before {
-                        @include icon-left;
-                        width: 14px;
-                        height: 14px;
-                        background-image: url('../img/icons/envelope.svg');
-                    }
-                }
-                a {
-                    color: #d3d2d2;
-                    font-size: 14px;
-                    font-weight: 400;
-                    letter-spacing: 0.35px;
-                    font-weight: 400;
-                    @include hover-link-header;
-                }
-            }
-        }
     }
     &__navigation {
         display: flex;

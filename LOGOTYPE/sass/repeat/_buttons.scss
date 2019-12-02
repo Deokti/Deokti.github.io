@@ -1,27 +1,3 @@
-.header-top__button {
-    width: 262px;
-    height: 45px;
-    background-color: #ffc222;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: #323232;
-    &:hover {
-        background-color: #ffd000;
-    }
-    span {
-        position: relative;
-        padding-left: 22px;
-        &:before {
-            @include icon-left;
-            left: -3px;
-            width: 15px;
-            height: 14px;
-            background-image: url('../img/icons/briefcase.svg');
-        }
-    }
-}
-
 .button {
     position: relative;
     display: block;
@@ -59,7 +35,7 @@
     &::before {
         content: '';
         position: absolute;
-        background-image: url('../img/arrow-right.svg');
+        background-image: url('../img/arrows/arrow-right.svg');
         width: 5px;
         height: 9px;
         right: 8px;

@@ -1,0 +1,14 @@
+@media screen and (max-width: 500px) {
+    //---NAV---
+    .relation-list_header {
+        li {
+            &:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+    .button-yellow_header {
+        margin: 0 auto;
+    }
+
+}

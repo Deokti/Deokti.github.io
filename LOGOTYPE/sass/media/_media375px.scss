@@ -1,0 +1,24 @@
+@media screen and (max-width: 375px) {
+    //---NAV---
+    .header-top__wrapper {
+        flex-direction: column;
+    }
+    .relation-list_header {
+        padding-left: 15px;
+        flex-direction: column;
+        li {
+            margin: 2px 0;
+            &:nth-child(1),
+            &:nth-child(2) {
+                display: flex;
+            }
+        }
+    }
+
+    //---OURS-SERVICES---
+    .ours-services__block {
+        width: 300px;
+        padding: 24px 8px 39px 8px;;
+    }
+
+}

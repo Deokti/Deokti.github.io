@@ -1,0 +1,28 @@
+@media screen and (max-width: 420px) {
+    //---PROMO---
+    .promo {
+        padding: 50px 0px 50px;
+    }
+    .promo__title {
+        font-size: 24px;
+    }
+    .promo__subtitle {
+        font-size: 15px;
+    }
+
+    //---OURS-SERVICES---
+    
+    .ours-services__top {
+        flex-direction: column;
+    }
+
+    //---ABOUT-COMPANY---
+    .title_about-company,
+    .subtitle_about-company,
+    .button_about-company {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+}

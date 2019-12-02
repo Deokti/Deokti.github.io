@@ -23,6 +23,13 @@
         border: 1px solid #ffc222;
         padding: 8px 17px;
     }
+    @media screen and (max-width: 680px) {
+        &:hover {
+            text-decoration: none;
+            border: 1px solid #ffc222;
+            padding: 8px 10px;
+        }
+    }
 }
 
 @mixin no-repeai-img {

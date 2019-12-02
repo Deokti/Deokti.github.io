@@ -1,0 +1,23 @@
+@media screen and (max-width: 800px) {
+    //---PROMO---
+    .arrow-left_promo,
+    .arrow-right_promo {
+        display: none;
+    }
+
+    //---OURS-SERVICES---
+    .ours-services__block {
+        margin: 0 5px;
+        margin-top: 20px;
+        width: 315px;
+        padding: 24px 15px 39px 8px;
+    }
+    .ours-services__block-desctiption {
+        width: 283px;
+    }
+    .subtitle_ours-services {
+        width: 280px;
+    }
+    
+
+}
