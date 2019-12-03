@@ -20,11 +20,13 @@
         background-color: #fff;
         padding: 33px 0;
         &__wrapper {
+            position: relative;
             display: flex;
             align-items: baseline;    
             justify-content: space-between;
         }
         &__nav {
+            position: relative;
             ul {
                 display: flex;
                 padding-left: 0;
@@ -51,3 +53,100 @@
     }
 }
 
+.hamburger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all;
+    z-index: 9000;
+    display: none;
+    &-checkbox {
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        width: 30px;
+        height: 35px;
+        opacity: 0;
+        z-index: 9999;
+    }
+    span {
+        width: 35px;
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: #f3c758;
+        border-radius: 10px;
+        transition: .5s all;
+    }
+    &_active {
+        span {
+            background-color: #ffc222;
+        }
+       .hamburger__span_one {
+            transform: rotate(50deg) translateX(8px) translateY(3px);
+       }
+       .hamburger__span_two {
+            transform: rotate(490deg) translateX(-1px) translateY(-1px);
+       }
+       .hamburger__span_three {
+            background-color: #f5d480;
+           transform: rotate(45deg);
+           opacity: 0;
+       }
+    }
+}
+
+.header-navigation__nav_hamburger-menu {
+    ul {
+        li {
+            padding: 10px 0;
+            a {
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: 400;
+                border: 1px solid transparent;
+                padding-top: 8px;
+                padding-right: 17px;
+                padding-left: 17px;
+                padding-bottom: 8px;
+                font-weight: 300;
+                @include hover-nav-bar;
+            }
+        }
+    }
+}
+
+.menu-hamburger {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: -100%;
+    left: -100%;
+    background-color: rgba(0,0,0,.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+    z-index: 7000;
+    transition: .5s all;
+    &__rotate {
+        transition: .7s all;
+        transform: rotate(50deg);
+        &_active {
+            transform: rotate(0deg);
+        }
+    }
+    &_active {
+        top: 0;
+        left: 0;
+    }
+    
+}
+.header-navigation__nav_hamburger-menu_active {
+    transition: .5s all;
+}
+/* hamburger_active */

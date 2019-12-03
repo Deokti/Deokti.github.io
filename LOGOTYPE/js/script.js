@@ -68,5 +68,19 @@ $(window).load(function() {
       };
       //---------/.Слайдер в секции Новости Компании (EVENT-COMPANY)
 
+
+      //---------Бургер-меню---------
+      $('.hamburger-checkbox').on('click', function(e) {
+          e.preventDefault();
+          $('.hamburger').toggleClass('hamburger_active');
+          //$('.header-navigation__nav_hamburger-menu').toggleClass('header-navigation__nav_hamburger-menu_active');
+          $('.menu-hamburger').toggleClass('menu-hamburger_active');
+          $('.menu-hamburger__rotate').toggleClass('menu-hamburger__rotate_active');
+          
+      })
+
+
+
+      //---------/.Бургер-меню---------
 });
 

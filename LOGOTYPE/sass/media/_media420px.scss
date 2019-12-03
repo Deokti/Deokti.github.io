@@ -25,4 +25,29 @@
         text-align: center;
     }
 
+    //---MAP---
+    .map__wrapper {
+        align-items: center;
+    }
+    .relation-list_map {
+        align-items: center;
+        li {
+            &:nth-child(1) {
+                &::before {
+                   left: -28px;
+                }
+            }
+            
+        }
+    }
+    .map-left {
+        text-align: center;
+        margin-right: 0;
+
+    }
+    .map-right {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 290px;
+    }
 }

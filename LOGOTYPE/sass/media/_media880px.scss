@@ -1,0 +1,22 @@
+@media screen and (max-width: 880px) {
+    //---CONSULTATE---
+    .consultate {
+        input, textarea {
+            width: 230px;
+        }
+        textarea {
+            width: 450px;
+        }
+    }
+    .consultate-theme {
+        select {
+            width: 230px;
+        }
+    }
+
+    //---MAP---
+    .map-right {
+        width: 400px;
+    }
+
+}

@@ -7,8 +7,19 @@
             }
         }
     }
-    .header-navigation__nav {
-        display: none; //позже здесь будет гамбургер
+
+    //---EVENT-COMPANY---
+    .event-company__left {
+        max-width: 430px;
     }
+    .event-company__slider {
+        max-width: 430px;
+        padding: 62px 0px 47px 10px;
+    }
+    .event-company__background-yellow {
+        left: 0;
+    }
+
+
 
 }

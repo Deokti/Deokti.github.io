@@ -1,0 +1,20 @@
+@media screen and (max-width: 613px) {
+    //---EVENT-COMPANY---
+    .event-company__right {
+        justify-content: center;
+    }
+    .event-company__left {
+        margin: 0 auto;
+    }
+    .event-company__content {
+        margin-top: 25px;
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+
+    //---MAP---
+    .map-right {
+        width: 390px;
+    }
+}

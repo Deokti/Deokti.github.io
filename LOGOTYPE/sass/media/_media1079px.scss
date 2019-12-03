@@ -1,0 +1,13 @@
+@media screen and (max-width: 1079px) {
+    //---DESCRIPTION---
+    .description__wrapper {
+        justify-content: space-around;
+    }
+    .description-block {
+        margin-top: 40px;
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+
+}

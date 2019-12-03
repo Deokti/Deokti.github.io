@@ -7,10 +7,12 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
     &-block {
         max-width: 340px;
         text-align: center;
+        margin: 0 5px;
         &__title {
             margin-top: 24px;
 

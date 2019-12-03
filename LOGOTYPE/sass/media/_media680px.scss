@@ -7,20 +7,58 @@
             }
         }
     }
-    .header-navigation__nav {
-        ul {
-            li {
-                a {
-                    padding-right: 10px;
-                    padding-left: 10px;
-                }
-            }
-        }
+    .header-navagition__link {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .menu-hamburger {
+        display: flex;
     }
 
     //---PROMO---
     .promo {
         min-height: 400px;
         padding: 90px 0px 50px;
+    }
+
+    //---CONSULTATE---
+    .consultate-theme {
+        &::after {
+            left: 205px;
+        }
+    }
+    .consultate-left {
+        margin-right: 0;
+    }
+    .consultate-right__message {
+        display: none;
+    }
+    .consultate__form {
+        flex-direction: column;
+    }
+    .button_consultate {
+        margin-left: 0;
+    }
+    .consultate {
+        input, textarea {
+            width: 230px;
+        }
+    }
+    .consultate-theme {
+        select {
+            width: 230px;
+        }
+    }
+
+    //---EVENT-COMPANY---
+    .subtitle_event-company {
+        display: none;
+    }
+    .title_event-company {
+        span {
+            display: block;
+        }
     }
 }

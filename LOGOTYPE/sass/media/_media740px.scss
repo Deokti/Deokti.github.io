@@ -1,0 +1,27 @@
+@media screen and (max-width: 740px) {
+    //---CONSULTATE---
+    .consultate {
+        input, textarea {
+            width: 210px;
+        }
+        textarea {
+            width: 410px;
+        }
+    }
+    .consultate-theme {
+        select {
+            width: 210px;
+        }
+    }
+
+    //---MAP---
+    .map__wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .map-right {
+        margin-top: 20px;
+        width: 580px;
+    }
+
+}
