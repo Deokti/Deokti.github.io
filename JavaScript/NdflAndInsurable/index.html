@@ -4,26 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Бухгалтерский расчёт </title>
+    <title>НДФЛ и страховые взносы</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <section class="section">
 
+        <h1>Рассчёт НДФЛ и страховых взносов</h1>
+        <div class="section__wrapper">
+            <input type="number" class="enter-salary" placeholder="Зарплата работника без вычетов">
+            <select name="menu" class="fund-traumatism">
+                <option value="0">Процент травматизма</option>
+                <option value="0.2">0.2%</option>
+                <option value="0.3">0.3%</option>
+                <option value="0.4">0.4%</option>
+                <option value="0.5">0.5%</option>
+                <option value="0.6">0.6%</option>
+                <option value="0.7">0.7%</option>
+                <option value="0.8">0.8%</option>
+                <option value="0.9">0.9%</option>
+                <option value="1.0">1.0%</option>
+                <option value="1.1">1.1%</option>
+                <option value="1.2">1.2%</option>
+                <option value="1.3">1.3%</option>
+                <option value="1.4">1.4%</option>
+                <option value="1.5">1.5%</option>
+                <option value="1.7">1.7%</option>
+                <option value="1.9">1.9%</option>
+                <option value="2.1">2.1%</option>
+                <option value="2.3">2.3%</option>
+                <option value="2.5">2.5%</option>
+                <option value="2.8">2.8%</option>
+                <option value="3.1">3.1%</option>
+                <option value="3.4">3.4%</option>
+                <option value="3.7">3.7%</option>
+                <option value="4.1">4.1%</option>
+                <option value="4.5">4.5%</option>
+                <option value="5.0">5.0%</option>
+                <option value="5.5">5.5%</option>
+                <option value="6.1">6.1%</option>
+                <option value="6.7">6.7%</option>
+                <option value="7.4">7.4%</option>
+                <option value="8.1">8.1%</option>
+                <option value="8.5">8.5%</option>
+            </select>
+            <a class="button">
+                <buttom class="button__mane button__front">Рассчитать</buttom>
+                <buttom class="button__mane button__bottom">Рассчитать</buttom>
+            </a>
+            <p class="salary-deductions">Зарплата без вычетов: <span class="salary-deductions_span"></span></p><!-- Зарплата без вычетов -->
+            <p class="display-ndfl">НДФЛ: <span class="display-ndfl_span"></span></p> <!-- Какая сумма НДФЛ -->
+            <p class="deduction-ndfl">Зарплата с вычетом НДФЛ: <span class="deduction-ndfl_span">0</span></p> <!-- Зарплата с вычетом НДФЛ -->
 
-    <section class="task-one">
-        <h2>Работник отработал 12 месяцев полностью.</h2>
-        <div class="task-one__enter">
-            <input style="width: 180px;" type="number" placeholder="Заработок за 12 месяцев" class="task-one__total-earnings">
-            <input style="width: 180px;" type="number" placeholder="Отпуск на ... дней" class="task-one__vacation">
-            <button class="task-one__button">Рассчитать отпускные</button>
+            <div class="line"></div>
+
+            <p class="fund-fss"><abbr title="Фонд обязательного социального страхования">ФСС</abbr> <span class="fund-fss_span">0</span> <!-- Процент социального страхования -->
+            <p class="fund-pension">Пенсионный фонд: <span class="fund-pension_span">0</span></p> <!-- Процент в деньгих пенсионного фонда -->
+            <p class="fund-foms"><abbr title="Фонд обязательного медицинского страхования">ФОМС:</abbr> <span class="fund-foms_span">0</span></p> <!-- Процент медицинского страхования -->
+            <p class="fund-trauma"><abbr title="Фонд обязательного медицинского страхования">Травматизм:</abbr> <span class="fund-trauma_span">0</span></p> <!-- Процент за травматизм -->
+
         </div>
-        <div class="task-one__paragrath">
-            <p class="task-one__number-holidays">Отпускные до вычета НДФЛ: <span class="task-one__number-holidays_span">0</span></p>
-            <p class="task-one__number-ndfl">Колличество НДФЛ: <span class="task-one__number-ndfl_span">0</span></p>
-            <p class="task-one__amount-hand">Отпускные после вычета НДФЛ <span class="task-one__amount-hand_span">0</span></p>
-        </div>
+        
     </section>
-    <hr>
+
 
     <script src="js/script.js"></script>
 </body>
