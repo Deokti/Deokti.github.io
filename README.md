@@ -32,10 +32,6 @@
   <li><a href="https://www.npmjs.com/package/gulp-concat">Gulp-concat</a>, - не знаю для каких целей плагин можно ещё использовать, тем не менее мной он используется для объединения JavaScript файлов в один;</li>
   <li><a href="https://www.npmjs.com/package/gulp-rename">Gulp-rename</a>, - не знаю для чего именно нужен;</li>
   <li><a href="https://www.npmjs.com/package/gulp-watch">Gulp-watch</a>, - ищет файлы, хотя стоит заметить, в настоящее время он пока не настроен по той причине, что я пока не понял как это делать. В будущем будет настроено;</li>
-  <li><a href=""></a>, - </li>
-  <li><a href=""></a>, - </li>
-  <li><a href=""></a>, - </li>
-  <li><a href=""></a>, - </li>
 </ol>  
 
 
