@@ -27,16 +27,15 @@
   <li><a href="">Browser-sync</a>, - позволяет запустить сервер для работы с проектом;</li>
   <li><a href="https://www.npmjs.com/package/gulp-sass">Gulp-sass</a>, - компилирует SASS файлы в обычный CSS-файл. Внутри него работают несколько другие плагины, позволяющие делать некоторые другие вещи;</li>
   <li><a href="https://www.npmjs.com/package/gulp-autoprefixer">Gulp-autoprefixer</a>, -  выставляет вендорные префиксы для лучшего понимания браузерами кода. Работает внутри  плагина «gulp-sass»;</li>
-  <li><a href="">Gulp-csso</a>, - минифицирует CSS файл после того, как он скомпилировался в данный формат и подставились вендорные префиксы. Работает внутри плагина «gulp-sass»;</li>
-  <li><a href="">Gulp-htmlmin</a>, - минифицирует HTML-файл;</li>
-  <li><a href="">Gulp-concat</a>, - не знаю для каких целей плагин можно ещё использовать, тем не менее мной он используется для объединения JavaScript файлов в один;</li>
-  <li><a href="">Gulp-rename</a>, - не знаю для чего именно нужен;</li>
-  <li><a href="">Gulp-watch</a>, - ищет файлы, хотя стоит заметить, в настоящее время он пока не настроен по той причине, что я пока не понял как это делать. В будущем будет настроено;</li>
+  <li><a href="https://www.npmjs.com/package/gulp-csso">Gulp-csso</a>, - минифицирует CSS файл после того, как он скомпилировался в данный формат и подставились вендорные префиксы. Работает внутри плагина «gulp-sass»;</li>
+  <li><a href="https://www.npmjs.com/package/gulp-htmlmin">Gulp-htmlmin</a>, - минифицирует HTML-файл;</li>
+  <li><a href="https://www.npmjs.com/package/gulp-concat">Gulp-concat</a>, - не знаю для каких целей плагин можно ещё использовать, тем не менее мной он используется для объединения JavaScript файлов в один;</li>
+  <li><a href="https://www.npmjs.com/package/gulp-rename">Gulp-rename</a>, - не знаю для чего именно нужен;</li>
+  <li><a href="https://www.npmjs.com/package/gulp-watch">Gulp-watch</a>, - ищет файлы, хотя стоит заметить, в настоящее время он пока не настроен по той причине, что я пока не понял как это делать. В будущем будет настроено;</li>
   <li><a href=""></a>, - </li>
   <li><a href=""></a>, - </li>
   <li><a href=""></a>, - </li>
   <li><a href=""></a>, - </li>
-  
 </ol>  
 
 
