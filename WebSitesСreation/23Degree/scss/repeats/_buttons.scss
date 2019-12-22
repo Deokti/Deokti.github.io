@@ -1,0 +1,30 @@
+.button {
+    position: relative;
+    display: block;
+    width: 232px;
+    height: 61px;
+    background-color: #19b5fe;
+
+    border: none;
+    border-radius: 30px;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.48px;
+    z-index: 1;
+    transition: .3s all .1s;
+    overflow: hidden;
+    @include hover-buttons;
+    &_header {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    &_our-services {
+        font-size: 14px;
+        font-weight: 400;
+        width: 181px;
+        height: 51px;
+    }
+    
+}

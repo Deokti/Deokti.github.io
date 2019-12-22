@@ -1,0 +1,19 @@
+.title {
+    position: relative;
+    color: #363636;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: center;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 377px;
+        height: 1px;
+        background-color: #19b5fe;
+        bottom: -16px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}

@@ -1,0 +1,32 @@
+.our-services {
+    min-height: 1125px;
+    padding: 62px 0 72px 0;
+    &__content {
+        margin-top: 35px;
+    }
+    &__section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &_two {
+            flex-direction: row-reverse;
+        }
+        &_three {
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        font-weight: 300;
+        color: #19b5fe;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    &__subtitle {
+        width: 555px;
+        font-size: 18px;
+        line-height: 24px;
+        color: #464646;
+        font-weight: 300;
+    }
+}

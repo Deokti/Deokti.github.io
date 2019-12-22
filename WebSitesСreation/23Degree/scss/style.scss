@@ -1,0 +1,23 @@
+//БАЗОВЫЕ СТИЛИ
+@import 'base/reset';
+@import 'base/bootstrap-reboot.min';
+@import 'base/mixins';
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+//ПОВТОРЯЮЩИЕСЯ ЭЛЕМЕНТЫ
+@import 'repeats/buttons';
+@import 'repeats/title';
+
+//СЕКЦИИ 
+@import 'sections/header';
+@import 'sections/our-services';
