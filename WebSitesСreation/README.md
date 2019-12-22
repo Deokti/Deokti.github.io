@@ -68,6 +68,16 @@
     <a href="https://www.youtube.com/watch?v=Q2zxQNQGcU8&t=4823s">ссылка на видео в котором макет;</a></li>
 </ol>  
 
-
-
+<hr>
+<h2>23Degree</h2>
+<ol>
+  <li>Сайт называется <a href="https://deokti.github.io/WebSitesСreation/23Degree/" target="_blank">23Degree</a></li>
+  <li><a href="https://cloud.mail.ru/home/Макеты/23Degree.png?weblink=4bhW/2JKYHTsEs" target="_blank">Ссылка на внешний вид макета</a>;</li>
+ 	<li>Пятый макет, который начал верстать. В самом начале было достаточно сложно, так как погрузился в изучение JavaScript, из-за чего к вёрстке приблизиться не мог из-за не слишком большого количества времени и по этой причине в самом начале работы были в некоторой степени затупки, из-за чего приходилось по два раза переписывать код, особенно в секции header. Хотя со второй всё пошло нормально;</li>
+ 	<li>На данный момент сказать нечего</li>
+ <li>Вёрстка началась 22.12.2019. В настоящее время потрачено 4 часа и 16 минут, <a href="https://wakatime.com/projects/23Degree?start=2019-12-16&end=2019-12-22" target="_blank">WakaTime</a>;</li>
+ <li>Макет был взят из телеграмм-канала, создателем которого является Артём Исламов, автор ютуб-канала Glo Academy: 
+    <a href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg/featured">ссылка на YouTube-канал</a> и 
+    <a href="https://t.me/glo_academy">ссылка на телеграмм-канал откуда взят макет;</a></li>
+</ol>  
 
