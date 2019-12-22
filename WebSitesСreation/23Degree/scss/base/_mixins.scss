@@ -2,14 +2,31 @@
 @mixin background-settig {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center;
 }
 
 //изминение телефона в section/header при наведении
 @mixin hover-tel {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s linear;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 25px; 
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        width: 0;
+        background: #19b5fe;
+        transition: .3s linear;
+    }
     &:hover {
         color: #19b5fe;
-        border-bottom: 1px solid #19b5fe;
+        &::after {
+            width: 100%;
+        }
     }
 }
 
@@ -34,6 +51,31 @@
         &:after {
             width: 400px;
             height: 400px;
+        }
+    }
+}
+
+@mixin hover-calculate-list {
+    overflow: hidden;
+    z-index: 1;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #19b5fe;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        transition: .3s linear;
+        z-index: -1;
+    }
+    &:hover {
+        &::after {
+            width: 250px;
+            height: 250px;
+            background-color: #19b5fe;
         }
     }
 }

@@ -9,7 +9,7 @@
     border-radius: 30px;
 
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 19.48px;
     z-index: 1;
@@ -17,14 +17,21 @@
     overflow: hidden;
     @include hover-buttons;
     &_header {
+        font-size: 16px;
         margin: 0 auto;
         margin-top: 20px;
     }
     &_our-services {
-        font-size: 14px;
         font-weight: 400;
         width: 181px;
         height: 51px;
+    }
+    &_calculate {
+        margin-top: 20px;
+        width: 309px;
+        height: 51px;
+        font-weight: 300;
+        font-weight: 400;
     }
     
 }

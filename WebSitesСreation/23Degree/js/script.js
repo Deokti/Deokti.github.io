@@ -73,5 +73,58 @@ document.querySelector('.button_header').addEventListener('click', function(even
     console.log(serialize(headerForm));
     
     //при нажатии input очищается
-    document.querySelector('.header-promo__application-enter').value = '';
+    let clearForm = document.querySelectorAll('.header-promo__application-enter');
+    for (let i = 0; i < clearForm.length; i++) {
+        clearForm[i].value = '';
+    }
 });
+
+/* Пеервый пакет - Light */
+document.querySelector('.calculate-left__choose-package_one').addEventListener('mousemove', function(event) {
+    let appearanceDescriptionOne = document.querySelector('.calculate-left__list-description_one');
+    setTimeout(function() {
+        appearanceDescriptionOne.style.opacity = '1';
+    }, 300);
+});
+document.querySelector('.calculate-left__choose-package_one').addEventListener('mouseout', function(event) {
+    let appearanceDescriptionOne = document.querySelector('.calculate-left__list-description_one');
+    setTimeout(function() {
+        appearanceDescriptionOne.style.opacity = '0';
+    }, 300);
+});
+/* /.Первый пакет - Light */
+
+/* Второй пакет - Medium */
+document.querySelector('.calculate-left__choose-package_two').addEventListener('mousemove', function(event) {
+    let appearanceDescriptionTwo = document.querySelector('.calculate-left__list-description_two');
+    setTimeout(function() {
+        appearanceDescriptionTwo.style.opacity = '1';
+    }, 300);
+});
+document.querySelector('.calculate-left__choose-package_two').addEventListener('mouseout', function(event) {
+    let appearanceDescriptionTwo = document.querySelector('.calculate-left__list-description_two');
+    setTimeout(function() {
+        appearanceDescriptionTwo.style.opacity = '0';
+    }, 300);
+});
+/* /.Второй пакет - Medium */
+
+/* Третий пакет - Full */
+document.querySelector('.calculate-left__choose-package_three').addEventListener('mousemove', function(event) {
+    let appearanceDescriptionThree = document.querySelector('.calculate-left__list-description_three');
+    setTimeout(function() {
+        appearanceDescriptionThree.style.opacity = '1';
+    }, 300);
+});
+document.querySelector('.calculate-left__choose-package_three').addEventListener('mouseout', function(event) {
+    let appearanceDescriptionThree = document.querySelector('.calculate-left__list-description_three');
+    setTimeout(function() {
+        appearanceDescriptionThree.style.opacity = '0';
+    }, 300);
+});
+/* ./.Третий пакет - Full */
+
+
+
+
+
