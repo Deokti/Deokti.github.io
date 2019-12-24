@@ -1,77 +1,7 @@
-function serialize(form) {
-    if (!form || form.nodeName !== "FORM") {
-        return false;
-    }
-    var i, j, q = [];
-    for (i = form.elements.length - 1; i >= 0; i = i - 1) {
-        if (form.elements[i].name === "") {
-            continue;
-        }
-        switch (form.elements[i].nodeName) {
-            case 'INPUT':
-                switch (form.elements[i].type) {
-                    case 'text':
-                    case 'tel':
-                    case 'email':
-                    case 'hidden':
-                    case 'password':
-                    case 'button':
-                    case 'reset':
-                    case 'color':
-                    case 'data':
-                    case 'range':   
-                    case 'submit':
-                        q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-                        break;
-                    case 'checkbox':
-                    case 'radio':
-                        if (form.elements[i].checked) {
-                            q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-                        }
-                        break;
-                }
-                break;
-            case 'file':
-                break;
-            case 'TEXTAREA':
-                q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-                break;
-            case 'SELECT':
-                switch (form.elements[i].type) {
-                    case 'select-one':
-                        q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-                        break;
-                    case 'select-multiple':
-                        for (j = form.elements[i].options.length - 1; j >= 0; j = j - 1) {
-                            if (form.elements[i].options[j].selected) {
-                                q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].options[j].value));
-                            }
-                        }
-                        break;
-                }
-                break;
-            case 'BUTTON':
-                switch (form.elements[i].type) {
-                    case 'reset':
-                    case 'submit':
-                    case 'button':
-                        q.push(form.elements[i].name + "=" + encodeURIComponent(form.elements[i].value));
-                        break;
-                }
-                break;
-        }
-    }
-    return q.join("&");
-}
-
-
-
 //получаем форму и отклчаем перезагрузку страницы
 document.querySelector('.button_header').addEventListener('click', function(event) {
-    let headerForm = document.querySelector('.header-form');
     event.preventDefault();
-    console.log(serialize(headerForm));
-    
+ 
     //при нажатии input очищается
     let clearForm = document.querySelectorAll('.header-promo__application-enter');
     for (let i = 0; i < clearForm.length; i++) {
@@ -84,13 +14,13 @@ document.querySelector('.calculate-left__choose-package_one').addEventListener('
     let appearanceDescriptionOne = document.querySelector('.calculate-left__list-description_one');
     setTimeout(function() {
         appearanceDescriptionOne.style.opacity = '1';
-    }, 300);
+    }, 400);
 });
 document.querySelector('.calculate-left__choose-package_one').addEventListener('mouseout', function(event) {
     let appearanceDescriptionOne = document.querySelector('.calculate-left__list-description_one');
     setTimeout(function() {
         appearanceDescriptionOne.style.opacity = '0';
-    }, 300);
+    }, 400);
 });
 /* /.Первый пакет - Light */
 
@@ -99,13 +29,13 @@ document.querySelector('.calculate-left__choose-package_two').addEventListener('
     let appearanceDescriptionTwo = document.querySelector('.calculate-left__list-description_two');
     setTimeout(function() {
         appearanceDescriptionTwo.style.opacity = '1';
-    }, 300);
+    }, 400);
 });
 document.querySelector('.calculate-left__choose-package_two').addEventListener('mouseout', function(event) {
     let appearanceDescriptionTwo = document.querySelector('.calculate-left__list-description_two');
     setTimeout(function() {
         appearanceDescriptionTwo.style.opacity = '0';
-    }, 300);
+    }, 400);
 });
 /* /.Второй пакет - Medium */
 
@@ -114,17 +44,50 @@ document.querySelector('.calculate-left__choose-package_three').addEventListener
     let appearanceDescriptionThree = document.querySelector('.calculate-left__list-description_three');
     setTimeout(function() {
         appearanceDescriptionThree.style.opacity = '1';
-    }, 300);
+    }, 400);
 });
 document.querySelector('.calculate-left__choose-package_three').addEventListener('mouseout', function(event) {
     let appearanceDescriptionThree = document.querySelector('.calculate-left__list-description_three');
     setTimeout(function() {
         appearanceDescriptionThree.style.opacity = '0';
-    }, 300);
+    }, 400);
 });
 /* ./.Третий пакет - Full */
 
+//Добавление и удаление класса при нажатии на один из прямоугольников в "Выберите пакет"
+document.querySelector('.calculate-left__list').addEventListener('click', function(e) {
+    let package = document.querySelectorAll('.calculate-left__choose-package');
+    Array.from(package).forEach(function(item) {
+        item.classList.remove('calculate-left__choose-package_active');
+    });
+    e.target.classList.add('calculate-left__choose-package_active');
+});
 
+//получаем объект, в котором находятся табы
+document.querySelector('.portfolio-tabs').addEventListener('click', function(event) {
+    //когда клик произошёл на элемента с классом
+    if (event.target.className == 'portfolio-tabs__tab') {
+        //получаем атрибут, указанный в кнопках табов
+        let dateAtribute = event.target.getAttribute('data-tab'), //получаем атрибут, указанный в кнопках табов
+            portfolioContent = document.querySelectorAll('.portfolio-content');  //получаем содержимое, иначе говоря контент, который должен отображаться в табах
+    
+        //перебор массива с контентом внутри татов и отражение тех, что идту по порядку
+        for (let i = 0; i < portfolioContent.length; i++) {
+            if (dateAtribute == i) {
+                portfolioContent[i].style.display = 'flex';
+            } else {
+                portfolioContent[i].style.display = 'none';
+            }
+        }
 
+        
+        let getTab = document.querySelectorAll('.portfolio-tabs__tab'); // получаем все табы, находящиеся внутри portfolio-tabs
 
-
+        //при нажатии на элемент одному добавляет активный класс, а у дргого забираем
+        for (let i = 0; i <getTab.length; i++) {
+            getTab[i].classList.remove('portfolio-tabs__tab_active');
+        }
+        event.target.classList.add('portfolio-tabs__tab_active');
+    
+    }
+});

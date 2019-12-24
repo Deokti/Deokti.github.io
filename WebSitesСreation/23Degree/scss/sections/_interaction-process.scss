@@ -1,0 +1,24 @@
+.interaction-process {
+    min-height: 1260px;
+    padding: 70px 0 66px 0;
+    &__wrapper {
+        color: #464646;
+        margin-top: 50px;
+    }
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+        }
+    }
+    &__right {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 0 auto;
+        p {
+            margin: 0;
+        }
+    }
+}

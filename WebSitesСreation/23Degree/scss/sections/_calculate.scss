@@ -35,6 +35,8 @@
             background-color: rgba(255, 255, 255, 0.5);
             border-radius: 4px;
             &::-webkit-slider-thumb {
+                cursor: pointer;
+
                 position: relative;
                 appearance: none;
                 width: 23px;
@@ -49,6 +51,7 @@
         }
         &__range-area {
             top: 55px;
+            pointer-events: none;
             position: absolute;
             font-size: 16px;
             font-weight: 300;
@@ -93,6 +96,8 @@
             align-items: flex-start;
             margin-bottom: 0;
             li {
+                cursor: pointer;
+
                 position: relative;
                 display: flex;
                 justify-content: center;
@@ -183,4 +188,9 @@
             @include hover-tel;
         }
     }
+}
+
+
+.calculate-left__choose-package_active {
+    background: #19b5fe;
 }

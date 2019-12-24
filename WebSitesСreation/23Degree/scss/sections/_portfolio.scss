@@ -1,0 +1,64 @@
+.portfolio {
+    min-height: 800px;
+    padding: 50px 0;
+    &-tabs {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+
+        width: 824px;
+        height: 47px;
+        border: 1px solid #19b5fe;
+        border-radius: 25px;
+        z-index: 10;
+        &__tab {
+            position: relative;
+            cursor: pointer;
+            color: #19b5fe;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 15px 22px;
+            z-index: 10;
+            @include hover-item;
+            &_active {
+                pointer-events: none;
+                color: #fff;
+                background-color: #19b5fe;
+                padding: 15px 22px;
+                border-radius: 10px;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            right: 281px;
+            background-color: #19b5fe;
+            width: 1px;
+            height: 39px;
+        }
+        
+    }
+    &-content {
+        margin-top: 30px;
+
+        display: none;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        &__item {
+            margin-top: 30px;
+            &:nth-child(-n+3) {
+                margin-top: 0;
+            }
+        }
+        &_active {
+            display: flex;
+        }
+    }
+}
