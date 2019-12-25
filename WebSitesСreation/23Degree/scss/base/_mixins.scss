@@ -105,3 +105,10 @@
         }
     }
 }
+
+@mixin hover-link-blog {
+    text-decoration: none;
+    &:hover {
+        border-bottom: 1px solid #19b5fe;
+    }
+}

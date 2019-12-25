@@ -1,0 +1,43 @@
+.partner {
+    min-height: 342px;
+    padding: 52px 0 65px 0;
+    background-color: rgba(#f2f8f9, .8);
+    &-slider {
+        margin-top: 60px;
+        width: 100%;
+        overflow: hidden;
+        &__inner {
+            display: flex;
+            width: 1785px;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &__item {
+            img {
+                display: block;
+            }
+        }
+        &__range {
+            margin-top: 35px;
+            position: relative;
+            appearance: none;
+            width: 1140px;
+            height: 5px;
+            background-color: rgba(#464646, .1);
+            border-radius: 4px;
+            &::-webkit-slider-thumb {
+                cursor: pointer;
+
+                position: relative;
+                appearance: none;
+                width: 32px;
+                height: 11px;
+                border-radius: 4px;
+                background: url('../img/dots.svg') #19b5fe;
+                @include background-settig;
+                background-size: auto;
+                z-index: 10;
+            }
+        }
+    }
+}

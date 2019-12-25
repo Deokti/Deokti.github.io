@@ -1,0 +1,32 @@
+.blog {
+    min-height: 600px;
+    padding: 53px 0 63px 0;
+    background-color: rgba(#f2f8f9, .8) ;
+    &-wrapper {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        &__img {
+            width: 555px;
+            img {
+                width: 100%;
+            }
+        }
+        &__link {
+            max-width: 520px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 26px;
+            a {
+                color: #19b5fe;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 24px;
+                @include hover-link-blog ;
+            }
+        }
+    }
+
+}

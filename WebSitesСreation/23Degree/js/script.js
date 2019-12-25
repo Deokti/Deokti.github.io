@@ -91,3 +91,13 @@ document.querySelector('.portfolio-tabs').addEventListener('click', function(eve
     
     }
 });
+let slider          = document.querySelector('.partner-slider'),
+    sliderInner     = document.querySelector('.partner-slider__inner'),
+    sliderRange     = document.querySelector('.partner-slider__range'),
+    maxOffset       = sliderInner.offsetWidth - slider.offsetWidth;
+
+sliderRange.addEventListener('input', function(event) {
+    slider.scrollLeft = event.target.value * maxOffset / 100;
+});
+
+console.log('Секция "partner" не закончена, так как есть некоторые моменты, которые стоит в будущем исправить, поскольку в настоящее время у меня не хватит навыков');
