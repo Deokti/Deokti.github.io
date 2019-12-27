@@ -29,3 +29,19 @@ body {
 @import 'sections/partner';
 @import 'sections/team';
 @import 'sections/blog';
+@import 'sections/questions';
+@import 'sections/map'; //не заполнено
+@import 'sections/footer';
+
+
+
+//МЕДИЯ ЗАПРОСЫ - Header
+@import 'media/header/media1080';
+@import 'media/header/media970';
+@import 'media/header/media935';
+@import 'media/header/media829';
+@import 'media/header/media764';
+@import 'media/header/media640';
+@import 'media/header/media580';
+@import 'media/header/media400';
+

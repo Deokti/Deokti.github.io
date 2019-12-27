@@ -1,9 +1,18 @@
 //получаем форму и отклчаем перезагрузку страницы
-document.querySelector('.button_header').addEventListener('click', function(event) {
+document.querySelector('.button').addEventListener('click', function(event) {
     event.preventDefault();
- 
+
     //при нажатии input очищается
     let clearForm = document.querySelectorAll('.header-promo__application-enter');
+    for (let i = 0; i < clearForm.length; i++) {
+        clearForm[i].value = '';
+    }
+});
+
+document.querySelector('.button_questions').addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let clearForm = document.querySelectorAll('.input-clear');
     for (let i = 0; i < clearForm.length; i++) {
         clearForm[i].value = '';
     }
@@ -70,7 +79,7 @@ document.querySelector('.portfolio-tabs').addEventListener('click', function(eve
         //получаем атрибут, указанный в кнопках табов
         let dateAtribute = event.target.getAttribute('data-tab'), //получаем атрибут, указанный в кнопках табов
             portfolioContent = document.querySelectorAll('.portfolio-content');  //получаем содержимое, иначе говоря контент, который должен отображаться в табах
-    
+
         //перебор массива с контентом внутри татов и отражение тех, что идту по порядку
         for (let i = 0; i < portfolioContent.length; i++) {
             if (dateAtribute == i) {
@@ -80,7 +89,6 @@ document.querySelector('.portfolio-tabs').addEventListener('click', function(eve
             }
         }
 
-        
         let getTab = document.querySelectorAll('.portfolio-tabs__tab'); // получаем все табы, находящиеся внутри portfolio-tabs
 
         //при нажатии на элемент одному добавляет активный класс, а у дргого забираем
@@ -88,9 +96,10 @@ document.querySelector('.portfolio-tabs').addEventListener('click', function(eve
             getTab[i].classList.remove('portfolio-tabs__tab_active');
         }
         event.target.classList.add('portfolio-tabs__tab_active');
-    
+
     }
 });
+
 let slider          = document.querySelector('.partner-slider'),
     sliderInner     = document.querySelector('.partner-slider__inner'),
     sliderRange     = document.querySelector('.partner-slider__range'),
@@ -101,3 +110,22 @@ sliderRange.addEventListener('input', function(event) {
 });
 
 console.log('Секция "partner" не закончена, так как есть некоторые моменты, которые стоит в будущем исправить, поскольку в настоящее время у меня не хватит навыков');
+//создаём переменные для того, чтобы в будущем добавить в них что-то. Если добавить сразу, прокрутка будет длиться только 1 раз.
+let heightScrollTop;
+
+document.querySelector('.click-mouse').addEventListener('click', function (event) {
+    //рассчитывает вертикальный скролл при нажатии кнопки
+    heightScrollTop = window.pageYOffset;
+    timeScrollTop();
+});
+
+//функция, которая будет срабатывать при нажатии
+function timeScrollTop () {
+    //пока heightScrollTop меньше или равно 700
+    if (heightScrollTop <= 700) {
+        //будет происходит скролл вниз, каждый раз добавляет по 10 пикселей, с переодичностью в 1 милисекунду
+        window.scrollTo(0, heightScrollTop);
+        heightScrollTop += 10;
+        setTimeout(timeScrollTop, 1);
+    }
+}

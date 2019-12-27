@@ -10,11 +10,11 @@
     position: relative;
     color: #fff;
     text-decoration: none;
-    transition: .2s linear;
     &::after {
+        pointer-events: none;
         content: '';
         position: absolute;
-        top: 25px; 
+        top: 25px;
         left: 50%;
         transform: translateX(-50%);
         height: 1px;
@@ -81,7 +81,7 @@
     }
 }
 
-//изминение таба при наведении 
+//изминение таба при наведении
 @mixin hover-item {
     transition: .2s linear;
     &::after {
@@ -106,9 +106,63 @@
     }
 }
 
-@mixin hover-link-blog {
+@mixin hover-links {
+    transition: .3s linear;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
     &:hover {
         border-bottom: 1px solid #19b5fe;
+    }
+}
+
+@mixin hover-link-qustions {
+    transition: .3s linear;
+    &:hover {
+        a {
+            @include hover-links;
+        }
+        .questions-right__border {
+            background:#19b5fe;
+        }
+
+    }
+}
+
+//активируется при наведении на одну из ссылок в section > question
+@mixin hover-relation-social {
+    span {
+        transition: .2s linear;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 27px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 0;
+            background: #19b5fe;
+            transition: .2s linear;
+        }
+    }
+    &:hover {
+        .questions-right__border {
+            background: #19b5fe;
+        }
+        a {
+            color: #19b5fe;
+            span {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@mixin hover-social {
+    transition: .3s linear;
+    &:hover {
+        background: #19b5fe;
     }
 }

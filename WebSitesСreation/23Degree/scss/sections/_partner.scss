@@ -8,7 +8,7 @@
         overflow: hidden;
         &__inner {
             display: flex;
-            width: 1785px;
+            min-width: 1785px;
             justify-content: space-between;
             align-items: flex-end;
         }

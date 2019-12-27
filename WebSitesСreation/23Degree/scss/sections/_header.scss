@@ -24,8 +24,12 @@
             font-weight: 300;
             transition: .3s linear;
             a {
+                position: relative;
                 font-weight: 400;
                 font-size: 21px;
+                text-decoration: none;
+                color: #fff;
+                transition: .3s linear;
                 @include hover-tel;
             }
         }
@@ -71,7 +75,7 @@
         &__application-enter {
             margin: 0 4px;
             margin-top: 45px;
-            
+
 
             width: 290px;
             height: 51px;
@@ -94,9 +98,16 @@
             font-weight: 300;
             line-height: 28px;
         }
-        
+        &__line {
+            position: absolute;
+            width: 954px;
+            height: 78px;
+            background-image: url('../img/button-line.svg');
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%, -54%);
+        }
     }
-
 }
 
 @keyframes mouse-animate {
@@ -116,5 +127,5 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 56px;
-    animation: mouse-animate 2s infinite; 
+    animation: mouse-animate 2s infinite;
 }

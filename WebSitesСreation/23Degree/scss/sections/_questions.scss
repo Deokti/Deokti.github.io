@@ -1,0 +1,79 @@
+.questions {
+    min-height: 530px;
+    padding: 55px 0 60px 0;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/background/qustion-bg.jpg');
+    @include background-settig;
+    &__wrapper {
+        margin-top: 44px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &-left {
+        width: 750px;
+        input,
+        textarea {
+            width: 240px;
+            height: 49px;
+            border: 1px solid rgba(0, 0, 0, 0.11);
+            border-radius: 10px;
+            padding: 20px 0 20px 27px;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+        input {
+            margin-right: 11px;
+            &:nth-child(3){
+                margin-right: 0;
+            }
+        }
+        textarea {
+            margin-top: 12px;
+            width: 750px;
+            height: 123px;
+            resize: none;
+        }
+    }
+    &-right {
+        &__item {
+            display: flex;
+            align-items: center;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+            a {
+                position: relative;
+                display: inline;
+                margin-left: 14px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 400;
+                text-decoration: none;
+            }
+            @include hover-relation-social;
+        }
+        &__border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 6px 0; //иначе при наведении значка будут подпригивать
+
+            width: 27px;
+            height: 27px;
+            border: 1px solid #ffffff;
+            border-radius: 2px;
+            transition: .3s linear;
+            &_mt0 {
+                margin-top: 0;
+            }
+        }
+        &__timetable {
+            margin-top: 30px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+    }
+}
