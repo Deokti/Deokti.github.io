@@ -83,12 +83,11 @@
 
             border: none;
             border-radius: 30px;
-            padding: 20px 27px 20px 27px;
+            padding: 15px 27px 16px 27px; //20px 27px 20px 27px;
 
             color: #606060;
             font-size: 13px;
             font-weight: 300;
-            line-height: 24px;
         }
         &__confederacy {
             margin-top: 13px;
@@ -100,7 +99,7 @@
         }
         &__line {
             position: absolute;
-            width: 954px;
+            width: 950px;
             height: 78px;
             background-image: url('../img/button-line.svg');
             top: 58%;
