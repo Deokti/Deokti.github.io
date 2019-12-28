@@ -1,0 +1,13 @@
+@media screen and (max-width: 580px) {
+    .title {
+        text-align: left;
+        &::after {
+            width: 68.5%;
+            left: 35.1%;
+        }
+    }
+    .subtitle {
+        text-align: left;
+    }
+}
+

@@ -1,0 +1,21 @@
+@media screen and (max-width: 940px) {
+    .questions__wrapper {
+        flex-direction: column;
+    }
+    .questions-left {
+        width: 100%;
+        input {
+            width: 32.8%;
+            margin-right: 0;
+        }
+    }
+    .questions-right {
+        margin-top: 30px;
+    }
+    .questions-right__item {
+        &:nth-child(3),
+        &:nth-child(4) {
+            display: none;
+        }
+    }
+}

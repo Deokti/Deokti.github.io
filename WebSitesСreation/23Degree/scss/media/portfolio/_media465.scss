@@ -1,0 +1,10 @@
+@media screen and (max-width: 465px) {
+    .portfolio-tabs__tab {
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+    .portfolio-content__item {
+        margin-left: 0;
+    }
+}

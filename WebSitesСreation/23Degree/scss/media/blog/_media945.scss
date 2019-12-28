@@ -1,0 +1,16 @@
+@media screen and (max-width: 945px) {
+    .blog-wrapper__item,
+    .blog-wrapper__link {
+        width: 100%;
+    }
+    .blog-wrapper__item {
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .blog-wrapper__link {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}

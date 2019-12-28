@@ -1,0 +1,11 @@
+@media screen and (max-width: 929px) {
+    .team-wrapper {
+        justify-content: space-around;
+    }
+    .team-wrapper__item {
+        margin-top: 40px;
+        &:nth-child(n+4) {
+            margin-top: 40px;
+        }
+    }
+}

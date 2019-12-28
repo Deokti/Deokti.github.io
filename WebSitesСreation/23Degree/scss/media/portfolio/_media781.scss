@@ -1,0 +1,11 @@
+@media screen and (max-width: 781px) {
+    .portfolio-tabs__tab {
+        padding: 15px 14px;
+    }
+    .portfolio-content__item {
+        width: 320px;
+        img {
+            width: 100%;
+        }
+    }
+}

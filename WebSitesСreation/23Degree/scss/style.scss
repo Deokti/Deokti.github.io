@@ -34,6 +34,8 @@ body {
 @import 'sections/footer';
 
 
+//МЕДИЯ ЗАПРОСЫ - Repat (повторяющиеся элементы)
+@import 'media/repeat/title&&subtitle';
 
 //МЕДИЯ ЗАПРОСЫ - Header
 @import 'media/header/media1080';
@@ -43,5 +45,56 @@ body {
 @import 'media/header/media764';
 @import 'media/header/media640';
 @import 'media/header/media580';
+@import 'media/header/media561';
 @import 'media/header/media400';
 
+//МЕДИЯ ЗАПРОСЫ - Our-services
+@import 'media/our-services/media1150';
+@import 'media/our-services/media1010';
+@import 'media/our-services/media929';
+@import 'media/our-services/media580';
+
+
+//МЕДИЯ ЗАПРОСЫ - Calculate
+/* С моей точкиз зрения на определённых уровнях расчёт должен меняться, дабы тот был
+    нормальным для расчёта как на планшетах, так и на телефонах. По этой причине на
+    определённом уровне я сделал выбор - просто-напросто скрыть эту секцию с сайта,
+    поскольку макета или идей как можно реализовать изминение у меня нет */
+@import 'media/calculate/media1030';
+
+//МЕДИЯ ЗАПРОСЫ - Portfolio
+
+@import 'media/portfolio/media1124';
+@import 'media/portfolio/media860';
+@import 'media/portfolio/media781';
+@import 'media/portfolio/media719';
+@import 'media/portfolio/media690';
+@import 'media/portfolio/media465';
+
+
+//МЕДИЯ ЗАПРОСЫ - Interaction-process
+@import 'media/interaction-process/media920.scss';
+
+
+//МЕДИЯ ЗАПРОСЫ - Team
+@import 'media/team/media928';
+@import 'media/team/media490';
+
+//МЕДИЯ ЗАПРОСЫ - Blog
+@import 'media/blog/media1155';
+@import 'media/blog/media1050';
+@import 'media/blog/media945';
+
+
+
+//МЕДИЯ ЗАПРОСЫ - Questions
+@import 'media/questions/media1100';
+@import 'media/questions/media1040';
+@import 'media/questions/media940';
+@import 'media/questions/media525';
+@import 'media/questions/media390';
+
+//МЕДИЯ ЗАПРОСЫ - Footer
+@import 'media/footer/media730';
+@import 'media/footer/media603';
+@import 'media/footer/media432';

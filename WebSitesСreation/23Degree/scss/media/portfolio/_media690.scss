@@ -1,0 +1,10 @@
+@media screen and (max-width: 690px) {
+    .portfolio-tabs {
+        justify-content: space-around;
+    }
+    .portfolio-tabs__tab {
+        &:nth-child(4) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@media screen and (max-width: 730px) {
+    .footer-top__link {
+        margin: 0 15px;
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+    }
+    .footer-top__social {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,19 @@
+@media screen and (max-width: 525px) {
+    .questions-left {
+        input {
+            display: block;
+            width: 65%;
+            margin-bottom: 7px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        textarea {
+            width: 80%;
+            height: 180px;
+        }
+    }
+    .button_questions {
+        margin-left: 0;
+    }
+}

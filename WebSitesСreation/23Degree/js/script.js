@@ -122,7 +122,7 @@ document.querySelector('.click-mouse').addEventListener('click', function (event
 //функция, которая будет срабатывать при нажатии
 function timeScrollTop () {
     //пока heightScrollTop меньше или равно 700
-    if (heightScrollTop <= 700) {
+    if (heightScrollTop <= 705) {
         //будет происходит скролл вниз, каждый раз добавляет по 10 пикселей, с переодичностью в 1 милисекунду
         window.scrollTo(0, heightScrollTop);
         heightScrollTop += 10;

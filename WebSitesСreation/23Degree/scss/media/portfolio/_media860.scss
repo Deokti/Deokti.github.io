@@ -1,0 +1,8 @@
+@media screen and (max-width: 860px) {
+    .portfolio-tabs {
+        width: 100%;
+        &::before {
+            display: none;
+        }
+    }
+}

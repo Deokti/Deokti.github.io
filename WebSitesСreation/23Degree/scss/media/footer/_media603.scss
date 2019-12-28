@@ -1,0 +1,17 @@
+@media screen and (max-width: 603px) {
+    .footer-top {
+        flex-direction: column;
+    }
+    .footer-top__right {
+        margin-top: 25px;
+    }
+    .footer-top__social {
+        justify-content: flex-start;
+    }
+    .footer-bottom__create-sites {
+        display: none;
+    }
+    .footer-bottom__licence-defence {
+        margin: 0 auto;
+    }
+}

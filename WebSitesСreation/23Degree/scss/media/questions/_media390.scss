@@ -1,0 +1,15 @@
+@media screen and (max-width: 390px) {
+    .questions-left {
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 7px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        textarea {
+            width: 100%;
+        }
+    }
+}

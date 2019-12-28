@@ -1,0 +1,10 @@
+@media screen and (max-width: 1124px) {
+    .portfolio-content {
+        &__item {
+            margin-top: 30px;
+            &:nth-child(-n+3) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
