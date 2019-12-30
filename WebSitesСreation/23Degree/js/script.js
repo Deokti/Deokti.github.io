@@ -91,8 +91,8 @@ document.querySelector('.portfolio-tabs').addEventListener('click', function(eve
 
         let getTab = document.querySelectorAll('.portfolio-tabs__tab'); // получаем все табы, находящиеся внутри portfolio-tabs
 
-        //при нажатии на элемент одному добавляет активный класс, а у дргого забираем
-        for (let i = 0; i <getTab.length; i++) {
+        //при нажатии на элемент одному добавляет активный класс, а у всех остальных удаляем
+        for (let i = 0; i < getTab.length; i++) {
             getTab[i].classList.remove('portfolio-tabs__tab_active');
         }
         event.target.classList.add('portfolio-tabs__tab_active');

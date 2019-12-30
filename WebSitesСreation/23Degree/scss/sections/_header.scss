@@ -99,9 +99,11 @@
         }
         &__line {
             position: absolute;
-            width: 950px;
+            width: 954px;
             height: 78px;
             background-image: url('../img/button-line.svg');
+            @include background-settig;
+            background-size: auto;
             top: 58%;
             left: 50%;
             transform: translate(-50%, -54%);
