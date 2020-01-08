@@ -1,13 +1,13 @@
-let gulp            = require('gulp'),
+let gulp            	= require('gulp'),
 	browserSync     = require('browser-sync'),
-	scss 			= require('gulp-sass'),
-    gulpRename      = require('gulp-rename'),
-    autoprefixer    = require('gulp-autoprefixer'),
-	htmlmin 		= require('gulp-htmlmin'),
-	watch 			= require('gulp-watch'),
-	concat 			= require('gulp-concat'),
-	csso 			= require('gulp-csso'),
-	uglify 			= require('gulp-uglify');
+	scss 		= require('gulp-sass'),
+   	gulpRename      = require('gulp-rename'),
+    	autoprefixer    = require('gulp-autoprefixer'),
+	htmlmin 	= require('gulp-htmlmin'),
+	watch 		= require('gulp-watch'),
+	concat 		= require('gulp-concat'),
+	csso 		= require('gulp-csso'),
+	uglify 		= require('gulp-uglify');
 
 
 /*-------- browserSync --------*/
