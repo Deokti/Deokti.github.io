@@ -1,0 +1,28 @@
+.todolist {
+    &-form {
+        max-width: 72%;
+        min-height: 255px;
+        margin: 0 auto;
+        padding: 10px 30px;
+        border: 1px solid #ced4da;
+        margin-bottom: 5%;
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        input, textarea {
+            width: 100%;
+            height: 38px;
+            padding: 5px 20px;
+            margin: 5px 0;
+            color: #495057;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        textarea {
+            min-height: 80px;
+            max-height: 180px;
+            resize: vertical;
+        }
+    }
+}
