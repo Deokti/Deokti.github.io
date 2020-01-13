@@ -2,6 +2,7 @@
     margin: 3% 0;
     &-items {
         list-style: none;
+        padding-left: 0;
         &__item {
             max-width: 1000px;
             border: 1px solid #ced4da;
