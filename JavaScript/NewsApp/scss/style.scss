@@ -1,0 +1,24 @@
+// БАЗОВЫЕ СТИЛИ
+@import 'base/bootstrap-reboot.min';
+
+//СТИЛИ ДЛЯ ТЕЛА СТРАНИЦЫ
+body {
+    background-color: #dfdfdf;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// ПОДКЛЮЧЕНИЕ ЭЛЕМЕНТОВ
+@import 'elements/nav-bar';
+@import 'elements/button';
+@import 'elements/news-container';
+
+
+// МЕДИЯ ЗАПРОСЫ
+@import 'media/media1180';

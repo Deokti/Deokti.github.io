@@ -1,0 +1,36 @@
+.button-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none; 
+    }
+}
+.button {
+    display: block;
+    width: 130px;
+    height: 30px;
+    border: 1px solid #c4c4c4;
+    background: transparent;
+    border-radius: 3px;
+    color: #fff;
+    transition: .3s all;
+    &_search {
+        margin-left: 5px;
+        &:hover {
+            background: #c4c4c4;
+            color: #c53f3f;
+            font-weight: 700;
+        }
+    }
+    &_news {
+        width: 90%;
+        margin: 0 auto;
+        height: 35px;
+        color: #000;
+        border: 1px solid #e0e0e0;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        &:hover {
+            background: rgb(73, 233, 86);
+        }
+    }
+}
