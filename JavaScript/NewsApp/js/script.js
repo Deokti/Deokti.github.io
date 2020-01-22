@@ -1,7 +1,12 @@
+// При нажатии на "Новостное приложение" страница перезагружается
+document.querySelector('.nav-bar__link').addEventListener('click', () => {
+    location.reload();
+});
+
 // Создание HTTP модуля
 function customHttp() {
     return {
-        get(url, cb) {
+        get(url, cb, category) {
             try {
                 const xhr = new XMLHttpRequest();
                 xhr.open('GET', url);
@@ -11,7 +16,7 @@ function customHttp() {
                         return;
                     }
                     const response = JSON.parse(xhr.responseText);
-                    cb(null, response);
+                    cb(null, response, null);
                 });
 
                 xhr.addEventListener('error', () => {
@@ -22,41 +27,13 @@ function customHttp() {
             } catch (error) {
                 cb(error);
             }
-        },
-        post(url, body, headers, cb) {
-            try {
-                const xhr = new XMLHttpRequest();
-                xhr.open('POST', url);
-                xhr.addEventListener('load', () => {
-                    if (Math.floor(xhr.status / 100) !== 2) {
-                        cb(`Error. Status code: ${xhr.status}`, xhr);
-                        return;
-                    }
-                    const response = JSON.parse(xhr.responseText);
-                    cb(null, response);
-                });
-
-                xhr.addEventListener('error', () => {
-                    cb(`Error. Status code: ${xhr.status}`, xhr);
-                });
-
-                if (headers) {
-                    Object.entries(headers).forEach(([key, value]) => {
-                        xhr.setRequestHeader(key, value);
-                    });
-                }
-
-                xhr.send(JSON.stringify(body));
-            } catch (error) {
-                cb(error);
-            }
-        },
-    };
+        }   
+    }
 }
+
 
 // Модуль инициализации протокола HTTP
 const http = customHttp();
-
 
 //Создание самовызывающейся функцию-программу,
 // которая активируется при загрузке DOM
@@ -69,10 +46,11 @@ const newService = (function () {
     // Возвращаем два объекта
     return {
         // Первый объект для выбора страны и вывода новостей согласну ключю пользователя
-        TopHeadlines(country = 'ru', cb) {
-            http.get(`${ApiURL}/top-headlines?country=${country}&apiKey=${apiKey}`, cb)
+        TopHeadlines(country = 'ru', cb, category = 'science') {
+            // http.get(`${ApiURL}/top-headlines?country=${country}&apiKey=${apiKey}`, cb)
+            http.get(`${ApiURL}/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`, cb)
         },
-        // Второй объект создан для будущего поиска по новостям
+        //Второй объект создан для будущего поиска по новостям
         Everything(query, cb) {
             http.get(`${ApiURL}/everything?q=${query}&apiKey=${apiKey}`, cb);
         }
@@ -85,16 +63,49 @@ document.addEventListener('DOMContentLoaded', function () {
     loadNews();
 });
 
+
+// Получаем форму для навешивания на неё события, 
+// и элементы формы для поиска новостей
+const mainForm          = document.forms['nav-form'];
+const selectCountry     = mainForm.elements['country'];
+const selectCategory    = mainForm.elements['category']
+const searchForm        = mainForm.elements['search'];
+console.log();
+
+mainForm.addEventListener('submit', event => {
+    event.preventDefault();
+    loadNews();
+});
+
+
 // Функция создания базового вывода новостей
 function loadNews() {
-    //Обращаемся к созданной функции выше и методу этой функции
-    newService.TopHeadlines('ru', handlingNews);
+    // При поиске активируется прелоадер
+    showPreloader();
+
+    // Обращаемся к элементам формы и вытаскиваем "значение"
+    const country = selectCountry.value;
+    const search = searchForm.value;
+    const category = selectCategory.value;
+    
+
+    //Если в поисковике ничего нет, 
+    //показываем базовые новости 
+    if (!search) {
+        //Обращаемся к созданной функции выше и методу этой функции
+        newService.TopHeadlines(country, handlingNews, category);
+    } 
+
+    // Если в поисковой строке что-то записано, то
+    // поиск будет происходить иходя из введённого
+    else {
+        newService.Everything(search, handlingNews);
+    }
 }
 
 // Фукция, которая отрабатывает при получении новостей от сервера
 function handlingNews(error, response) {
-    //console.log(response.articles);
-    
+    removePreloader();
     renderNews(response.articles);
 }
 
@@ -103,6 +114,12 @@ function handlingNews(error, response) {
 function renderNews(news) {
     // Контейнер, в который затем будет запихиваться 
     const newsContainer = document.querySelector('.news-container .news-wrapper');
+
+    // Если в контейнере были дочерние элементы, 
+    // то запустить функцию и передать в него контейнер
+    if (newsContainer.children.length) {
+        oldNewsRemove(newsContainer);
+    }
     
     // Создаём фрагмент, для его заполнения и для будущего ускорения загрузки
     let fragment = '';
@@ -123,7 +140,7 @@ function creatingOneNews({urlToImage, title, author, description, publishedAt, u
             <div class="news-inner__direction">
                 <div class="news-inner__combine-one">
                     <div class="news-inner__img">
-                        <img src="${urlToImage}" alt="">
+                        <img src="${urlToImage || 'img/news.jpg'}" alt="">
                     </div>
                     <div class="news-inner__detailed">
                         <h2 class="news-inner__title">${title || ''}</h2>
@@ -133,11 +150,51 @@ function creatingOneNews({urlToImage, title, author, description, publishedAt, u
                 </div>
                 <div class="news-inner__combine-two">
                     <p class="news-inner__data">${publishedAt}</p>
-                    <a href="${url}" class="button-link">
+                    <a href="${url}" class="button-link" target="_black">
                         <button class="button button_news">Читать новость!</button>
                     </a>
                 </div>
                 
             </div>
         </div>`
+}
+
+// Очищения контейнера для наполнения новых новостей
+// для того, чтобы новости не смешивались
+function oldNewsRemove(container) {
+    let child = container.lastElementChild;
+
+    // Если дочерние элементы присутвуются, 
+    // пройтись по нему циклом и удалить их
+    while (child) {
+        container.removeChild(child);
+
+        // И перезаписывает переменную, чтобы
+        // не допустить бесконечного цикла
+        child = container.lastElementChild;
+    }
+}
+
+
+// Прелоадер, который будет появляться
+// при поиске новостей
+function showPreloader() {
+    document.body.insertAdjacentHTML('afterbegin', 
+    `
+        <div class="preloader">
+            <div class="preloader__line"></div>
+        </div>
+    `);
+}
+
+// Прелоадер пропадает после того, 
+// как новости были найдены и показы
+function removePreloader() {
+    // Ищем прелоадер 
+    const isPreloader = document.querySelector('.preloader');
+
+    //И если он присутствует, удалить
+    if (isPreloader) {
+        isPreloader.remove();
+    }
 }
