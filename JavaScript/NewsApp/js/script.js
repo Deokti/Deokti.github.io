@@ -6,7 +6,7 @@ document.querySelector('.nav-bar__link').addEventListener('click', () => {
 // Создание HTTP модуля
 function customHttp() {
     return {
-        get(url, cb, category) {
+        get(url, cb) {
             try {
                 const xhr = new XMLHttpRequest();
                 xhr.open('GET', url);
@@ -16,7 +16,7 @@ function customHttp() {
                         return;
                     }
                     const response = JSON.parse(xhr.responseText);
-                    cb(null, response, null);
+                    cb(null, response);
                 });
 
                 xhr.addEventListener('error', () => {
@@ -77,6 +77,16 @@ mainForm.addEventListener('submit', event => {
     loadNews();
 });
 
+// Активация функции по создании новостей, 
+// при переключении СТРАНЫ
+selectCountry.addEventListener('change', () => {
+    loadNews();
+})
+// Активация функции по создании новостей, 
+// при переключении КАТЕГОРИИ
+selectCategory.addEventListener('change', () => {
+    loadNews();
+})
 
 // Функция создания базового вывода новостей
 function loadNews() {
