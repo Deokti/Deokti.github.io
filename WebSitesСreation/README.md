@@ -95,8 +95,11 @@
 <h2>SwedishBitter</h2>
 
 <ol>
-  <li>Сайт называется <a href="https://deokti.github.io/WebSitesСreation/Пусто/" target="_blank">Пусто</a> </li>
-  <li>Как выглядит сайт (ссылка на Облако.Маил);</li>
+  <li>Сайт называется <a href="https://deokti.github.io/WebSitesСreation/SwedishBitter/dist/" target="_blank">SwedishBitter</a> </li>
+  <li>Ссылки на внешний вид макета: 
+    <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/SwedishBitter/SwedishBitter-desktop.jpg?x-email=reilgelern%40mail.ru" target="_blank">Полная версия</a>, 
+    <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/SwedishBitter/SwedishBitter-tablet.jpg?x-email=reilgelern%40mail.ru" target="_blank">Планшетная версия</a>, 
+    <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/SwedishBitter/SwedishBitter-mobile.jpg?x-email=reilgelern%40mail.ru" target="_blank">Мобильная версия</a>;</li>
   <li>Пятый макет, который начал верстать. На данный момент ничего сложного не заметил, хотя на первую секцию потратил довольно много из-за долгого перерыва в вёрстке. При этом не хочется городить слишком много кода и пытаюсь обдумывать практически каждый шаг, перед тем как написать. Хотя, сказав "обдумывать практически каждый шаг" - это конечно я сильно загнул;</li>
   <li>Всё те же, ничего нового не добавилось;</li>
   <li>В настоящее время потрачено 3 часа. <a href="https://wakatime.com/projects/SwedishBitter?start=2020-01-21&end=2020-01-27" target="_blank">WakaTime</a>;</li>
