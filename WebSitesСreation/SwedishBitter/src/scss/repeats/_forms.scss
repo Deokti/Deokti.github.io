@@ -1,0 +1,42 @@
+.form {
+    width: 571px;
+    height: 315px;
+    background-color: #ffffff;
+    padding: 20px;
+    &_header {
+        margin-top: 95px;
+    }
+    &__border {
+        width: 530px;
+        height: 275px;
+        border: 1px solid rgba($color: #a4c58c, $alpha: .6) ;
+        padding: 47px 0 0 49px;
+        margin: 0 auto;
+    }
+    &__title {
+        /* Style for "Узнайте по" */
+        width: 200px;
+        color: #303030;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+    &-input {
+        padding-top: 23px;
+        input {
+            width: 200px;
+            height: 30px;
+            border: none;
+            border-bottom: 1px solid #abc490;
+            color: #9a9a9a;
+            &::placeholder {
+                color: #abc490;
+            }
+            &:nth-child(1) {
+                margin-right: 25px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,27 @@
+// Базовые стили
+@import 'base/bootstrap-reboot.min';
+@import 'base/mixins';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// Повторяющиеся элементы
+
+@import 'repeats/phone';
+@import 'repeats/forms';
+@import 'repeats/button';
+
+
+// Подключение секций
+@import 'sections/header';
+
