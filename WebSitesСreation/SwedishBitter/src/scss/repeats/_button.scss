@@ -29,7 +29,8 @@
     &:hover {
         span {
             &::after {
-                right: -150px;
+                right: -100%;
+                right: -220%;
             }
         }
         &::before {
@@ -58,5 +59,12 @@
     &_form {
         margin-left: auto;
         margin-top: 63px;
+    }
+    &_list {
+        margin-top: 50px;
+        margin-left: auto;
+
+        width: 500px;
+        height: 70px;
     }
 }
