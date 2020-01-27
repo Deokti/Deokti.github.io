@@ -102,7 +102,7 @@
     <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/SwedishBitter/SwedishBitter-mobile.jpg?x-email=reilgelern%40mail.ru" target="_blank">мобильная версия</a>;</li>
   <li>Шестой макет, который начал верстать. На данный момент ничего сложного не заметил, хотя на первую секцию потратил довольно много из-за долгого перерыва в вёрстке. При этом не хочется городить слишком много кода и пытаюсь обдумывать практически каждый шаг, перед тем как написать. Хотя, сказав «обдумывать практически каждый шаг» – это конечно я сильно загнул;</li>
   <li>Всё те же, ничего нового не добавилось;</li>
-  <li>В настоящее время потрачено 3 часа. <a href="https://wakatime.com/projects/SwedishBitter?start=2020-01-21&end=2020-01-27" target="_blank">WakaTime</a>;</li>
+  <li>В настоящее время потрачено 6 часов, 41 минута. <a href="https://wakatime.com/projects/SwedishBitter?start=2020-01-21&end=2020-01-27" target="_blank">WakaTime</a>;</li>
   <li>Макет был взят с ютуб-канала, создателем которого является Вадим Прокопчук, автор ютуб-канала От 0 до 1: 
     <a href="https://www.youtube.com/channel/UCE_w6FxGfRKH2fU76raVeog/videos">ссылка на YouTube-канал</a> и 
     <a href="https://www.youtube.com/watch?v=e6mWQyj2wNY&t=204s">ссылка на видео в котором макет;</a>;</li>
