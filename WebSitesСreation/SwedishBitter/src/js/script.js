@@ -1,10 +1,9 @@
 const allAilmentsItems = document.querySelectorAll('.list-ailments__item');
-
 allAilmentsItems.forEach(event => {
     event.addEventListener('click', function({target}) {
         // Получаем атрибут элемента исходя из контекста
-        let dataAttribute = this.getAttribute('data');
-
+        let dataAttribute = target.getAttribute('data');
+   
         // Получаем элементы круга с цифрой, перебираем и скрываем 
         document.querySelectorAll('.list-skeleton__item').forEach(item => {
             item.style.display = 'none';
@@ -22,5 +21,14 @@ allAilmentsItems.forEach(event => {
         target.classList.add('list-ailments__item_active');
     });
 });
+
+// Отключаем базовое поведение всех ссылок 
+let allLinks = document.querySelectorAll('.prevent-default');
+allLinks.forEach(event => {
+    event.addEventListener('click', event => {
+        event.preventDefault();
+    })
+});
+
 
 

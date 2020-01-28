@@ -35,12 +35,12 @@
                         <p class="header-content__subtitle">Не имеет аналогов в мире по оздоровительной силе и широте лечебных свойств</p>
 
                         <!-- form -->
-                        <form class="form form_header">
+                        <form name="form" class="form form_header">
                             <div class="form__border">
                                 <h3 class="form__title">Узнайте подробнее о бальзаме</h3>
                                 <div class="form-input">
-                                    <input type="text" placeholder="Имя">
-                                    <input type="tel" placeholder="Телефон">
+                                    <input name="name" type="text" placeholder="Имя">
+                                    <input name="tel" type="tel" placeholder="Телефон">
                                 </div>
                                 <button class="button button_form"><span>Узнать</span></button>
                             </div>
@@ -158,12 +158,14 @@
                         <div class="list-skeleton__item list-skeleton__item-nine" data="9"><span>09</span></div>
                     </div>
                     
-                    <div class="list-skeleton__read-reviews">
-                        <div class="list-skeleton__border">
+                    <!-- form -->
+                    <form name="form" class="form form_list-skeleton">
+                        <div class="form__border">
                             <p>Более 2 000 покупателей доказали эффективность «Шведской горечи» в каждом из этих случаев</p>
-                            <a href="#">Читать отзывы</a>
+                            <a href="#" class="prevent-default">Читать отзывы</a>
                         </div>
-                    </div>
+                    </form>
+                    <!-- /.form -->
                 </div>
            </div>
            <button class="button button_list"><span>Избавиться от проблем</span></button>
@@ -171,8 +173,25 @@
     </section>
     <!-- /.LIST -->
 
+    <!-- WHAT-POPULARY -->
+    <div class="what">
+        <div class="container">
+            <div class="what__wrapper">
+                <div class="what-left">
+                    <img src="" alt="">
 
-    
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- /.WHAT-POPULARY -->
+
+
+    <div class="message"></div>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 .list {
-    padding-bottom: 100px;
+    padding-bottom: 180px;
     &__wrapper {
         position: relative;
 
@@ -21,7 +21,7 @@
         &__rectangle {
             position: absolute;
             width: 1720px;
-            min-height: 555px;
+            min-height: 535px;
             background-color: #f6f9f3;
 
             left: -275px;
@@ -31,8 +31,7 @@
             position: relative;
             cursor: pointer;
             width: 651px;
-            height: 75px;
-            height: 73px;
+            height: 70px;
             border-bottom: 1px solid rgba(#a4c58c, .2);
 
             display: flex;
@@ -82,7 +81,6 @@
             .list-ailments__item {
                 align-items: center;
                 width: 350px;
-                height: 75px;
                 height: 80px;
                 border-right: 1px solid rgba($color: #a4c58c, $alpha: .2);
                 &::after {
@@ -117,7 +115,7 @@
         &__img { 
             display: block;
             z-index: -1;
-            margin-top: -20px;
+            margin-top: -35px;
         }
         &__read-reviews {
             position: absolute;
@@ -127,38 +125,6 @@
             height: 180px;
             background-color: #f6f9f3;
             padding: 20px;
-        }
-        &__border {
-            border: 1px solid rgba(164, 197, 140, 0.6);
-            padding: 39px 10px 0px 50px;
-            height: 100%;
-            p {
-                width: 300px;
-                color: #303030;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                margin-bottom: 0;
-            }
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                position: absolute;
-                width: 130px;
-                bottom: 13px;
-                left: 52px;
-                
-                color: #7eb252;
-                background: #f6f9f3;
-                font-size: 14px;
-                font-weight: 600;
-                text-decoration: underline;
-                &:hover {
-                    text-decoration: none;
-                }
-            }
         }
         &__item {
             display: flex;
@@ -190,38 +156,38 @@
             &-one {
                 display: flex;
                 left: 144px;
-                top: 175px;
+                top: 160px;
             }
             &-two {
-                top: 55px;
-                left: 260px;
+                top: 45px;
+                left: 250px;
             }
             &-three {
-                top: 20px;
+                top: 10px;
                 left: 203px;
             }
             &-four {
-                top: 110px;
+                top: 100px;
                 left: 227px;
             }
             &-five {
-                top: -10px;
+                top: 0;
                 left: 227px;
             }
             &-six {
-                top: 200px;
+                top: 190px;
                 left: 270px;
             }
             &-seven {
-                top: 20px;
+                top: 10px;
                 left: 245px;
             }
             &-eight {
-                top: 170px;
+                top: 160px;
                 left: 227px;
             }
             &-nine {
-                top: 105px;
+                top: 95px;
                 left: 240px;
             }
         }

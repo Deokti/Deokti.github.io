@@ -15,8 +15,11 @@ body {
     padding: 0 15px;
 }
 
-// Повторяющиеся элементы
+// Элементы, появлвющиеся иногда
+@import 'elements/message';
 
+
+// Повторяющиеся элементы
 @import 'repeats/phone';
 @import 'repeats/forms';
 @import 'repeats/button';
