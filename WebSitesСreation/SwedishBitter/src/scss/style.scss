@@ -15,9 +15,10 @@ body {
     padding: 0 15px;
 }
 
-// Элементы, появлвющиеся иногда
-@import 'elements/message';
-
+.container-1720 {
+    max-width: 1720px;
+    margin: 0 auto;
+}
 
 // Повторяющиеся элементы
 @import 'repeats/phone';

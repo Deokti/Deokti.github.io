@@ -1,32 +1,29 @@
 .list {
     padding-bottom: 180px;
-    &__wrapper {
-        position: relative;
+    &__title {
+        color: #303030;
+        width: 446px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    &-rectangle {
+        margin-top: 42px;
 
-        display: flex;
-        justify-content: space-between;
+        width: 1720px;
+        height: 540px;
+        background-color: #f6f9f3;
+        z-index: -1;
+        &__wrapper {
+            position: relative;
+    
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &-ailments {
         position: relative;
         color: #303030;
-        &__title {
-            width: 446px;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 50px;
-        }
-        &__transfer {
-            margin-top: 45px;
-        }
-        &__rectangle {
-            position: absolute;
-            width: 1720px;
-            min-height: 535px;
-            background-color: #f6f9f3;
-
-            left: -275px;
-            z-index: -1;
-        }
         &__item {
             position: relative;
             cursor: pointer;
@@ -115,7 +112,7 @@
         &__img { 
             display: block;
             z-index: -1;
-            margin-top: -35px;
+            margin-top: -183px;
         }
         &__read-reviews {
             position: absolute;
@@ -156,38 +153,38 @@
             &-one {
                 display: flex;
                 left: 144px;
-                top: 160px;
+                top: 0;
             }
             &-two {
-                top: 45px;
+                top: -115px;
                 left: 250px;
             }
             &-three {
-                top: 10px;
+                top: -160px;
                 left: 203px;
             }
             &-four {
-                top: 100px;
-                left: 227px;
+                top: -65px;
+                left: 228px;
             }
             &-five {
-                top: 0;
+                top: -173px;
                 left: 227px;
             }
             &-six {
-                top: 190px;
+                top: 5px;
                 left: 270px;
             }
             &-seven {
-                top: 10px;
+                top: -160px;
                 left: 245px;
             }
             &-eight {
-                top: 160px;
-                left: 227px;
+                top: 8px;
+                left: 228px;
             }
             &-nine {
-                top: 95px;
+                top: -60px;
                 left: 240px;
             }
         }
