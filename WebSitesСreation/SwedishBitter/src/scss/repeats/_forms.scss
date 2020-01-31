@@ -27,7 +27,7 @@
             width: 200px;
             height: 30px;
             border: none;
-            border-bottom: 1px solid #abc490;
+            border-bottom: 1px solid rgba(#abc490, .6) ;
             color: #9a9a9a;
             &::placeholder {
                 color: #abc490;
@@ -75,5 +75,37 @@
             }
         }
     }
-    
+    &_what {
+        position: absolute;
+        bottom: -90px;
+
+        width: 601px;
+        height: 251px;
+        color: #303030;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        .form__border {
+            padding: 39px 50px 100px 39px;
+        }
+        p {
+            margin-bottom: 28px;
+        }
+    }
+    &_history {
+        width: 510px; 
+        height: 262px;
+        margin-left: auto;
+        padding: 43px 58px 0 70px;
+        .form__title {
+            width: 350px;
+        }
+        .form-input {
+            input {
+                width: 370px;
+            }
+        }
+        
+        
+    }
 }

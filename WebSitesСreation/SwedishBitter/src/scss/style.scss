@@ -16,17 +16,22 @@ body {
 }
 
 .container-1720 {
-    max-width: 1720px;
+    max-width: 1750px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 // Повторяющиеся элементы
 @import 'repeats/phone';
 @import 'repeats/forms';
 @import 'repeats/button';
+@import 'repeats/title';
 
 
 // Подключение секций
 @import 'sections/header';
 @import 'sections/list';
+@import 'sections/what';
+@import 'sections/history';
+@import 'sections/what-get';
 

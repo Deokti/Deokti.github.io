@@ -1,16 +1,9 @@
 .list {
     padding-bottom: 180px;
-    &__title {
-        color: #303030;
-        width: 446px;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 50px;
-    }
     &-rectangle {
         margin-top: 42px;
 
-        width: 1720px;
+        max-width: 1720px;
         height: 540px;
         background-color: #f6f9f3;
         z-index: -1;

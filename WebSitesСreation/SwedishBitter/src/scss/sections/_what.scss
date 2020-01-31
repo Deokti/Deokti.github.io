@@ -1,0 +1,59 @@
+.what {
+    margin-bottom: 200px;
+    &__wrapper {
+        position: relative;
+        background-image: url('../../img/what/woman-drinking-tea.png');
+        @include base-image;
+        background-size: auto;
+        background-position: left center;
+        min-height: 645px;
+    }
+    &__inner {
+        color: #303030;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    &-right {
+        margin-top: 38px;
+        margin-right: 12px; // Для сравнение правой части исходя из макета
+        ul {
+            margin-top: 42px;
+
+            padding-left: 0;
+            list-style: none;
+            span {
+                display: block;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.7px;
+
+                margin-bottom: 50px;
+            }
+            li {
+                position: relative;
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 43px;
+                margin-left: 41px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 9px;
+                    height: 14px;
+                    background-image: url('../img/right-arrow.svg');
+
+                    top: 50%;
+                    left: -40px;
+                    transform: translateY(-50%);
+
+                }
+                
+            }
+        }
+    }
+}
