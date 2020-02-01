@@ -1,8 +1,8 @@
 .what {
-    margin-bottom: 200px;
+    padding-bottom: 200px;
     &__wrapper {
         position: relative;
-        background-image: url('../../img/what/woman-drinking-tea.png');
+        background-image: url('../img/what/woman-drinking-tea.png');
         @include base-image;
         background-size: auto;
         background-position: left center;

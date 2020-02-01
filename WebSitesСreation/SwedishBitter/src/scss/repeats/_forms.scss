@@ -105,7 +105,38 @@
                 width: 370px;
             }
         }
-        
-        
+    }
+    &_structure-bottom {
+        width: 831px;
+        height: 250px;
+        padding: 0;
+        .form__border {
+            position: relative;
+            padding: 50px 90px 0 80px; 
+            ul {
+                position: relative;
+                padding-left: 0;
+                list-style: none;
+                color: #303030;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                &::before {
+                    content: '';
+                    position: absolute;
+
+                    width: 7px;
+                    height: 7px;
+                    background-color: #a4c58c;
+                    border-radius: 100%;
+
+                    transform: translateY(7px);
+                    left: -20px;
+                }
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 }

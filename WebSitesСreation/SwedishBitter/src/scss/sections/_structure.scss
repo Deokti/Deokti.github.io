@@ -1,0 +1,185 @@
+.structure {
+    padding-bottom: 200px;
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        width: 270px;
+        height: 270px;
+        background-color: #f6f9f3;
+        color: #a4c58c;
+
+        margin-right: 30px;
+        margin-bottom: 30px;
+        &__number, 
+        &__name {
+            position: absolute;
+            font-size: 14px;
+            letter-spacing: 0.42px;
+            transform: rotate(-90deg);
+        }
+        &__number {
+            top: 20px;
+            left: 2px;
+            font-weight: 700;
+        }
+        &__name {
+            bottom: 20px;
+            right: 2px;
+            font-weight: 400;
+            margin-bottom: 0;
+            bottom: 87px;
+            right: -60px;
+        }
+        &__hover {
+            display: none;
+            position: absolute;
+            width: 230px;
+            height: 229px;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('../img/structure/gradient.png');
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: auto;
+            background-color: rgba(#83ac53, .9);
+        }
+        &__hover-name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        &:hover {
+            .structure-item__hover {
+                display: block;
+            }
+        }
+        &_one {
+            .structure-item__name {
+                right: -63px;
+            }
+        }
+        &_two {
+            .structure-item__name {
+                bottom: 60px;
+                right: -37px;
+            }
+        }
+        &_three {
+            .structure-item__name {
+                bottom: 102px;
+                right: -79px;
+            }
+        }
+        &_four {
+            .structure-item__name {
+                bottom: 60px;
+                right: -37px;
+            }
+        }
+        &_six {
+            .structure-item__name {
+                bottom: 75px;
+                right: -49px;
+            }
+        }
+        &_seven {
+            .structure-item__name {
+                bottom: 60px;
+                right: -34px;
+            }
+        }
+        &_eight {
+            .structure-item__name {
+                bottom: 76px;
+                right: -50px;
+            }
+        }
+        &_ten {
+            .structure-item__name {
+                bottom: 75px;
+                right: -49px;
+            }
+        }
+        &_query {
+            margin-right: 0;
+            margin-bottom: 0;
+            .structure-item__detailed {
+                position: absolute;
+                bottom: 49px;
+                left: 49px;
+
+                width: 105px;
+                color: #303030;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 22px;
+                text-transform: uppercase;
+                letter-spacing: 0.7px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &__items {
+            display: flex;
+        }
+        &__list {
+            margin-top: 52px;
+            width: 520px; // Для того, чтобы отступ текстового блока сответствовал макету
+
+            list-style: none;
+            color: #303030;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            li {
+                position: relative;
+                margin: 20px 0;
+                &:nth-child(1) {
+                    margin-top: 0;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+
+                    width: 7px;
+                    height: 7px;
+                    background-color: #a4c58c;
+                    border-radius: 100%;
+
+                    transform: translateY(7px);
+                    left: -20px;
+                }
+            }
+        } 
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .structure-item {
+            margin-right: 0;
+        }
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
