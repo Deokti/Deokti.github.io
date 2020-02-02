@@ -17,20 +17,20 @@
     &-right {
         margin-top: 38px;
         margin-right: 12px; // Для сравнение правой части исходя из макета
+        &__reasons {
+            margin-top: 40px;
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            margin-bottom: 0;
+        }
         ul {
-            margin-top: 42px;
+            margin-top: 50px;
 
             padding-left: 0;
             list-style: none;
-            span {
-                display: block;
-                font-size: 14px;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 0.7px;
-
-                margin-bottom: 50px;
-            }
             li {
                 position: relative;
                 font-size: 16px;

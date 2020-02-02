@@ -82,4 +82,22 @@
         right: 0;
         bottom: 0;
     }
+    &_reviews {
+        width: 570px;
+        height: 70px;
+    }
+    &_your-participation {
+        margin-top: 55px;
+
+        width: 500px;
+        height: 70px;
+    }
+    &_guarantee {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 351px;
+        height: 60px;
+    }
 }
