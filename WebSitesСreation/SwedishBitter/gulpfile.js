@@ -1,13 +1,13 @@
-let gulp            	= require('gulp'),
-	browserSync     = require('browser-sync'),
-	scss 		= require('gulp-sass'),
-    	gulpRename      = require('gulp-rename'),
-    	autoprefixer    = require('gulp-autoprefixer'),
-	htmlmin 	= require('gulp-htmlmin'),
-	watch 		= require('gulp-watch'),
-	concat 		= require('gulp-concat'),
-	csso 		= require('gulp-csso'),
-	uglify 		= require('gulp-uglify');
+let gulp          = require('gulp'),
+    browserSync   = require('browser-sync'),
+    scss 	  = require('gulp-sass'),
+    gulpRename    = require('gulp-rename'),
+    autoprefixer  = require('gulp-autoprefixer'),
+    htmlmin 	  = require('gulp-htmlmin'),
+    watch 	  = require('gulp-watch'),
+    concat 	  = require('gulp-concat'),
+    csso 	  = require('gulp-csso'),
+    uglify 	  = require('gulp-uglify');
 
 
 gulp.task('browser-sync', function() {
@@ -21,7 +21,6 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scss', function() {
     return gulp.src('src/scss/**/*.scss')
-		//компилация происходит
 		.pipe(scss({outputStyle: 'compressed'}).on('error', scss.logError))
 		.pipe(gulpRename({ prefix: "", suffix: ".min"}))
 		.pipe(autoprefixer({cascade: false}))
