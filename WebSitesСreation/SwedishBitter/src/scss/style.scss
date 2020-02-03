@@ -10,15 +10,15 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1210px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .container-1720 {
-    max-width: 1750px;
+    max-width: 1710px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 // Повторяющиеся элементы
@@ -40,3 +40,12 @@ body {
 @import 'sections/guarantee';
 @import 'sections/footer';
 
+
+// Медия запроса
+@import 'media/media1300';
+@import 'media/media1070';
+@import 'media/media960';
+@import 'media/media930';
+@import 'media/media870';
+@import 'media/media830';
+@import 'media/media770';

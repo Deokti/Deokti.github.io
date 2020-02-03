@@ -1,0 +1,15 @@
+@media screen and (max-width: 1070px) {
+    /* HEADER */
+    .header-content__packaging {
+        left: 30px;
+    }
+    .header-bottom__item {
+        margin: 0 18px;
+    }
+    .header-bottom__number {
+        &::before {
+            left: -30px;
+        }
+    }
+    /* HEADER */
+} 
