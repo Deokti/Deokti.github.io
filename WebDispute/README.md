@@ -12,15 +12,11 @@
 
 <hr>
 
-<h2>RomanceTours</h2>
-
+<h2>AsiaWay</h2>
 <ol>
-  <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/RomanceTours/" target="_blank">RomanceTours</a></li>
-  <li><a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/Гранит.jpg?x-email=reilgelern%40mail.ru" target="_blank">Ссылка на внешний вид макета</a>;</li>
- 	<li>Сказать много о нём не имею возможности, тем не менее – это первый свёрстанный сайт, можно сказать, он является первым шагом к будущим проектам.</li>
- 	<li>В самом макете использовался только сам HTML и препроцессор SASS, который компилировался в CSS. SASS файлы не разделялись по отдельным файлам. Можно сказать код писался в единственном файле, разделение было только на главный файл и медиа-запросы. Из-за этого было сложно вспомнить многие вещи. В следующий раз стоит разделять секции по разным файлам, чтобы не допустить той ошибки, которая была допущена в первом проекте. Касательно JavaScript или JQuery, здесь не использовалось совершенно ничего из этого, так как в действительности ничего из перечисленного выше не знаю от слова совсем. Залился сайт с помощью встроенный в GitHub - Upload files. Git не использовался, не знаю его. Из технологий использовался flexbox; </li>
- <li>Сказать это точно не могу, так как WakaTime бесплатной версии, и, к сожалению, ссылку приложить не смогу. Тем не менее на вёрстку было потрачено около двух-трёх дней. Довольно долго. Можно было справиться и лучше.</li>
- <li>Макет был взят из телеграмм-канала, создателем которого является Артём Исламов, автор ютуб-канала Glo Academy: 
-    <a href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg/featured">ссылка на YouTube-канал</a> и 
-    <a href="https://t.me/glo_academy">ссылка на телеграмм-канал откуда взят макет;</a></li>
+  <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/AsiaWay/dist/" target="_blank">AsiaWay</a></li>
+  <li><a href="https://cloclo19.datacloudmail.ru/inline/7Z1re4jh7ayU7o28Qd5vJa74Ee4gGamEZMu7i1W3QbPt6vEuXutnbEkTxogCt9RcsFSoZt/reilgelern@mail.ru/Макеты/WebDispute/AsiaWay.png" target="_blank">Ссылка на внешний вид макета</a>;</li>
+ 	<li>Сказать много не могу, хотя в целом было интересно. Единственная проблема, с которой столкнулся - это тень у треуголинка, и подгон сайта под PixelPerfect, на который и было, собственно потрачено много времени.</li>
+ <li>Вёрстка началась 13.02.2020, закончилась 14.02.2020. На проект потрачено 10 часов и 21 минута. <a href="https://cloclo4.datacloudmail.ru/inline/81vbaR1DpYKzRHwrcryk2CToFHCZB3LkWseNyPzcJjZDJcPfKnhHad2p8br1p52hUa5a4s/reilgelern@mail.ru/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8%20%D1%81%20WakaTime/AsiaWay.png" target="_blank">WakaTime</a>;</li>
+ <li>Макет был сделаный дизайнером, одним из участников прокте WebDispute по имени Olya Vodomesova.</li>
 </ol>  
