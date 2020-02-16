@@ -1,0 +1,8 @@
+.logo {
+    position: absolute;
+    &_header {
+        left: 50%;
+        transform: translateX(-51%);
+        bottom: 65px;
+    }
+}

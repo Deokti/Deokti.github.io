@@ -1,0 +1,23 @@
+// Базовые файлы для подключения
+@import 'base/bootstrap-reboot.min';
+@import 'base/mixins';
+@import 'base/fonts';
+
+
+body {
+    font-family: 'ReiseReise', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+// Повторяющиеся или одиночные элементы
+@import 'repeats/logo';
+
+// Подключение секционных стилей
+@import 'sections/header';

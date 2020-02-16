@@ -1,0 +1,38 @@
+.header {
+    position: relative;
+    min-height: 576px;
+    padding: 97px 0 0 0;
+    background-image: url('../img/header/back_2.jpg');
+    @include base-code-background;
+    background-position: right;
+    // background-position-x: center;
+    &__list {
+        padding-left: 0;
+        margin-bottom: 0;
+
+        list-style: none;
+        li {
+            font-size: 29px;
+            line-height: 34px;
+            padding-bottom: 29px;
+            transition: .3s linear;
+            &:last-child {
+                padding-top: 8px;
+            }
+            a {
+                display: block;
+                width: 100%;
+                color: #6C6C6C;
+                text-decoration: none;
+                
+            }
+            &:hover {
+                font-size: 36px;
+                
+                a {
+                    color: #C0C0C0;
+                }    
+            }
+        }
+    }
+}
