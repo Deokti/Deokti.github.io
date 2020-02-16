@@ -20,3 +20,10 @@
  <li>Вёрстка началась 13.02.2020, закончилась 14.02.2020. На проект потрачено 10 часов и 21 минута. <a href="https://cloclo4.datacloudmail.ru/inline/81vbaR1DpYKzRHwrcryk2CToFHCZB3LkWseNyPzcJjZDJcPfKnhHad2p8br1p52hUa5a4s/reilgelern@mail.ru/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8%20%D1%81%20WakaTime/AsiaWay.png" target="_blank">WakaTime</a>;</li>
  <li>Макет был сделаный дизайнером, одним из участников прокте WebDispute по имени Olya Vodomesova.</li>
 </ol>  
+
+<hr>
+
+<h2>Rammstein</h2>
+<ol>
+  <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/Rammstein/dist/" target="_blank">Rammstein</a></li>
+</ol>  
