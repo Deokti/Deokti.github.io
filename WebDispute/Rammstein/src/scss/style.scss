@@ -18,6 +18,15 @@ body {
 
 // Повторяющиеся или одиночные элементы
 @import 'repeats/logo';
+@import 'repeats/title';
+@import 'repeats/arrow-top';
+// @import 'repeats/buy-popup';
+
+
+
 
 // Подключение секционных стилей
 @import 'sections/header';
+@import 'sections/about-news'; // секция, внутри котороый нахоядстя секции about и news
+@import 'sections/about';
+@import 'sections/news';

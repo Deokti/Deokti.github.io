@@ -1,0 +1,14 @@
+.about {
+    position: relative;
+    padding-bottom: 32px;
+    &__description {
+        margin-top: 24px;
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: #E1E1E1;
+        }
+        margin-bottom: 14px;
+    }
+}
