@@ -3,72 +3,51 @@
         margin-top: 28px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
 
         max-width: 921px;
-        height: 335px;
-        padding: 8px 4px 10px 17px;
-        background: #3c3c3c;
+        height: 313px;
+        padding: 15px 12px 10px 0;
         &__detailed {
-            padding-top: 10px;
-            font-weight: 400;
+            padding-left: 5px;
+            padding-top: 20px;
+
             font-size: 16px;
             line-height: 18px;
-            color: #000000;
+            color: #E1E1E1;
             margin-bottom: 0;
         }
         &__img {
             position: relative;
+            max-width: 211px;
+            width: 100%;
+            max-height: 154px;
         }
         &__item {
-            &_reverse {
-                display: flex;
-                flex-direction: column-reverse;
-                .news-items__detailed {
-                    padding-top: 0;
-                }
-            }
-            &_one {
-                .news-items__img {
-                    top: -20px;
-                    left: -5px;
-                }
-                .news-items__detailed {
-                    padding-top: 0;
-                    padding-bottom: 6px;
-                }
-            }
             &_two {
                 .news-items__img {
-                    top: 12px;
-                    left: 10px;
-                    width: 218px;
+                    left: 15px;
                 }
                 .news-items__detailed {
-                    padding-bottom: 14px;
-                    padding-left: 11px;                
+                    padding-left: 15px;
                 }
             }
             &_three {
-                .news-items__detailed {
-                    padding-left: 18px;
-                    padding-top: 20px;
-                }
                 .news-items__img {
-                    left: 18px;
-                    top: 6px;
+                    left: 19px;
+                }
+                .news-items__detailed {
+                    padding-left: 17px;
                 }
             }
             &_four {
-                .news-items__detailed {
-                    padding-bottom: 18px;
-                }
                 .news-items__img {
-                    top: -12px;
+                    left: 4px;
+                }
+                .news-items__detailed {
+                    padding-left: 2px;
                 }
             }
         }
-        
     }
-    
 }

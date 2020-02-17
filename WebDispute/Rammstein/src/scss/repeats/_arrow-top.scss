@@ -1,17 +1,26 @@
-.arrow-top {
-    position: relative;
-    cursor: pointer;
-    z-index: 999;
-    img {
-        transition: .3s linear;
-        opacity: .7;
-        position: absolute;
-        right: 63px;
-        top: -34px;
-    }
-    &:hover {
-        img {
-            opacity: 1;
-        }
-    }
-}
+// .arrow-top {
+//     cursor: pointer;
+
+//     position: relative;
+//     transform: translateY(20px);
+//     transition: .3s all ease-in-out;
+//     opacity: 0;
+//     z-index: -999;
+//     img {
+//         transition: .3s linear;
+//         opacity: .7;
+//         position: absolute;
+//         right: 63px;
+//         top: -34px;
+//     }
+//     &:hover {
+//         img {
+//             opacity: 1;
+//         }
+//     }
+// }
+// .arrow-top_show {
+//     opacity: 1;
+//     transform: translateY(0);
+//     z-index: 999;
+// }

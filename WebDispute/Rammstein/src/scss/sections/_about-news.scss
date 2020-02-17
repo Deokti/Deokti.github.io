@@ -1,10 +1,14 @@
 .about-news {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+
     position: relative;
     min-height: 949px;
     margin-top: -112px;
     z-index: 5;
-    padding-top: 177px;
+    padding-top: 195px;
     padding-left: 9px;
     background-image: url('../img/about-news/about-news-bg.jpg');
     @include base-code-background;
+    background-position: right;
 }

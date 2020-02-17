@@ -1,5 +1,27 @@
+function $(target) {
+    return document.querySelector(target);    
+}
+ function $All(target) {
+     return document.querySelectorAll(target);    
+}
 
 
+function changeVideoClick() {
+    let mainVideo = $('.media-video__main iframe');
+    let AllVideoLinks = document.querySelectorAll('.media-video__link a');
+    
+    // Перебираем все ссылки, получаем их href 
+    // после чего заменяем главное видео исходя из одной из полученных ссылок
+    AllVideoLinks.forEach(event => {
+        event.addEventListener('click', function(link) {
+            link.preventDefault();
+            let getHref = this.href
+            mainVideo.src = `${getHref}`;
+        });
+    });
+
+}
+changeVideoClick();
 // (function() {
 //     let amount = document.querySelector('.buy-popup__price');
 //     const plus = document.querySelector('.buy-popup__plus');
@@ -22,4 +44,26 @@
 //         }
 //     });
 // })();
+
+
+// // Функция отвечает за показ и удаление стрелочки 
+// function showArrowTop() {
+//     // Обращение к элементу
+//     const arrowTop = $('.arrow-top');
+
+//     // Узнаёт позицию элемент относительно размера экрана вертикально 
+//     const arrowTopPosition = arrowTop.getBoundingClientRect().top;
+    
+//     // Узнаём высоту области просмотра окна браузера
+//     const windowHeightPosition = window.innerHeight;
+    
+//     // Если позиция элемента меньше высоты просмотра браузера, 
+//     // делённую на четыре, - то добавлять класс. Иначе удалять. 
+//     if (arrowTopPosition < windowHeightPosition / 4) {
+//         arrowTop.classList.add('arrow-top_show');
+//     } else {
+//         arrowTop.classList.remove('arrow-top_show');
+//     }
+// }
+// window.addEventListener('scroll', showArrowTop);
 

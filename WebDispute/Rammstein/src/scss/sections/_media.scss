@@ -1,0 +1,95 @@
+.media {
+    min-height: 706px;
+    padding: 85px 0 30px 7px;
+    background-image: url('../img/media/media-bg.jpg');
+    @include base-code-background;
+    background-size: inherit;
+    background-position: right;
+    &__wrapper {
+        margin-top: 14px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &-video {
+        &__main {
+            width: 596px;
+            height: 335px;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__videos {
+            padding-top: 18px;
+            padding-left: 0;
+            list-style: none;
+
+            display: flex;
+        }
+        &__link {
+            position: relative;
+            margin-right: 14px;
+
+            width: 185px;
+            height: 104px;
+            &:first-child {
+                width: 194px;
+                height: 108px;
+            }
+            &:last-child {
+                margin-right: 0;
+                margin-left: 6px;
+            }
+            a {
+                display: block;
+
+                text-decoration: none;
+                color: #fff;
+                img {
+                    pointer-events: none;
+                    width: 100%;       
+                }
+                span {
+                    position: absolute;
+                    right: 3px;
+                    bottom: 2px;
+                    background-color: rgba(0,0,0,.7);
+                    width: 35px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    &-gallery {
+        position: relative;
+        margin-left: 18px;
+        &__img {
+            position: relative;
+            &_two {
+                padding-left: 11px;
+            }
+            &_three {
+                padding-top: 10px;
+            }
+            &_four {
+                top: -6px;
+                padding-left: 6px;
+            }
+            &_five {
+                left: 0px;
+                top: -2px;
+            }
+            &_six {
+                top: -12px;
+                padding-left: 6px;
+            }
+            &_eight {
+                padding-left: 7px;
+                top: 2px;
+            }
+        }
+    }
+}

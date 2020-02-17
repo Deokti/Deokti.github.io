@@ -10,4 +10,16 @@
     font-family: 'ReiseReise';
     src: local('ReiseReise'), 
     url('../fonts/ReiseReise/ReiseReise-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial Bold';
+    src: url('../fonts/Arial/Arial-Bold.eot');
+    src: url('../fonts/Arial/Arial-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Arial/Arial-Bold.woff') format('woff'),
+    url('../fonts/Arial/Arial-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
