@@ -1,12 +1,15 @@
 .media {
+    position: relative;
     min-height: 706px;
-    padding: 85px 0 30px 7px;
-    background-image: url('../img/media/media-bg.jpg');
+    padding: 98px 0 0 0;
+    background-image: url('../img/media/media-bg.png');
     @include base-code-background;
-    background-size: inherit;
-    background-position: right;
+    background-position: -1px 20px;
+    margin-top: -34px;
+
+    z-index: 35;
     &__wrapper {
-        margin-top: 14px;
+        margin-top: -5px;
 
         display: flex;
         justify-content: space-between;
@@ -22,15 +25,15 @@
             }
         }
         &__videos {
-            padding-top: 18px;
+            padding-top: 13px;
             padding-left: 0;
             list-style: none;
 
             display: flex;
+            justify-content: space-between;
         }
         &__link {
             position: relative;
-            margin-right: 14px;
 
             width: 185px;
             height: 104px;
@@ -40,7 +43,6 @@
             }
             &:last-child {
                 margin-right: 0;
-                margin-left: 6px;
             }
             a {
                 display: block;
@@ -66,30 +68,36 @@
     &-gallery {
         cursor: pointer;
         position: relative;
-        margin-left: 18px;
+        margin-left: 31px;
         &__img {
             position: relative;
             &_two {
-                padding-left: 11px;
+                padding-left: 8px;
             }
             &_three {
-                padding-top: 10px;
+                padding-top: 8px;
+                padding-left: 1px;
             }
             &_four {
-                top: -6px;
-                padding-left: 6px;
+                top: -8px;
+                padding-left: 3px;
             }
             &_five {
-                left: 0px;
-                top: -2px;
+                top: -4px;
             }
             &_six {
-                top: -12px;
+                width: 175.1px;
+                height: 107.84px;
+                top: -16px;
                 padding-left: 6px;
+                left: 1px;
+            }
+            &_seven {
+                top: -3px;
             }
             &_eight {
-                padding-left: 7px;
-                top: 2px;
+                padding-left: 1px;
+                top: -5px;
             }
         }
     }
@@ -115,7 +123,7 @@
             transform: translate(-50%, -50%);
             img {
                 position: absolute;
-                width: 50%;
+                width: 60%;
 
                 top: 50%;
                 left: 50%;

@@ -1,13 +1,19 @@
 .about {
     position: relative;
-    padding-bottom: 68px;
+    padding-bottom: 56px;
     &__description {
-        margin-top: 52px;
+        margin-top: 42px;
+        margin-left: 17px;
+        letter-spacing: .2px;
         p {
             font-size: 16px;
             line-height: 18px;
-            color: #E1E1E1;
-            margin-bottom: 15px;
+            color: #e1e1e1;
+            margin-bottom: 14px;
+            &:last-child {
+                padding-bottom: 0;
+                margin-bottom: 14px;
+            }
         }
     }
 }

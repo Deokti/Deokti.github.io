@@ -11,15 +11,21 @@ body {
 }
 
 .container {
-    max-width: 1020px;
+    max-width: 1005px;
     margin: 0 auto;
     padding: 0 25px;
+    &_media {
+        padding-left: 25px;
+        padding-right: 10px;
+    }
 }
 
 // Повторяющиеся или одиночные элементы
 @import 'repeats/logo';
 @import 'repeats/title';
+@import 'repeats/buttons';
 @import 'repeats/arrow-top';
+@import 'repeats/calculate';
 // @import 'repeats/buy-popup';
 
 
@@ -31,3 +37,9 @@ body {
 @import 'sections/about';
 @import 'sections/news';
 @import 'sections/media';
+@import 'sections/tickets';
+@import 'sections/footer';
+
+
+// Медия запросы
+@import 'media/media1023';

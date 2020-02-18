@@ -81,7 +81,7 @@
 
     <!-- MEDIA -->
     <div class="media">
-        <div class="container">
+        <div class="container container_media">
             <h2 class="title title_media">Media</h2>
 
             <div class="media__wrapper">
@@ -152,15 +152,125 @@
                 
                 <!-- media-tabs -->
             </div>
-
         </div>
     </div>
     <!-- /.MEDIA -->
 
-    
+    <!-- TICKETS -->
+    <section class="tickets">
+        <div class="container">
+            <h2 class="title title_tickets">Tickets</h2>
+
+            <div class="tickets__wrapper">
+
+                <!-- tickets__left -->
+                <div class="tickets__left">
+                    <div class="tickets-item tickets-item_left">
+                        <img src="img/tickets/london.png" alt="concert rammstein" class="tickets-item__img">
+                        <h5 class="tickets-item__title"><time datetime="2020-02-20 19:00">20.02.2020, 19:00</time> <span>London</span> Prince Edward Theatre</h5>
+                        <button class="button button_one button_buy">Buy</button>
+                    </div>
+                </div>
+                <!-- /.tickets__left -->
+
+                <!-- tickets__right -->
+                <div class="tickets__right">
+                    <div class="tickets-item tickets-item_right">
+                        <img src="img/tickets/paris.png" alt="concert rammstein" class="tickets-item__img">
+                        <h5 class="tickets-item__title"><time datetime="2020-02-21 19:00">21.02.2020, 19:00</time> <span>Paris</span >Le Grand Rex</h5>
+                        <button class="button button_two button_buy">Buy</button>
+                    </div>
+                </div>
+                <!-- /.tickets__right -->
 
 
+                <div class="calculate">
+                    <div class="container">
+                        <!-- London -->
+                        <div class="calculate-item calculate-item_london">
+                            <img class="calculate-item__close" src="img/popup-close.svg" alt="icon close">
+                            <h6 class="calculate-item__title"><span>London,</span> <time datetime="2020-02-20 19:00">20.02.2020, 19:00</time></h6>
+                            <ul class="calculate-item__places">
+                                <li class="calculate-item__place">
+                                    Simple
+                                    <span class="calculate-item__number">0</span>
+                                    <button class="plus plus_simple">+</button>
+                                    <button class="minus minus_simple">-</button>
+                                </li>
+                                <li class="calculate-item__place">
+                                    Vip
+                                    <span class="calculate-item__number">0</span>
+                                    <button class="plus plus_vip">+</button>
+                                    <button class="minus minus_vip">-</button>
+                                </li>
+                            </ul>
+                            <div class="calculate-item__final">
+                                <div class="calculate-item__price">0</div>
+                                <button class="button button_price">Buy</button>
+                            </div>
+                        </div>
+                        <!-- /.London -->
     
+                        <!-- Paris -->
+                        <div class="calculate-item calculate-item_paris">
+                            <img class="calculate-item__close" src="img/popup-close.svg" alt="icon close">
+                            <h6 class="calculate-item__title"><span>Paris,</span> <time datetime="2020-02-21 19:00">21.02.2020, 19:00</time></h6>
+                            <ul class="calculate-item__places">
+                                <li class="calculate-item__place">
+                                    Simple
+                                    <span class="calculate-item__number">0</span>
+                                    <button class="plus plus_simple">+</button>
+                                    <button class="minus minus_simple">-</button>
+                                </li>
+                                <li class="calculate-item__place">
+                                    Vip
+                                    <span class="calculate-item__number">0</span>
+                                    <button class="plus plus_vip">+</button>
+                                    <button class="minus minus_vip">-</button>
+                                </li>
+                            </ul>
+                            <div class="calculate-item__final">
+                                <div class="calculate-item__price">0</div>
+                                <button class="button button_price">Buy</button>
+                            </div>
+                        </div>
+                        <!-- /.Paris -->
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.TICKETS -->
+
+    <!-- BUY-POPUP -->
+    <!-- <div class="buy-popup">
+        <div class="buy-popup__item buy-popup__item_moscow">
+            
+            <h3 class="buy-popup__title">Moscow, 19.02.2020</h3>
+            <ul class="buy-popup__places">
+                <li class="buy-popup__place">Simple<span class="buy-popup__price">0</span> <span class="buy-popup__plus">+</span><span class="buy-popup__minus">-</span></li>
+                <li class="buy-popup__place">Vip<span class="buy-popup__price">0</span></li>
+            </ul>
+        </div>
+        <div class="buy-popup__purchase">
+            <div class="buy-popup__final-price">0<span>$</span></div>
+            <button class="button button_buy">Buy</button>
+        </div>
+
+    </div> -->
+    <!-- /.BUY-POPUP -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>COPYRIGHT ©1997-2020. All rights reserved. Unauthorized reproduction in whole or in part is strictly prohibited.</p>
+        </div>
+    </footer>
+    <!-- ./FOOTER -->
+
+    
+
     <script src="js/script.js"></script>
 </body>
 </html>
@@ -225,24 +335,4 @@
 
 
 
-
-
-
-    <!-- BUY-POPUP -->
-    <!-- <div class="buy-popup">
-        <div class="buy-popup__item buy-popup__item_moscow">
-            <img src="img/popup-close.svg" alt="close" class="buy-popup__close">
-            <h3 class="buy-popup__title">Moscow, 19.02.2020</h3>
-            <ul class="buy-popup__places">
-                <li class="buy-popup__place">Simple<span class="buy-popup__price">0</span> <span class="buy-popup__plus">+</span><span class="buy-popup__minus">-</span></li>
-                <li class="buy-popup__place">Vip<span class="buy-popup__price">0</span></li>
-            </ul>
-        </div>
-        <div class="buy-popup__purchase">
-            <div class="buy-popup__final-price">0<span>$</span></div>
-            <button class="button button_buy">Buy</button>
-        </div>
-
-    </div> -->
-    <!-- /.BUY-POPUP -->
 

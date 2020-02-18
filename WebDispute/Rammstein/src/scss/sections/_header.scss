@@ -1,12 +1,10 @@
 .header {
     position: relative;
-    min-height: 576px;
-    padding: 122px 0 0 12px;
-    background-image: url('../img/header/header-bg.jpg');
+    min-height: 565px;
+    padding: 120px 0 0 27px;
+    background-image: url('../img/header/header-bg.png');
     @include base-code-background;
-    background-position: right;
-    z-index: 10;
-    // background-position-x: center;
+    z-index: 50;
     &__list {
         padding-left: 0;
         margin-bottom: 0;
@@ -17,11 +15,11 @@
             padding-bottom: 20px;
             line-height: 43px;
             transition: .3s linear;
+            letter-spacing: .3px;
             &:nth-child(3) {
-                padding-top: 5px;
+                padding-top: 3px;
             }
             &:last-child {
-                padding-top: 1px;
                 padding-bottom: 0;
             }
             a {

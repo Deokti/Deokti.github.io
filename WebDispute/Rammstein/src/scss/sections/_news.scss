@@ -1,16 +1,16 @@
 .news {
     &-items {
-        margin-top: 28px;
+        margin-top: 16px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
 
-        max-width: 921px;
+        max-width: 950px;
         height: 313px;
-        padding: 15px 12px 10px 0;
+        padding: 20px 20px 10px 30px;
         &__detailed {
             padding-left: 5px;
-            padding-top: 20px;
+            padding-top: 14px;
 
             font-size: 16px;
             line-height: 18px;
@@ -26,7 +26,8 @@
         &__item {
             &_two {
                 .news-items__img {
-                    left: 15px;
+                    left: 13px;
+                    top: -3px;
                 }
                 .news-items__detailed {
                     padding-left: 15px;
@@ -34,18 +35,21 @@
             }
             &_three {
                 .news-items__img {
-                    left: 19px;
+                    left: 16px;
+                    top: -3px;
                 }
                 .news-items__detailed {
-                    padding-left: 17px;
+                    padding-left: 18px;
+                    padding-top: 14px;
                 }
             }
             &_four {
                 .news-items__img {
-                    left: 4px;
+                    left: 1px;
                 }
                 .news-items__detailed {
-                    padding-left: 2px;
+                    padding-left: 0;
+                    padding-top: 14px;
                 }
             }
         }
