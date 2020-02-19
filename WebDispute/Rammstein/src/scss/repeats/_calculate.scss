@@ -8,12 +8,13 @@
         font-family: 'ReiseReise', sans-serif;
         font-weight: 400;
 
-        width: 893px;
+        width: 920px;
         height: 604px;
         background: #292929;
 
         padding-top: 20px;
         &__close {
+            cursor: pointer;
             position: absolute;
             right: 25px;
             top: 17px;
@@ -71,12 +72,6 @@
             height: 78px;
             font-size: 56px;
             margin-right: 28px;
-        }
-        &_london {
-            // display: none;
-        }
-        &_paris {
-            display: none;
         }
     }
 }

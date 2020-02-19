@@ -8,11 +8,22 @@ mediaGalleryImg.forEach(event => {
         $All('.media-tabs__item').forEach(iteration => {
             iteration.style.display = 'none';
         });
+        $('.about-news').style.zIndex = '0';
         $('.media-tabs').style.display = 'block';
         $(`.media-tabs__item[data-gallery="${dataAttribute}"]`).style.display = 'block';
     });
 });
 
 mediaGalleryClose.forEach(event => {
-    event.addEventListener('click', () => $('.media-tabs').style.display = 'none');
+    event.addEventListener('click', () => {
+        $('.about-news').style.zIndex = '40';
+        $('.media-tabs').style.display = 'none';  
+    });
+});
+$('.media-tabs').addEventListener('click', ({target}) => {
+    if (target.tagName === "LI") {
+        $('.about-news').style.zIndex = '40';
+        $('.media-tabs').style.display = 'none';  
+    }
+      
 });

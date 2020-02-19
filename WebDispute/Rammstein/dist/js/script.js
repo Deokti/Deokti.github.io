@@ -5,6 +5,18 @@ function $(target) {
      return document.querySelectorAll(target);    
 }
 
+const navLinks = $All('.header__list li a[href*="#"]');
+for (let navLink of navLinks) {
+    navLink.addEventListener('click', event => {
+        event.preventDefault();
+        const hrefAttribute = navLink.getAttribute('href');
+        document.querySelector('' + hrefAttribute).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+
+    });
+}
 
 function changeVideoClick() {
     let mainVideo = $('.media-video__main iframe');
@@ -32,38 +44,95 @@ mediaGalleryImg.forEach(event => {
         $All('.media-tabs__item').forEach(iteration => {
             iteration.style.display = 'none';
         });
+        $('.about-news').style.zIndex = '0';
         $('.media-tabs').style.display = 'block';
         $(`.media-tabs__item[data-gallery="${dataAttribute}"]`).style.display = 'block';
     });
 });
 
 mediaGalleryClose.forEach(event => {
-    event.addEventListener('click', () => $('.media-tabs').style.display = 'none');
+    event.addEventListener('click', () => {
+        $('.about-news').style.zIndex = '40';
+        $('.media-tabs').style.display = 'none';  
+    });
+});
+$('.media-tabs').addEventListener('click', ({target}) => {
+    if (target.tagName === "LI") {
+        $('.about-news').style.zIndex = '40';
+        $('.media-tabs').style.display = 'none';  
+    }
+      
 });
 
-// (function() {
-//     let amount = document.querySelector('.buy-popup__price');
-//     const plus = document.querySelector('.buy-popup__plus');
-//     const minus = document.querySelector('.buy-popup__minus');
-//     let finallyPrice = document.querySelector('.buy-popup__final-price');
-//     let sum = 120;
+const buttonCalculate = $All('.button_buy');
+const calculateItemClose = $All('.calculate-item__close');
 
-//     let mountInner = Number(amount.textContent);
-//     plus.addEventListener('click', event => {
-//         amount.textContent++
-//         let sum2 = mountInner++ * sum;
-//         finallyPrice.innerHTML = `${sum2 + 120}$`;
-//     });
-//     minus.addEventListener('click', event => {
-//         if (amount.textContent >= 1) {
-//             amount.textContent--;
-//             let sum2 = mountInner-- * sum;
-//             console.log(sum2);
-//             finallyPrice.innerHTML = `${sum2 - 120}$`;
-//         }
-//     });
-// })();
+buttonCalculate.forEach(event => {
+    event.addEventListener('click', function ({target}) {
+        let dataAttribute = target.getAttribute('data-calculate');
+        
+        $All('.calculate-item').forEach(del => {
+            del.style.display = 'none';
+        });
+        $(`.calculate-item[data-calculate="${dataAttribute}"]`).style.display = 'block';
+        
+    });
+});
 
+calculateItemClose.forEach(event => {
+    event.addEventListener('click', function() {
+        $All('.calculate-item').forEach(del => {
+            del.style.display = 'none';
+        });
+    });
+});
+
+
+function calculate() {
+    /* SIMPLE */
+    let amountSimle = $('.calculate-item_london-dekstop .calculate-item__number');
+    const plusSimple = $('.calculate-item_london-dekstop .plus_simple');
+    const minusSimple = $('.calculate-item_london-dekstop .minus_simple');
+    /* SIMPLE */
+    /* VIP */
+    let amountVip = $('.calculate-item_london-dekstop .calculate-item__number_vip');
+    const plusVip = $('.calculate-item_london-dekstop .plus_vip');
+    const minusVip = $('.calculate-item_london-dekstop .minus_vip');
+    console.log(plusVip, minusVip, amountVip)
+    /* VIP */
+
+    let finallyPrice = $('.calculate-item_london-dekstop .calculate-item__price');
+
+    plusSimple.addEventListener('click', event => {
+        if (amountSimle.textContent < 10) {
+            amountSimle.textContent;
+            let sumOne = amountSimle.textContent++ * 70;
+            finallyPrice.textContent = `${sumOne + 70}$`;
+        }
+    });
+    minusSimple.addEventListener('click', event => {
+        if (amountSimle.textContent > 0) {
+            amountSimle.textContent;
+            let sumOne = amountSimle.textContent-- * 70;
+            finallyPrice.textContent = `${sumOne - 70}$`;
+        }
+    });
+    plusVip.addEventListener('click', event => {
+        if (amountVip.textContent < 10) {
+            amountVip.textContent;
+            let sumTwo = amountVip.textContent++ * 143.5;
+            finallyPrice.textContent = `${sumTwo + 143.5}$`;
+        }
+    });
+    minusVip.addEventListener('click', event => {
+        if (amountVip.textContent > 0) {
+            amountVip.textContent;
+            let sumTwo = amountVip.textContent-- * 143.5;
+            finallyPrice.textContent = `${sumTwo - 143.5}$`;
+        }
+    });
+}
+calculate();
 
 // // Функция отвечает за показ и удаление стрелочки 
 // function showArrowTop() {

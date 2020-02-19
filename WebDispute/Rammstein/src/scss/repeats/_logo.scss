@@ -1,6 +1,7 @@
 .logo {
     position: absolute;
     &_header {
+        pointer-events: none;
         left: 50%;
         transform: translateX(-50%);
         bottom: 60px;

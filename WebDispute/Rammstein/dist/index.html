@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rammstein</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/favicone.ico" type="image/x-icon">
 </head>
 <body>
+
     
     <header class="header">
         <div class="container">
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li><a href="#">Out & <span>About</span></a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#about">Out & <span>About</span></a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#tickets">Tickets</a></li>
                 </ul>
             </nav>
 
@@ -29,12 +31,10 @@
     
     <section class="about-news">
 
-
         
         
         
-        
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
 
                 <h2 class="title title_about">Out & about</h2>
@@ -48,7 +48,7 @@
         
 
         
-        <section class="news">
+        <section class="news" id="news">
             <div class="container">
                 <h2 class="title title_news">News</h2>
 
@@ -71,52 +71,261 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         
     </section>
     
 
     
-    
+    <div class="media" id="media">
+        <div class="container container_media">
+            <h2 class="title title_media">Media</h2>
+
+            <div class="media__wrapper">
                 
-                
+                <div class="media-video">
+                    <div class="media-video__main">
+                        <iframe src="https://www.youtube.com/embed/Rr8ljRgcJNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <ul class="media-video__videos">
+                        <li class="media-video__link"><a href="https://www.youtube.com/embed/Rr8ljRgcJNM"><img src="img/media/videos/1.png" alt="rammstein amerika"><span>4:19</span></a></li>
+                        <li class="media-video__link"><a href="https://www.youtube.com/embed/EOnSh3QlpbQ"><img src="img/media/videos/2.png" alt="rammstein ich will"><span>4:06</span></a></li>
+                        <li class="media-video__link"><a href="https://www.youtube.com/embed/z0NfI2NeDHI"><img src="img/media/videos/3.png" alt="rammstein radio"><span>4:51</span></a></li>
+                    </ul>
+                </div>
                 
 
                 
-                
+                <div class="media-gallery">
+                    <img data-gallery="0" class="media-gallery__img media-gallery__img_one" src="img/media/gallery/1.png" alt="rammstein">
+                    <img data-gallery="1" class="media-gallery__img media-gallery__img_two" src="img/media/gallery/2.png" alt="rammstein">
+                    <img data-gallery="2" class="media-gallery__img media-gallery__img_three" src="img/media/gallery/3.png" alt="rammstein">
+                    <img data-gallery="3" class="media-gallery__img media-gallery__img_four" src="img/media/gallery/4.png" alt="rammstein">
+                    <img data-gallery="4" class="media-gallery__img media-gallery__img_five" src="img/media/gallery/5.png" alt="rammstein">
+                    <img data-gallery="5" class="media-gallery__img media-gallery__img_six" src="img/media/gallery/6.png" alt="rammstein">
+                    <img data-gallery="6" class="media-gallery__img media-gallery__img_seven" src="img/media/gallery/7.png" alt="rammstein">
+                    <img data-gallery="7" class="media-gallery__img media-gallery__img_eight" src="img/media/gallery/8.png" alt="rammstein">
+                </div>
                 
 
                 
+                <div class="overlay">
+                    <ul class="media-tabs">
+                        <li class="media-tabs__item media-tabs__item_one" data-gallery="0">
+                            <img src="img/media/gallery/large-pictures/1.jpg" alt="rammstein">
+                            <span class="media-tabs__close">&times;</span>
+                        </li> 
+                        <li class="media-tabs__item media-tabs__item_two" data-gallery="2">
+                            <img src="img/media/gallery/large-pictures/2.jpg" alt="rammstein">
+                            <span class="media-tabs__close">&times;</span>
+                        </li> 
+                        <li class="media-tabs__item media-tabs__item_three" data-gallery="1">
+                            <img src="img/media/gallery/large-pictures/3.jpg" alt="rammstein">
+                            <span class="media-tabs__close">&times;</span>
+                        </li> 
+                        <li class="media-tabs__item media-tabs__item_four" data-gallery="3">
+                            <img src="img/media/gallery/large-pictures/4.jpg" alt="rammstein">
+                            <span class="media-tabs__close">&times;</span>
+                        </li> 
+                        <li class="media-tabs__item media-tabs__item_nine" data-gallery="4">
+                            <img src="img/media/gallery/large-pictures/5.jpg" alt="rammstein">
+                            <span class="media-tabs__close">&times;</span>
+                        </li> 
+                        <li class="media-tabs__item media-tabs__item_six" data-gallery="5">
+                            <img src="img/media/gallery/large-pictures/6.jpg" alt="rammstein">
+                            <span class="media-tabs__close">&times;</span>
+                        </li> 
+                        <li class="media-tabs__item media-tabs__item_seven" data-gallery="6">
+                            <img src="img/media/gallery/large-pictures/7.jpg" alt="rammstein">
+                            <span class="media-tabs__close">&times;</span>
+                        </li> 
+                        <li class="media-tabs__item media-tabs__item_eight" data-gallery="7">
+                            <img src="img/media/gallery/large-pictures/8.jpg" alt="rammstein">
+                            <span class="media-tabs__close">&times;</span>
+                        </li> 
+                    </ul>
+                </div>
                 
-                
-                
+            </div>
+
+            <section class="tickets tickets_mobile">
+                <div class="container">
+                    <h2 class="title title_tickets">Tickets</h2>
+        
+                    <div class="tickets__wrapper">
+        
+                        
+                        <div class="tickets__left">
+                            <div class="tickets-item tickets-item_left">
+                                <img src="img/tickets/london.png" alt="concert rammstein" class="tickets-item__img">
+                                <h5 class="tickets-item__title"><time datetime="2020-02-20 19:00">20.02.2020, 19:00</time> <span>London</span> Prince Edward Theatre</h5>
+                                <button class="button button_one button_buy button_calculate-mobile" data-calculate="1">Buy</button>
+                            </div>
+                        </div>
+                        
+        
+                        
+                        <div class="tickets__right">
+                            <div class="tickets-item tickets-item_right">
+                                <img src="img/tickets/paris.png" alt="concert rammstein" class="tickets-item__img">
+                                <h5 class="tickets-item__title"><time datetime="2020-02-21 19:00">21.02.2020, 19:00</time> <span>Paris</span>Le Grand Rex</h5>
+                                <button class="button button_two button_buy" data-calculate="2">Buy</button>
+                            </div>
+                        </div>
+                        
+        
+                        <div class="calculate">
+                            
+                            <div class="calculate-item calculate-item_london" data-calculate="1">
+                                <img class="calculate-item__close" src="img/popup-close.svg" alt="icon close">
+                                <h6 class="calculate-item__title"><span>London,</span> <time datetime="2020-02-20 19:00">20.02.2020, 19:00</time></h6>
+                                <ul class="calculate-item__places">
+                                    <li class="calculate-item__place">
+                                        Simple
+                                        <span class="calculate-item__number">0</span>
+                                        <button class="plus plus_simple">+</button>
+                                        <button class="minus minus_simple">-</button>
+                                    </li>
+                                    <li class="calculate-item__place">
+                                        Vip
+                                        <span class="calculate-item__number">0</span>
+                                        <button class="plus plus_vip">+</button>
+                                        <button class="minus minus_vip">-</button>
+                                    </li>
+                                </ul>
+                                <div class="calculate-item__final">
+                                    <div class="calculate-item__price">0</div>
+                                    <button class="button button_price">Buy</button>
+                                </div>
+                            </div>
+                            
+        
+                            
+                            <div class="calculate-item calculate-item_paris" data-calculate="2">
+                                <img class="calculate-item__close" src="img/popup-close.svg" alt="icon close">
+                                <h6 class="calculate-item__title"><span>Paris,</span> <time datetime="2020-02-21 19:00">21.02.2020, 19:00</time></h6>
+                                <ul class="calculate-item__places">
+                                    <li class="calculate-item__place">
+                                        Simple
+                                        <span class="calculate-item__number">0</span>
+                                        <button class="plus plus_simple">+</button>
+                                        <button class="minus minus_simple">-</button>
+                                    </li>
+                                    <li class="calculate-item__place">
+                                        Vip
+                                        <span class="calculate-item__number">0</span>
+                                        <button class="plus plus_vip">+</button>
+                                        <button class="minus minus_vip">-</button>
+                                    </li>
+                                </ul>
+                                <div class="calculate-item__final">
+                                    <div class="calculate-item__price">0</div>
+                                    <button class="button button_price">Buy</button>
+                                </div>
+                            </div>
+                            
+        
+                        </div>
+                    </div>
+                </div>
+            </section>
             
+
+        </div>
+    </div>
     
 
     
+    <section class="tickets tickets_dekstop" id="tickets">
+        <div class="container">
+            <h2 class="title title_tickets">Tickets</h2>
+
+            <div class="tickets__wrapper">
+
+                
+                <div class="tickets__left">
+                    <div class="tickets-item tickets-item_left">
+                        <img src="img/tickets/london.png" alt="concert rammstein" class="tickets-item__img">
+                        <h5 class="tickets-item__title"><time datetime="2020-02-20 19:00">20.02.2020, 19:00</time> <span>London</span> Prince Edward Theatre</h5>
+                        <button class="button button_one button_buy button_one-dekstop" data-calculate="3">Buy</button>
+                    </div>
+                </div>
+                
+
+                
+                <div class="tickets__right">
+                    <div class="tickets-item tickets-item_right">
+                        <img src="img/tickets/paris.png" alt="concert rammstein" class="tickets-item__img">
+                        <h5 class="tickets-item__title"><time datetime="2020-02-21 19:00">21.02.2020, 19:00</time> <span>Paris</span>Le Grand Rex</h5>
+                        <button class="button button_two button_buy" data-calculate="4">Buy</button>
+                    </div>
+                </div>
+                
+
+                <div class="calculate">
+                    
+                    <div class="calculate-item calculate-item_london-dekstop calculate-item_london" data-calculate="3">
+                        <img class="calculate-item__close" src="img/popup-close.svg" alt="icon close">
+                        <h6 class="calculate-item__title"><span>London,</span> <time datetime="2020-02-20 19:00">20.02.2020, 19:00</time></h6>
+                        <ul class="calculate-item__places">
+                            <li class="calculate-item__place">
+                                Simple
+                                <span class="calculate-item__number">0</span>
+                                <button class="plus plus_simple">+</button>
+                                <button class="minus minus_simple">-</button>
+                            </li>
+                            <li class="calculate-item__place">
+                                Vip
+                                <span class="calculate-item__number calculate-item__number_vip">0</span>
+                                <button class="plus plus_vip">+</button>
+                                <button class="minus minus_vip">-</button>
+                            </li>
+                        </ul>
+                        <div class="calculate-item__final">
+                            <div class="calculate-item__price">0$</div>
+                            <button class="button button_price">Buy</button>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div class="calculate-item calculate-item_paris-dekstop calculate-item_paris" data-calculate="4">
+                        <img class="calculate-item__close" src="img/popup-close.svg" alt="icon close">
+                        <h6 class="calculate-item__title"><span>Paris,</span> <time datetime="2020-02-21 19:00">21.02.2020, 19:00</time></h6>
+                        <ul class="calculate-item__places">
+                            <li class="calculate-item__place">
+                                Simple
+                                <span class="calculate-item__number">0</span>
+                                <button class="plus plus_simple">+</button>
+                                <button class="minus minus_simple">-</button>
+                            </li>
+                            <li class="calculate-item__place">
+                                Vip
+                                <span class="calculate-item__number">0</span>
+                                <button class="plus plus_vip">+</button>
+                                <button class="minus minus_vip">-</button>
+                            </li>
+                        </ul>
+                        <div class="calculate-item__final">
+                            <div class="calculate-item__price">0</div>
+                            <button class="button button_price">Buy</button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
     
 
-                
-                
-                
-
-                
-                
-                
-
-                
-                    
-                    
-                    
-
-                    
-                    
-                    
-
     
-
-    
-    
+    <footer class="footer">
+        <div class="container">
+            <p>COPYRIGHT ©1997-2020. All rights reserved. Unauthorized reproduction in whole or in part is strictly prohibited.</p>
+        </div>
+    </footer>
     
 
     
