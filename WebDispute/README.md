@@ -26,4 +26,13 @@
 <h2>Rammstein</h2>
 <ol>
   <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/Rammstein/dist/" target="_blank">Rammstein</a></li>
+  <li>Подробности будут позже</li>
+</ol>  
+
+<hr>
+
+<h2>Lada</h2>
+<ol>
+  <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/Lada/dist/" target="_blank">Lada</a></li>
+  <li>Подробности будут позже</li>
 </ol>  
