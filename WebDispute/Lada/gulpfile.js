@@ -41,16 +41,15 @@ gulp.task('scss', function() {
 /*-------- htmlmin --------*/
 gulp.task('htmlmin', function() {
 	return gulp.src('src/*.html')
-		.pipe(htmlmin({ 
-			collapseWhitespace: true, 
-			ignoreCustomComments: true, 
-			removeComments: true })) //убарает пробелы в минифицированном файле
+		.pipe(htmlmin({
+			ignoreCustomComments: true,
+			removeComments: true }))
 		.pipe(gulp.dest('dist/'));
 });
 
 /*-------- scriptJS --------*/
 gulp.task('concat', function() {
-	return gulp.src(['src/js/libs/jquery.min.js', 'src/js/libs/slick.min.js', 'src/js/about-car-slider.js']) 
+	return gulp.src(['src/js/libs/jquery.min.js', 'src/js/libs/slick.min.js', 'src/js/about-car-slider.js', 'src/js/links.js'])
 		.pipe(concat({ path: 'script.js'}))
 		.pipe(gulp.dest('dist/js'))
 		.pipe(browserSync.stream())

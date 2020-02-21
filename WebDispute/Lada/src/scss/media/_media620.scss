@@ -1,0 +1,19 @@
+@media screen and (max-width: 620px) {
+    .title {
+        font-size: 30px;
+    }
+
+    // ABOUT
+    .about-slider__title {
+        font-size: 22px;
+    }
+    .about-slider__detailed {
+        br {
+            display: none;
+        }
+    }
+    .about-slider__characteristic_power {
+        max-width: 275px;
+    }
+    // /.ABOUT
+}
