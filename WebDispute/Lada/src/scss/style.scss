@@ -1,5 +1,6 @@
 // Базовые файлы для подключения
 @import 'base/bootstrap-reboot.min';
+@import 'base/slick';
 @import 'base/mixins';
 
 
@@ -10,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 1139px; //1110px + 15 с левой стороны и 15 с правой = 
+    max-width: 1139px; //1110px + 15 с левой стороны и 15 с правой =
     padding: 0 22px; // 15
     margin: 0 auto;
 }
@@ -23,11 +24,12 @@ body {
 @import 'repeats/vertical-menu';
 @import 'repeats/buttons';
 @import 'repeats/arrows';
+@import 'repeats/title.scss';
 
 
 // Подключение секций
 @import 'sections/header';
-@import 'sections/about-car';
+@import 'sections/about';
 @import 'sections/gallery';
 @import 'sections/model';
 @import 'sections/contacts';

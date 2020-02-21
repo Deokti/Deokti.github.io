@@ -1,0 +1,62 @@
+.about {
+    // min-height: 758px;
+    height: 758px;
+    padding: 54px 0 50px 0;
+    background-image: linear-gradient(90deg, rgba(68, 64, 78, 0.5) 45.02%, rgba(68, 64, 78, 0) 100%), url('../img/about/full-about-car-bg.jpg');
+    @include style-base-bg;
+    &__wrapper {
+        position: relative;
+    }
+    &-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-slider {
+        margin-top: 45px;
+        color: #E6F0F5;
+        &__item {
+            outline: none;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__detailed {
+            max-width: 530px;
+            margin-top: 20px;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            margin-bottom: 0;
+        }
+        &__description {
+            margin-top: 56px;
+        }
+        &__characteristic {
+            margin-bottom: 40px;
+            &_volume {
+                margin-left: 62px;
+                margin-bottom: 0;
+            }
+        }
+        &__heading {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+        &__details {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 0;
+            letter-spacing: -0.2px;
+        }
+        &__inner {
+            display: flex;
+        }
+    }
+}

@@ -50,7 +50,7 @@ gulp.task('htmlmin', function() {
 
 /*-------- scriptJS --------*/
 gulp.task('concat', function() {
-	return gulp.src(['src/js/ease-get-element.js']) /* Для создания вложенности/иерархии файлов - (['src/js/forms.js', 'src/js/packages.js',])*/
+	return gulp.src(['src/js/libs/jquery.min.js', 'src/js/libs/slick.min.js', 'src/js/about-car-slider.js']) 
 		.pipe(concat({ path: 'script.js'}))
 		.pipe(gulp.dest('dist/js'))
 		.pipe(browserSync.stream())

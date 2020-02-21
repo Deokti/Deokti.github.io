@@ -30,4 +30,10 @@
             height: 40px;
         }
     }
+    &_about {
+        top: 51%;
+        .vertical-menu__square_active {
+            transform: translateX(3px) translateY(26px);
+        }
+    }
 }

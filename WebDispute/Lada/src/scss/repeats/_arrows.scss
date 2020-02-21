@@ -4,5 +4,19 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    // display: none;
+    display: none;
+}
+
+// Стрелки, которые находятся
+// во второй секции у слайдера
+.arrow-slick {
+    position: absolute;
+    background: none;
+    border: none;
+    right: -7px;
+    bottom: 40px;
+    z-index: 100;
+    &_prev {
+        transform: translateY(-50px) rotate(180deg);
+    }
 }
