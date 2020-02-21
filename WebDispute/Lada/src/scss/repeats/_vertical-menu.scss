@@ -1,0 +1,32 @@
+.vertical-menu {
+    position: absolute;
+    top: 52%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 152px;
+    &__square {
+        position: absolute;
+
+        width: 8px;
+        height: 8px;
+        background: #778AA2;
+        &_two {
+            transform: translateY(60px);
+        }
+        &_three {
+            transform: translateY(88px);
+        }
+        &_four {
+            transform: translateY(115px);
+        }
+        &_five {
+            transform: translateY(143px);
+        }
+        &_active {
+            transform: translateX(3px);
+            width: 2px;
+            height: 40px;
+        }
+    }
+}

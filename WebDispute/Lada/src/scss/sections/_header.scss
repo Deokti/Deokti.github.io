@@ -3,6 +3,9 @@
     padding: 31px 0 56px 0;
     background-image: url('../img/header/header-bg.jpg');
     @include style-base-bg;
+    &__wrapper {
+        position: relative;
+    }
     &-top {
         display: flex;
         justify-content: space-between;
