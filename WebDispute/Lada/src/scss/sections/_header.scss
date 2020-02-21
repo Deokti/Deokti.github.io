@@ -1,7 +1,8 @@
 .header {
     min-height: 758px; // min-height: 768px;
     padding: 31px 0 56px 0;
-    background-image: url('../img/header/header-bg.jpg');
+    // background-image: url('../img/header/header-bg.jpg');
+    background-image: url('../img/header/header-full-bg.jpg');
     @include style-base-bg;
     &__wrapper {
         position: relative;

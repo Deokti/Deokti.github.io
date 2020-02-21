@@ -16,13 +16,13 @@ body {
 }
 
 
-
 // Подключение повторяющихся элементов
 // или единичных, которые стоит вынести
 @import 'repeats/logo';
 @import 'repeats/hamburgers';
 @import 'repeats/vertical-menu';
 @import 'repeats/buttons';
+@import 'repeats/arrows';
 
 
 // Подключение секций
@@ -34,6 +34,10 @@ body {
 
 
 
-
 // Изминение значений бэкграунта на экранах
 @import 'media/media-bg';
+@import 'media/media1030';
+@import 'media/media900';
+@import 'media/media840';
+@import 'media/media730';
+@import 'media/media530';

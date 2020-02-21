@@ -1,0 +1,29 @@
+@media screen and (max-width: 840px) {
+    /* HEADER */
+    .header__main-title {
+        font-size: 70px;
+        text-align: left;
+    }
+    .header-content__menu {
+        margin-top: 5px;
+    }
+    .header-characteristic {
+        margin-top: 160px;
+    }
+    .header-characteristic {
+        justify-content: end;
+    }
+    .header-characteristic__item_acceleration {
+        display: none;
+    }
+    .header-characteristic__item_volume-tank {
+        display: none;
+    }
+    .header-characteristic__item {
+        margin-right: 15%;
+        &:nth-child(3) {
+            margin-right: 0%;
+        }
+    }
+    /* HEADER */
+}
