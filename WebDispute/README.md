@@ -26,7 +26,10 @@
 <h2>Rammstein</h2>
 <ol>
   <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/Rammstein/dist/" target="_blank">Rammstein</a></li>
-  <li>Подробности будут позже</li>
+  <li>Ссылки на внешность макета: <a href="https://cloclo13.datacloudmail.ru/inline/7YvpjFuAqpwsrdYahtq4uuZcFTQSi9w1DWL15fU6yfpatR2VDXGHExnkmByAUsGhMUUGry/reilgelern@mail.ru/Макеты/Rammstein/Rammstein%20-%201920.png">1920</a>, <a href="https://cloclo13.datacloudmail.ru/inline/81kfyzuTGhwfcE5SQFxdUWpT6UGTBWtYxKt1NgWoiwVAqLBZz3DzMjxy5ECEtVGY1neHuf/reilgelern@mail.ru/Макеты/Rammstein/Rammstein%20-%201024.png">1024</a>, <a href="https://cloclo13.datacloudmail.ru/inline/81cGpmYboe6YbfCGNQ6zW1dNC7D9ytj2s7HijpEQJ8PDmg5QuH5Pp5GUh2EX24v7UqZNZQ/reilgelern@mail.ru/Макеты/Rammstein/Rammstein%20-%20768.png">768</a>, <a href="https://cloclo13.datacloudmail.ru/inline/81pQeHsiYvBdniGVn5Mkiwjr1R4V3osVPAjJextsmShm3G3usG7xbeyy3SWRJzC3kXaFQC/reilgelern@mail.ru/Макеты/Rammstein/Rammstein%20-%20320.png">320</a>;</li>
+  <li>Говоря честно, было достаточно сложно. В особенности из-за некоторых секций, которые прятались за друг друга верхними или нижними частями, из-за чего первое время не понимал, как лучше сделать галерею. Впрочем, со временем понимание пришло. Видео и изменение его, к удивлению, заняло намного меньше времени, нежели предполагал ранее. Но, к сожалению, с небольшим калькулятором в конце вышли траблы, не смог довести его до ума. Тем не менее, собираюсь продолжить изучать JavaScript, и когда-нибудь вернусь, дабы закончить начатое. А пока, пусть калькулятор говорится у своей участи быть доделанным.</li>
+  <li>Сколько времени на него было затрачено, и если это возможно, сделанная картинка в WakaTime; </li>
+  <li>Макет был сделаный дизайнером, одним из участников прокте WebDispute по имени Ильгар Гусейнов.</li>
 </ol>  
 
 <hr>
