@@ -1,0 +1,39 @@
+// Базовые файлы для подключения
+@import 'base/bootstrap-reboot.min';
+@import 'base/mixins';
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1139px; //1110px + 15 с левой стороны и 15 с правой = 
+    padding: 0 22px; // 15
+    margin: 0 auto;
+}
+
+
+
+// Подключение повторяющихся элементов
+// или единичных, которые стоит вынести
+@import 'repeats/logo';
+@import 'repeats/hamburgers';
+@import 'repeats/vertical-menu';
+@import 'repeats/buttons';
+
+
+// Подключение секций
+@import 'sections/header';
+@import 'sections/about-car';
+@import 'sections/gallery';
+@import 'sections/model';
+@import 'sections/contacts';
+
+
+
+
+// Изминение значений бэкграунта на экранах
+@import 'media/media-bg';
