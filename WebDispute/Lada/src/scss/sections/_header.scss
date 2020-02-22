@@ -1,7 +1,7 @@
 .header {
     min-height: 758px; // min-height: 768px;
     padding: 31px 0 20px 0;
-    background-image: url('../../img/header/header-full-bg.jpg');
+    background-image: url('../img/header/header-full-bg.jpg');
     @include style-base-bg;
     &__wrapper {
         position: relative;
@@ -12,7 +12,6 @@
         align-items: center;
     }
     &__main-title {
-        padding-top: 17px;
         font-weight: 700; // 700
         font-size: 144px;
         color: #778aa2;
@@ -23,7 +22,7 @@
     }
     &-content {
         &__menu {
-            margin-top: 62px;
+            margin-top: 80px;
 
             padding-left: 0;
             margin-bottom: 0;
@@ -53,6 +52,7 @@
                         font-weight: 600;
                     }
                     .show {
+                        pointer-events: none;
                         color: #E6F0F5;
                         font-weight: 300;
                         opacity: 1;

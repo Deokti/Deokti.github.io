@@ -1,13 +1,18 @@
 .hamburder {
     cursor: pointer;
-    position: relative;
     width: 26px;
     height: 23px;
+
+    position: fixed;
+    top: 46px;
+    right: 127px;
+    z-index: 999;
     span {
         position: absolute;
         width: 24px;
         height: 2px;
         background: #E6F0F5;
+        transition: all .3s ease;
         &:first-child {
             transform: translateY(0.4px);
         }
@@ -18,7 +23,109 @@
             transform: translateY(15.4px);
         }
     }
-    &_about {
-        padding-top: 11px;
+    &_active {
+        span {
+            &:first-child {
+                width: 13px;
+            }
+            &:nth-child(2) {
+                &::before,
+                &::after {
+                    transition: 1s ease-in-out;
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 2px;
+                    background: #E6F0F5;
+                    top: 0;
+                    right: 0;
+                }
+                &::before {
+                    transform: rotate(-320deg) translate(-1px,-3px);
+                }
+                &::after {
+                    transform: rotate(320deg) translate(-1px,4px);
+                }
+            }
+            &:last-child {
+                width: 13px;
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    position: fixed;
+    top: 25px;
+    right: -100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: all .1s ease;
+    z-index: 100;
+    li {
+        opacity: 0;
+
+        font-size: 24px;
+        text-align: right;
+        margin-left: 38px;
+        transition: all .2s ease;
+
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:first-child {
+            margin-left: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #E6F0F5;
+            display: block;
+            height: 100%;
+            line-height: 60px;
+            span {
+                opacity: .9;
+                pointer-events: none;
+                transition: all .1s ease;
+            }
+            .fade {
+                pointer-events: none;
+                opacity: 1;
+                color: #0A5EBD;
+                font-weight: 600;
+            }
+            .show {
+                pointer-events: none;
+                color: #E6F0F5;
+                font-weight: 300;
+                opacity: 1;
+            }
+            
+        }
+
+    }
+    &_active {
+        right: 195px;
+        opacity: 1;
+        li {
+            opacity: 1;
+            &:nth-child(1) {
+                transition: all .2s ease .1s;
+            }
+            &:nth-child(2) {
+                transition: all .3s ease .2s;
+            }
+            &:nth-child(3) {
+                transition: all .4s ease .3s;
+            }
+            
+        }
     }
 }

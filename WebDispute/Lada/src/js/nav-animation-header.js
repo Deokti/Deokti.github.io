@@ -1,6 +1,12 @@
+// Получение ссылок на первом экране лендинга
 const navLinkAbout = document.querySelector('.header-content__menu a[href="#about"]');
 const navLinksGallery = document.querySelector('.header-content__menu a[href="#gallery"]')
 const navLinksContacts = document.querySelector('.header-content__menu a[href="#contacts"]')
+
+// Получение ссылок в габмургере
+const mobileMenuAbout = document.querySelector('.mobile-menu__link-about a[href="#about"]');
+const mobileMenuPresentation = document.querySelector('.mobile-menu__link-gallery a[href="#gallery"]')
+const mobileMenuTest = document.querySelector('.mobile-menu__link-contacts a[href="#contacts"]')
 
 function animationText(hoverLink, linksItem) {
     const link = document.querySelector(hoverLink);
@@ -50,3 +56,7 @@ function animationText(hoverLink, linksItem) {
 animationText('.header-content__link-about', navLinkAbout);
 animationText('.header-content__link-gallery', navLinksGallery);
 animationText('.header-content__link-contacts', navLinksContacts);
+
+animationText('.mobile-menu__link-about', mobileMenuAbout); 
+animationText('.mobile-menu__link-gallery', mobileMenuPresentation); 
+animationText('.mobile-menu__link-contacts', mobileMenuTest); 

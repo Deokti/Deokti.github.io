@@ -1,10 +1,14 @@
 $('.gallery-left').vegas({
     cover: true,
+    autoplay: true,
+    preload: true,
+    timer: false,
     slides: [
         {src: 'img/gallery/right/full-page/full-1.jpg'},
         {src: 'img/gallery/right/full-page/full-2.jpg'},
         {src: 'img/gallery/right/full-page/full-3.jpg'},
         {src: 'img/gallery/right/full-page/full-4.jpg'},
+        {src: 'img/gallery/right/full-page/full-5.jpg'},
     ]
 });
  //перелистывает вперёд

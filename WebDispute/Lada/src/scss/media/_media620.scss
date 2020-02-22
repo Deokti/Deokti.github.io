@@ -16,4 +16,26 @@
         max-width: 275px;
     }
     // /.ABOUT
+
+    // GALLERY
+    .gallery-right {
+        margin-top: -70px;
+    }
+    .gallery-right__img {
+        height: 100px;
+    }
+    .gallery-right__one {
+        width: 140px;
+    }
+    .gallery-right__two {
+        width: 160px;
+    }
+    .gallery-right__three {
+        width: 130px;
+    
+    }
+    .gallery-right__four {
+        display: none;
+    }
+    // /.GALLERY
 }

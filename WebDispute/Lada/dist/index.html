@@ -15,65 +15,74 @@
         <div class="container">
            <div class="header__wrapper">
                 
-            <div class="header-top">
-                <h1 class="logo"><a href="#">Lada</a></h1>
-                <nav class="hamburder hamburder_header">
+                <div class="header-top">
+                    <h1 class="logo"><a href="#">Lada</a></h1>
+                </div>
+                
+
+                <h2 class="header__main-title">Vesta Sport</h2>
+
+                
+                <div class="header-content">
+                    <nav>
+                        <ul class="header-content__menu">
+                            <li class="header-content__link-about"><a href="#about">Обзор</a></li>
+                            <li class="header-content__link-gallery"><a href="#gallery">Галерея</a></li>
+                            <li class="header-content__link-contacts"><a href="#contacts">Контакты</a></li>
+                        </ul>
+                        <button class="button button_header">Тест драйв</button>
+                    </nav>
+                </div>
+                
+
+                
+                <div class="header-characteristic">
+                    <div class="header-characteristic__item header-characteristic__item_speed">
+                        <h5 class="header-characteristic__title">Max. скорость</h5>
+                        <p class="header-characteristic__description">193 км/ч</p>
+                    </div>
+                    <div class="header-characteristic__item header-characteristic__item_volume-engine">
+                        <h5 class="header-characteristic__title">Объем дв.</h5>
+                        <p class="header-characteristic__description">1774 см<sup>2</sup></p>
+                    </div>
+                    <div class="header-characteristic__item header-characteristic__item_power">
+                        <h5 class="header-characteristic__title">Мощность</h5>
+                        <p class="header-characteristic__description">145 л.с.</p>
+                    </div>
+                    <div class="header-characteristic__item header-characteristic__item_acceleration">
+                        <h5 class="header-characteristic__title">Разгон</h5>
+                        <p class="header-characteristic__description">9.6 сек</p>
+                    </div>
+                    <div class="header-characteristic__item header-characteristic__item_volume-tank">
+                        <h5 class="header-characteristic__title">Объем бака</h5>
+                        <p class="header-characteristic__description">55 л</p>
+                    </div>
+                </div>
+                
+
+                <nav class="vertical-menu vertical-menu_header">
+                    <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_one"></span>
+                    <span class="vertical-menu__square vertical-menu__square_two"></span>
+                    <span class="vertical-menu__square vertical-menu__square_three"></span>
+                    <span class="vertical-menu__square vertical-menu__square_four"></span>
+                    <span class="vertical-menu__square vertical-menu__square_five"></span>
+                </nav>
+
+                <a href="#about" class="mobile-arrow"><img src="img/icons/mobile-arrow.svg" alt="arrow bottom"></a>
+
+                <nav class="hamburder">
                     <span></span>
                     <span></span>
                     <span></span>
                 </nav>
-            </div>
-            
 
-            <h2 class="header__main-title">Vesta Sport</h2>
-
-            
-            <div class="header-content">
                 <nav>
-                    <ul class="header-content__menu">
-                        <li class="header-content__link-about"><a href="#about">Обзор</a></li>
-                        <li class="header-content__link-gallery"><a href="#gallery">Галерея</a></li>
-                        <li class="header-content__link-contacts"><a href="#contacts">Контакты</a></li>
+                    <ul class="mobile-menu">
+                        <li class="mobile-menu__link-about"><a href="#about">Другие модели</a></li>
+                        <li class="mobile-menu__link-gallery"><a href="#gallery">Презентация</a></li>
+                        <li class="mobile-menu__link-contacts"><a href="#contacts">Тест драйв</a></li>
                     </ul>
-                    <button class="button button_header">Тест драйв</button>
                 </nav>
-            </div>
-            
-
-            
-            <div class="header-characteristic">
-                <div class="header-characteristic__item header-characteristic__item_speed">
-                    <h5 class="header-characteristic__title">Max. скорость</h5>
-                    <p class="header-characteristic__description">193 км/ч</p>
-                </div>
-                <div class="header-characteristic__item header-characteristic__item_volume-engine">
-                    <h5 class="header-characteristic__title">Объем дв.</h5>
-                    <p class="header-characteristic__description">1774 см<sup>2</sup></p>
-                </div>
-                <div class="header-characteristic__item header-characteristic__item_power">
-                    <h5 class="header-characteristic__title">Мощность</h5>
-                    <p class="header-characteristic__description">145 л.с.</p>
-                </div>
-                <div class="header-characteristic__item header-characteristic__item_acceleration">
-                    <h5 class="header-characteristic__title">Разгон</h5>
-                    <p class="header-characteristic__description">9.6 сек</p>
-                </div>
-                <div class="header-characteristic__item header-characteristic__item_volume-tank">
-                    <h5 class="header-characteristic__title">Объем бака</h5>
-                    <p class="header-characteristic__description">55 л</p>
-                </div>
-            </div>
-            
-
-            <nav class="vertical-menu vertical-menu_header">
-                <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_one"></span>
-                <span class="vertical-menu__square vertical-menu__square_two"></span>
-                <span class="vertical-menu__square vertical-menu__square_three"></span>
-                <span class="vertical-menu__square vertical-menu__square_four"></span>
-                <span class="vertical-menu__square vertical-menu__square_five"></span>
-            </nav>
-
-            <a href="#about" class="mobile-arrow"><img src="img/icons/mobile-arrow.svg" alt="arrow bottom"></a>
            </div>
         </div>
     </header>
@@ -87,11 +96,6 @@
                 
                 <div class="about-top">
                     <h3 class="title title_about">Об автомобиле</h3>
-                    <nav class="hamburder hamburder_about">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </nav>
                 </div>
                 
 
@@ -352,7 +356,20 @@
 
         <div class="gallery__wrapper">
             <div class="gallery-left">
+                <div class="container">
+                    <div class="gallery-left__inner">
+                        <nav class="vertical-menu vertical-menu_gallery vertical-menu_gallery-tablet">
+                            <span class="vertical-menu__square vertical-menu__square_one"></span>
+                            <span class="vertical-menu__square vertical-menu__square_two"></span>
+                            <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_three"></span>
+                            <span class="vertical-menu__square vertical-menu__square_four"></span>
+                            <span class="vertical-menu__square vertical-menu__square_five"></span>
+                        </nav>
 
+                        <button class="arrow-gallery-bg arrow-gallery-bg_tablet arrow-gallery-bg_prev"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
+                        <button class="arrow-gallery-bg arrow-gallery-bg_tablet arrow-gallery-bg_next"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
+                    </div>
+                </div>
             </div>
             <div class="gallery-right">
                 <img data-full-page="0" class="gallery-right__img gallery-right__one" src="img/gallery/right/1.png" alt="машина">
@@ -363,7 +380,7 @@
                 </div>
             </div>
 
-            <nav class="vertical-menu vertical-menu_gallery">
+            <nav class="vertical-menu vertical-menu_gallery vertical-menu_gallery-full">
                 <span class="vertical-menu__square vertical-menu__square_one"></span>
                 <span class="vertical-menu__square vertical-menu__square_two"></span>
                 <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_three"></span>
@@ -371,17 +388,17 @@
                 <span class="vertical-menu__square vertical-menu__square_five"></span>
             </nav>
 
-            <button class="arrow-gallery-bg arrow-gallery-bg_prev"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
-            <button class="arrow-gallery-bg arrow-gallery-bg_next"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
+            <button class="arrow-gallery-bg arrow-gallery-bg_prev arrow-gallery-bg_full"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
+            <button class="arrow-gallery-bg arrow-gallery-bg_next arrow-gallery-bg_full"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
         </div>
 
         <div class="gallery-full-page">
             <div class="close">&times;</div>
             <ul>
-                <li data-full-page="0"><img src="img/gallery/right/full-page/full-1.jpg" alt="машина"></li>
-                <li data-full-page="1"><img src="img/gallery/right/full-page/full-2.jpg" alt="машина"></li>
-                <li data-full-page="2"><img src="img/gallery/right/full-page/full-3.jpg" alt="машина"></li>
-                <li data-full-page="3"><img src="img/gallery/right/full-page/full-4.jpg" alt="машина"></li>
+                <li data-full-page="0"><img src="img/gallery/right/full-page/full-2.jpg" alt="машина"></li>
+                <li data-full-page="1"><img src="img/gallery/right/full-page/full-3.jpg" alt="машина"></li>
+                <li data-full-page="2"><img src="img/gallery/right/full-page/full-4.jpg" alt="машина"></li>
+                <li data-full-page="3"><img src="img/gallery/right/full-page/full-5.jpg" alt="машина"></li>
             </ul>
         </div>
     </section>

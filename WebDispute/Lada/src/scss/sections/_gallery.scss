@@ -8,6 +8,9 @@
     }
     &-left {
         width: 100%;
+        &__inner {
+            position: relative;
+        }
     }
     &-right {
         margin-left: auto;
@@ -27,8 +30,7 @@
             cursor: pointer;
         }
         &__one {
-            width: 472px;
-            height: 328px; // height: 333px;
+            width: 100%;
         }
         &__two {
             width: 472px;
