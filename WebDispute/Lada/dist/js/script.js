@@ -14,8 +14,6 @@ function animationText(hoverLink, linksItem) {
     const textContent = text.textContent;
     const textSplit = textContent.split('');
 
-   
-
     link.addEventListener('mouseover', function () {
         text.textContent = '';
 
@@ -53,38 +51,12 @@ function animationText(hoverLink, linksItem) {
                 timer = null;
             }
         }
-
     });
 };
 animationText('.header-content__link-about', navLinkAbout);
 animationText('.header-content__link-gallery', navLinksGallery);
 animationText('.header-content__link-contacts', navLinksContacts);
 
-// const text = document.querySelector('.header-content__menu a[href="#about"]');
-// const textContent = text.textContent;
-// const textSplit = textContent.split('');
-
-// $('.header-content__link-about').hover(function(handlerIn, handlerOut) {
-//     text.textContent = '';
-
-//     let char = 0;
-//     let timer = setInterval(onTick, 50);
-
-//     textSplit.forEach(item => {
-//         text.innerHTML += `<span>${item}</span>`;
-//     });
-
-//     function onTick() {
-//         const span = text.querySelectorAll('span')[char];
-//         span.classList.add('fade')
-//         char++;
-//         if (char === textSplit.length) {
-//             clearInterval(timer);
-//             timer = null;
-//         }
-//     }
-
-// });
 (function () {
     const navLinks = document.querySelectorAll('.header-content__menu li a[href*="#"]');
     navLinks.forEach(item => {

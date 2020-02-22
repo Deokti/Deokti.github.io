@@ -8,7 +8,7 @@ function animationText(hoverLink, linksItem) {
     const textContent = text.textContent;
     const textSplit = textContent.split('');
 
-    link.addEventListener('mousemove', function () {
+    link.addEventListener('mouseover', function () {
         text.textContent = '';
 
         let char = 0;
@@ -45,7 +45,6 @@ function animationText(hoverLink, linksItem) {
                 timer = null;
             }
         }
-
     });
 };
 animationText('.header-content__link-about', navLinkAbout);
