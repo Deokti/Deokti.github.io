@@ -1,5 +1,10 @@
 .title {
+    position: relative;
+
     font-weight: 600;
     font-size: 36px;
     color: #E6F0F5;
+    &_gallery {
+        z-index: 10;
+    }
 }

@@ -49,7 +49,7 @@ gulp.task('htmlmin', function() {
 
 /*-------- scriptJS --------*/
 gulp.task('concat', function() {
-	return gulp.src(['src/js/libs/jquery.min.js', 'src/js/libs/slick.min.js', 'src/js/about-car-slider.js', 'src/js/links.js'])
+	return gulp.src(['src/js/libs/jquery.min.js', 'src/js/libs/slick.min.js', 'src/js/libs/vegas.min.js', 'src/js/nav-animation-header.js', 'src/js/links.js', 'src/js/about-car-slider.js', 'src/js/gallery-bg.js', 'src/js/full-page-click.js'])
 		.pipe(concat({ path: 'script.js'}))
 		.pipe(gulp.dest('dist/js'))
 		.pipe(browserSync.stream())

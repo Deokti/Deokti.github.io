@@ -36,4 +36,20 @@
             transform: translateX(3px) translateY(26px);
         }
     }
+    &_gallery {
+        top: 50%;
+        right: 137px;
+        z-index: 30;
+        .vertical-menu__square {
+            background: #E6F0F5;
+
+        }
+        .vertical-menu__square_two {
+            transform: translateY(29px);
+        }
+        .vertical-menu__square_active {
+            background: #E6F0F5;
+            transform: translateX(3px) translateY(55px);
+        }
+    }
 }

@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lada</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-
     <!-- HEADER -->
     <header class="header">
         <div class="container">
@@ -31,9 +31,9 @@
             <div class="header-content">
                 <nav>
                     <ul class="header-content__menu">
-                        <li><a href="#about">Обзор</a></li>
-                        <li><a href="#">Галерея</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li class="header-content__link-about"><a href="#about">Обзор</a></li>
+                        <li class="header-content__link-gallery"><a href="#gallery">Галерея</a></li>
+                        <li class="header-content__link-contacts"><a href="#contacts">Контакты</a></li>
                     </ul>
                     <button class="button button_header">Тест драйв</button>
                 </nav>
@@ -342,11 +342,50 @@
             </div>
         </div>
     </section>
-
-
-
     <!-- /.ABOUT-CAR -->
 
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="title title_gallery">Галерея</h2>
+        </div>
+
+        <div class="gallery__wrapper">
+            <div class="gallery-left">
+
+            </div>
+            <div class="gallery-right">
+                <img data-full-page="0" class="gallery-right__img gallery-right__one" src="img/gallery/right/1.png" alt="машина">
+                <img data-full-page="1" class="gallery-right__img gallery-right__two" src="img/gallery/right/2.png" alt="машина">
+                <div class="gallery-right__inner">
+                    <img data-full-page="2" class="gallery-right__img gallery-right__three" src="img/gallery/right/3.png" alt="машина">
+                    <img data-full-page="3" class="gallery-right__img gallery-right__four" src="img/gallery/right/4.png" alt="машина">
+                </div>
+            </div>
+
+            <nav class="vertical-menu vertical-menu_gallery">
+                <span class="vertical-menu__square vertical-menu__square_one"></span>
+                <span class="vertical-menu__square vertical-menu__square_two"></span>
+                <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_three"></span>
+                <span class="vertical-menu__square vertical-menu__square_four"></span>
+                <span class="vertical-menu__square vertical-menu__square_five"></span>
+            </nav>
+
+            <button class="arrow-gallery-bg arrow-gallery-bg_prev"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
+            <button class="arrow-gallery-bg arrow-gallery-bg_next"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
+        </div>
+
+        <div class="gallery-full-page">
+            <div class="close">&times;</div>
+            <ul>
+                <li data-full-page="0"><img src="img/gallery/right/full-page/full-1.jpg" alt="машина"></li>
+                <li data-full-page="1"><img src="img/gallery/right/full-page/full-2.jpg" alt="машина"></li>
+                <li data-full-page="2"><img src="img/gallery/right/full-page/full-3.jpg" alt="машина"></li>
+                <li data-full-page="3"><img src="img/gallery/right/full-page/full-4.jpg" alt="машина"></li>
+            </ul>
+        </div>
+    </section>
+    <!-- /.GALLERY -->
 
 
     <script src="js/script.js"></script>

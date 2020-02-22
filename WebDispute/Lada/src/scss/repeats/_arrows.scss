@@ -13,10 +13,48 @@
     position: absolute;
     background: none;
     border: none;
-    right: -7px;
-    bottom: 40px;
+    right: -2px;
+    bottom: 45px;
     z-index: 100;
+    &:hover {
+        svg {
+            path {
+                transition: all .3s ease;
+                fill: #55A5FF;
+            }
+        }
+    }
     &_prev {
-        transform: translateY(-50px) rotate(180deg);
+        transform: translateY(-50px);
+    }
+    &_next {
+        transform: rotate(180deg);
+    }
+}
+
+// Стрелки, которые находястя
+// в третьей секции, галерея
+.arrow-gallery-bg {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 0;
+    bottom: 0;
+    right: 125px;
+    bottom: 109px;
+    z-index: 30;
+    &:hover {
+        svg {
+            path {
+                transition: all .3s ease;
+                fill: #55A5FF;
+            }
+        }
+    }
+    &_next {
+        transform: rotate(180deg);
+    }
+    &_prev {
+        transform: translateY(-50px);
     }
 }

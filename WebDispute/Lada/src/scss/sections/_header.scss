@@ -1,6 +1,6 @@
 .header {
     min-height: 758px; // min-height: 768px;
-    padding: 31px 0 56px 0;
+    padding: 31px 0 20px 0;
     background-image: url('../img/header/header-full-bg.jpg');
     @include style-base-bg;
     &__wrapper {
@@ -12,6 +12,7 @@
         align-items: center;
     }
     &__main-title {
+        padding-top: 17px;
         font-weight: 700; // 700
         font-size: 144px;
         color: #778aa2;
@@ -22,12 +23,13 @@
     }
     &-content {
         &__menu {
-            margin-top: 79px;
+            margin-top: 62px;
 
             padding-left: 0;
             margin-bottom: 0;
             list-style: none;
             li {
+                display: block;
                 font-weight: 300;
                 font-size: 24px;
                 color: #E6F0F5;
@@ -36,8 +38,25 @@
                     margin-bottom: 0;
                 }
                 a {
+                    display: block;
                     text-decoration: none;
                     color: #E6F0F5;
+                    span {
+                        opacity: .9;
+                        pointer-events: none;
+                        transition: all .3s ease;
+                    }
+                    .fade {
+                        pointer-events: none;
+                        opacity: 1;
+                        color: #0A5EBD;
+                        font-weight: 600;
+                    }
+                    .show {
+                        color: #E6F0F5;
+                        font-weight: 300;
+                        opacity: 1;
+                    }
                 }
             }
         }
