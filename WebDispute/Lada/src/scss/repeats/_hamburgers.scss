@@ -1,11 +1,16 @@
+.navigations {
+    position: absolute;
+    right: 26px;
+    top: 15px;
+}
+
+
 .hamburder {
+    position: fixed;
+
     cursor: pointer;
     width: 26px;
     height: 23px;
-
-    position: fixed;
-    top: 46px;
-    right: 127px;
     z-index: 999;
     span {
         position: absolute;
@@ -54,14 +59,24 @@
     }
 }
 
+.navigations-menu {
+    position: absolute;
+    right: -100%;
+    top: 15px;
+    transition: all .1s ease;
+    &_active {
+        right: 613px;
+
+    }
+}
+
 .mobile-menu {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
 
     position: fixed;
-    top: 25px;
-    right: -100%;
+    top: 26px;
     height: 60px;
 
     display: flex;
@@ -90,6 +105,7 @@
             display: block;
             height: 100%;
             line-height: 60px;
+            z-index: 99;
             span {
                 opacity: .9;
                 pointer-events: none;
@@ -112,7 +128,6 @@
 
     }
     &_active {
-        right: 195px;
         opacity: 1;
         li {
             opacity: 1;

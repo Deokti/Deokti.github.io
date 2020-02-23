@@ -21,6 +21,15 @@
         color: #E6F0F5;
         opacity: 1;
         line-height: 44px;
+        span {
+            opacity: 0;
+            transition: all .4s ease;
+        }
+        .fade {
+            opacity: 1;
+            color: #E6F0F5;
+        }
+        
     }
     .header-content__menu {
         margin-top: -60px;
@@ -48,6 +57,5 @@
         height: 51px;
         font-size: 14px;
     }
-
     /* /.HEADER */
 }

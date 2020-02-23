@@ -60,3 +60,35 @@ animationText('.header-content__link-contacts', navLinksContacts);
 animationText('.mobile-menu__link-about', mobileMenuAbout); 
 animationText('.mobile-menu__link-gallery', mobileMenuPresentation); 
 animationText('.mobile-menu__link-contacts', mobileMenuTest); 
+
+
+const VastaSports = document.querySelector('.header__main-title');
+
+// Анимация, которая происходит 
+// при загрузке. Она происходит 
+// с Vesta Sports
+function animationMainTitle(hoverLink) {
+    const text = hoverLink;
+    const textContent = text.textContent;
+    const textSplit = textContent.split('');
+
+    text.textContent = '';
+
+    let char = 0;
+    let timer = setInterval(onTick, 50);
+
+    textSplit.forEach(item => {
+        text.innerHTML += `<span>${item}</span>`;
+    });
+
+    function onTick() {
+        const span = text.querySelectorAll('span')[char];
+        span.classList.add('fade')
+        char++;
+        if (char === textSplit.length) {
+            clearInterval(timer);
+            timer = null;
+        }
+    }
+}
+animationMainTitle(VastaSports);

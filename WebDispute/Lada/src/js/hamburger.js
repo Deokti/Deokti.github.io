@@ -1,5 +1,6 @@
 (function() {
     const hamburder = document.querySelector('.hamburder');
+    const navMenu = document.querySelector('.navigations-menu');
     const mobuleMenu = document.querySelector('.mobile-menu');
     
     hamburder.addEventListener('click', event => {

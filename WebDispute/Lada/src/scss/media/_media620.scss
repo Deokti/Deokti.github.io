@@ -18,8 +18,14 @@
     // /.ABOUT
 
     // GALLERY
+    .gallery {
+        min-height: 524px;
+    }
+    .gallery-left {
+        max-height: 542.5px;
+    }
     .gallery-right {
-        margin-top: -70px;
+        margin-top: -100px;
     }
     .gallery-right__img {
         height: 100px;
