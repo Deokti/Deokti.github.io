@@ -73,5 +73,23 @@
             transform: translateX(3px) translateY(86px);
         }
     }
+    &_contacts {
+        top: 50%;
+        span {
+            background: #E6F0F5;
+        }
+        .vertical-menu__square_two {
+            transform: translateY(31px);
+        }
+        .vertical-menu__square_three {
+            transform: translateY(58px);
+        }
+        .vertical-menu__square_four {
+            transform: translateY(86px);
+        }
+        .vertical-menu__square_active {
+            transform: translateX(3px) translateY(113px);
+        }
+    }
     
 }

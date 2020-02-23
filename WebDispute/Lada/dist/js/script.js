@@ -159,6 +159,29 @@ animationMainTitle(VastaSports);
     });
 })();
 
+window.addEventListener('load', function() {
+    // Ссылка в последней секции,
+    // которая отправляем вверх
+    const clickHeightTop = document.querySelector('.arrow-top');
+    let scrolled;
+    let timerScrolled;
+
+    clickHeightTop.addEventListener('click', event => {
+        scrolled = window.pageYOffset;
+        scrollToTop();
+    });
+    function scrollToTop() {
+        if (scrolled > 0) {
+            window.scrollTo(0, scrolled);
+            scrolled -= 50;
+            timerScrolled = setTimeout(scrollToTop, 1);
+        } else {
+            clearTimeout(timerScrolled);
+            window.scrollTo(0, 0);
+        }
+    }
+});
+
 $('.about-slider__box').slick({
    infinite: true,
    speed: 500,

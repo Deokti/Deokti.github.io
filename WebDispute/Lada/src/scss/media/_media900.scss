@@ -13,4 +13,23 @@
         margin-top: 60px;
     }
     /* /.HEADER */
+
+
+    // CONTACTS
+    .contacts__wrapper {
+        justify-content: space-between;
+    }
+    .contacts__map {
+        width: 450px;
+        height: 370px;
+    }
+    .contacts__address {
+        li {
+            font-size: 16px;
+        }
+    }
+    .contacts__locations {
+        margin-left: 0;
+    }
+    // /.CONTACTS
 }

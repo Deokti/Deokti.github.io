@@ -122,6 +122,27 @@
     }
     // /.MODELS
 
-   
+
+    // CONTACTS
+    .contacts__address {
+    &::before {
+        left: 0px;
+        top: -30px;
+    }
+    margin-bottom: 60px;
+    }
+    .contacts__locations {
+        margin-left: 0;
+        margin-top: 80px;
+    }
+    .contacts__map {
+        width: 290px;
+        height: 254px;
+    }
+
+    .arrow-top {
+        display: none;
+    }
+    // /.CONTACTS
             
 }

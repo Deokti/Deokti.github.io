@@ -62,7 +62,8 @@
     }
 }
 
-
+// Стрелчки, которые находятся
+// в секции "Другие модели"
 .arrow-models {
     position: absolute;
     bottom: 26px;
@@ -84,5 +85,25 @@
     &_prev {
         right: auto;
         left: 0;
+    }
+}
+
+// Стрелка, которая находится
+// в последней секции, и которая
+// отправляет в самый вверх страницы
+.arrow-top {
+    position: absolute;
+    border: none;
+    background: none;
+    bottom: 7px;
+    right: -3px;
+    transform: rotate(90deg);
+    &:hover {
+        svg {
+            path {
+                transition: all .3s ease;
+                fill: #55A5FF;
+            }
+        }
     }
 }
