@@ -61,3 +61,28 @@
         display: none;
     }
 }
+
+
+.arrow-models {
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+
+    background: none;
+    border: none;
+    &:hover {
+        svg {
+            path {
+                transition: all .3s ease;
+                fill: #55A5FF;
+            }
+        }
+    }
+    &_next {
+        transform: rotate(180deg) translate(-2px, -2px);
+    }
+    &_prev {
+        right: auto;
+        left: 0;
+    }
+}

@@ -55,4 +55,23 @@
     &_gallery-tablet {
         display: none;
     }
+    &_models {
+        top: 50%;
+        span {
+            background: #E6F0F5;
+        }
+        .vertical-menu__square_one {
+            transform: translateY(2px);
+        }
+        .vertical-menu__square_two {
+            transform: translateY(30px);
+        }
+        .vertical-menu__square_three {
+            transform: translateY(58px);
+        }
+        .vertical-menu__square_active {
+            transform: translateX(3px) translateY(86px);
+        }
+    }
+    
 }

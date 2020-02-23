@@ -97,4 +97,31 @@
     
     }
     // /.GALLERY
+
+
+    // MODELS
+    .models {
+        min-height: 470px;
+    }
+    .models-slider__item {
+        height: 470px;
+    }
+
+    .arrow-models {
+        right: auto;
+        left: 50px;
+        &_prev {
+            left: 0;
+        }
+    }
+    .button_models {
+        display: none;
+    }
+    .models-name__title {
+        font-size: 24px;
+    }
+    // /.MODELS
+
+   
+            
 }
