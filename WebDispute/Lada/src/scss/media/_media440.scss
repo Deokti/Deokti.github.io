@@ -23,4 +23,39 @@
         max-width: 180px;
     }
     // /.ABOUT
+
+
+    /* POPUP */
+    .popup {
+        width: 270px;
+        height: 296px;
+        padding: 30px 10px 50px 10px;
+    }
+    .popup__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button_popup {
+        width: 159px;
+        height: 65px;
+        font-size: 16px;
+    }
+    .button_close {
+        margin-top: 15px;
+    }
+    .popup__text {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .popup_two {
+        width: 270px;
+        height: 238px;
+        padding: 30px 10px 30px 10px;
+    }
+    .popup__rejection {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    /* /.POPUP */
 }

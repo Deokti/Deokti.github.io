@@ -17,4 +17,15 @@
     &_contacts {
         margin-top: 46px;
     }
+    &_popup {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: #E6F0F5;
+        }
+    }
+    &_close {
+        background: transparent;
+        border: 1px solid #E6F0F5;
+    }
 }

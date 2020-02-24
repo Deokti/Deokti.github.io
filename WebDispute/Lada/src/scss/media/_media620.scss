@@ -53,4 +53,29 @@
         height: 524px;
     }
     // /.MODELS
+
+    /* POPUP */
+    .popup {
+        width: 380px;
+        height: 251px;
+        padding: 50px 25px 50px 25px;
+    }
+    .button_popup {
+        width: 159px;
+        height: 65px;
+        font-size: 16px;
+    }
+    .popup__text {
+        font-size: 20px;
+    }
+
+    .popup_two {
+        height: 280px;
+        padding: 40px 25px 40px 25px;
+    }
+    .popup__rejection {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    /* /.POPUP */
 }

@@ -49,7 +49,7 @@
                             <li class="header-content__link-gallery"><a href="#gallery">Галерея</a></li>
                             <li class="header-content__link-contacts"><a href="#contacts">Контакты</a></li>
                         </ul>
-                        <button class="button button_header">Тест драйв</button>
+                        <button class="button button_header show-popup-one">Тест драйв</button>
                     </nav>
                 </div>
                 <!-- /.header-content -->
@@ -87,8 +87,7 @@
                     <span class="vertical-menu__square vertical-menu__square_five"></span>
                 </nav>
 
-                <a href="#about" class="mobile-arrow"><img src="img/icons/mobile-arrow.svg" alt="arrow bottom"></a>
- 
+                <a href="#about" class="mobile-arrow"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.2 7.4H9.20005V0.199997H6.80005V7.4H0.800049L8.00005 15.8L15.2 7.4Z" fill="#E6F0F5"/></svg></a>
            </div>
         </div>
     </header>
@@ -439,7 +438,7 @@
                     </div>
                     <!-- /.models-name -->
 
-                    <button class="button button_models">Тест драйв</button>
+                    <button class="button button_models show-popup-two">Тест драйв</button>
     
                     <nav class="vertical-menu vertical-menu_models">
                         <span class="vertical-menu__square vertical-menu__square_one"></span>
@@ -483,7 +482,7 @@
                         <li>СТО: <a href="tel:+78482518355">+7 (8482)518355</a></li>
                     </ul>
                     
-                    <button class="button button_contacts">Тест драйв</button>
+                    <button class="button button_contacts show-popup-two">Тест драйв</button>
                     <div class="contacts__info">
                         <h6 class="contacts__test">Мы организуем тестовый заезд <br>
                             из любого удобного для вас салона</h6>
@@ -506,6 +505,29 @@
     </footer>
     <!-- /.CONTACTS -->
 
+
+
+    <!-- POPUPS -->
+    <div class="overlay"> 
+        <div class="popup popup_one">
+            <h6 class="popup__text">Мы перенаправим вас на основной сайт. Вы не против?</h6>
+            <div class="popup__buttons">
+                <button class="button button-get-sites button_popup">Не против</button>
+                <button class="button popup_close button_close button_popup">Остаться</button>
+            </div>
+        </div>
+    
+        <div class="popup popup_two">
+            <h6 class="popup__text">Мы перенаправим вас на основной сайт. Вы не против?</h6>
+            <div class="popup__buttons">
+                <button class="button button-get-sites button_popup">Не против</button>
+                <button class="popup__rejection popup_close">Нет, продолжить здесь</button>
+            </div>
+        </div>
+    </div>
+    <!-- /.POPUPS -->
+
+    
 
     <script src="js/script.js"></script>
 </body>

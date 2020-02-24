@@ -231,32 +231,45 @@ $('.about-slider__box').slick({
         }
     });
 })();
-(function() {
-    const hamburder = document.querySelector('.hamburder');
-    const navMenu = document.querySelector('.navigations-menu');
-    const mobuleMenu = document.querySelector('.mobile-menu');
-    
-    hamburder.addEventListener('click', event => {
-        event.preventDefault();
-        hamburder.classList.toggle('hamburder_active');
-        
-        if (!(hamburder.classList.contains('hamburder_active'))) {
-            mobuleMenu.classList.remove('mobile-menu_active');
-            
-        } else {
-            mobuleMenu.classList.toggle('mobile-menu_active');
-        }
-    });
-    mobuleMenu.addEventListener('click', event => {
-        if (mobuleMenu.classList.contains('mobile-menu_active')) {
-            if (event.target.tagName === 'A') {
-                mobuleMenu.classList.toggle('mobile-menu_active');
-                hamburder.classList.toggle('hamburder_active');
-            }
-        } 
-    });
-})();
+const hamburder = document.querySelector('.hamburder');
+const navMenu = document.querySelector('.navigations-menu');
+const mobuleMenu = document.querySelector('.mobile-menu');
 
+hamburder.addEventListener('click', event => {
+    event.preventDefault();
+    hamburder.classList.toggle('hamburder_active');
+    
+    if (!(hamburder.classList.contains('hamburder_active'))) {
+        mobuleMenu.classList.remove('mobile-menu_active');
+        
+    } else {
+        mobuleMenu.classList.toggle('mobile-menu_active');
+    }
+});
+mobuleMenu.addEventListener('click', event => {
+    if (mobuleMenu.classList.contains('mobile-menu_active')) {
+        if (event.target.tagName === 'A') {
+            mobuleMenu.classList.toggle('mobile-menu_active');
+            hamburder.classList.toggle('hamburder_active');
+        }
+    } 
+});
+
+
+// Появление навигации при скоролле
+// более 800 пикселей
+const mainNavigations = document.querySelector('.navigations');
+window.addEventListener('scroll', () => {
+    let pageY = window.pageYOffset
+
+    if (pageY > 750) {
+        hamburder.classList.add('hamburder_show');
+        mainNavigations.classList.add('navigations_show');
+    } else {
+        hamburder.classList.remove('hamburder_show');
+        mainNavigations.classList.remove('navigations_show');
+    }
+});
 $('.models-slider__inner').slick({
     infinite: true,
     speed: 500,
@@ -277,3 +290,47 @@ $('.models-slider__inner').slick({
     cssEase: 'linear',
     asNavFor: '.models-slider__inner'
  });
+const showPopupOne = document.querySelectorAll('.show-popup-one');
+const showPopupTwo = document.querySelectorAll('.show-popup-two');
+
+// Открытие попапа
+function showPopup(buttons, overlay, popup) {
+    buttons.forEach(button => {
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            document.querySelector(overlay).style.display = 'block';
+            document.querySelector(popup).style.display = 'block';
+        });
+    });
+}
+showPopup(showPopupOne, '.overlay', '.popup_one');
+showPopup(showPopupTwo, '.overlay', '.popup_two');
+
+
+// Закрытие попапа
+const closePopup = document.querySelectorAll('.popup_close');
+
+function hidePopup(buttons, overlay) {
+    buttons.forEach(button => {
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            document.querySelector(overlay).style.display = 'none';
+        });
+    });
+}
+hidePopup(closePopup, '.overlay');
+
+
+// Преход на другой сайт
+const testDrive = document.querySelectorAll('.button-get-sites');
+
+function goAnotherSite(buttons, overlay, link) {
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            window.open(link, "_blank");
+            document.querySelector(overlay).style.display = 'none';
+        });
+    });
+}
+goAnotherSite(testDrive, '.overlay', 'https://www.lada.ru/test-drive/');
+
