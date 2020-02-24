@@ -157,4 +157,10 @@
             
         }
     }
+    &__menu {
+        display: none;
+    }
+    &__link {
+        display: flex;
+    }
 }

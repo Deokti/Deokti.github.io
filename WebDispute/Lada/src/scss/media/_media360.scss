@@ -5,4 +5,16 @@
         height: 254px;
     }
     // /.CONTACTS
+
+    /* /.NAVIGATIONS-MENU */
+    .mobile-menu {
+        width: 100%;
+        padding: 60px 20px 32px 20px;
+        .header-content__menu {
+            li {
+                display: block;
+            }
+        }
+    }
+    /* /.NAVIGATIONS-MENU */
 }

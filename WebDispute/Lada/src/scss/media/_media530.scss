@@ -2,15 +2,38 @@
     .container {
         padding: 0 33px;
     }
+
+    .navigations {
+        right: 25px;
+    }
     .hamburder {
         width: 20px;
         span {
-            width: 20px;
             &:nth-child(2) {
                 transform: translateY(6px);
             }
             &:last-child {
                 transform: translateY(12px);
+            }
+        }
+        &_active {
+            span {
+                &:first-child {
+                    width: 13px;
+                }
+                &:nth-child(2) {
+                    &::before {
+                        width: 8px;
+                        transform: rotate(-320deg) translate(-2px,-2px);
+                    }
+                    &::after {
+                        width: 8px;
+                        transform: rotate(320deg) translate(-2px,2px);
+                    }
+                }
+                &:last-child {
+                    width: 13px;
+                }
             }
         }
     }

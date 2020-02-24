@@ -29,7 +29,7 @@ const mainNavigations = document.querySelector('.navigations');
 window.addEventListener('scroll', () => {
     let pageY = window.pageYOffset
 
-    if (pageY > 750) {
+    if (pageY >= 700) {
         hamburder.classList.add('hamburder_show');
         mainNavigations.classList.add('navigations_show');
     } else {

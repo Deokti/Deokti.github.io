@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lada</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -16,8 +15,8 @@
         <div class="container">
            <div class="header__wrapper">
                 <!-- header-top -->
-                <div class="header-top" lang="en">
-                    <h1 class="logo"><a href="#">Lada</a></h1>
+                <div class="header-top">
+                    <h1 class="logo" lang="en"><a href="#">Lada</a></h1>
 
                     <!-- NAV -->
                     <div class="navigations">
@@ -29,9 +28,18 @@
             
                         <nav class="navigations-menu navigations-menu_active">
                             <ul class="mobile-menu">
-                                <li class="mobile-menu__link-about"><a href="#about">Другие модели</a></li>
-                                <li class="mobile-menu__link-gallery"><a href="#gallery">Презентация</a></li>
-                                <li class="mobile-menu__link-contacts"><a href="#contacts">Тест драйв</a></li>
+                                <div class="mobile-menu__link">
+                                    <li class="mobile-menu__after-model show-popup-one get-link-sites"><a href="https://www.lada.ru">Другие модели</a></li>
+                                    <li class="mobile-menu__link-presentation show-popup-one get-link-sites"><a href="#">Презентация</a></li>
+                                    <li class="mobile-menu__link-test show-popup-one get-link-sites"><a href="https://www.lada.ru/test-drive/">Тест драйв</a></li>
+                                </div>
+                                <div class="mobile-menu__menu">
+                                    <ul class="header-content__menu">
+                                        <li class="header-content__about"><a href="#about">Обзор</a></li>
+                                        <li class="header-content__gallery"><a href="#gallery">Галерея</a></li>
+                                        <li class="header-content__contacts get-link-sites"><a href="https://www.lada.ru/cars/dealers.html">Диллеры</a></li>
+                                    </ul>
+                                </div>
                             </ul>
                         </nav>
                     </div>
@@ -49,7 +57,7 @@
                             <li class="header-content__link-gallery"><a href="#gallery">Галерея</a></li>
                             <li class="header-content__link-contacts"><a href="#contacts">Контакты</a></li>
                         </ul>
-                        <button class="button button_header show-popup-one">Тест драйв</button>
+                        <button class="button button_header show-popup-two">Тест драйв</button>
                     </nav>
                 </div>
                 <!-- /.header-content -->
@@ -79,13 +87,18 @@
                 </div>
                 <!-- /.header-characteristic -->
 
-                <nav class="vertical-menu vertical-menu_header">
-                    <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_one"></span>
-                    <span class="vertical-menu__square vertical-menu__square_two"></span>
-                    <span class="vertical-menu__square vertical-menu__square_three"></span>
-                    <span class="vertical-menu__square vertical-menu__square_four"></span>
-                    <span class="vertical-menu__square vertical-menu__square_five"></span>
+
+                <!-- PROGRESS-BAR -->
+                <nav class="progress-bar">
+                    <ul class="progress-bar__list">
+                        <li class="progress-bar__item progress-bar__item_one"></li>
+                        <li class="progress-bar__item progress-bar__item_two"></li>
+                        <li class="progress-bar__item progress-bar__item_three"></li>
+                        <li class="progress-bar__item progress-bar__item_four"></li>
+                        <li class="progress-bar__item progress-bar__item_five"></li>
+                    </ul>
                 </nav>
+                <!-- /.PROGRESS-BAR -->
 
                 <a href="#about" class="mobile-arrow"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.2 7.4H9.20005V0.199997H6.80005V7.4H0.800049L8.00005 15.8L15.2 7.4Z" fill="#E6F0F5"/></svg></a>
            </div>
@@ -340,14 +353,6 @@
                     </div>
                 </div>
                 <!-- /.about-slider -->
-
-                <nav class="vertical-menu vertical-menu_about">
-                    <span class="vertical-menu__square vertical-menu__square_one"></span>
-                    <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_two"></span>
-                    <span class="vertical-menu__square vertical-menu__square_three"></span>
-                    <span class="vertical-menu__square vertical-menu__square_four"></span>
-                    <span class="vertical-menu__square vertical-menu__square_five"></span>
-                </nav>
             </div>
         </div>
     </section>
@@ -363,14 +368,6 @@
             <div class="gallery-left">
                 <div class="container">
                     <div class="gallery-left__inner">
-                        <nav class="vertical-menu vertical-menu_gallery vertical-menu_gallery-tablet">
-                            <span class="vertical-menu__square vertical-menu__square_one"></span>
-                            <span class="vertical-menu__square vertical-menu__square_two"></span>
-                            <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_three"></span>
-                            <span class="vertical-menu__square vertical-menu__square_four"></span>
-                            <span class="vertical-menu__square vertical-menu__square_five"></span>
-                        </nav>
-
                         <button class="arrow-gallery-bg arrow-gallery-bg_tablet arrow-gallery-bg_prev"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
                         <button class="arrow-gallery-bg arrow-gallery-bg_tablet arrow-gallery-bg_next"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
                     </div>
@@ -384,14 +381,6 @@
                     <img data-full-page="3" class="gallery-right__img gallery-right__four" src="img/gallery/right/4.png" alt="машина">
                 </div>
             </div>
-
-            <nav class="vertical-menu vertical-menu_gallery vertical-menu_gallery-full">
-                <span class="vertical-menu__square vertical-menu__square_one"></span>
-                <span class="vertical-menu__square vertical-menu__square_two"></span>
-                <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_three"></span>
-                <span class="vertical-menu__square vertical-menu__square_four"></span>
-                <span class="vertical-menu__square vertical-menu__square_five"></span>
-            </nav>
 
             <button class="arrow-gallery-bg arrow-gallery-bg_prev arrow-gallery-bg_full"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
             <button class="arrow-gallery-bg arrow-gallery-bg_next arrow-gallery-bg_full"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
@@ -439,14 +428,6 @@
                     <!-- /.models-name -->
 
                     <button class="button button_models show-popup-two">Тест драйв</button>
-    
-                    <nav class="vertical-menu vertical-menu_models">
-                        <span class="vertical-menu__square vertical-menu__square_one"></span>
-                        <span class="vertical-menu__square vertical-menu__square_two"></span>
-                        <span class="vertical-menu__square vertical-menu__square_three"></span>
-                        <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_four"></span>
-                        <span class="vertical-menu__square vertical-menu__square_five"></span>
-                    </nav>
                 </div>
             </div>
         </div>
@@ -491,14 +472,6 @@
                 </div>
                 <!-- /.contacts__locations -->
 
-                <nav class="vertical-menu vertical-menu_contacts">
-                    <span class="vertical-menu__square vertical-menu__square_one"></span>
-                    <span class="vertical-menu__square vertical-menu__square_two"></span>
-                    <span class="vertical-menu__square vertical-menu__square_three"></span>
-                    <span class="vertical-menu__square vertical-menu__square_four"></span>
-                    <span class="vertical-menu__square vertical-menu__square_active vertical-menu__square_five"></span>
-                </nav>
-
                 <button class="arrow-top"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 18L10.75 10.5H19.75V7.5L10.75 7.5V0L0.25 9L10.75 18Z" fill="#E6F0F5"/></svg></button>
             </div>
         </div>
@@ -506,13 +479,12 @@
     <!-- /.CONTACTS -->
 
 
-
     <!-- POPUPS -->
     <div class="overlay"> 
         <div class="popup popup_one">
             <h6 class="popup__text">Мы перенаправим вас на основной сайт. Вы не против?</h6>
             <div class="popup__buttons">
-                <button class="button button-get-sites button_popup">Не против</button>
+                <button class="button button_true button_popup">Не против</button>
                 <button class="button popup_close button_close button_popup">Остаться</button>
             </div>
         </div>
@@ -520,7 +492,7 @@
         <div class="popup popup_two">
             <h6 class="popup__text">Мы перенаправим вас на основной сайт. Вы не против?</h6>
             <div class="popup__buttons">
-                <button class="button button-get-sites button_popup">Не против</button>
+                <button class="button get-sites-driver button_popup">Не против</button>
                 <button class="popup__rejection popup_close">Нет, продолжить здесь</button>
             </div>
         </div>

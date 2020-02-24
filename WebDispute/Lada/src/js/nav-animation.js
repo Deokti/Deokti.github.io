@@ -1,12 +1,12 @@
 // Получение ссылок на первом экране лендинга
-const navLinkAbout = document.querySelector('.header-content__menu a[href="#about"]');
-const navLinksGallery = document.querySelector('.header-content__menu a[href="#gallery"]')
-const navLinksContacts = document.querySelector('.header-content__menu a[href="#contacts"]')
+const navLinkAbout = document.querySelector('.header-content .header-content__link-about a[href="#about"]');
+const navLinksGallery = document.querySelector('.header-content .header-content__menu a[href="#gallery"]')
+const navLinksContacts = document.querySelector('.header-content .header-content__menu a[href="#contacts"]')
 
 // Получение ссылок в габмургере
-const mobileMenuAbout = document.querySelector('.mobile-menu__link-about a[href="#about"]');
-const mobileMenuPresentation = document.querySelector('.mobile-menu__link-gallery a[href="#gallery"]')
-const mobileMenuTest = document.querySelector('.mobile-menu__link-contacts a[href="#contacts"]')
+const mobileMenuAbout = document.querySelector('.mobile-menu__after-model a');
+const mobileMenuPresentation = document.querySelector('.mobile-menu__link-presentation a')
+const mobileMenuTest = document.querySelector('.mobile-menu__link-test a')
 
 function animationText(hoverLink, linksItem) {
     const link = document.querySelector(hoverLink);
@@ -57,9 +57,9 @@ animationText('.header-content__link-about', navLinkAbout);
 animationText('.header-content__link-gallery', navLinksGallery);
 animationText('.header-content__link-contacts', navLinksContacts);
 
-animationText('.mobile-menu__link-about', mobileMenuAbout); 
-animationText('.mobile-menu__link-gallery', mobileMenuPresentation); 
-animationText('.mobile-menu__link-contacts', mobileMenuTest); 
+animationText('.mobile-menu__after-model', mobileMenuAbout); 
+animationText('.mobile-menu__link-presentation', mobileMenuPresentation); 
+animationText('.mobile-menu__link-test', mobileMenuTest); 
 
 
 const VastaSports = document.querySelector('.header__main-title');

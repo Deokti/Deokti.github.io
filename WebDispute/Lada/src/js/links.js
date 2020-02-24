@@ -22,20 +22,6 @@
             block: 'start',
         });
     })
-
-    // Меню, находящееся с правой верхней стороны, 
-    // которое появляется при скролле до второй секции
-    const mobileNavLinks = document.querySelectorAll('.mobile-menu li a[href*="#"]');
-    mobileNavLinks.forEach(item => {
-        item.addEventListener('click', event => {
-            event.preventDefault();
-            const hrefAttributeLink = item.getAttribute('href');
-            document.querySelector('' + hrefAttributeLink).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-        });
-    });
 })();
 
 window.addEventListener('load', function() {

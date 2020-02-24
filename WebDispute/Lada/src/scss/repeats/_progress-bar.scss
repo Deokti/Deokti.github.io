@@ -1,0 +1,79 @@
+.progress-bar {
+    position: absolute;
+    right: 17px;
+    top: 40.7%;
+    transition: all .3s ease;
+    z-index: 400;
+    transition: all .3s ease; 
+    &__list {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        position: fixed;
+        transition: all .3s ease; 
+        &_header {
+            .progress-bar__item_one {
+                width: 2px;
+                height: 40px;
+                transform: translateX(1.3px);
+            }
+        }
+        &_about {
+            .progress-bar__item_one {
+                width: 8px;
+                height: 8px;
+                transform: translateX(0);
+            }
+            .progress-bar__item_two {
+                width: 2px;
+                height: 40px;
+                transform: translateX(2.2px);
+            }
+        }
+        &_gallery {
+            .progress-bar__item_two {
+                width: 8px;
+                height: 8px;
+                transform: translateX(0);
+            }
+            .progress-bar__item_three {
+                width: 2px;
+                height: 40px;
+                transform: translateX(2.2px);
+            }
+        }
+        &_models {
+            .progress-bar__item_three {
+                width: 8px;
+                height: 8px;
+                transform: translateX(0);
+            }
+            .progress-bar__item_four {
+                width: 2px;
+                height: 40px;
+                transform: translateX(2.2px);
+            }
+        }
+        &_contacts {
+            .progress-bar__item_four {
+                width: 8px;
+                height: 8px;
+                transform: translateX(0);
+            }
+            .progress-bar__item_five {
+                width: 2px;
+                height: 40px;
+                transform: translateX(2.2px);
+            }
+        }
+    }
+    
+    &__item {
+        width: 8px;
+        height: 8px;
+        background: #E6F0F5;
+        margin-bottom: 20px;
+        transition: all .3s ease; 
+    }
+}

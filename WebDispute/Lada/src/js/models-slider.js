@@ -2,7 +2,6 @@ $('.models-slider__inner').slick({
     infinite: true,
     speed: 500,
     fade: false,
-    autoplay: true,
     cssEase: 'linear',
     asNavFor: '.models-name',
     appendArrows: $('.models-wrapper__inner'),
