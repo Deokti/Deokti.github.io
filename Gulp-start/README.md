@@ -19,7 +19,7 @@
 
 <ol>
   <li><a href="https://gulpjs.com">Gulp</a>, - сам gulp-файл;</li>
-  <li><a href="https://www.npmjs.com/package/gulp-cli">Gulp-cli</a></li>
+  <li><a href="https://www.npmjs.com/package/gulp-cli">Gulp-cli</a>, - ???</li>
   <li><a href="">Browser-sync</a>, - позволяет запустить сервер для работы с проектом;</li>
   <li><a href="https://www.npmjs.com/package/gulp-sass">Gulp-sass</a>, - компилирует SASS файлы в обычный CSS-файл. Внутри него работают несколько другие плагины, позволяющие делать некоторые другие вещи;</li>
   <li><a href="https://www.npmjs.com/package/gulp-autoprefixer">Gulp-autoprefixer</a>, -  выставляет вендорные префиксы для лучшего понимания браузерами кода. Работает внутри  плагина «gulp-sass»;</li>
@@ -28,6 +28,7 @@
   <li><a href="https://www.npmjs.com/package/gulp-concat">Gulp-concat</a>, - не знаю для каких целей плагин можно ещё использовать, тем не менее мной он используется для объединения JavaScript файлов в один;</li>
   <li><a href="https://www.npmjs.com/package/gulp-rename">Gulp-rename</a>, - не знаю для чего именно нужен;</li>
   <li><a href="https://www.npmjs.com/package/gulp-watch">Gulp-watch</a>, - ищет файлы, хотя стоит заметить, в настоящее время он пока не настроен по той причине, что я пока не понял как это делать. В будущем будет настроено;</li>
+  <li><a href="https://www.npmjs.com/package/gulp-uglify-es">Gulp-uglify-es</a>, - сжимает файлы JS, работает вместе с Gulp-concat. Ранее пытался использовать Gulp-uglify, однако сжать не получалось, были ошибки. Этот же плагин на данный момент показал себя превосходно.</li>
 </ol>  
 
 
