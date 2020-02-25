@@ -1,15 +1,8 @@
 .navigations {
-    opacity: 0;
-
     position: absolute;
     right: 26px;
     top: 15px;
-
     transition: all .3s ease;
-    &_show {
-        opacity: 1;
-        display: block;
-    }
 }
 
 .hamburder {
@@ -20,10 +13,6 @@
     height: 23px;
     z-index: 999;
     transition: all .3s ease;
-    transform: translateY(-20px);
-    &_show {
-        transform: translateY(0);
-    }
     span {
         position: absolute;
         width: 24px;
@@ -162,5 +151,7 @@
     }
     &__link {
         display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
     }
 }
