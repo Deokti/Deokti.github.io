@@ -7,7 +7,7 @@ let gulp            = require('gulp'),
 	watch 			= require('gulp-watch'),
 	concat 			= require('gulp-concat'),
 	csso 			= require('gulp-csso'),
-	uglify 			= require('gulp-uglify');
+	uglify 			= require('gulp-uglify-es').default;
 
 
 /*-------- browserSync --------*/
@@ -52,6 +52,8 @@ gulp.task('concat', function() {
 	return gulp.src(['src/js/preloader.js', 'src/js/libs/jquery.min.js', 'src/js/libs/vegas.min.js', 'src/js/gallery-bg.js', 'src/js/libs/slick.min.js', 'src/js/nav-animation.js', 'src/js/links.js', 'src/js/about-car-slider.js', 'src/js/full-page-click.js', 'src/js/hamburger.js', 'src/js/progress-bar.js', 'src/js/models-slider.js', 'src/js/popup.js'])
 		.pipe(concat({ path: 'script.js'}))
 		.pipe(gulp.dest('dist/js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('dist/js'))
 		.pipe(browserSync.stream())
 });
 
@@ -78,4 +80,4 @@ gulp.task('watch', function() {
 });
 
 //запускает паралельно несколько задач
-gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', 'concat','img', 'fonts'))
+gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', 'concat', 'img', 'fonts'))
