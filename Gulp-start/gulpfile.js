@@ -1,13 +1,13 @@
-let gulp            	= require('gulp'),
-    browserSync    	= require('browser-sync'),
-    scss 		= require('gulp-sass'),
-    gulpRename      	= require('gulp-rename'),
-    autoprefixer    	= require('gulp-autoprefixer'),
-    htmlmin 		= require('gulp-htmlmin'),
-    watch 		= require('gulp-watch'),
-    concat 		= require('gulp-concat'),
-    csso 		= require('gulp-csso'),
-    uglify 		= require('gulp-uglify');
+let gulp            = require('gulp'),
+	browserSync     = require('browser-sync'),
+	scss 			= require('gulp-sass'),
+    gulpRename      = require('gulp-rename'),
+    autoprefixer    = require('gulp-autoprefixer'),
+	htmlmin 		= require('gulp-htmlmin'),
+	watch 			= require('gulp-watch'),
+	concat 			= require('gulp-concat'),
+	csso 			= require('gulp-csso'),
+	uglify 			= require('gulp-uglify-es').default;
 
 
 /*-------- browserSync --------*/
@@ -21,8 +21,8 @@ gulp.task('browser-sync', function() {
     gulp.watch('src/*.html').on("change", browserSync.reload); //после изминения запускает задачу, страница перезагружается
 });
 
+
 /*-------- scss, gulpRename, autoprefixer, cleanCSS --------*/
-//обращаемся к галпу и назначает задачу, называя её scss, после чего создаём функцию
 gulp.task('scss', function() {
     //говорим откуда брать файлы для компаляции
     return gulp.src('src/scss/**/*.scss')
@@ -41,17 +41,18 @@ gulp.task('scss', function() {
 /*-------- htmlmin --------*/
 gulp.task('htmlmin', function() {
 	return gulp.src('src/*.html')
-		.pipe(htmlmin({ 
-			collapseWhitespace: true, 
-			ignoreCustomComments: true, 
-			removeComments: true })) //убарает пробелы в минифицированном файле
+		.pipe(htmlmin({
+			ignoreCustomComments: true,
+			removeComments: true }))
 		.pipe(gulp.dest('dist/'));
 });
 
 /*-------- scriptJS --------*/
 gulp.task('concat', function() {
-	return gulp.src(['']) /* Для создания вложенности/иерархии файлов - (['src/js/forms.js', 'src/js/packages.js',])*/
+	return gulp.src(['']) /* 'src/js/preloader.js', 'src/js/popup.js' */
 		.pipe(concat({ path: 'script.js'}))
+		.pipe(gulp.dest('dist/js'))
+		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'))
 		.pipe(browserSync.stream())
 });
@@ -79,4 +80,4 @@ gulp.task('watch', function() {
 });
 
 //запускает паралельно несколько задач
-gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', 'concat','img', 'fonts'))
+gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', 'concat', 'img', 'fonts'))
