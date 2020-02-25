@@ -19,7 +19,7 @@
 
 <ol>
   <li><a href="https://gulpjs.com">Gulp</a>, - сам gulp-файл;</li>
-  <li><a href="https://www.npmjs.com/package/gulp-cli">Gulp-cli</a></li>
+  <li><a href="https://www.npmjs.com/package/gulp-cli">Gulp-cli</a>, - ???</li>
   <li><a href="">Browser-sync</a>, - позволяет запустить сервер для работы с проектом;</li>
   <li><a href="https://www.npmjs.com/package/gulp-sass">Gulp-sass</a>, - компилирует SASS файлы в обычный CSS-файл. Внутри него работают несколько другие плагины, позволяющие делать некоторые другие вещи;</li>
   <li><a href="https://www.npmjs.com/package/gulp-autoprefixer">Gulp-autoprefixer</a>, -  выставляет вендорные префиксы для лучшего понимания браузерами кода. Работает внутри  плагина «gulp-sass»;</li>
