@@ -58,9 +58,11 @@
         margin-top: -160px;
         width: 680px;
         &__item {
+            cursor: pointer;
             width: 155px;
             margin-right: 11px;
             transition: all .3s ease-in-out;
+            opacity: .5;
             &:last-child {
                 margin-right: 0;
             }
@@ -70,6 +72,7 @@
                 pointer-events: none;
             }
             &_active {
+                opacity: 1;
                 border-radius: 50%;
                 border: 1px dashed #F1403B;
                 padding: 3px;
