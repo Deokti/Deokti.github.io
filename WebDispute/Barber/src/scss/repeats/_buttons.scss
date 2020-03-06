@@ -7,6 +7,10 @@
 
     font-size: 30px;
     color: #fff;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background: #A01E1A;
+    }
     &_header {
         margin-top: 35px;
     }
