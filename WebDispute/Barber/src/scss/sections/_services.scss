@@ -1,9 +1,11 @@
 .services {
-    min-height: 890px;
+    min-height: 867px;
     &-left {
         max-width: 951px;
+        height: 867px;
         img {
             width: 100%;
+            height: 100%;
         }
     }
     &-right {

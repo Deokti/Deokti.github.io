@@ -11,7 +11,7 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header background-base">
+    <header class="header background-base" id="header">
         <!-- header-top -->
         <div class="header-top">
             <div class="container">
@@ -37,9 +37,9 @@
                 <div class="naigations__wrapper display-flex justify-space-between">
                     <h1 class="navigations__title">Брадобрей</h1>
                     <ul class="navigations__links ul-none display-flex">
-                        <li><a href="#">Главное</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Мастера</a></li>
+                        <li><a href="#header">Главное</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#masters">Мастера</a></li>
                         <li><a href="#">Отзывы</a></li>
                         <li><a href="#">Галерея</a></li>
                         <li><a href="#">Контакты</a></li>
@@ -63,11 +63,12 @@
     </header>
     <!-- /.HEADER -->
 
+
     <!-- MAIN -->
     <main class="main">
 
         <!-- REVIEWS -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="services__wrapper display-flex">
                 <!-- reviews-left -->
                 <div class="services-left">
@@ -100,6 +101,111 @@
         <!-- /.REVIEWS -->
 
 
+        <!-- MASTERS -->
+        <section class="masters" id="masters">
+            <div class="container">
+                <h3 class="title title_masters">Наши мастера</h3>
+                
+                <div class="masters__wrapper display-flex flex-d-col">
+
+                    <!-- masters-content -->
+                    <div class="masters-content">
+                        <!-- one -->
+                        <div class="masters-content__item masters-content__item_one" data-masters="1">
+                            <div class="masters-content__border">
+                                <img src="img/masters/shamil.png" alt="Шамиль Мушрапилов" class="masters-content__img">
+                            </div>
+    
+                            <div class="masters-content__description">
+                                <h4 class="masters-content__title">Шамиль Мушрапилов</h4>
+                                <h5 class="masters-content__subtitle">Старший барбер</h5>
+                                <ul class="masters-content__detailed ul-none">
+                                    <li>- Стрижка усов и бороды</li>
+                                    <li>- Моделирование бороды</li>
+                                    <li>- Мужская стрижка</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.one -->
+
+                        <!-- two -->
+                        <div class="masters-content__item masters-content__item_two" data-masters="2">
+                            <div class="masters-content__border">
+                                <img src="img/masters/andrew.png" alt="Андрей Кибиков" class="masters-content__img">
+                            </div>
+    
+                            <div class="masters-content__description">
+                                <h4 class="masters-content__title">Андрей Кибиков</h4>
+                                <h5 class="masters-content__subtitle">Барбер</h5>
+                                <ul class="masters-content__detailed ul-none">
+                                    <li>- Мужская стрижка</li>
+                                    <li>- Детская стрижка</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.two -->
+
+                        <!-- three -->
+                        <div class="masters-content__item masters-content__item_three" data-masters="3">
+                            <div class="masters-content__border">
+                                <img src="img/masters/islam.png" alt="Ислам Анданов" class="masters-content__img">
+                            </div>
+    
+                            <div class="masters-content__description">
+                                <h4 class="masters-content__title">Ислам Анданов</h4>
+                                <h5 class="masters-content__subtitle">Барбер</h5>
+                                <ul class="masters-content__detailed ul-none">
+                                    <li>- Стрижка усов и бороды</li>
+                                    <li>- Моделирование бороды</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.three -->
+
+                        <!-- four -->
+                        <div class="masters-content__item masters-content__item_four" data-masters="4">
+                            <div class="masters-content__border">
+                                <img src="img/masters/ruslan.png" alt="Руслан Зайнутдинов" class="masters-content__img">
+                            </div>
+    
+                            <div class="masters-content__description">
+                                <h4 class="masters-content__title">Руслан Зайнутдинов</h4>
+                                <h5 class="masters-content__subtitle">Барбер</h5>
+                                <ul class="masters-content__detailed ul-none">
+                                    <li>- Моделирование бороды</li>
+                                    <li>- Мужская стрижка</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.four -->
+                    </div>
+                    <!-- /.masters-content -->
+
+                    <!-- masters-content -->
+                    <div class="masters-tabs">
+                        <ul class="masters-tabs__inner ul-none display-flex">
+                            <li class="masters-tabs__item masters-tabs__item_active" data-masters="1">
+                                <img src="img/masters/shamil.png" alt="Шамиль Мушрапилов">
+                            </li>
+
+                            <li class="masters-tabs__item" data-masters="2">
+                                <img src="img/masters/andrew.png" alt="Андрей Кибиков">
+                            </li>
+                            
+                            <li class="masters-tabs__item" data-masters="3">
+                                <img src="img/masters/islam.png" alt="Ислам Анданов">
+                            </li>
+                            <li class="masters-tabs__item" data-masters="4">
+                                <img src="img/masters/ruslan.png" alt="Руслан Зайнутдинов">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.masters-content -->
+                </div>
+                
+            </div>
+        </section>
+        <!-- /.MASTERS -->
 
 
 

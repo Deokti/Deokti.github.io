@@ -1,6 +1,18 @@
 .header {
-    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.25) 45.02%,rgba(0, 0, 0, 0.25) 100%), url('../img/header/header-bg.jpg');
-    min-height: 694px;
+    position: relative;
+    background-image: url('../img/header/header-bg.jpg');
+    min-height: 793px;
+    background-position: -115px 0px;
+    z-index: 3;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.25);
+        z-index: -1;
+        pointer-events: none;
+    }
     &-top {
         min-height: 50px;
         padding: 12px 0;
