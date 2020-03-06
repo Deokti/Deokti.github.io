@@ -1,0 +1,38 @@
+// Базовые файлы для подключения
+@import 'base/bootstrap-reboot.min';
+@import 'base/tiny-slider';
+@import 'base/fonts';
+
+
+body {
+    font-family: 'Bebas Neue Bold';
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+// Подключение стилей, 
+// которые отвечают за 
+// некоторые стили
+@import 'repeats/style-elements.scss';
+
+// Повторяющиеся элементы, 
+// или единичные 
+@import 'repeats/social';
+@import 'repeats/navigations';
+@import 'repeats/buttons';
+@import 'repeats/title';
+
+
+// Секции
+@import 'sections/header';
+@import 'sections/services';
+@import 'sections/masters';
+@import 'sections/reviews';
+@import 'sections/gallery';
+@import 'sections/contacts';
+@import 'sections/footer';

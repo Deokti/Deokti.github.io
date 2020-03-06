@@ -1,0 +1,13 @@
+.button {
+    display: block;
+    width: 404px;
+    height: 80px;
+    background: #F1403B;
+    border: none;
+
+    font-size: 30px;
+    color: #fff;
+    &_header {
+        margin-top: 35px;
+    }
+}

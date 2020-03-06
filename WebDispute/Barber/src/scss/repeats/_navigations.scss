@@ -1,0 +1,31 @@
+.navigations {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 19px 0;
+    &__title {
+        font-size: 42px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: #fff;
+    }
+    &__links {
+        align-items: center;
+        li {
+            padding-left: 30px;
+            &:first-child {
+                padding-left: 0;
+            }
+            a {
+                color: #fff;
+                font-size: 24px;
+                text-transform: uppercase;
+                transition: all .3s ease-in-out;
+                text-decoration: none;
+                &:hover {
+                    color: #F1403B;
+                }
+            }
+        }
+    }
+}

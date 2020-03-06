@@ -1,0 +1,14 @@
+.social-hover {
+   transition: all .3s ease-in-out;
+}
+
+.social {
+   li {
+      padding-left: 15px;
+      &:hover {
+         .social-hover {
+            fill: #fff;
+         }
+      }
+   }
+}
