@@ -42,3 +42,16 @@
    <li>Вёрстка началась 20.02.2020, закончилась 25.02.2020. На проект потрачено 34 часа и 17 минут. <a href="https://cloclo20.datacloudmail.ru/inline/7Yr8iewWXqQTjkwTZz4CTyesZz4BtNS6U5Ek8fSEV2EyDyo7BHfMzRSrVaurC7FsuTe81P/reilgelern@mail.ru/Макеты/Картинки%20с%20WakaTime/LADA.png" target="_blank">WakaTime</a>;</li>
   <li>Макет был сделаный дизайнером, одним из участников прокте WebDispute по имени <a href="https://vk.com/belane360">Эдуард Белан</a>.</li>
 </ol>  
+
+<hr>
+
+<h2>Barber</h2>
+
+<ol>
+  <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/Barber/dist/" target="_blank">Barber</a></li>
+  <li>Подробности будут позже.</li>
+</ol>  
+
+
+
+
