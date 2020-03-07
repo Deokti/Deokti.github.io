@@ -13,10 +13,9 @@
     }
 
     .navigations__mobile {
-        height: 120px;
         padding: 0 20px 13px;
         li {
-            padding-top: 6px;
+            padding-top: 12px;
             line-height: 12px;
             a {
                 font-size: 12px;
@@ -75,4 +74,31 @@
         font-size: 20px;
     }
     /* SERVICES */
+
+    /* MASTERS */
+    .masters-content__border {
+        width: 259px;
+        height: 259px;
+        padding: 12px;
+        &::after {
+            width: 255px;
+            height: 255px;
+        }
+    }
+    .masters-content__title {
+        font-size: 16px;
+    }
+    .masters-content__subtitle {
+        padding-top: 6px;
+        font-size: 14px;
+    }
+    .masters-content__detailed {
+        li {
+            font-size: 14px;
+        }
+    }
+    .masters-content__detailed {
+        padding-top: 0;
+    }
+    /* MASTERS */
 }

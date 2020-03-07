@@ -88,10 +88,19 @@
         padding-bottom: 8px;
         width: 100%;
     }
+    .masters-tabs {
+        width: 100%;
+    }
     .services-right {
         padding: 0;
         width: 100%;
         padding: 40px 40px 15px;
+    }
+    .masters-tabs__item {
+        margin: 0;
+    }
+    .masters-tabs__inner {
+        justify-content: space-between;
     }
     /* SERVICES */
 }

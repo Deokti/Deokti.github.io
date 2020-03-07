@@ -1,0 +1,24 @@
+@media screen and (max-width: 1110px) {
+    /* MASTERS */
+    .masters-tabs {
+        left: 0;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .masters-content__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .masters-content__description {
+        padding-left: 0;
+        padding-top: 15px;
+        text-align: center;
+    }
+    .masters-tabs__item {
+        margin: 0 15px;
+    }
+    .masters__wrapper {
+        padding-top: 30px;
+    }
+    /* MASTERS */
+}
