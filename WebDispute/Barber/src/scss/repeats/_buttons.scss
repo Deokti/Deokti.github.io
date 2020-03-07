@@ -15,3 +15,39 @@
         margin-top: 35px;
     }
 }
+
+.button-arrow {
+    position: absolute;
+    border: none;
+    background: transparent;
+    left: -38px;
+    top: 61%;
+    transform: translateY(-50%);
+    &_next {
+        left: auto;
+        right: -38px;
+        transform: rotate(180deg) translate(1px, 19px);
+    }
+}
+
+.tns-nav {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+// Образщаемся к круглым элементам навигации
+// слайцдера через атрибут
+button[aria-controls=tns1] {
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #F1403B;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.tns-nav-active {
+    background: #F1403B !important;
+}

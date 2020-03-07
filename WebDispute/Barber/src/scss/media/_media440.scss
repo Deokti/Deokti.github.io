@@ -18,4 +18,27 @@
         padding-bottom: 1px;
     }
     /* SERVICES */
+
+
+    .reviews {
+        padding: 25px 0 56px 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .tns-nav {
+        bottom: -30px;
+        left: 49%;
+    }
+    .button-arrow {
+        svg {
+            width: 8px;
+            height: 22px;
+        }
+    }
+    .button-arrow_prev {
+        left: -20px;
+    }
+    .button-arrow_next {
+        right: -20px;
+    }
 }

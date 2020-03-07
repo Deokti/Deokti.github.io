@@ -75,6 +75,7 @@
     }
     /* SERVICES */
 
+
     /* MASTERS */
     .masters-content__border {
         width: 259px;
@@ -101,4 +102,41 @@
         padding-top: 0;
     }
     /* MASTERS */
+
+
+     /* REVIEWS */
+     .reviews {
+        padding: 43px 0 85px 0;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+    .reviews__wrapper {
+        padding-top: 25px;
+    }
+    .reviews-items__item {
+        width: 280px;
+        min-height: 186px;
+        padding: 28px 0 20px 16px;
+    }
+    .reviews-items__name {
+        font-size: 12px;
+    }
+    .reviews-items__rating {
+        margin-top: -5px;
+        font-size: 12px;
+    }
+    .reviews-items__description {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .tns-nav {
+        width: 120px;
+        left: 50%;
+    }
+    button[aria-controls=tns1] {
+        border: 1px solid #F1403B;
+        width: 10px;
+        height: 14px;
+    }
+    /* REVIEWS */
 }

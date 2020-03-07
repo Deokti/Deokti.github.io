@@ -103,4 +103,38 @@
         justify-content: space-between;
     }
     /* SERVICES */
+
+
+    /* REVIEWS */
+    .reviews {
+        padding: 43px 0 85px 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .reviews__wrapper {
+        padding-top: 25px;
+    }
+    .reviews-items__item {
+        width: 572px;
+        min-height: 193px;
+        padding: 28px 0 23px 32px;
+    }
+    .reviews-items__name {
+        font-size: 20px;
+    }
+    .reviews-items__rating {
+        font-size: 17px;
+    }
+    .reviews-items__description {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .button-arrow {
+        svg {
+            width: 13px;
+            height: 30px;
+        }
+    }
+    /* REVIEWS */
 }
