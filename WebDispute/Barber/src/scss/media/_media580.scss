@@ -56,4 +56,23 @@
         }
     }
    
+    .title {
+        font-size: 25px;
+        &::before {
+            width: 25px;
+            bottom: 5px;
+        }
+    }
+
+    /* SERVICES */
+    .services {
+        min-height: 540px;
+    }
+    .services-right {
+        padding: 40px 20px 22px;
+    }
+    .services-list__item {
+        font-size: 20px;
+    }
+    /* SERVICES */
 }

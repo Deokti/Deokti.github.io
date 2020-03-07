@@ -62,8 +62,36 @@
             font-size: 26px;
         }
     }
-   
-
-
     /* HEADER */
+
+
+    .title {
+        font-size: 30px;
+        text-align: center;
+        &::before {
+            bottom: 10px;
+            left: auto;
+        }
+    }
+
+    /* SERVICES */
+    .services {
+        min-height: 704px;
+    }
+    .services-list {
+        padding-top: 15px;
+        max-width: 570px;
+        margin: 0 auto;
+    }
+    .services-list__item {
+        font-size: 30px;
+        padding-bottom: 8px;
+        width: 100%;
+    }
+    .services-right {
+        padding: 0;
+        width: 100%;
+        padding: 40px 40px 15px;
+    }
+    /* SERVICES */
 }

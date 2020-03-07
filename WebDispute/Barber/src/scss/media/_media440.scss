@@ -1,0 +1,21 @@
+@media screen and (max-width: 440px) {
+    .title {
+        font-size: 20px;
+    }
+
+    /* SERVICES */
+    .services {
+        min-height: 330px;
+    }
+    .services-list {
+        padding-top: 0;
+    }
+    .services-right {
+        padding: 26px 20px 25px;
+    }
+    .services-list__item {
+        font-size: 14px;
+        padding-bottom: 1px;
+    }
+    /* SERVICES */
+}

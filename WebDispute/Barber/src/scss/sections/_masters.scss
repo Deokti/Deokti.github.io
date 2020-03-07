@@ -6,6 +6,7 @@
     font-weight: 400;
     &__wrapper {
         padding-top: 80px;
+        overflow: hidden;
     }
     &-content {
         &__item {
@@ -17,27 +18,29 @@
         }
         &__border {
             position: relative;
+            position: relative;
             width: 430px;
             height: 430px;
-            border-radius: 50%;
-            border: 3px dashed #F1403B;
-            padding: 11px;
-            // &::after { Возможно в будущем!!!!!!!!!!
-            //     position: absolute;
-            //     content: '';
-            //     width: 430px;
-            //     height: 430px;
-            //     border-radius: 50%;
-            //     border: 3px dashed #F1403B;
-            //     left: -4px;
-            //     top: -3px;
-            //     pointer-events: none;
+            padding: 16px;
 
-            //     animation-name: transformRotate;
-            //     animation-duration: .3s;
-            //     animation-iteration-count: infinite;
+            margin-left: -3px;
+            margin-top: -2px;
+            &::after { 
+                position: absolute;
+                content: '';
+                width: 425px;
+                height: 425px;
+                border-radius: 50%;
+                border: 3px dashed #f1403b;
+                left: 2px;
+                top: 1px;
+                pointer-events: none;
 
-            // }
+                animation-name: transformRotate;
+                animation-duration: .3s;
+                animation-iteration-count: infinite;
+
+            }
         }
         &__img {
             border-radius: 50%;

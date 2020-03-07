@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px) {
+    .services-left {
+        display: none;
+        pointer-events: none;
+    }
+    .services {
+        min-height: 815px;
+    }
+}

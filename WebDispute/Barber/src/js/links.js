@@ -7,6 +7,16 @@ desktopNavLinks.forEach(link => {
         document.querySelector('' + hrefAttributeLink).scrollIntoView({
             behavior: 'smooth',
             block: 'start',
+
         });
+        closeHamburder();
     });
 });
+
+const openHamburger = document.querySelector('.navigations__hamburger');
+const openMenu = document.querySelector('.navigations__mobile');
+
+function closeHamburder() {
+    openHamburger.classList.remove('navigations__hamburger_active')
+    openMenu.classList.remove('navigations__mobile_active');
+}
