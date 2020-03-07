@@ -1,0 +1,69 @@
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+
+
+    /* HEADER */
+    .social {
+        li {
+            padding-left: 10px;
+            svg {
+                width: 15px;
+            }
+        }
+    }
+    .header-contact {
+        padding-left: 21px;
+    }
+    .header-contact__mail {
+        &::before {
+            width: 15px;
+            height: 11px;
+            top: 2px;
+            left: -20px;
+        }
+    }
+    .header-contact__phone {
+        &::before {
+            width: 13px;
+            height: 13px;
+            top: 2px;
+            left: 17px;
+        }
+    }
+
+    .navigations__hamburger {
+        right: 40px;
+    }
+    .navigations__mobile {
+        padding: 0 40px 50px;
+    }
+
+    .button {
+        width: 344px;
+        height: 60px;
+        font-size: 22px;
+        &_header {
+            margin-top: 42px;
+        }
+    }
+    
+
+    .header {
+        min-height: 700px;
+        background-position: -610px 0;
+    }
+    .header-content__title {
+        padding-top: 5px;
+        font-size: 54px;
+        line-height: 45px;
+        span {
+            font-size: 26px;
+        }
+    }
+   
+
+
+    /* HEADER */
+}

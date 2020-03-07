@@ -14,11 +14,13 @@
         pointer-events: none;
     }
     &-top {
+        position: relative;
         min-height: 50px;
         padding: 12px 0;
         background: #000000;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
+        z-index: 5;
         &__wrapper {
             display: flex;
             justify-content: space-between;
@@ -39,6 +41,9 @@
             &::before {
                 content: '';
                 position: absolute;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
         }
         &__mail {

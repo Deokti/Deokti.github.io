@@ -48,7 +48,7 @@ gulp.task('htmlmin', function() {
 
 /*-------- scriptJS --------*/
 gulp.task('concat', function() {
-	return gulp.src(['src/js/libs/jquery.min.js', 'src/js/navigations.js', 'src/js/links.js', 'src/js/tabs.js', 'src/js/libs/tiny-slider.js', 'src/js/slider-reviews.js', 'src/js/libs/jgallery.min.js', 'src/js/gallery.js'])
+	return gulp.src(['src/js/libs/jquery.min.js', 'src/js/navigations.js', 'src/js/hamburger.js', 'src/js/links.js', 'src/js/tabs.js', 'src/js/libs/tiny-slider.js', 'src/js/slider-reviews.js', 'src/js/libs/jgallery.min.js', 'src/js/gallery.js'])
 		.pipe(concat({ path: 'script.js'}))
 		.pipe(gulp.dest('dist/js'))
 		.pipe(uglify())
@@ -68,6 +68,10 @@ gulp.task('fonts', function() {
 		.pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('htaccess', function() {
+	return gulp.src('src/*.htaccess')
+		.pipe(gulp.dest('dist/'));
+})
 
 gulp.task('watch', function() {
 	//следит за файлами по данной дериктории, и если в них происзошло изменение, запускается задача scss
@@ -79,4 +83,4 @@ gulp.task('watch', function() {
 });
 
 //запускает паралельно несколько задач
-gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', 'concat', 'img', 'fonts'))
+gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', 'concat', 'img', 'fonts', 'htaccess'))

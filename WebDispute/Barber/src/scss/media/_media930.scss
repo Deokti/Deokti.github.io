@@ -1,0 +1,25 @@
+@media screen and (max-width: 930px) {
+    /* HEADER */
+    .navigations {
+        background-color: #1A1A1A;
+    }
+    .navigations__desktop {
+        display: none;
+    }
+    .navigations__hamburger {
+        display: block;
+    }
+    .navigations__mobile {
+        li {
+            width: 100%;
+            a {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+   
+
+
+    /* HEADER */
+}

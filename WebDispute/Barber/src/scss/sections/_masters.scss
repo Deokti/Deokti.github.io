@@ -16,11 +16,28 @@
             }
         }
         &__border {
+            position: relative;
             width: 430px;
             height: 430px;
             border-radius: 50%;
             border: 3px dashed #F1403B;
             padding: 11px;
+            // &::after { Возможно в будущем!!!!!!!!!!
+            //     position: absolute;
+            //     content: '';
+            //     width: 430px;
+            //     height: 430px;
+            //     border-radius: 50%;
+            //     border: 3px dashed #F1403B;
+            //     left: -4px;
+            //     top: -3px;
+            //     pointer-events: none;
+
+            //     animation-name: transformRotate;
+            //     animation-duration: .3s;
+            //     animation-iteration-count: infinite;
+
+            // }
         }
         &__img {
             border-radius: 50%;
@@ -55,7 +72,7 @@
     &-tabs {
         position: relative;
         left: 457px;
-        margin-top: -160px;
+        margin-top: -176px;
         width: 680px;
         &__item {
             cursor: pointer;

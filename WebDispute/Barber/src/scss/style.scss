@@ -2,6 +2,7 @@
 @import 'base/bootstrap-reboot.min';
 @import 'base/tiny-slider';
 @import 'base/fonts';
+@import 'base/animate';
 
 
 body {
@@ -36,3 +37,12 @@ body {
 @import 'sections/gallery';
 @import 'sections/contacts';
 @import 'sections/footer';
+
+
+// Медия запросы
+@import 'media/media1700';
+@import 'media/media930';
+@import 'media/media768';
+@import 'media/media700';
+@import 'media/media580';
+@import 'media/media340';
