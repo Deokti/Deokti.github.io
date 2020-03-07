@@ -1,7 +1,25 @@
 @media screen and (max-width: 740px) {
+    .gallery {
+        h6 {
+            font-size: 4rem;
+        }
+    }
+
     /* MASTERS */
     .masters-tabs__item {
         width: 23%;
     }
     /* MASTERS */
+
+    /* CONTACTS */
+    .contacts-address__inner {
+        padding-right: 40px;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    .contacts-details__contact {
+        padding-left: 25px;
+    }
+    /* CONTACTS */
 }

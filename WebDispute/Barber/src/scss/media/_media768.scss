@@ -5,7 +5,7 @@
 
 
     /* HEADER */
-    .social {
+    .social_svg-min {
         li {
             padding-left: 10px;
             svg {
@@ -40,13 +40,13 @@
         padding: 0 40px 50px;
     }
 
-    .button {
+    .button_large {
         width: 344px;
         height: 60px;
         font-size: 22px;
-        &_header {
-            margin-top: 42px;
-        }
+    }
+    .button_header {
+        margin-top: 42px;
     }
     
 

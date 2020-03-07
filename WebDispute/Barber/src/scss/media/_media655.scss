@@ -19,4 +19,25 @@
         padding: 40px 40px 0;
     }
     /* SERVICES */
+
+
+    /* CONTACTS */
+    .contacts-address__place,
+    .contacts-address__phone,
+    .contacts-address__email,
+    .contacts-details__subtitle {
+        font-size: 15px;
+    }
+    .contacts-details__title, 
+    .social-fix-width {
+        font-size: 25px;
+    }
+    .social-fix-width {
+        width: 155px;
+    }
+    .social-contacts-paddings li {
+        margin-top: -4px;
+    }
+    /* CONTACTS */
+
 }

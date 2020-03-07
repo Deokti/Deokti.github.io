@@ -12,3 +12,19 @@
       }
    }
 }
+
+.social-fix-width {
+   font-family: 'Bebas Neue Bold';
+   font-size: 32px;
+   flex-wrap: wrap;
+   width: 200px;
+}
+
+.social-contacts-paddings {
+   padding-top: 98px;
+   li {
+      padding-left: 0;
+      margin-top: -7px;
+      padding-right: 15px;
+   }
+}

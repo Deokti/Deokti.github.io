@@ -3,13 +3,13 @@
         padding: 0 20px;
     }
 
-    .button  {
+    .button_large  {
         width: 216px;
         height: 40px;
-        font-size: 14px;
-        &_header {
-            margin-top: 12px;
-        }
+        font-size: 14px;  
+    }
+    .button_header {
+        margin-top: 12px;
     }
 
     .navigations__mobile {
@@ -139,4 +139,15 @@
         height: 14px;
     }
     /* REVIEWS */
+
+
+
+    /* CONTACTS */
+    .contacts-address__place,
+    .contacts-address__phone,
+    .contacts-address__email,
+    .contacts-details__subtitle {
+        font-size: 14px;
+    }
+    /* CONTACTS */
 }

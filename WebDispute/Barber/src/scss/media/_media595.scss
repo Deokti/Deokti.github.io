@@ -1,0 +1,37 @@
+@media screen and (max-width: 595px) {
+    .button_small {
+        width: 97px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .button_contacts {
+        margin-top: 15px;
+    }
+    
+    /* CONTACTS */
+    .contacts__wrapper {
+        padding-top: 1px;
+    }
+    .contacts-address {
+        flex-direction: column;
+    }
+    .contacts-address__inner {
+        padding: 0;
+    }
+    .contacts-address__item_two, 
+    .contacts-address__item_four {
+        padding-top: 0;
+    }
+    .contacts-address__item {
+        padding-bottom: 13px;
+    }
+    
+    .contacts-details {
+        flex-direction: column;
+    }
+    .contacts-details__contact {
+        padding-left: 0;
+    }
+    /* CONTACTS */
+}
