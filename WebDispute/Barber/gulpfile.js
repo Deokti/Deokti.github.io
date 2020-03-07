@@ -41,6 +41,7 @@ gulp.task('scss', function() {
 gulp.task('htmlmin', function() {
 	return gulp.src('src/*.html')
 		.pipe(htmlmin({
+			collapseWhitespace: true,
 			ignoreCustomComments: true,
 			removeComments: true }))
 		.pipe(gulp.dest('dist/'));
