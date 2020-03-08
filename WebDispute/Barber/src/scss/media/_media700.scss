@@ -2,4 +2,21 @@
     .header {
         background-position: center;
     }
+
+    .lg-prev,
+    .lg-next {
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+    }
+
+    .lg-toolbar .lg-close:after {
+        font-size: 35px;
+        color: rgba($color: #fff, $alpha: .8);
+    }
+    .lg-toolbar .lg-close:hover:after {
+        color: rgba($color: #fff, $alpha: 1);
+    }
+
+    
 }

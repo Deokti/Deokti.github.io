@@ -3,7 +3,7 @@
 @import 'base/tiny-slider';
 @import 'base/fonts';
 @import 'base/animate';
-@import 'base/jBox.all.min';
+@import 'base/lightgallery.min';
 
 
 body {
@@ -28,6 +28,7 @@ body {
 @import 'repeats/navigations';
 @import 'repeats/buttons';
 @import 'repeats/title';
+@import 'repeats/modal';
 
 
 // Секции
@@ -46,6 +47,7 @@ body {
 @import 'media/media1300';
 @import 'media/media1200';
 @import 'media/media1110';
+@import 'media/media1030';
 @import 'media/media930';
 @import 'media/media880';
 @import 'media/media768';

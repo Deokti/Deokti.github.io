@@ -1,7 +1,7 @@
 .gallery {
     position: relative;
     padding: 52px 0 70px 0;
-    height: 929px;
+    min-height: 929px;
     background: rgba(241, 64, 59, .25);
     &__wrapper {
         padding-top: 78px;
@@ -33,6 +33,62 @@
         }
     }
 }
+
+.lg-backdrop {
+    background: rgba(0, 0, 0, .25);
+}
+
+
+.lg-actions .lg-prev:after,
+.lg-actions .lg-next:before {
+    content: '';
+}
+.lg-actions,
+.lg-next, 
+.lg-actions, 
+.lg-prev {
+    background-color: transparent !important;
+}
+
+.lg-actions .lg-prev:hover:after {
+    background: #fff;
+}
+
+.lg-prev,
+.lg-next {
+    background-image: url('../img/icons/to-left.svg');
+    width: 60px;
+    height: 60px;
+}
+.lg-next {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .jBox-image-label-container {
     top: 50%;

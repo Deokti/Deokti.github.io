@@ -72,7 +72,7 @@
                 <div class="header-content__wrapper">
                     <h2 class="header-content__title">Оставайся острым</h2>
                     <h3 class="header-content__subtitle">не откажи себе во внимании</h3>
-                    <button class="button button_header button_large">Запишись прямо сейчас</button>
+                    <button class="button button_header button_large button-show-popup">Запишись прямо сейчас</button>
                 </div>
             </div>
         </section>
@@ -272,7 +272,7 @@
             <div class="container">
                 <h3 class="title title_gallery">Галерея</h3>
 
-                <div class="gallery__wrapper display-flex justify-space-between align-start flex-wrap">
+                <div class="gallery__wrapper display-flex justify-space-between align-start flex-wrap" id="lightgallery">
                     <a href="img/gallery/1.jpg" class="gallery__item gallery__item_one" data-jbox-image="gallery1"></a>
                     <a href="img/gallery/2.jpg" class="gallery__item gallery__item_two" data-jbox-image="gallery1"></a>
                     <a href="img/gallery/3.jpg" class="gallery__item gallery__item_three" data-jbox-image="gallery1"></a>
@@ -280,7 +280,7 @@
                     <a href="img/gallery/5.jpg" class="gallery__item gallery__item_five" data-jbox-image="gallery1"></a>
                     <a href="img/gallery/6.jpg" class="gallery__item gallery__item_six" data-jbox-image="gallery1"></a>
                 </div>
-                
+
             </div>
         </section>
         <!-- /.GALLERY -->
@@ -340,7 +340,7 @@
                                 <li class="social__links"><a href="https://www.youtube.com/channel/UCEV-_rQKKRErPaFLl16exxg/featured" target="_blank"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="social-hover" d="M10.943 14.8419L15.0091 12.5L10.943 10.1582V14.8419Z" fill="#F1403B"/><path class="social-hover" d="M12.5 0C5.5975 0 0 5.5975 0 12.5C0 19.4025 5.5975 25 12.5 25C19.4025 25 25 19.4025 25 12.5C25 5.5975 19.4025 0 12.5 0ZM20.3106 12.5128C20.3106 12.5128 20.3106 15.0478 19.989 16.2703C19.8088 16.9394 19.2812 17.4669 18.6121 17.647C17.3897 17.9688 12.5 17.9688 12.5 17.9688C12.5 17.9688 7.6231 17.9688 6.3879 17.6342C5.7188 17.4541 5.19123 16.9264 5.01099 16.2573C4.68922 15.0478 4.68922 12.5 4.68922 12.5C4.68922 12.5 4.68922 9.96513 5.01099 8.74271C5.19104 8.07362 5.73158 7.53307 6.3879 7.35302C7.61032 7.03125 12.5 7.03125 12.5 7.03125C12.5 7.03125 17.3897 7.03125 18.6121 7.3658C19.2812 7.54585 19.8088 8.07362 19.989 8.74271C20.3236 9.96513 20.3106 12.5128 20.3106 12.5128Z" fill="#F1403B"/></svg></a></li>
                             </ul>
         
-                            <button class="button button_small button_contacts">Записаться</button>
+                            <button class="button button_small button_contacts button-show-popup">Записаться</button>
                        </div>
                     </div>
                     <!-- /.contacts-details -->
@@ -366,6 +366,31 @@
         </div>
     </footer>
     <!-- /.FOOTER -->
+
+    <div class="overlay">
+        <form class="modal modal-mobile">
+            <h5 class="modal__title">Онлайн запись</h5>
+
+            <div class="modal-fill">
+                <div class="modal-fill__name">
+                    <h6 class="display-flex justify-con-center align-center">Ваше имя</h6>
+                    <input type="text">
+                </div>
+                <div class="modal-fill__phone">
+                    <h6 class="display-flex justify-con-center align-center">Телефон</h6>
+                    <input type="tel">
+                </div>
+            </div>
+            <button class="button button_form">Отправить</button>
+        </form>
+
+        <div class="thank">
+            <h5>Спасибо, <br> ваша заявка принята!</h5>
+            <h6>Мы свяжемся с вами в ближайшее время</h6>
+            <button class="button button_thank">Вернутся назад на сайт</button>
+        </div>
+
+    </div>
     
     <script src="js/script.js"></script>
 </body>
