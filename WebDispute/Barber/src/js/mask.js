@@ -46,9 +46,9 @@ function isPhone() {
     div.classList.add('incorrect');
     div.textContent = 'Не правильно введены Ваше имя или Ваш телефон!';
     document.querySelector('.modal').appendChild(div);
-    setTimeout(function() {
-        div.remove();
-    }, 2000);
+    // setTimeout(function() {
+    //     div.remove();
+    // }, 2000);
 }
 
 function enteredCorrectly() {

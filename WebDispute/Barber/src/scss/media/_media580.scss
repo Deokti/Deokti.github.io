@@ -50,9 +50,11 @@
     .header-content__title {
         font-size: 34px;
         line-height: 35px;
-        span {
-            font-size: 18px;
-        }
+        margin-bottom: 0;
+    }
+    .header-content__subtitle {
+        font-size: 18px;
+        line-height: 40px;
     }
    
     .title {
@@ -212,5 +214,13 @@
     }
     .gallery__wrapper {
         justify-content: center;
+    }
+    
+    .modal {
+        .incorrect {
+            font-size: 12px;
+            width: 220px;
+            top: 54px;
+        }
     }
 }
