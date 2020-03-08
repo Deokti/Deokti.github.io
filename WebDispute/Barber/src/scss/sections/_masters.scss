@@ -64,9 +64,23 @@
             font-weight: 400;
         }
         &__detailed {
-            padding-top: 5px;
+            padding-top: 13px;
             font-size: 20px;
             color: #fff;
+            li {
+                position: relative;
+                padding-left: 14px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 6px;
+                    height: 0.5px;
+                    background-color: #fff;
+                    top: 50%;
+                    left: 3px;
+                    transform: translateY(-50%);
+                }
+            }
         }
     }
     &-tabs {

@@ -1,8 +1,44 @@
 .gallery {
-    padding: 70px 0 70px 0;
+    position: relative;
+    padding: 52px 0 70px 0;
     height: 929px;
     background: rgba(241, 64, 59, .25);
-    h6 {
-        font-size: 7rem;
+    &__wrapper {
+        padding-top: 78px;
     }
+    &__item {
+        width: 297px;
+        height: 297px;
+        margin-bottom: 50px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.jBox-image-label-container {
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.jBox-image-pointer-prev,
+.jBox-image-pointer-next {
+    background-image: url('../img/icons/to-left.svg');
+    background-size: auto;
+    width: 60px;
+    height: 60px;
+}    
+.jBox-image-pointer-prev {
+    left: -110px;
+}
+.jBox-image-pointer-next {
+    right: -110px;
+}
+.jBox-overlay.jBox-overlay-Image {
+    background: rgba(0, 0, 0, .15);
+}
+.jBox-closeButton {
+    opacity: 0;
+    pointer-events: none;
 }

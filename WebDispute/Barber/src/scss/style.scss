@@ -3,6 +3,7 @@
 @import 'base/tiny-slider';
 @import 'base/fonts';
 @import 'base/animate';
+@import 'base/jBox.all.min';
 
 
 body {
@@ -40,6 +41,7 @@ body {
 
 
 // Медия запросы
+@import 'media/media1920';
 @import 'media/media1700';
 @import 'media/media1300';
 @import 'media/media1200';

@@ -2,7 +2,6 @@
     position: relative;
     background-image: url('../img/header/header-bg.jpg');
     min-height: 793px;
-    background-position: -115px 0px;
     z-index: 3;
     &::before {
         content: '';
@@ -72,15 +71,16 @@
         &__wrapper {
             padding-top: 158px;
         }
-        &__title {
+        &__title,
+        &__subtitle {
             font-size: 64px;
             text-transform: uppercase;
             line-height: 51px;
             color: #fff;
-            span {
-                font-size: 36px;
-                display: block;
-            }
+        }
+        &__subtitle {
+            margin-top: -8px;
+            font-size: 36px;
         }
     }
 }
