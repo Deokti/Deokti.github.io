@@ -9,7 +9,6 @@ function changeActiveClass(elements, addClass, pageY, min, max) {
     }
 }
 
-
 window.addEventListener('scroll', function() {
     scrollPageY = window.pageYOffset;
     console.log(scrollPageY);
@@ -23,3 +22,30 @@ window.addEventListener('scroll', function() {
         changeActiveClass(scrollHoverMenu, 'scroll-hover_six', scrollPageY, 3870, 4210);
     }
 });
+
+
+function arrowTopShow(arrow, addClass, scroll) {
+    var buttonTop = document.querySelector(arrow);
+
+    window.addEventListener('scroll', function() {
+        scrollPageY = window.pageYOffset;
+        if (scrollPageY >= scroll) {
+            buttonTop.classList.add(addClass);
+        } else {
+            buttonTop.classList.remove(addClass);
+        }
+    });
+}
+arrowTopShow('.button-top', 'button-top_active', 800);
+
+
+function clickArrowTop(arrowSelector, time) {
+    var arrow = document.querySelector(arrowSelector);
+
+    $(arrow).click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, time);
+    })
+}
+clickArrowTop('.button-top', 1000);

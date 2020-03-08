@@ -72,3 +72,37 @@ button[aria-controls=tns1] {
 .tns-nav-active {
     background: #F1403B !important;
 }
+
+.button-top {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 50px;
+    border: none;
+    background: transparent;
+    transform: rotate(180deg) translateY(20px);
+    transition: all .3s ease-in-out;
+    z-index: 0;
+    svg {
+        transition: all .3s ease-in-out;
+        width: 100%;
+        opacity: .5;
+        path {
+            fill: #F1403B;
+        }
+    }
+    &:hover {
+        svg {
+            opacity: 1;
+        }
+    }
+    &_active {
+        transform: rotate(180deg) translateY(0);
+        pointer-events: all;
+        opacity: 1;
+        z-index: 888;
+    }
+}

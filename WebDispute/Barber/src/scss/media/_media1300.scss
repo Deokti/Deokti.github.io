@@ -10,4 +10,10 @@
         right: -45px;
     }
     /* MASTERS */
+
+    .button-top_active {
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
