@@ -10,10 +10,27 @@
         width: 297px;
         height: 297px;
         margin-bottom: 50px;
-    }
-    &__img {
-        width: 100%;
-        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &_one {
+            background-image: url('../img/gallery/1.jpg');
+        }
+        &_two {
+            background-image: url('../img/gallery/2.jpg');
+        }
+        &_three {
+            background-image: url('../img/gallery/3.jpg');
+        }
+        &_four {
+            background-image: url('../img/gallery/4.jpg');
+        }
+        &_five {
+            background-image: url('../img/gallery/5.jpg');
+        }
+        &_six {
+            background-image: url('../img/gallery/6.jpg');
+        }
     }
 }
 
