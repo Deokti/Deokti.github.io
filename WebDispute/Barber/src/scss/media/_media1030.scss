@@ -1,9 +1,10 @@
 @media screen and (max-width: 1030px) {
     .gallery__item {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .gallery__wrapper {
-        justify-content: space-around;
+        padding-top: 45px;
+        justify-content: space-between;
     }
 }

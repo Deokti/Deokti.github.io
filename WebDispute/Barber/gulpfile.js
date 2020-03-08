@@ -49,7 +49,7 @@ gulp.task('htmlmin', function() {
 
 /*-------- scriptJS --------*/
 gulp.task('concat', function() {
-	return gulp.src(['src/js/libs/jquery.min.js', 'src/js/libs/tiny-slider.js', 'src/js/slider-reviews.js', 'src/js/tabs.js', 'src/js/navigations.js', 'src/js/hamburger.js', 'src/js/links.js','src/js/libs/lightgallery.min.js', 'src/js/gallery.js', 'src/js/popup.js'])
+	return gulp.src(['src/js/libs/jquery.min.js', 'src/js/libs/tiny-slider.js', 'src/js/scroll-class-add.js', 'src/js/slider-reviews.js', 'src/js/tabs.js', 'src/js/navigations.js', 'src/js/hamburger.js', 'src/js/links.js','src/js/libs/lightgallery.min.js', 'src/js/gallery.js', 'src/js/popup.js', 'src/js/libs/jquery.maskedinput.min.js', 'src/js/mask.js'])
 		.pipe(concat({ path: 'script.js'})) 
 		.pipe(gulp.dest('dist/js'))
 		.pipe(uglify())

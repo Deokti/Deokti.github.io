@@ -199,4 +199,18 @@
     }
 
     /* MODAL-MOBILE */
+
+    .gallery__wrapper {
+        padding-top: 10px;
+    }
+
+    .gallery__item {
+        margin: 0;
+        width: 280px;
+        height: 280px;
+        margin-bottom: 15px;
+    }
+    .gallery__wrapper {
+        justify-content: center;
+    }
 }

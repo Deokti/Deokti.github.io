@@ -53,6 +53,11 @@
                 font-size: 26px;
                 color: #000000;
                 padding: 25px 30px 25px 30px;
+                transition: all .3s ease-in-out;
+                &:focus {
+                    outline: none;
+                    border: 2px solid #F1403B;
+                }
             }
             h6 {
                 display: flex;
@@ -66,6 +71,16 @@
                 transform: translate(25px,-10px);
             }
         }
+    }
+    .incorrect {
+        position: absolute;
+        text-align: center;
+        color: #f1403b;
+        font-size: 19px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 350px;
+        top: 90px;
     }
 }
 

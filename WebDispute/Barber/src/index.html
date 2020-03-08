@@ -368,17 +368,17 @@
     <!-- /.FOOTER -->
 
     <div class="overlay">
-        <form class="modal modal-mobile">
+        <form class="modal modal-mobile" name="form">
             <h5 class="modal__title">Онлайн запись</h5>
 
             <div class="modal-fill">
                 <div class="modal-fill__name">
                     <h6 class="display-flex justify-con-center align-center">Ваше имя</h6>
-                    <input type="text">
+                    <input type="text" name="name" id="name">
                 </div>
                 <div class="modal-fill__phone">
                     <h6 class="display-flex justify-con-center align-center">Телефон</h6>
-                    <input type="tel">
+                    <input type="tel" name="phone" id="phone">
                 </div>
             </div>
             <button class="button button_form">Отправить</button>
@@ -387,7 +387,7 @@
         <div class="thank">
             <h5>Спасибо, <br> ваша заявка принята!</h5>
             <h6>Мы свяжемся с вами в ближайшее время</h6>
-            <button class="button button_thank">Вернутся назад на сайт</button>
+            <button class="button button_thank popup-thank-close">Вернутся назад на сайт</button>
         </div>
 
     </div>

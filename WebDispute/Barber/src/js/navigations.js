@@ -1,10 +1,11 @@
 "use strict";
 
 var navigations = document.querySelector('.navigations');
-window.addEventListener('scroll', function (event) {
+
+window.addEventListener('scroll', function () {
     var pageY = pageYOffset;
 
-    if (pageY > 600) {
+    if (pageY >= 500) {
         navigations.classList.add('navigations-scroll');
         navigations.classList.add('navigations-top-bottom');
     } else {
