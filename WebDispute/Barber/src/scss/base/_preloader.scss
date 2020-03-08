@@ -24,8 +24,8 @@ $color: #ffffff;
 }   
 
 .preloader {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -87,7 +87,7 @@ $color: #ffffff;
 
 @media screen and (max-width: 650px) {
     .preloader {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
 }
