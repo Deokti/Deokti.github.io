@@ -41,14 +41,23 @@ function getDataServer() {
     }
 }
 
+
 function isPhone() {
+    var input = document.querySelectorAll('.modal-fill input');
     var div = document.createElement('div');
+    
     div.classList.add('incorrect');
     div.textContent = 'Не правильно введены Ваше имя или Ваш телефон!';
     document.querySelector('.modal').appendChild(div);
-    // setTimeout(function() {
-    //     div.remove();
-    // }, 2000);
+    for (let i = 0; i < input.length; i++) {
+        input[i].style.border = '2px solid rgb(203, 60, 60)';
+    }
+    setTimeout(function() {
+        div.remove();
+        for (let j = 0; j < input.length; j++) {
+            input[j].style.border = '2px solid #000'
+        }
+    }, 2000);
 }
 
 function enteredCorrectly() {
