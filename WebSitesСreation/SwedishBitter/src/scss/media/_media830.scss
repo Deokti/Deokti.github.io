@@ -5,5 +5,14 @@
     .header-content__subtitle {
         padding-left: 200px;
     }
+    .header-bottom__item {
+        margin: 0 2px;
+        width: 40%;
+    }
+    .header-bottom__number {
+        &::before {
+            display: none;
+        }
+    }
     /* HEADER */
 } 
