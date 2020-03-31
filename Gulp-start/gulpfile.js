@@ -4,26 +4,28 @@ let gulp            = require('gulp'),
     gulpRename      = require('gulp-rename'),
     autoprefixer    = require('gulp-autoprefixer'),
 	htmlmin 		= require('gulp-htmlmin'),
-	watch 			= require('gulp-watch'),
 	concat 			= require('gulp-concat'),
 	csso 			= require('gulp-csso'),
-	uglify 			= require('gulp-uglify-es').default;
+	uglify 			= require('gulp-uglify-es').default,
+	pug 			= require('gulp-pug'),
+	babel 			= require("gulp-babel");
 
 
-/*-------- browserSync --------*/
+/*-------- BROWSERSYNC --------*/
 //Запускает сервер
-gulp.task('browser-sync', function() {
-    browserSync.init({
+
+gulp.task('browser-sync', () => {
+	browserSync.init({
         server: {
-            baseDir: "dist"
+			baseDir: "dist",
         }
 	});
     gulp.watch('src/*.html').on("change", browserSync.reload); //после изминения запускает задачу, страница перезагружается
 });
 
 
-/*-------- scss, gulpRename, autoprefixer, cleanCSS --------*/
-gulp.task('scss', function() {
+/*-------- SCSS, GULPRENAME, AUTOPREFIXER, CLEANCSS --------*/
+gulp.task('scss', () => {
     //говорим откуда брать файлы для компаляции
     return gulp.src('src/scss/**/*.scss')
 		//компилация происходит
@@ -38,46 +40,56 @@ gulp.task('scss', function() {
 });
 
 
-/*-------- htmlmin --------*/
-gulp.task('htmlmin', function() {
+/*-------- HTMLMIN --------*/
+gulp.task('htmlmin', () => {
 	return gulp.src('src/*.html')
-		.pipe(htmlmin({
-			ignoreCustomComments: true,
-			removeComments: true }))
+		.pipe(htmlmin({ 
+			collapseWhitespace: true, //убарает пробелы в минифицированном файле
+			ignoreCustomComments: true, 
+			removeComments: true })) 
 		.pipe(gulp.dest('dist/'));
 });
 
-/*-------- scriptJS --------*/
-gulp.task('concat', function() {
-	return gulp.src(['']) /* 'src/js/preloader.js', 'src/js/popup.js' */
-		.pipe(concat({ path: 'script.js'}))
-		.pipe(gulp.dest('dist/js'))
+/*-------- PUG --------*/
+// gulp.task('pug', () => {
+// 	return gulp.src('src/*.pug')
+// 	.pipe(pug(/*{pretty: true}*/))
+// 	.pipe(gulp.dest('dist'))
+// });
+
+/*-------- JAVASCRIPT --------*/
+gulp.task('concat', () => {
+	return gulp.src(['src/js/polyfills/polyfill.js', '']) /*Пример: 'src/js/preloader.js', 'src/js/popup.js' */
+		.pipe(babel())
 		.pipe(uglify())
+		.pipe(concat({path: 'script.js'}))
 		.pipe(gulp.dest('dist/js'))
 		.pipe(browserSync.stream())
 });
 
-/*-------- img --------*/
-gulp.task('img', function() {
+
+/*-------- IMG --------*/
+gulp.task('img', () => {
 	return gulp.src('src/img/**/*')
 		.pipe(gulp.dest('dist/img'));
 });
 
-/*-------- fonts --------*/
-gulp.task('fonts', function() {
+/*-------- FONTS --------*/
+gulp.task('fonts', () => {
 	return gulp.src('src/fonts/**/*')
 		.pipe(gulp.dest('dist/fonts'));
 });
 
 
-gulp.task('watch', function() {
-	//следит за файлами по данной дериктории, и если в них происзошло изменение, запускается задача scss
+gulp.task('watch', () => {
+	//следит за файлами по данной дериктории, и если в них происзошло изменение, запускаются нужные задачи 
 	gulp.watch('src/scss/**/*.scss', gulp.parallel('scss'))
     gulp.watch('src/*.html').on("change", gulp.parallel('htmlmin'));
+    // gulp.watch('src/*.pug').on("change", gulp.parallel('pug'));
     gulp.watch('src/js/**/*.js').on("change", gulp.parallel('concat'));
     gulp.watch('src/img/**/*').on("change", gulp.parallel('img'));
     gulp.watch('src/fonts/**/*').on("change", gulp.parallel('fonts'));
 });
 
 //запускает паралельно несколько задач
-gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', 'concat', 'img', 'fonts'))
+gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', /*'pug',*/ 'concat', 'img', 'fonts'))
