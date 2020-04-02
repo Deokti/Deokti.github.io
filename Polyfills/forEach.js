@@ -1,6 +1,4 @@
 (function() {
-    
-    //forEach
     if ('NodeList' in window && !NodeList.prototype.forEach) {
         NodeList.prototype.forEach = function (callback, thisArg) {
             thisArg = thisArg || window;
