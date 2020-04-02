@@ -50,7 +50,8 @@
 <ol>
   <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/Barber/dist/" target="_blank">Barber</a></li>
   Ссылка на внешний вид макета: <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/Barber/Desktop%20version.jpg?x-email=reilgelern%40mail.ru" target="_blank">desktop-версия</a>, <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/Barber/Barbershop-Tablet.jpg?x-email=reilgelern%40mail.ru" target="_blank">tablet-версия</a>, <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/Barber/Barbershop-Mobile.jpg?x-email=reilgelern%40mail.ru" target="_blank">mobile-версия</a>
-  
+  <li>Вёрстка началась 05.03.2020, закончилась 08.03.2020. На проект потрачено 31 час и 35 минут. <a href="https://cloclo25.datacloudmail.ru/inline/7Y9J7zEPLSaFFmkDkGN4kN6io7jN5H25FsNpebCytYa3WutmNR1Ab9aPoZvTfZzHB3F4AS/reilgelern@mail.ru/Макеты/Картинки%20с%20WakaTime/Barbershop.png" target="_blank">WakaTime</a>;</li>
+   <li>Макет был сделаный дизайнером, одним из участников прокте WebDispute по имени <a href="https://vk.com/kairatdev">Кайрат Батырбаев</a>.
 </ol>  
 
 
