@@ -49,7 +49,8 @@
 
 <ol>
   <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/Barber/dist/" target="_blank">Barber</a></li>
-  <li>Подробности будут позже.</li>
+  Ссылка на внешний вид макета: <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/Barber/Desktop%20version.jpg?x-email=reilgelern%40mail.ru" target="_blank">desktop-версия</a>, <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/Barber/Barbershop-Tablet.jpg?x-email=reilgelern%40mail.ru" target="_blank">tablet-версия</a>, <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/Barber/Barbershop-Mobile.jpg?x-email=reilgelern%40mail.ru" target="_blank">mobile-версия</a>
+  
 </ol>  
 
 
