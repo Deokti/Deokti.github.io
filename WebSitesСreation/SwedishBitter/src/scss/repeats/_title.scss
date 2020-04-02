@@ -1,0 +1,27 @@
+.title {
+    display: block;
+    color: #303030;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    &_list {
+        width: 446px;
+    }
+    &_what {
+        width: 473px;
+    }
+    &_history {
+        width: 560px;
+        margin-left: auto;
+        margin-right: 105px;
+    }
+    &_what-get {
+        width: 520px;
+    }
+    &_structure {
+        margin-top: -64px;
+    }
+    &_your-participation {
+        width: 540px;
+    }
+}

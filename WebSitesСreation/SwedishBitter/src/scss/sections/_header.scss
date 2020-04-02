@@ -1,0 +1,119 @@
+.header {
+    min-height: 1300px;
+    &-top {
+        padding: 33px 0 33px 0;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__logo {
+            display: flex;
+            align-items: flex-end;
+            span {
+                color: #9a9a9a;
+                font-size: 14px;
+                font-weight: 400;
+                padding-left: 30px;
+            }
+        }
+    }
+    &-content {
+        background: url('../img/bg/header-bg.jpg');
+        height: 544px;
+        @include base-image;
+        background-size: auto;
+        color: #fff;
+        &__wrapper {
+            position: relative;
+
+            padding-top: 94px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__packaging {
+            position: absolute;
+            left: 137px;
+            z-index: 1;
+        }
+        &__details {
+            padding-top: 80px;
+            margin-left: auto;
+            margin-right: 0;
+            z-index: 5;
+        }
+        &__desctiption {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            margin-bottom: 0;
+        }
+        &__title {
+            color: #ffffff;
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            width: 500px;
+
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    &-bottom {
+        padding-top: 280px;
+        color: #000;
+        padding-bottom: 179px;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        &__number {
+            position: relative;
+            display: inline-block;
+            color: #a4c58c;
+            font-size: 30px;
+            font-weight: 500;
+            span {
+                font-size: 18px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                border: 5px solid rgba($color: #a4c58c, $alpha: .3);
+                border-radius: 100%;
+
+                left: -50px;
+                top: -26px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+
+                width: 100%;
+                height: 3px;
+                background-color: #a4c58c;
+
+                bottom: 0px;
+                left: 0;
+            }
+        }
+        &__details {
+            display: block;
+            min-height: 90px;
+            margin-top: 23px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@media screen and (max-width: 1240px) {
+    /* LIST */
+    .list-ailments__item {
+        width: 100%;
+    }
+
+    .list-ailments__join-three {
+        .list-ailments__item {
+            width: 100%;
+        }
+    }
+    .list-ailments__join-two {
+        .list-ailments__item  {
+            width: 100%;
+            padding-right: 22px;
+        }
+    }
+    /* LIST */
+}

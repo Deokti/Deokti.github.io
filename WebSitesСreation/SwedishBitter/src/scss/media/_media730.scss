@@ -1,0 +1,15 @@
+@media screen and (max-width: 730px) {
+    .header-content__desctiption, 
+    .header-content__title, 
+    .header-content__subtitle {
+        padding-left: 300px;
+    }
+    .header-content__subtitle {
+        width: 525px;
+    }
+    .header-top__logo {
+        span {
+            display: none;
+        }
+    }
+}

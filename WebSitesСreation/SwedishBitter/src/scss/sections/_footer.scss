@@ -1,0 +1,36 @@
+.footer {
+    height: 120px;
+    padding: 45px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-info {
+        &__link {
+            color: #9a9a9a;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 0 24px;
+            text-decoration: none;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            &:hover {
+                color: #9a9a9a;
+                text-decoration: none;
+            }
+            span {
+                border-bottom: 1px solid #9a9a9a;
+                &:hover {
+                    text-decoration: none;
+                    color: #9a9a9a;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
