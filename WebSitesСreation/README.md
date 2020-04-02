@@ -90,20 +90,3 @@
 </ol>  
 
 <hr>
-<h2>SwedishBitter</h2>
-
-<ol>
-  <li>Сайт называется: <a href="https://deokti.github.io/WebSitesСreation/SwedishBitter/dist/" target="_blank">SwedishBitter</a> </li>
-  <li>Ссылки на внешний вид макета: 
-    <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/SwedishBitter/SwedishBitter-desktop.jpg?x-email=reilgelern%40mail.ru" target="_blank">полная версия</a>, 
-    <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/SwedishBitter/SwedishBitter-tablet.jpg?x-email=reilgelern%40mail.ru" target="_blank">планшетная версия</a>, 
-    <a href="https://thumb.cloud.mail.ru/thumb/xw1/Макеты/SwedishBitter/SwedishBitter-mobile.jpg?x-email=reilgelern%40mail.ru" target="_blank">мобильная версия</a>;</li>
-  <li>Шестой макет, который начал верстать. На данный момент ничего сложного не заметил, хотя на первую секцию потратил довольно много из-за долгого перерыва в вёрстке. При этом не хочется городить слишком много кода и пытаюсь обдумывать практически каждый шаг, перед тем как написать. Хотя, сказав «обдумывать практически каждый шаг» – это конечно я сильно загнул. Всё сказанное мной ранее - простой фарс, поскольку теперь мне стало понятно, что здесь сложное. Пока единственное, что можно сказать: сложно, не понятно, не ясно, интересно;</li>
-  <li>Всё те же, ничего нового не добавилось;</li>
-  <li>В настоящее время потрачено 22 часа и 3 минуты. <a href="https://wakatime.com/projects/SwedishBitter?start=2020-01-21&end=2020-01-27" target="_blank">WakaTime</a>;</li>
-  <li>Макет был взят с ютуб-канала, создателем которого является Вадим Прокопчук, автор ютуб-канала От 0 до 1: 
-    <a href="https://www.youtube.com/channel/UCE_w6FxGfRKH2fU76raVeog/videos">ссылка на YouTube-канал</a> и 
-    <a href="https://www.youtube.com/watch?v=e6mWQyj2wNY&t=204s">ссылка на видео в котором макет;</a>;</li>
-  <li>Пятый пункт пока пустой.</li>
-</ol>  
-
