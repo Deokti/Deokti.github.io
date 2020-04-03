@@ -124,8 +124,8 @@
   <li>В настоящее время потрачено 3 часа и 1 минут. К сожалению предоставить время законченного прокте не могу, прошло слишком много времени, и данные были удалены <a href="https://wakatime.com/projects/SwedishBitter?start=2020-01-21&end=2020-01-27" target="_blank">WakaTime</a>;</li>
   <li>Макет был взят с сайта Psdrepo: 
     <a href="https://psdrepo.com">ссылка на сайт</a> и 
-    <a href="https://psdrepo.com/free-psd/shapeup-gym-website-template-freebie/">ссылка на сам макет;</a>;</li>
-  <li>
+    <a href="https://psdrepo.com/free-psd/shapeup-gym-website-template-freebie/">ссылка на сам макет;</a>;
+  </li>
 </ol>  
 
 
