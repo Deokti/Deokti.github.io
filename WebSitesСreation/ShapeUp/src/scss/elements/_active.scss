@@ -1,0 +1,15 @@
+.is-nav-active {
+    color: #f80759 !important;
+}
+
+.is-hamburger-active {
+    span {
+        &:first-child {
+            transform: rotate(450deg) translateX(8px)
+        }
+        &:last-child {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}

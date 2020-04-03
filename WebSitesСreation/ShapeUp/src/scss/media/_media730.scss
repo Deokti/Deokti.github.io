@@ -1,0 +1,29 @@
+@media screen and (max-width: 730px) {
+    .header {
+        min-height: 52rem;
+    }
+    .header-content {
+        padding-top: 11rem;
+    }
+    .header-content__title {
+        font-size: 4rem;
+        line-height: 4.1rem;
+        span {
+            font-size: 2.8rem;
+        }
+    }
+    .header-content__subtitle {
+        max-width: 48rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        br {
+            display: none;
+        }
+
+    }
+    .button--header {
+        &:last-child {
+            display: none;
+        }
+    }
+}

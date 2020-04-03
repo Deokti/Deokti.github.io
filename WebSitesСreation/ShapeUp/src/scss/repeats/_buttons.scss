@@ -1,0 +1,43 @@
+.button {
+    width: 20rem;
+    height: 5rem;
+    border: none;
+    border-radius: .5rem;
+    color: #fefefe;
+    font-size: 1.6rem;
+    transition: all .3s ease-in-out;
+    z-index: 2;
+    &-background {
+        position: relative;
+        background-color: #ed213a;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: .5rem;
+            background-image: linear-gradient(to right, #e100ff 0%, #f80759 100%);
+            z-index: -1;
+            transition: all .3s ease-in-out;
+            opacity: 0;
+            pointer-events: none;
+        }
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+    &-transparent {
+        border: 0.1rem solid #f80759;
+        background-color: transparent;
+        &:hover {
+            background-color: #ed213a;
+        }
+    }
+    &--header {
+        margin-right: 1.8rem;
+    }
+}

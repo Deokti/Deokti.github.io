@@ -1,0 +1,26 @@
+@media screen and (max-width: 430px) {
+    .header-content__title {
+        font-size: 3rem;
+        line-height: 3rem;
+        span {
+            font-size: 2rem;
+        }
+    } 
+    .header-content__subtitle {
+        max-width: 28rem;
+    }
+    .button-header-mobile {
+        width: 16rem;
+    }
+    .logo {
+        width: 13rem;
+        img {
+            width: 100%;
+        }
+    }
+    .header-nav {
+        padding-top: 0;
+        margin-top: -0.3rem;
+    }
+  
+}

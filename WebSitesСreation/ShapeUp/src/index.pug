@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,500,700&display=swap")
+        link(rel="stylesheet", href="./css/style.min.css")
+        link(rel="shortcut icon", href="./img/favicone.ico", type="image/x-icon")
+        title ShapeUp
+    body
+        header.header 
+            .container
+                .header-top.d-flex.j-content-between
+                    a.logo(href="#")
+                        img(src="./img/logo.svg", alt="shapeup")
+                    nav.header-nav
+                        .hamburger.hide-the-item.hamburger-show
+                            span
+                            span
+                            span
+                        ul.header-nav__list.header-list-tablet.ul-none.d-flex
+                            li.header-nav__link
+                                a.is-nav-active(href="#") Home
+                            li.header-nav__link
+                                a(href="#") About
+                            li.header-nav__link
+                                a(href="#") Trainers
+                            li.header-nav__link
+                                a(href="#") Service
+                            li.header-nav__link
+                                a(href="#") Reviews
+                            li.header-nav__link
+                                a(href="#") Price
+                            li.header-nav__link
+                                a(href="#") Blog
+                            li.header-nav__link
+                                a(href="#") Contact
+                .header-content
+                    h1.header-content__title 
+                        span Build
+                        |   Your Body 
+                        br
+                        span Transform
+                        |   Your Life
+                    p.header-content__subtitle Curabitur ac volutpat odio. Nunc eget eros viverra, laoreet ligula eget, interdum augue. 
+                        br
+                        |   Pellentesque ornare mauris a hendrerit imperdiet.
+                    .header-content__buttons
+                        button.button.button-header-mobile.button-background.button--header Get Started
+                        button.button.button-header-mobile.button-transparent.button--header Learn More
+                    
+
+        script(src="./js/script.js")

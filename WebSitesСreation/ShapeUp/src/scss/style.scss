@@ -1,0 +1,38 @@
+// Базовые файлы для подключения
+@import './base/bootstrap-reboot.min';
+@import './base/library-flex';
+@import './libs/tiny-slider';
+@import './base/animations';
+
+// font-family: 'Roboto', sans-serif;
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1172px; 
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+// Повторяющиеся элементы
+@import './repeats/buttons';
+
+// Отдельные элементы или классы
+@import './elements/active';
+@import './elements/hamburger';
+
+// Испорт секция
+@import './sections/header';
+
+
+// Импорт медия-запросов
+@import './media/media1000';
+@import './media/media900';
+@import './media/media730';
+@import './media/media430';
