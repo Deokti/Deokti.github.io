@@ -111,3 +111,21 @@
      </ul>
   </li>
 </ol>  
+
+<hr>
+
+<h2>ShapeUp</h2>
+<ol>
+  <li>Сайт называется: <a href="https://deokti.github.io/WebSitesСreation/ShapeUp/dist/" target="_blank">ShapeUp</a> </li>
+  <li>Ссылки на внешний вид макета: 
+    <a href="https://cloclo11.datacloudmail.ru/inline/7ZtET1LFqjZhdzuKdZqDuW63JG5Qi6Rna5zsPYXTGbR5KKDRtJhL1oWdZkvAB4dwpXgViv/reilgelern@mail.ru/Макеты/ShapeUp.png" target="_blank">полная версия</a>;</li>
+  <li>Десятый макет, который начал верстать (четыре в другой папке, WebDespute). Этот относительно простой макет специально был взят для того, чтобы потренироваться в написании кода при использовании препроцессора HMTL - PUG, поскольку ранее с ним не работал. Стиот сказать, что это сложновато. Впрочем, что вполне возможно, это из-за того, что работую с ним первый раз. Нельзя исключать тот вариант, что после вёрстки данного макета вся остальная вёрстка будет делаться с помощью PUG. А возможно и нет;</li>
+  <li>Добавился препроцессор PUG и Babel для перегонки нового синтаксиса JavaScript в старый;</li>
+  <li>В настоящее время потрачено 3 часа и 1 минут. К сожалению предоставить время законченного прокте не могу, прошло слишком много времени, и данные были удалены <a href="https://wakatime.com/projects/SwedishBitter?start=2020-01-21&end=2020-01-27" target="_blank">WakaTime</a>;</li>
+  <li>Макет был взят с сайта Psdrepo: 
+    <a href="https://psdrepo.com">ссылка на сайт</a> и 
+    <a href="https://psdrepo.com/free-psd/shapeup-gym-website-template-freebie/">ссылка на сам макет;</a>;</li>
+  <li>
+</ol>  
+
+
