@@ -22,6 +22,8 @@ body {
 
 // Повторяющиеся элементы
 @import './repeats/buttons';
+@import './repeats/titles';
+@import './repeats/subtitles';
 
 // Отдельные элементы или классы
 @import './elements/active';
@@ -29,10 +31,15 @@ body {
 
 // Испорт секция
 @import './sections/header';
+@import './sections/about';
 
 
 // Импорт медия-запросов
+@import './media/media1130';
+@import './media/media1040';
 @import './media/media1000';
+@import './media/media980';
 @import './media/media900';
 @import './media/media730';
+@import './media/media550';
 @import './media/media430';

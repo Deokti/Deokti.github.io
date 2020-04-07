@@ -8,7 +8,7 @@ html(lang="ru")
         link(rel="shortcut icon", href="./img/favicone.ico", type="image/x-icon")
         title ShapeUp
     body
-        header.header 
+        header.header#header
             .container
                 .header-top.d-flex.j-content-between
                     a.logo(href="#")
@@ -20,9 +20,9 @@ html(lang="ru")
                             span
                         ul.header-nav__list.header-list-tablet.ul-none.d-flex
                             li.header-nav__link
-                                a.is-nav-active(href="#") Home
+                                a.is-nav-active(href="#header") Home
                             li.header-nav__link
-                                a(href="#") About
+                                a(href="#about") About
                             li.header-nav__link
                                 a(href="#") Trainers
                             li.header-nav__link
@@ -48,6 +48,44 @@ html(lang="ru")
                     .header-content__buttons
                         button.button.button-header-mobile.button-background.button--header Get Started
                         button.button.button-header-mobile.button-transparent.button--header Learn More
+        section.about#about
+            .container
+                .about__wrapper.d-flex.j-content-between
+                    .about-left
+                        .titles
+                            h2.title About ShapeUp
+                            h3.subtitle Welcome to Healthy Life
+                        .about-left__bottom
+                            .about-left__title Nunc euismod ante at purus elementum porttitor. 
+                                                br
+                                                |   Ut nisi nisl, auctor et imperdiet quis risus.
+                            .about-left__descripton Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas est porttitor, 
+                                        br
+                                        |   malesuada tellus aliquet, vehicula ipsum. Suspendisse porttitor sed dolor ac vehicula. 
+                                        br
+                                        |   Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
+                                        br
+                                        |   turpis egestas. Morbi iaculis tellus vestibulum est accumsan commodo. Curabitur 
+                                        br
+                                        |   sollicitudin, eros vitae vulputate euismod, nibh tortor accumsan tellus, 
+                                        br
+                                        |   fringilla hendrerit ligula eros nec velit.
+                            a.about-left__learn-more(href="#") Learn More
+                    .about-right
+                        .about-right__main
+                            .about-right__main-video
+                                iframe(src="https://www.youtube.com/embed/GS_z6FG_jqE", frameborder="0")
+                            
+                        ul.about-right__additionally.ul-none.d-flex.j-content-between
+                            li.about-right__additionally-video.about-right__additionally-video--one
+                                a(href="https://www.youtube.com/embed/A7ZgGLtvaFg")
+                            li.about-right__additionally-video.about-right__additionally-video--two
+                                a(href="https://www.youtube.com/embed/1qc5bAgZ0uY")
+                            li.about-right__additionally-video.is-active-additionally-video.about-right__additionally-video--three
+                                a(href="https://www.youtube.com/embed/GS_z6FG_jqE")
                     
+                
+
+
 
         script(src="./js/script.js")

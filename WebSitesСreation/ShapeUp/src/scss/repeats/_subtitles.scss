@@ -1,0 +1,17 @@
+.subtitle {
+    position: relative;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.24px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 6rem;
+        height: .2rem;
+        background-color: #ed213a;
+        left: -2px;
+        bottom: -2rem;
+    }
+}

@@ -1,0 +1,16 @@
+@media screen and (max-width: 1130px) {
+    .about-left__descripton {
+        max-width: 50.4rem;
+        br {
+            display: none;
+        }
+    }
+    .about-right__main-video {
+        width: 51rem;
+        height: 35rem;
+    }
+    .about-right__additionally-video {
+        width: 16rem;
+        height: 10rem;
+    }
+}

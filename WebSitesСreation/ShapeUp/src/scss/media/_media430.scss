@@ -1,4 +1,22 @@
 @media screen and (max-width: 430px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .subtitle {
+        font-size: 2.2rem;
+    }
+
+    .header {
+        min-height: 43rem;
+    }
+    .header-content {
+        padding-top: 7rem;
+    }
+
+    .about {
+        padding-top: 0;
+        padding-bottom: 4rem;
+    }
     .header-content__title {
         font-size: 3rem;
         line-height: 3rem;
@@ -23,4 +41,31 @@
         margin-top: -0.3rem;
     }
   
+    .about-right__main-video {
+        max-height: 21rem;
+    }
+    .about-right__additionally {
+        height: 8.5rem;
+    }
+
+    .about-left {
+        padding-top: 3rem;
+        padding-left: 0;
+    }
+
+    .about-left__bottom {
+        padding-top: 4rem;
+    }
+    .about-left__descripton {
+        padding-top: 2rem;
+    }
+    .about-left__learn-more {
+        margin-top: 1rem;
+    }
+    .about-left__title {
+        font-size: 1.9rem;
+        br {
+            display: none
+        }
+    }
 }

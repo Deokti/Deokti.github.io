@@ -60,7 +60,7 @@ gulp.task('pug', () => {
 
 /*-------- JAVASCRIPT --------*/
 gulp.task('concat', () => {
-	return gulp.src(['./src/js/polyfills/polyfill.js', './src/js/libs/jquery-3.4.1.min.js', './src/js/libs/tiny-slider.js', './src/js/hamburger.js']) /*Пример: 'src/js/preloader.js', 'src/js/popup.js' */
+	return gulp.src(['./src/js/polyfills/polyfill.js', './src/js/libs/jquery-3.4.1.min.js', './src/js/libs/tiny-slider.js', './src/js/hamburger.js', './src/js/change-address-video.js'])
 		.pipe(babel())
 		.pipe(uglify())
 		.pipe(concat({path: 'script.js'}))
