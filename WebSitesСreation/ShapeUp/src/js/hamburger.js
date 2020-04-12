@@ -7,13 +7,13 @@ function checkActiveClass(selectorNav, hamburger, checkClass, addActiveClass) {
 }
 
 
-function smoothScrollingToAnchor (links) {
-    links.forEach(link => {
-        link.addEventListener('click', event => {
+function smoothScrollingToAnchor(links) {
+    links.forEach((link) => {
+        link.addEventListener('click', (event) => {
             event.preventDefault();
 
             const toHref = link.getAttribute('href');
-            document.querySelector('' + toHref).scrollIntoView({
+            document.querySelector(`${toHref}`).scrollIntoView({
                 behavior: 'smooth',
                 block: 'start',
             });
@@ -21,14 +21,16 @@ function smoothScrollingToAnchor (links) {
     });
 }
 
+
 function clickHamburgetLinkOvarlayClose(navigationsSelector) {
     const navigations = document.querySelectorAll(navigationsSelector);
+    smoothScrollingToAnchor(navigations);
 
-    navigations.forEach(navigation => {
+    navigations.forEach((navigation) => {
         navigation.addEventListener('click', () => {
+
             document.querySelector('.header-nav').classList.remove('header-nav-tablet');
             document.querySelector('.hamburger').classList.remove('is-hamburger-active');
-            smoothScrollingToAnchor(navigations);
         });
     });
 }
@@ -45,6 +47,4 @@ function addActiveClassHamburger(hamburderSelector, activeClass) {
         checkActiveClass('.header-nav', hamburger, activeClass, 'header-nav-tablet');
     });
 }
-addActiveClassHamburger('.hamburger', 'is-hamburger-active')
-
-
+addActiveClassHamburger('.hamburger', 'is-hamburger-active');

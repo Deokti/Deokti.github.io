@@ -37,7 +37,23 @@
             background-color: #ed213a;
         }
     }
+    &-mini {
+        width: 14rem;
+        height: 5rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 0.06rem;
+    }
+    &-center {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
     &--header {
         margin-right: 1.8rem;
+    }
+    &--choose {
+        margin-top: 2.7rem;
+        border: 0.2rem solid #f80759;
     }
 }

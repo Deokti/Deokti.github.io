@@ -68,4 +68,23 @@
             display: none
         }
     }
+
+    .meet-card {
+        margin-right: 0;
+    }
+    .meet-card:last-child {
+        margin-right: 0;
+    }
+
+    .choose-item__title {
+        font-size: 1.9rem;
+    }
+    .choose-item__description {
+        padding-top: 0.5rem;
+    }
+    .choose-item__description {
+        br {
+            display: none;
+        }
+    }
 }

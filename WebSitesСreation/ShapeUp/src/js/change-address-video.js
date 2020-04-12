@@ -2,8 +2,8 @@ function changeAdressVideoOnClick(mainVideoSelector, additionallyVideoSelector, 
     const mainVideo = document.querySelector(mainVideoSelector);
     const additionallyVideo = document.querySelectorAll(additionallyVideoSelector);
 
-    additionallyVideo.forEach(oneVideo => {
-        oneVideo.addEventListener('click', event => {
+    additionallyVideo.forEach((oneVideo) => {
+        oneVideo.addEventListener('click', (event) => {
             event.preventDefault();
 
             const getHref = event.target.href;
@@ -11,13 +11,11 @@ function changeAdressVideoOnClick(mainVideoSelector, additionallyVideoSelector, 
             const parent = event.path[1];
 
             if (mainVideo.src === getHref) return;
-            else {
-                parentActive.forEach(active => active.classList.remove(liActiveClasss));
-                parent.classList.add(liActiveClasss);
-                mainVideo.src = getHref;
-            };
+
+            parentActive.forEach((active) => active.classList.remove(liActiveClasss));
+            parent.classList.add(liActiveClasss);
+            mainVideo.src = getHref;
         });
     });
-
 }
 changeAdressVideoOnClick('.about-right__main-video iframe', '.about-right__additionally-video a', '.about-right__additionally-video', 'is-active-additionally-video');

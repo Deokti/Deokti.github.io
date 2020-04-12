@@ -11,7 +11,12 @@
         width: 6rem;
         height: .2rem;
         background-color: #ed213a;
-        left: -2px;
-        bottom: -2rem;
+        transform: translate(-0.2rem, 6.3rem);
+    }
+    &-center {
+        &::before {
+            left: 50%;
+            transform: translateX(-50%) translateY(6.3rem);
+        }
     }
 }

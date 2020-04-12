@@ -1,0 +1,71 @@
+.meet {
+    min-height: 40rem;
+    padding: 4.5rem 0 9.5rem 0;
+    &__wrapper {
+        padding-top: 5.1rem;
+    }
+    &-card {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 21.2rem;
+        height: 29.7rem;
+        background-color: rgb(61, 18, 18);
+        padding-bottom: 1.7rem;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+        margin-top: 1.5rem;
+        &:hover {
+            .meet-card__name,
+            .meet-card__position {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &__description {
+            text-align: center;
+        }
+        &__name,
+        &__position {
+            margin: 0;
+            opacity: 0;
+        }
+        &__name {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.9px;
+            transition: all .3s ease-in-out .1s;
+            transform: translateY(10px);
+        }
+        &__position {
+            color: #12c2e9;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.6px;
+            transition: all .3s ease-in-out .2s;
+            transform: translateY(10px);
+        }
+        &--one {
+            background-image: url('../img/meet/1.jpg');
+        }
+        &--two {
+            background-image: url('../img/meet/2.jpg');
+        }
+        &--three {
+            background-image: url('../img/meet/3.jpg');
+        }
+        &--four {
+            background-image: url('../img/meet/4.jpg');
+        }
+        &--five {
+            background-image: url('../img/meet/5.jpg');
+        }
+    }
+}

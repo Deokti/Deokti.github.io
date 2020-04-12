@@ -1,0 +1,52 @@
+.choose {
+    min-height: 65rem;
+    background-color: #161616;
+    padding: 7.5rem 0 8rem 0;
+    &__wrapper {
+        padding-top: 2rem;
+    }
+    &-item {
+        padding-top: 5.3rem;
+        margin-left: .7rem;
+        margin-right: .7rem;
+        &__border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 10rem;
+            height: 10rem;
+            border: 2px solid #f80759;
+            border-radius: 50%;
+            margin: 0 auto
+        }
+        &__detailed {
+            padding-top: 3.5rem;
+        }
+        &__title,
+        &__description {
+            text-align: center;
+        }
+        &__title {
+            color: #fefefe;
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: .1rem;
+        }
+        &__description {
+            padding-top: 1.4rem;
+            color: #fefefe;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            letter-spacing: 0.06rem;
+        }
+        &--one {
+            transform: translateX(-1.3rem);
+        }
+        &--three {
+            transform: translateX(1rem);
+        }
+    }
+
+}

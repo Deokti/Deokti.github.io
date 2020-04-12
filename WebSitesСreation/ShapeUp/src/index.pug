@@ -24,9 +24,9 @@ html(lang="ru")
                             li.header-nav__link
                                 a(href="#about") About
                             li.header-nav__link
-                                a(href="#") Trainers
+                                a(href="#meet") Trainers
                             li.header-nav__link
-                                a(href="#") Service
+                                a(href="#choose") Service
                             li.header-nav__link
                                 a(href="#") Reviews
                             li.header-nav__link
@@ -46,7 +46,7 @@ html(lang="ru")
                         br
                         |   Pellentesque ornare mauris a hendrerit imperdiet.
                     .header-content__buttons
-                        button.button.button-header-mobile.button-background.button--header Get Started
+                        button.button.button-header-mobile.button-background.button-hover-linear-gradient.button--header Get Started
                         button.button.button-header-mobile.button-transparent.button--header Learn More
         section.about#about
             .container
@@ -57,8 +57,8 @@ html(lang="ru")
                             h3.subtitle Welcome to Healthy Life
                         .about-left__bottom
                             .about-left__title Nunc euismod ante at purus elementum porttitor. 
-                                                br
-                                                |   Ut nisi nisl, auctor et imperdiet quis risus.
+                                            br
+                                            |   Ut nisi nisl, auctor et imperdiet quis risus.
                             .about-left__descripton Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas est porttitor, 
                                         br
                                         |   malesuada tellus aliquet, vehicula ipsum. Suspendisse porttitor sed dolor ac vehicula. 
@@ -83,7 +83,79 @@ html(lang="ru")
                                 a(href="https://www.youtube.com/embed/1qc5bAgZ0uY")
                             li.about-right__additionally-video.is-active-additionally-video.about-right__additionally-video--three
                                 a(href="https://www.youtube.com/embed/GS_z6FG_jqE")
-                    
+        section.meet#meet     
+            .container
+                .titles.titles-center
+                    h2.title Meet
+                    h3.subtitle.subtitle-center Our Trainers
+                ul.meet__wrapper.ul-none.d-flex.j-content-around.flex-wrap
+                    li.meet-card.meet-card--one
+                        .meet-card__description
+                            h4.meet-card__name Trainer 1
+                            h5.meet-card__position Fitness Trainer
+
+                    li.meet-card.meet-card--two
+                        .meet-card__description
+                            h4.meet-card__name Letty Adams
+                            h5.meet-card__position Fitness Trainer
+
+                    li.meet-card.meet-card--three
+                        .meet-card__description
+                            h4.meet-card__name Trainer 3
+                            h5.meet-card__position Fitness Trainer
+
+                    li.meet-card.meet-card--four
+                        .meet-card__description
+                            h4.meet-card__name Trainer 4
+                            h5.meet-card__position Fitness Trainer
+
+                    li.meet-card.meet-card--five
+                        .meet-card__description
+                            h4.meet-card__name Trainer 5
+                            h5.meet-card__position Fitness Trainer
+        section.choose#choose
+            .container
+                .titles.titles-center
+                    h2.title Choose
+                    h3.subtitle.subtitle-center Our Programs
+                ul.choose__wrapper.ul-none.d-flex.j-content-around.flex-wrap
+                    li.choose-item.choose-item--one
+                        .choose-item__border
+                            img(src="./img/icons/1.svg", alt="running")
+                        .choose-item__detailed
+                            h4.choose-item__title Body Building Programs
+                            p.choose-item__description Sed augue enim, lacinia non dui ut, mollis vulputate 
+                                                        br
+                                                        |   felis. Vivamus consequat bibendum ullamcorper. Donec 
+                                                        br
+                                                        |    sed nibh aliquet odio efficitur sagittis.       
+                            button.button.button-mini.button-center.button-transparent.button--choose Learn More
+                            
+                    li.choose-item.choose-item--two
+                        .choose-item__border
+                            img(src="./img/icons/2.svg", alt="rod")
+                        .choose-item__detailed
+                            h4.choose-item__title Weight Loose Programs
+                            p.choose-item__description Sed augue enim, lacinia non dui ut, mollis vulputate 
+                                                        br
+                                                        |   felis. Vivamus consequat bibendum ullamcorper. Donec 
+                                                        br
+                                                        |    sed nibh aliquet odio efficitur sagittis. 
+                            button.button.button-mini.button-center.button-transparent.button--choose Learn More
+
+                    li.choose-item.choose-item--three
+                        .choose-item__border
+                            img(src="./img/icons/3.svg", alt="swimming")
+                        .choose-item__detailed
+                            h4.choose-item__title Spa Programs
+                            p.choose-item__description Sed augue enim, lacinia non dui ut, mollis vulputate 
+                                                        br
+                                                        |   felis. Vivamus consequat bibendum ullamcorper. Donec 
+                                                        br
+                                                        |    sed nibh aliquet odio efficitur sagittis. 
+                            button.button.button-mini.button-center.button-transparent.button--choose Learn More
+                        
+            
                 
 
 
