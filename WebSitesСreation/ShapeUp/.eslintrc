@@ -1,26 +1,47 @@
+// 0 - Отключение ошибки.
+// 1 - Предупреждение,
+// 2 - Ошибка.
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true
-    },
-    "extends": ["airbnb/base"],
-    "rules": {
-        "semi": "off",
-        "no-console": "off",
-        "eol-last": "off",
-        "linebreak-style": "off",
-        "no-plusplus": "off",
-        "max-len": ["error", 115, {
-            "ignoreUrls": true,
-            "ignoreComments": true,
-            "ignoreStrings": true,
-            "ignoreTemplateLiterals": true,
-            "ignoreRegExpLiterals": true
-        }],
-        "indent": ["error", 4],
-        "prefer-destructuring": "off",
-        "no-param-reassign": "off",
-        "func-names": "off"
-    }
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb/base"],
+  "rules": {
+    "semi": [2, "always"], // Правило обеспечивает последовательное использование точек с запятой.
+    "no-console": 0, // Разрешим вывод в консоль (используйте это правило только при разработке).
+    "eol-last": 1,
+    "linebreak-style": 0,
+    "no-plusplus": 0, // Убарием ошибку при использовании инкримента, то есть ++
+    "max-len": [
+      2,
+      115,
+      {
+        "ignoreUrls": true, // Игнорируем URL-адреса
+        "ignoreComments": true, // Игнорируем комментарии
+        "ignoreStrings": true, // Игнорирует строки, которые содержат двойные кавычки или одинарные кавычки
+        "ignoreTemplateLiterals": true, // Игнорирование строк, содержащие литеральный шаблон
+        "ignoreRegExpLiterals": true // Игнорируем регулярные выражения
+      }
+    ],
+    "indent": [2, 4], // Правило обеспечивает согласованный стиль отступов. В данном примере 4 пробела.
+    "prefer-destructuring": 0, // Отключаем требование деструктуризации, там, где не нужно
+    "no-param-reassign": 0,
+    "func-names": 0, // Отключает требование о названии функции
+    "no-unused-vars": 0, // отмена того, чтобы необъявленные функции показывались как ошибка
+    "no-undef": 0,
+    "no-restricted-globals": [
+      // Говорит про объявленные глобальные переменные и ошибки, вроде event. Потом отключу.
+      "error",
+      {
+        "name": "event",
+        "message": "Use local parameter instead."
+      },
+      {
+        "name": "fdescribe",
+        "message": "Do not commit fdescribe. Use describe instead."
+      }
+    ]
+  }
 }

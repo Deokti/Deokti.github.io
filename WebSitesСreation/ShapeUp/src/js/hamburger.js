@@ -28,7 +28,6 @@ function clickHamburgetLinkOvarlayClose(navigationsSelector) {
 
     navigations.forEach((navigation) => {
         navigation.addEventListener('click', () => {
-
             document.querySelector('.header-nav').classList.remove('header-nav-tablet');
             document.querySelector('.hamburger').classList.remove('is-hamburger-active');
         });

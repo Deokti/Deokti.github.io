@@ -1,52 +1,55 @@
 // Базовые файлы для подключения
-@import './base/bootstrap-reboot.min';
-@import './base/library-flex';
-@import './libs/tiny-slider';
-@import './base/animations';
+@import "./base/bootstrap-reboot.min";
+@import "./base/library-flex";
+@import "./libs/tiny-slider";
+@import "./base/animations";
 
 // font-family: 'Roboto', sans-serif;
 
 html,
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    background-image: url('../img/bg/body-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  background-image: url("../img/bg/body-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
-    max-width: 1172px;
-    width: 100%;
-    padding: 0 2rem;
-    margin: 0 auto;
+  max-width: 1172px;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
 // Повторяющиеся элементы
-@import './repeats/buttons';
-@import './repeats/titles';
-@import './repeats/subtitles';
+@import "./repeats/buttons";
+@import "./repeats/titles";
+@import "./repeats/subtitles";
 
 // Отдельные элементы или классы
-@import './elements/active';
-@import './elements/hamburger';
+@import "./elements/active";
+@import "./elements/hamburger";
 
 // Испорт секция
-@import './sections/header';
-@import './sections/about';
-@import './sections/meet';
-@import './sections/choose';
-
+@import "./sections/header";
+@import "./sections/about";
+@import "./sections/meet";
+@import "./sections/choose";
+@import "./sections/reviews";
+@import "./sections/gallery";
 
 // Импорт медия-запросов
-@import './media/media1130';
-@import './media/media1040';
-@import './media/media1000';
-@import './media/media980';
-@import './media/media900';
-@import './media/media730';
-@import './media/media550';
-@import './media/media490';
-@import './media/media430';
+@import "./media/media1170";
+@import "./media/media1130";
+@import "./media/media1040";
+@import "./media/media1000";
+@import "./media/media980";
+@import "./media/media900";
+@import "./media/media730";
+@import "./media/media600";
+@import "./media/media550";
+@import "./media/media490";
+@import "./media/media430";

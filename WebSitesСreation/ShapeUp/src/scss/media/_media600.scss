@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    .reviews-item__left {
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+    .reviews-item__right {
+        padding-right: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+}

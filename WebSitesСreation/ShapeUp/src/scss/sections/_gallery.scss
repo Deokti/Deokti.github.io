@@ -1,0 +1,9 @@
+.gallery {
+    min-height: 40rem;
+    padding: 2rem 0 0 0;
+    &__item {
+        width: 370px!important;
+        height: 370px;
+        margin-right: 3rem;
+    }
+}

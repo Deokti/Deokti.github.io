@@ -1,0 +1,81 @@
+.reviews {
+    min-height: 66.5rem;;
+    padding: 7rem 0 0 0;
+    background-image: url('../img/bg/reviews-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrapper {
+        position: relative;
+        padding-top: 6.4rem;
+    }
+    &-item {
+        cursor: pointer;
+        display: flex!important;
+
+        max-width: 55.5rem!important;
+        min-height: 30rem;
+        background-color: #222222;
+        &__right {
+            padding-left: 2rem;
+            padding-top: 3rem;
+        }
+        &__name {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #12c2e9;
+            margin-bottom: .2rem;
+            letter-spacing: -0.03rem;
+        }
+        &__work {
+            font-size: 10px;
+            color: #fff;
+        }
+        &__description {
+            padding-top: 2.8rem;
+        }
+        &__detailed {
+            font-size: 1.2rem;
+            line-height: 2;
+            color: #fffefe;
+            margin-bottom: 2rem;
+        }
+        &__rating {
+            svg {
+                width: 2rem;
+                height: 2.1rem;
+            }
+            &--full {
+                svg {
+                    fill: #ff0000;
+                    stroke: #ff0000;
+                    }
+            }
+            &--four {
+                svg {
+                    &:last-child {
+                        path {
+                            fill: transparent
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tns-nav {
+    padding-top: 4.2rem;
+    text-align: center;
+    button[aria-controls=slider-reviews] {
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        margin: 0.5rem;
+    }
+    .tns-nav-active {
+        background-color: #12c2e9!important;
+    }
+}
