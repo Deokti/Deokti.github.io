@@ -6,4 +6,12 @@
             font-size: 3.8rem;
         }
     }
+
+    .pricing-item {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        &:last-child {
+            margin-right: 0.5rem;
+        }
+    }
 }

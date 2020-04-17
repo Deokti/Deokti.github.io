@@ -37,6 +37,9 @@
             background-color: #ed213a;
         }
     }
+    &-transparent-black {
+        border: solid 2px #222222;
+    }
     &-mini {
         width: 14rem;
         height: 5rem;
@@ -55,5 +58,8 @@
     &--choose {
         margin-top: 2.7rem;
         border: 0.2rem solid #f80759;
+    }
+    &--pricing {
+        margin-top: 2.9rem;
     }
 }

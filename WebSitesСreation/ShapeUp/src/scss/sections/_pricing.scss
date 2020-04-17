@@ -1,0 +1,88 @@
+.pricing {
+    min-height: 80.7rem;
+    padding: 8.7rem 0 7rem 0;
+    &__wrapper {
+        padding-top: 3rem;
+    }
+    &-item {
+        padding-top: 1.9rem;
+        margin-top: 3.4rem;
+
+        width: 36rem;
+        height: 50rem;
+        border: solid .2rem #222222;
+        transition: all .3s ease-in-out;
+        
+        margin-right: 2.6rem;
+        &:last-child {
+            margin-right: 0;
+        }
+        &__price {
+            font-size: 48px;
+            letter-spacing: 2.4px;
+            font-weight: 700;
+
+            letter-spacing: 1.2px;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 0;
+            span {
+                font-size: 24px;
+                letter-spacing: 1.2px;
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+        &__subscription {
+            margin-top: 2rem;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 5rem;
+            background-color: #262424;
+            font-size: 18px;
+            color: #ffffff;
+            transition: all .3s ease-in-out;
+            &::before,
+            &::after {
+                opacity: 0;
+                content: '';
+                position: absolute;
+                width: .2rem;
+                height: 100%;
+                background-color: #ed213a;
+                transition: all .3s ease-in-out;
+            }
+            &::before {
+                left: -0.2rem;
+            }
+            &::after {
+                right: -0.2rem;
+            }
+        }
+        &__description {
+            padding-top: 3.4rem;
+            text-align: center;
+            li {
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.7px;
+                color: #ffffff;
+                padding-bottom: 0.76rem;
+            }
+        }
+        &:hover {
+            border: solid 2px #12c2e9;
+            .pricing-item__subscription {
+                background-color: #ed213a;
+                &::before,
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
