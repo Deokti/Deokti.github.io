@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.App {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.App-form {
+    padding-top: 20px;
+}
