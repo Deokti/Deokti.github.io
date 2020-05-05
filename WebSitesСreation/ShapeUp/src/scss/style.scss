@@ -41,8 +41,11 @@ body {
 @import "./sections/reviews";
 @import "./sections/gallery";
 @import "./sections/pricing";
+@import "./sections/blog";
+@import "./sections/call-us";
 
 // Импорт медия-запросов
+@import './media/media1300';
 @import "./media/media1170";
 @import "./media/media1130";
 @import "./media/media1040";

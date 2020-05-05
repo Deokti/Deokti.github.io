@@ -38,7 +38,10 @@
         }
     }
     &-transparent-black {
-        border: solid 2px #222222;
+        border: .2rem solid #222222;
+        &:hover {
+            border-color: #ed213a;
+        }
     }
     &-mini {
         width: 14rem;
@@ -52,14 +55,11 @@
         margin-right: auto;
         margin-left: auto;
     }
-    &--header {
-        margin-right: 1.8rem;
-    }
+    &--header { margin-right: 1.8rem; }
     &--choose {
         margin-top: 2.7rem;
         border: 0.2rem solid #f80759;
     }
-    &--pricing {
-        margin-top: 2.9rem;
-    }
+    &--pricing {  margin-top: 2.9rem; }
+    &--call-ul { margin-top: 7.3rem; }
 }
