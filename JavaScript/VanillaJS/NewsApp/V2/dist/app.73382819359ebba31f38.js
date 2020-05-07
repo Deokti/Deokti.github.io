@@ -118,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Api
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar config = {\n  NEWS_URL: 'http://newsapi.org/v2',\n  API_KEY: '7b49a3a1f5dd40cdbd91ece9d0c9b625'\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (config);\n\n//# sourceURL=webpack:///./js/config/config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar config = {\n  NEWS_URL: 'https://newsapi.org/v2',\n  API_KEY: '7b49a3a1f5dd40cdbd91ece9d0c9b625'\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (config);\n\n//# sourceURL=webpack:///./js/config/config.js?");
 
 /***/ }),
 
