@@ -1,0 +1,10 @@
+.header-title-link,
+.nav-link,
+.nav-link::before,
+.open-search svg path,
+.news-item__link {
+    transition: all .3s ease-in-out;
+}
+.search-cross svg {
+    transition: fill .3s ease-in-out;
+}

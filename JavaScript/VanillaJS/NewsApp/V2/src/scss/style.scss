@@ -1,0 +1,67 @@
+.message-tablet-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #15191D;
+    color: #fff;
+    font-size: 3.5rem;
+    display: none;
+}
+.message-tablet-none {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+// Сброк базовых стилей
+@import './base/bootstrap-reboot.min';
+
+// Моя крохотная библиотека
+@import './base/library-flex';
+
+// Переменные 
+@import './base/variables';
+
+// Импорт миксинов
+@import './base/mixins';
+
+// Плавный переход
+@import './base/transition';
+
+// Импорт шрифта
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+
+html { font-size: 10px; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    background-color: $global-bg;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+// Отдельные элементы, которые стоит вывести в отдельный файл
+@import './elements/search';
+
+// Импорт секций
+@import './section/header';
+@import './section/news';
+
+
+@media screen and (max-width: 1180px) {
+    body { overflow: hidden; }
+    .header, main {
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .message-tablet-mobile { display: block; }
+}
+
