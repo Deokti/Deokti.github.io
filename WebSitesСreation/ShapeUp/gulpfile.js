@@ -70,7 +70,7 @@ gulp.task('pug', () => {
 });
 
 /* -------- JAVASCRIPT --------*/
-gulp.task('concat', () => gulp.src(['./src/js/polyfills/polyfill.js', './src/js/libs/jquery-3.4.1.min.js', './src/js/libs/tiny-slider.js', './src/js/hamburger.js', './src/js/change-address-video.js', './src/js/slider-reviews.js', './src/js/slider-gallery.js'])
+gulp.task('concat', () => gulp.src(['./src/js/polyfills/polyfill.js', './src/js/libs/jquery-3.4.1.min.js', './src/js/libs/tiny-slider.js', './src/js/hamburger.js', './src/js/change-address-video.js', './src/js/slider-reviews.js', './src/js/slider-gallery.js', './src/js/disable-basic-link-behavior.js'])
     .pipe(babel())
     .pipe(uglify())
     .pipe(concat({

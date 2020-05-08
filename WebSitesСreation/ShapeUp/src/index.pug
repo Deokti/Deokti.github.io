@@ -34,7 +34,7 @@ html(lang="ru")
                             li.header-nav__link
                                 a(href="#blog") Blog
                             li.header-nav__link
-                                a(href="#") Contact
+                                a(href="#contact") Contact
                 .header-content
                     h1.header-content__title 
                         span Build
@@ -70,7 +70,7 @@ html(lang="ru")
                                         |   sollicitudin, eros vitae vulputate euismod, nibh tortor accumsan tellus, 
                                         br
                                         |   fringilla hendrerit ligula eros nec velit.
-                            a.about-left__learn-more(href="#") Learn More
+                            a.about-left__learn-more.disable-basic-link(href="#") Learn More
                     .about-right
                         .about-right__main
                             .about-right__main-video
@@ -121,7 +121,7 @@ html(lang="ru")
                 ul.choose__wrapper.ul-none.d-flex.j-content-around.flex-wrap
                     li.choose-item.choose-item--one
                         .choose-item__border
-                            img(src="./img/icons/1.svg", alt="running")
+                            img(src="./img/icons/choose-icons/1.svg", alt="running")
                         .choose-item__detailed
                             h4.choose-item__title Body Building Programs
                             p.choose-item__description Sed augue enim, lacinia non dui ut, mollis vulputate 
@@ -133,7 +133,7 @@ html(lang="ru")
                             
                     li.choose-item.choose-item--two
                         .choose-item__border
-                            img(src="./img/icons/2.svg", alt="rod")
+                            img(src="./img/icons/choose-icons/2.svg", alt="rod")
                         .choose-item__detailed
                             h4.choose-item__title Weight Loose Programs
                             p.choose-item__description Sed augue enim, lacinia non dui ut, mollis vulputate 
@@ -145,7 +145,7 @@ html(lang="ru")
 
                     li.choose-item.choose-item--three
                         .choose-item__border
-                            img(src="./img/icons/3.svg", alt="swimming")
+                            img(src="./img/icons/choose-icons/3.svg", alt="swimming")
                         .choose-item__detailed
                             h4.choose-item__title Spa Programs
                             p.choose-item__description Sed augue enim, lacinia non dui ut, mollis vulputate 
@@ -386,7 +386,7 @@ html(lang="ru")
                             span.blog-item__theme Body Fitness  
                             h4.blog-item__title Start your push-ups today and see results 
                             p.blog-item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare ut dui sed facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem
-                            a.blog-item__link(href="#") Continue reading
+                            a.blog-item__link.disable-basic-link(href="#") Continue reading
                             .blog-item__detailed   
                                 h6.blog-item__autor 1d | Kevin Smith
                                 span.blog-item__like 25
@@ -396,7 +396,7 @@ html(lang="ru")
                             span.blog-item__theme Exersize
                             h4.blog-item__title Are you commited enough for better body ?
                             p.blog-item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare ut dui sed facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem
-                            a.blog-item__link(href="#") Continue reading
+                            a.blog-item__link.disable-basic-link(href="#") Continue reading
                             .blog-item__detailed
                                 h6.blog-item__autor 2d | Md Mizanur Rahman
                                 span.blog-item__like 50
@@ -406,7 +406,7 @@ html(lang="ru")
                             span.blog-item__theme Fitness Club
                             h4.blog-item__title Why working out is good for you ?
                             p.blog-item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare ut dui sed facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem
-                            a.blog-item__link(href="#") Continue reading
+                            a.blog-item__link.disable-basic-link(href="#") Continue reading
                             .blog-item__detailed
                                 h6.blog-item__autor 2d | Nazratun Nayeem
                                 span.blog-item__like 71
@@ -416,7 +416,7 @@ html(lang="ru")
                             span.blog-item__theme Training Equipments
                             h4.blog-item__title Liftings things do make a difference
                             p.blog-item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare ut dui sed facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem
-                            a.blog-item__link(href="#") Continue reading
+                            a.blog-item__link.disable-basic-link(href="#") Continue reading
                             .blog-item__detailed
                                 h6.blog-item__autor 3d | Marry Poppins
                                 span.blog-item__like 39
@@ -429,10 +429,82 @@ html(lang="ru")
                             a.subtitle-phone.subtitle-phone--call-ul(href="tel:+19576521268") +1 957 652 1268
                     p.call-us__description Praesent elementum nulla non posuere dictum. Suspendisse aliquet quam diam, egestas tristique nibh tempor sed. Ut justo leo, eleifend sit amet ipsum ac, scelerisque mattis nisl.
                     button.button.button-center.button-header-mobile.button-background.button-hover-linear-gradient.button--call-ul Book a Program
-
-                    
-
-            
+        section.contact#contact
+            .container
+                .contact__wrapper.d-flex.j-content-between.flex-wrap
+                    .contact-left
+                        h3.contact-left__logo
+                            img(src="./img/logo.svg", alt="logo")
+                        p.contact-left__description Maecenas rhoncus ipsum non nisi finibus maximus. In hac habitasse platea dictumst. Aenean purus eros.
+                        h4.contact-left__follow-title Follow Us
+                        ul.contact-left__follow-wrapper.ul-none.d-flex 
+                            li
+                                a.disable-basic-link(style="background-image: url('./img/icons/contacts-icons/left/facebook-icon.svg')" href="#") 
+                            li
+                                a.disable-basic-link(style="background-image: url('./img/icons/contacts-icons/left/twitter-icon.svg')" href="#")
+                            li
+                                a.disable-basic-link(style="background-image: url('./img/icons/contacts-icons/left/instagram-icon.svg')" href="#")
+                            li
+                                a.disable-basic-link(style="background-image: url('./img/icons/contacts-icons/left/youtube-icon.svg')" href="#")
+                            li
+                                a.disable-basic-link(style="background-image: url('./img/icons/contacts-icons/left/vimeo-icon.svg')" href="#")
+                    .contact-location
+                        h3.contact-title.contact-location__title Quick Contacts
+                        ul.contact-location__list.ul-none 
+                            li.contact-location__item.contact-location__item--location
+                                a(href="https://goo.gl/maps/FjXMJ7u5zyTZ5QNC7" target="_blank") 23, George Washington Street, New York, USA, 09567
+                            li.contact-location__item.contact-location__item--phone
+                                a(href="tel:+19576521268") +1 957 652 1268
+                            li.contact-location__item.contact-location__item--email
+                                a(href="mailto:info@shapeup.com") info@shapeup.com
+                            li.contact-location__item.contact-location__item--site
+                                a(href="www.shapeup.com" target="_blank") www.shapeup.com
+                    .contact-tags
+                        h3.contact-title.contact-tags__title Popular Search Tags
+                        ul.contact-tags__container.ul-none
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Workout
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Spa
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Schedule
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Weightlifing
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Boxing
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Yoga
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Location
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Trainers
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Class
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Equipments
+                            li.contact-tags__item
+                                a.disable-basic-link(href="#") Nutrition
+        section.footer-links#footer-links
+            .container
+                 ul.footer-links__list.ul-none.d-flex.j-content-center
+                            li.footer-links__item
+                                a(href="#header") Home
+                            li.footer-links__item
+                                a(href="#about") About
+                            li.footer-links__item
+                                a(href="#meet") Trainers
+                            li.footer-links__item
+                                a(href="#choose") Service
+                            li.footer-links__item
+                                a(href="#reviews") Reviews
+                            li.footer-links__item
+                                a(href="#pricing") Price
+                            li.footer-links__item
+                                a(href="#blog") Blog
+        footer.footer#footer
+            .container
+                p.footer__copyright Copyright    2018.  All Rights Reserved
+                
         
                         
                             

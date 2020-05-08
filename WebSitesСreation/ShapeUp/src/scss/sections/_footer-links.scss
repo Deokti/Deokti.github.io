@@ -1,0 +1,17 @@
+.footer-links {
+    min-height: 8rem;
+    background-color: #c1162b;
+    padding: 2.8rem 0;
+    &__list { text-align: center; }
+    &__item {
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #fff;
+            transition: all .3s ease-in-out;
+            &:hover { color: #12c2e9; }
+        }
+        margin-right: 3.3rem;
+        &:last-child {  margin-right: 0; }
+    }
+}

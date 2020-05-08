@@ -1,3 +1,5 @@
+const navLinkFooter = document.querySelectorAll('.footer-links__item a');
+
 function checkActiveClass(selectorNav, hamburger, checkClass, addActiveClass) {
     const nav = document.querySelector(selectorNav);
 
@@ -20,6 +22,7 @@ function smoothScrollingToAnchor(links) {
         });
     });
 }
+smoothScrollingToAnchor(navLinkFooter);
 
 
 function clickHamburgetLinkOvarlayClose(navigationsSelector) {
