@@ -1,15 +1,21 @@
+
+// Цвет для фона
+@bg-color: #fff;
+
+// Цвет базового текса
+@base-text-color: #000;
+
+// Фон для навигации
+@nav-bg: #004D76;
+
 .header {
     min-height: 10rem;
     background-color: @bg-color;
-    padding: 2.5rem 0;
-    &-top { padding-bottom: 1rem; }
+    &-top { padding: 1.2rem 0; }
     &-addres {
         font-size: 1.6rem;
         font-weight: 300;
         text-align: center;
-    }
-    .logo-img{
-        width: 4rem;
     }
     .nav-bar {
         background-color: @nav-bg;
@@ -20,6 +26,7 @@
         font-weight: 400;
         font-size: 1.7rem;
         color: @bg-color;
+        text-transform: uppercase;
         &:hover { color: rgba(#fff, .7); }
     }
 }

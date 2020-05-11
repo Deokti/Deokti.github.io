@@ -1,0 +1,19 @@
+@title-color: #2c2c2c;
+
+.title {
+    font-size: 4.8rem;
+    color: @title-color;
+    margin: 0;
+    &-after-line {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 9rem;
+            height: 0.2rem;
+            background: #fbcf00;
+            bottom: -4rem;
+            left: 0;
+        }
+    }
+}
