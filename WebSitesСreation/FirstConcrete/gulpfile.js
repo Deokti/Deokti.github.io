@@ -74,7 +74,7 @@ gulp.task('htmlmin', () => gulp.src('src/*.html')
 // });
 
 /* -------- JAVASCRIPT --------*/
-gulp.task('concat', () => gulp.src(['src/js/polyfills/polyfill.js', './src/js/libs/jquery-3.4.1.min.js', './src/js/script.js']) 
+gulp.task('concat', () => gulp.src(['src/js/polyfills/polyfill.js', './src/js/libs/jquery-3.4.1.min.js', './src/js/smooth-scroll.js']) 
     .pipe(uglify())
     .pipe(concat({ path: 'script.js' }))
     .pipe(gulp.dest('dist/js'))
