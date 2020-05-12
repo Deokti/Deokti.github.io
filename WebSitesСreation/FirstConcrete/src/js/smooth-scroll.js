@@ -1,8 +1,7 @@
 // В функции для того, чтобы можно было переиспользовать
-
 function smoothScroll(linkSelector) {
     const links = $(linkSelector);
-    const margin = 0; // переменная для контроля докрутки
+    const margin = 5; // переменная для контроля докрутки
 
     $(links).click(function () { // условие, при нажатии на какие ссылки действует плавная прокрутка
         $('html, body').animate({

@@ -1,30 +1,19 @@
 @import './base/base-style';
 @import './base/transition';
-@import './base/variables';
 
-
-.font-family-scada {
-    font-family: 'Scada', sans-serif;
-}
 
 // Установка базового размера шрифта для использования rem
-html,
-body {
-    font-size: 10px;
-}
+html, body { font-size: 10px; }
 
-// Установка самого шрифта
 body { font-family: 'Roboto', sans-serif; }
 
+// font-weight: 100, 300, 400
 
-// font-weight: 300, 400
-
-// Подключение скролла фона в некоторых моментах
-@import './repeats/scroll-paralax-image';
 
 // Подключение отдельных элементов
 @import './elements/phone';
 @import './elements/logo';
+@import './elements/hamburger';
 
 // Подключение повторяющихся элементов
 @import './repeats/button';
@@ -36,3 +25,19 @@ body { font-family: 'Roboto', sans-serif; }
 @import './sections/promo';
 @import './sections/about-us';
 @import './sections/production';
+@import './sections/information';
+@import './sections/order';
+@import './sections/septic';
+
+// Отдельные стили к классам
+@import './base/individual-styles.less';
+
+
+
+// Подключение media-запросов
+@import './media/media1200';
+@import './media/media990';
+@import './media/media767';
+@import './media/media680';
+@import './media/media575';
+@import './media/media500';

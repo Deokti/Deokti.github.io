@@ -11,6 +11,7 @@ const pug = require('gulp-pug');
 const babel = require('gulp-babel');
 const less = require('gulp-less');
 const lessAutoprefix = require('less-plugin-autoprefix');
+const path = require('path');
 
 
 /* -------- BROWSERSYNC --------*/
@@ -43,11 +44,10 @@ gulp.task('scss', () =>
 
 /* -------- LESS --------*/
 gulp.task('less', () => {
-    return gulp.src('./src/less/**/*.less')
+    return gulp.src('./src/less/style.less')
         .pipe(less({
-            plugins: [
-                new lessAutoprefix({ browsers: ['last 2 versions'] })
-            ]
+            paths: [ path.join(__dirname, 'less', 'includes') ],
+            plugins: [ new lessAutoprefix({ browsers: ['last 2 versions'] }) ]
         }))
         .pipe(gulpRename({ prefix: '', suffix: '.min' /* dirname: "main/text/ciao", basename: "aloha", extname: ".md" */ }))
         .pipe(csso({ restructure: false, sourceMap: true, debug: true }))
@@ -74,7 +74,7 @@ gulp.task('htmlmin', () => gulp.src('src/*.html')
 // });
 
 /* -------- JAVASCRIPT --------*/
-gulp.task('concat', () => gulp.src(['src/js/polyfills/polyfill.js', './src/js/libs/jquery-3.4.1.min.js', './src/js/smooth-scroll.js']) 
+gulp.task('concat', () => gulp.src(['src/js/polyfills/polyfill.js', './src/js/libs/jquery-3.4.1.min.js', './src/js/smooth-scroll.js', './src/js/hamburger.js']) 
     .pipe(uglify())
     .pipe(concat({ path: 'script.js' }))
     .pipe(gulp.dest('dist/js'))

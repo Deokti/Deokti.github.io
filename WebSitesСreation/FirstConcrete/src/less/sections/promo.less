@@ -14,8 +14,8 @@
         width: 100%;
         height: 100%;
         opacity: 0.71;
-        background: #FFFFFF;
-        background: linear-gradient(180deg, #FFFFFF, #030303);
+        background: @bg-color;
+        background: linear-gradient(180deg, @bg-color, #030303);
         z-index: -1;
         pointer-events: none;
     }
@@ -42,7 +42,7 @@
         &::after {
             content: '';
             position: absolute;
-            background-image: url('../../img/main-line.png');
+            background-image: url('../img/main-line.png');
             background-repeat: no-repeat;
             width: 64rem;
             height: 1.4rem;
