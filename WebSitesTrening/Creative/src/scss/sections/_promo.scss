@@ -1,11 +1,12 @@
 .promo {
-    margin-top: -65px;
+    margin-top: -1px;
 
     position: relative;
     background-image: url('../img/bg/header-bg.jpg');
     min-height: 70.3rem;
     padding: 24rem 0 21.3rem 0;
     @include base-style-bg;
+    background-position: initial;
     z-index: 4;
     &::after {
         content: '';
