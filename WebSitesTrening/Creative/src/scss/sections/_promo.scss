@@ -1,0 +1,36 @@
+.promo {
+    margin-top: -65px;
+
+    position: relative;
+    background-image: url('../img/bg/header-bg.jpg');
+    min-height: 70.3rem;
+    padding: 24rem 0 21.3rem 0;
+    @include base-style-bg;
+    z-index: 4;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(#000000, .7);
+        z-index: -1;
+        pointer-events: none;
+    }
+    &__text-content {
+        padding-top: 3.2rem;
+        max-width: 104.1rem;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+        letter-spacing: .1px;
+    }
+    &__button-box {
+        padding-top: 3.8rem;
+        text-align: center;
+    }
+    &__button { margin: 0 1.9rem; }
+}

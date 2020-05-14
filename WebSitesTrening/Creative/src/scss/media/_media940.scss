@@ -1,0 +1,29 @@
+@media screen and (max-width: 940px) {
+    .header {
+        top: 0;
+        width: 100%;
+        position: fixed;
+        min-height: 0;
+        background-color: transparent;
+        &::before { position: static; }
+    }
+    .header__logo-absolute {
+        top: -100%;
+        visibility: hidden;
+    }
+    .header__nav-list { 
+        position: absolute;
+        visibility: hidden;  
+        pointer-events: none;
+        right: -100%;
+    }
+    .hamburger {
+        top: 2rem;
+        right: 0;
+        pointer-events: all;
+        visibility: visible; 
+    }
+    .header__nav-item {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,9 @@
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .06rem;
+    &-center { text-align: center; }
+    &--main { color: #ffffff; }
+    &--subtitle { color: #ff0036; }
+}

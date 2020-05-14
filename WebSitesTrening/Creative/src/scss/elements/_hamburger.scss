@@ -1,0 +1,50 @@
+.hamburger {
+    top: -100%;
+    pointer-events: none;
+    visibility: hidden;
+
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1000;
+    &-item {
+        position: relative;
+        width: 2rem;
+        height: .2rem;
+        background-color: #000;
+        margin-bottom: .4rem;
+        &::before, 
+        &::after { 
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: currentColor;
+            left: 0;
+        }
+        &::before { top: -.5rem; }
+        &::after { bottom: -.5rem; }
+        &:last-child { margin-bottom: 0; }
+    }
+    &--active {
+        .hamburger-item {
+            background: transparent;
+            &::before {
+                transform: rotate(135deg);
+                top: 0;
+            }
+            &::after {
+                transform: rotate(-135deg);
+                bottom: 0;
+            }
+        }
+    }
+}

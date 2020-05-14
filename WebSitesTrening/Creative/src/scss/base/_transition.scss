@@ -1,0 +1,13 @@
+.logo,
+.header__nav-link,
+.header__nav-link::before,
+.header__nav-link::after,
+.button,
+.button::after,
+.button::before,
+.hamburger,
+.hamburger-item,
+.hamburger-item::before,
+.hamburger-item::after {
+    transition: all .3s ease-in-out;
+}

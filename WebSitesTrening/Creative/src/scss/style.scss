@@ -1,0 +1,40 @@
+// Connection fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;500&display=swap');
+
+// Basic files for connecting
+@import './base/bootstrap-reboot.min';
+@import './base/library-flex';
+@import './base/variables';
+@import './base/mixins';
+@import './base/animations';
+@import './base/transition';
+
+
+html { font-size: 10px; }
+body { font-family: 'Lato', sans-serif; }
+// font-family: 'Raleway', sans-serif;
+
+
+.container {
+    max-width: 1215px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// Connection the individual elements
+@import './elements/logo';
+@import './elements/hamburger';
+
+// Connection repeat elemtnts 
+@import './repeats/title';
+@import './repeats/button';
+
+// Connection sections
+@import './sections/header';
+@import './sections/promo';
+
+// Connection media-queries
+@import './media/media1130';
+@import './media/media1040';
+@import './media/media940';
+@import './media/media445';
