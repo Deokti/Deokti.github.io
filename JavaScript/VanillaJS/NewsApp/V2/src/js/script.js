@@ -1,4 +1,3 @@
-// Импорт файлов
 import getCategory from './get-category';
 import searchForm from './search-form';
 import responseProcessing from './response-processing';
