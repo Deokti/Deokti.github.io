@@ -9,6 +9,15 @@
 .hamburger-item,
 .hamburger-item::before,
 .hamburger-item::after,
-.about-right__item--image {
+.about-right__item--image,
+.about-left__item-minus,
+.about-left__item-minus::before,
+.about-left__item-minus::after,
+.about-left__item-header {
     transition: all .3s ease-in-out;
+}
+
+.about-description__hexagon,
+.about-description__hexagon svg {
+    transition: all .1s ease-in-out;
 }

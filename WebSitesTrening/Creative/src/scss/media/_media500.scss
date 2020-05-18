@@ -1,0 +1,8 @@
+@media screen and (max-width: 500px) {
+    .about-right {
+        position: absolute;
+        pointer-events: none;
+        visibility: hidden;
+        left: -100%;
+    }
+}
