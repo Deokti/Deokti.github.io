@@ -8,6 +8,7 @@
 .hamburger,
 .hamburger-item,
 .hamburger-item::before,
-.hamburger-item::after {
+.hamburger-item::after,
+.about-right__item--image {
     transition: all .3s ease-in-out;
 }

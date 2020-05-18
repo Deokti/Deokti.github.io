@@ -1,0 +1,15 @@
+@keyframes accordionTopToDown {
+    0% {
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.accordionTopToDown {
+    animation-name: accordionTopToDown;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+}

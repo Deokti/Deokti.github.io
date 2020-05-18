@@ -27,11 +27,13 @@ body { font-family: 'Lato', sans-serif; }
 
 // Connection repeat elemtnts 
 @import './repeats/title';
+@import './repeats/subtitle';
 @import './repeats/button';
 
 // Connection sections
 @import './sections/header';
 @import './sections/promo';
+@import './sections/about';
 
 // Connection media-queries
 @import './media/media1440';
