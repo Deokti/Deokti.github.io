@@ -1,4 +1,11 @@
-const tabs = (triggersSelector, content, dataAttribute, addClassActive) => {
+const tabs = (
+    triggersSelector,
+    content,
+    dataAttribute,
+    addClassActive,
+    triggerClassAdd = null,
+    animationClassAdd = null,
+) => {
     const triggers = document.querySelectorAll(triggersSelector);
     const imageFilterContent = document.querySelectorAll(content);
 
@@ -8,6 +15,16 @@ const tabs = (triggersSelector, content, dataAttribute, addClassActive) => {
 
             imageFilterContent.forEach((classRemove) => classRemove.classList.remove(addClassActive));
             document.querySelector(`${content}[${dataAttribute}="${data}"]`).classList.add(addClassActive);
+
+            if (triggerClassAdd) {
+                triggers.forEach((triggerClassRemove) => triggerClassRemove.classList.remove(triggerClassAdd));
+                this.classList.add(triggerClassAdd);
+            }
+
+            if (animationClassAdd) {
+                imageFilterContent.forEach((classRemove) => classRemove.lastChild.classList.remove(animationClassAdd));
+                document.querySelector(`${content}[${dataAttribute}="${data}"]`).lastChild.classList.add(animationClassAdd);
+            }
         });
     });
 };

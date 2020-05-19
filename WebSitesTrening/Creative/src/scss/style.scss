@@ -35,6 +35,7 @@ body { font-family: 'Lato', sans-serif; }
 @import './sections/header';
 @import './sections/promo';
 @import './sections/about';
+@import './sections/portfolio';
 
 // Connection media-queries
 @import './media/media1440';
@@ -42,6 +43,9 @@ body { font-family: 'Lato', sans-serif; }
 @import './media/media1040';
 @import './media/media940';
 @import './media/media910';
+@import './media/media650';
 @import './media/media560';
+@import './media/media520';
 @import './media/media500';
 @import './media/media445';
+@import './media/media350';

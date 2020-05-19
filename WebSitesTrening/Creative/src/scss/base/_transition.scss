@@ -13,11 +13,9 @@
 .about-left__item-minus,
 .about-left__item-minus::before,
 .about-left__item-minus::after,
-.about-left__item-header {
-    transition: all .3s ease-in-out;
-}
-
+.about-left__item-header,
 .about-description__hexagon,
-.about-description__hexagon svg {
-    transition: all .1s ease-in-out;
+.about-description__hexagon svg,
+.portfolio-category__item  {
+    transition: all .3s ease-in-out;
 }
