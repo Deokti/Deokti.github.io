@@ -31,4 +31,8 @@
         background-color: #131313;
         &::before { background-color: #131313; }
     }
+    &-additional-lighter {
+        background-color:  #393939;
+        &::before { background-color:  #393939; }
+    }
 }

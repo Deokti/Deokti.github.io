@@ -66,6 +66,29 @@
                 &--less {
                     width: 20.248%;
                 }
+                &:hover { .portfolio-content-list-hover { opacity: 1; pointer-events: all; } }
+            }
+            &-hover {   
+                pointer-events: none;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: #000000, $alpha: .9);
+                &--plus {
+                    width: 2.4rem;
+                    svg { fill: #fff; }
+                }
+                &--name { 
+                    padding-top: 1rem;
+                    color: #fff;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                }
             }
         }
     }

@@ -1,0 +1,12 @@
+@media screen and (max-width: 1175px) {
+    .product-center {
+        position: absolute;
+        left: -100%;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .product { padding-bottom: 10rem; }
+    .product__wrapper { padding-top: 0; }
+    .product-left, .product-right { width: 50%; }
+    .product-information-item { width: 95%; }
+}

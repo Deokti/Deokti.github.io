@@ -8,6 +8,7 @@
 @import './base/mixins';
 @import './base/animations';
 @import './base/transition';
+@import './base/fonts';
 
 
 html { font-size: 10px; }
@@ -36,16 +37,23 @@ body { font-family: 'Lato', sans-serif; }
 @import './sections/promo';
 @import './sections/about';
 @import './sections/portfolio';
+@import './sections/product';
+@import './sections/clients';
 
 // Connection media-queries
 @import './media/media1440';
+@import './media/media1175';
 @import './media/media1130';
+@import './media/media1100';
 @import './media/media1040';
 @import './media/media940';
 @import './media/media910';
+@import './media/media800';
 @import './media/media650';
 @import './media/media560';
 @import './media/media520';
 @import './media/media500';
+@import './media/media460';
 @import './media/media445';
+@import './media/media410';
 @import './media/media350';

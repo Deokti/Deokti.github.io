@@ -5,8 +5,14 @@
 
     .portfolio-content-list__item--large,
     .portfolio-content-list__item--8 { width: 60%; }
+    // .portfolio-content-list__item--4 { width: 60%; }
 
     .portfolio-content-list__item--less,
-    .portfolio-content-list__item--4,
-    .portfolio-content-list__item--7 { width: 40%; }
+    .portfolio-content-list__item--7,
+    .portfolio-content-list__item--4 { width: 40%; }
+    .clients { padding: 5rem 0 5rem 0; }
+    .clients-left-reviews { padding-top: 1.5rem; }
+    .clients__wrapper { padding-top: 6rem; }
+    .clients-right-item { width: 44%; }
+    // .portfolio-content-list__item--3 { width: 100%; }
 }
