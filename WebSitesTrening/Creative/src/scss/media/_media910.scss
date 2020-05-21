@@ -1,0 +1,16 @@
+@media screen and (max-width: 910px) {
+    .about-left,
+    .about-right { width: 100%; padding-left: 0; }
+    .about-right__list {
+        padding-top: 6rem;
+        justify-content: center;
+    }
+    
+    .about-description__title { padding-top: 2.5rem; }
+
+    .portfolio-content-list__item--large { width: 34.3%; }
+    .portfolio-content-list__item--less { width: 31.248%; }
+    .portfolio-content-list__item--4 { width: 34.3%; }
+    .portfolio-content-list__item--7 { width: 34.3%; }
+    .portfolio-content-list__item--8 { width: 65.7%; }
+}

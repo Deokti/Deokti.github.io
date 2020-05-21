@@ -1,0 +1,8 @@
+.subtitle {
+    color: #505050;
+    font-size: 1.6rem;
+    font-weight: 700;
+    &-center { text-align: center; }
+    &--allocate { color: #ff0036; }
+    &--lighter { color: #a4a4a4; }
+}

@@ -1,0 +1,77 @@
+@import '../base/variables';
+
+.services {
+    position: relative;
+    padding: 10rem 0;
+    background-color: #272727;
+    &__wrapper { padding-top: 2rem; }
+    &-item {
+        padding-top: 8rem;
+        width: 48%;
+        &:hover {
+            .services-item-header__hexagon {
+                color: $is-active-color;
+                svg { fill: #fff }
+            }
+            .services-item-content {
+                background-color: rgba($is-active-color, .1);
+                &__text { color: #fff; }
+            }
+        }
+        &-header {
+            &__hexagon {
+                position: relative;
+                width: 66px; 
+                height: 38px;
+                color: #a4a4a4;
+                background-color: currentColor;
+                transform: rotate(90deg);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg { transform: rotate(-90deg); fill: #262626 }
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    border-left: 33px solid transparent;
+                    border-right: 33px solid transparent;
+                }
+                &::before {
+                    bottom: 100%;
+                    border-bottom: 19px solid currentColor;
+                }
+                &::after {
+                    top: 100%;
+                    width: 0;
+                    left: 0;
+                    border-top: 19px solid currentColor;
+                }
+            }
+            &__title {
+                padding-left: 3.5rem;
+                color: #fff;
+                font-family: 'Raleway', sans-serif;
+                font-size: 2rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+        }
+        &-content {
+            margin-top: 4rem;
+            width: 100%;
+            padding: 2.5rem 2.8rem;
+            min-height: 12.1rem;
+            background-color: rgba($color: #a4a4a4, $alpha: .1);
+            &__text {
+                color: #a4a4a4;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.2rem;
+            }
+        }
+    }
+}

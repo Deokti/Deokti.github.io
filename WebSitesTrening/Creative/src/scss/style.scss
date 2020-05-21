@@ -1,0 +1,65 @@
+// Connection fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;500&display=swap');
+
+// Basic files for connecting
+@import './base/bootstrap-reboot.min';
+@import './base/library-flex';
+@import './base/variables';
+@import './base/mixins';
+@import './base/animations';
+@import './base/transition';
+@import './base/fonts';
+
+
+html { font-size: 10px; }
+body { font-family: 'Lato', sans-serif; }
+// font-family: 'Raleway', sans-serif;
+
+
+.container {
+    max-width: 1215px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// Connection the individual elements
+@import './elements/logo';
+@import './elements/hamburger';
+@import './elements/line-split';
+
+// Connection repeat elemtnts 
+@import './repeats/title';
+@import './repeats/subtitle';
+@import './repeats/button';
+
+// Connection sections
+@import './sections/header';
+@import './sections/promo';
+@import './sections/about';
+@import './sections/portfolio';
+@import './sections/product';
+@import './sections/clients';
+@import './sections/teamwork';
+@import './sections/skils';
+@import './sections/services';
+@import './sections/bestseller';
+
+// Connection media-queries
+@import './media/media1440';
+@import './media/media1175';
+@import './media/media1130';
+@import './media/media1100';
+@import './media/media1040';
+@import './media/media990';
+@import './media/media940';
+@import './media/media910';
+@import './media/media800';
+@import './media/media680';
+@import './media/media650';
+@import './media/media560';
+@import './media/media520';
+@import './media/media500';
+@import './media/media460';
+@import './media/media445';
+@import './media/media410';
+@import './media/media350';

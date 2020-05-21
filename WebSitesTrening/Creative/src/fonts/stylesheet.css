@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MgOpen Modata';
+    src: url('MgOpenModata.woff2') format('woff2'),
+        url('MgOpenModata.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
