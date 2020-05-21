@@ -1,7 +1,0 @@
-font-family: Raleway 400, 500
-font-family: Lato; 400, 700
-font-family: "Mg Open Modata"; 400
-
-
-
-npm i --save-dev babel babel-core babel-loader core-js webpack webpack-stream @babel/core @babel/preset-env
