@@ -35,4 +35,15 @@
         background-color:  #393939;
         &::before { background-color:  #393939; }
     }
+    &-base-behavior { 
+        &::before {  display: none; }
+    }
+    &-additional-hover {
+        &:hover { background-color: #ff0036; }
+    }
+    &-mini { padding: .4rem 4.62rem; }
+    &-blog { 
+        font-size: 1.6rem;
+        padding: .9rem 1.4rem;
+    }
 }

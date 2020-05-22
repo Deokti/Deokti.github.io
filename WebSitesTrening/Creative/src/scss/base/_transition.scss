@@ -29,6 +29,13 @@
 .services-item-header__hexagon,
 .services-item-header__hexagon svg,
 .services-item-content,
-.services-item-content__text { 
+.services-item-content__text,
+.bestseller-item-cost,
+.bestseller-item-cost--price, 
+.bestseller-item-cost--year,
+.blog-item-image::before,
+.arrow-bottom svg,
+.follow-social-item-header__hexagon,
+.follow-social-item-header__link svg { 
     transition: all .3s ease-in-out;
 }

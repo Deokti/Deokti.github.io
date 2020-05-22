@@ -1,0 +1,98 @@
+@import '../base/mixins';
+
+.blog {
+    padding: 10rem 0;
+    &__wrapper { padding-top: 5rem; }
+    &__arrow-bottom { margin-top: 5.5rem; }
+    &-item {
+        width: 100%;
+        margin-top: 5rem;
+        &:hover {
+            .blog-item-image::before { opacity: 1; }
+            .blog__button { background-color: #ff0036; }
+        }
+        &-image {
+            position: relative;
+            width: 37rem;
+            @include base-style-bg;
+            &--1 { background-image: url('../img/blog/1.png'); }
+            &--2 { background-image: url('../img/blog/2.png'); }
+            &::before {
+                opacity: 0;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: #fff, $alpha: .5);
+                &--size { width: 100%; height: 100%; }
+            }
+        }
+        &-content {
+            padding-left: 3rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            &__title {
+                color: #2e2e2e;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            &-information {
+                padding-left: 1rem;
+                padding-top: 1.2rem;
+                &__icon {
+                    position: relative;
+                    color: #a2a2a2;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    padding-left: 1.3rem;
+                    &:nth-child(2),
+                    &:nth-child(3) {  padding-left: 5rem; }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: -.8rem;
+                        @include base-style-bg;
+                    }
+                }
+                &--user {
+                    &::before {
+                        width: 1.3rem;
+                        height: 1.6rem;
+                        background-image: url('../img/blog/user.svg');
+                    }
+                }
+                &--comment {
+                    &::before {
+                        left: 3rem;
+                        width: 1.5rem;
+                        height: 1.3rem;
+                        background-image: url('../img/blog/comment.svg');
+                    }
+                }
+                &--view {
+                    &::before {
+                        left: 3rem;
+                        width: 1.7rem;
+                        height: 1.2rem;
+                        background-image: url('../img/blog/view.svg');
+                    }
+                }
+            }
+            &__description { padding-top: 1.5rem; }
+            &__text {
+                max-width: 58rem;
+                color: #505050;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__button { margin-top: 1.2rem; }
+}

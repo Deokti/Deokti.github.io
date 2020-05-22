@@ -1,5 +1,5 @@
 // Connection fonts
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@400;500&display=swap');
 
 // Basic files for connecting
 @import './base/bootstrap-reboot.min';
@@ -26,6 +26,7 @@ body { font-family: 'Lato', sans-serif; }
 @import './elements/logo';
 @import './elements/hamburger';
 @import './elements/line-split';
+@import './elements/arrow-bottom';
 
 // Connection repeat elemtnts 
 @import './repeats/title';
@@ -43,6 +44,9 @@ body { font-family: 'Lato', sans-serif; }
 @import './sections/skils';
 @import './sections/services';
 @import './sections/bestseller';
+@import './sections/twitter';
+@import './sections/blog';
+@import './sections/follow';
 
 // Connection media-queries
 @import './media/media1440';

@@ -5,5 +5,14 @@
         padding-top: 5rem;
         width: 100%; 
     }
+    .blog-item-container { flex-direction: column; align-items: center; }
+    .blog-item-image { height: 20rem; }
+    .blog-item-content { 
+        text-align: center; 
+        padding-left: 0; 
+        padding-top: 2rem;
+    }
+    .blog-item-content-information { justify-content: center; }
+    .blog__button{ margin-left: auto; margin-right: auto; }
 
 }
