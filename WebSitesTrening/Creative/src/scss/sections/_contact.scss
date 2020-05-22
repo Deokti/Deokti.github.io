@@ -1,0 +1,99 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+.contact {
+    position: relative;
+    padding-top: 10rem;
+    &__wrapper { position: relative; margin-top: 10rem; }
+    &-map { 
+        min-height: 57.5rem;
+        background-image: url('../img/bg/map.jpg');
+        @include base-style-bg;
+    }
+    &-location {
+        position: relative;
+        bottom: -33rem;
+        left: 8rem;
+        width: 30rem;
+        &-list {
+            position: relative;
+            padding: 3.4rem 2.4rem;
+            height: 16.6rem;
+            background-color: #262626;
+            &-item {
+                color: #fff;
+                font-family: "Myriad Pro", sans-serif;
+                font-size: 1.6rem;
+                font-weight: 400;
+                &--link {
+                    color: #fff;
+                    &:hover {
+                        color: $is-active-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &-arrow {
+            position: absolute;
+            width: 100%;
+            color: #262626;
+            background: currentColor;
+            border-radius: 3px;
+            &::before {
+                content: ""; 
+                border: solid transparent;
+                position: absolute; 
+                top: 100%;
+                right: 8px;
+                border-top-color: currentColor;
+                border-width: 9px;
+                margin-right: -1px;
+            }
+        }
+    }
+    &-form {
+        position: absolute;
+        right: 14rem;
+        bottom: 0;
+
+        padding: 5rem 4.3rem;
+        width: 47rem;
+        height: 47.5rem;
+        box-shadow: 0 0 0.9rem rgba(5, 5, 6, 0.17);
+        background-color: #fff;
+        &__title {
+            color: #262626;
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        &-content {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            &__input,
+            &__massage {
+                width: 100%;
+                border: 0.1rem solid #e7e7e7;
+                background-color: #fff;
+                color: #505050;
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+            &__input {
+                padding: 0 1.6rem;
+                height: 3.5rem;
+                margin-bottom: 1.5rem;
+                &::placeholder { color: #505050; }
+            }
+            &__massage {
+                padding: .5rem 1.6rem;
+                resize: none;
+                height: 8.8rem;
+            }
+        }
+    }
+    &__button { margin-top: 3.2rem; }
+}
