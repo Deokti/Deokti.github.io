@@ -15,7 +15,7 @@
 <h2>AsiaWay</h2>
 <ol>
   <li>Сайт называется: <a href="https://deokti.github.io/WebDispute/AsiaWay/dist/" target="_blank">AsiaWay</a></li>
-  <li><a href="https://cloclo19.datacloudmail.ru/inline/7Z1re4jh7ayU7o28Qd5vJa74Ee4gGamEZMu7i1W3QbPt6vEuXutnbEkTxogCt9RcsFSoZt/reilgelern@mail.ru/Макеты/WebDispute/AsiaWay.png" target="_blank">Ссылка на внешний вид макета</a>;</li>
+  <li><a href="https://cloud.mail.ru/public/6pQi/4TCsmavzr" target="_blank">Ссылка на внешний вид макета</a>;</li>
  	<li>Сказать много не могу, хотя в целом было интересно. Единственная проблема, с которой столкнулся - это тень у треуголинка, и подгон сайта под PixelPerfect, на который и было, собственно потрачено много времени.</li>
  <li>Вёрстка началась 13.02.2020, закончилась 14.02.2020. На проект потрачено 10 часов и 21 минута. <a href="https://cloclo4.datacloudmail.ru/inline/81vbaR1DpYKzRHwrcryk2CToFHCZB3LkWseNyPzcJjZDJcPfKnhHad2p8br1p52hUa5a4s/reilgelern@mail.ru/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82%D1%8B/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8%20%D1%81%20WakaTime/AsiaWay.png" target="_blank">WakaTime</a>;</li>
  <li>Макет был сделаный дизайнером, одним из участников прокте WebDispute по имени <a href="https://vk.com/olyavod">Olya Vodomesova</a> .</li>
