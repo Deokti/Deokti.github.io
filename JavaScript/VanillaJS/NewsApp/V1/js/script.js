@@ -41,7 +41,8 @@ const newService = (function () {
     //API ключ пользователя
     const apiKey = '7b49a3a1f5dd40cdbd91ece9d0c9b625';
     // APi адресс для получения данных со страницы
-    const ApiURL = 'https://newsapi.org/v2';
+    // const ApiURL = 'https://newsapi.org/v2',
+    const ApiURL = 'https://news-api-v2.herokuapp.com';
 
     // Возвращаем два объекта
     return {
