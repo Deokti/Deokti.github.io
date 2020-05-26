@@ -1,9 +1,20 @@
 .gallery {
     min-height: 50rem;
     padding: 2rem 0 0 0;
-    &__item {
-        width: 370px!important;
-        height: 370px;
-        margin-right: 3rem;
+    &__wrapper { position: relative; }
+    &-slider { 
+        &__item { text-align: center; }
     }
+    &__button-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &-left { left: 1rem; }
+        &-right {
+            right: 1rem;
+            transform: translateY(-80%) rotate(180deg);
+        }
+    }
+
+
 }

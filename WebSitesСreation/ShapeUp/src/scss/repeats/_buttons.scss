@@ -55,6 +55,15 @@
         margin-right: auto;
         margin-left: auto;
     }
+    &-arrow { 
+        background-color: transparent;
+        border: none;
+        width: auto;
+        height: auto;
+        svg { transition: all .3s ease-in-out; }
+        &:hover { svg { opacity: .6; } }
+        // &-right { transform: rotate(180deg) translateY(1rem); }
+    }   
     &--header { margin-right: 1.8rem; }
     &--choose {
         margin-top: 2.7rem;
