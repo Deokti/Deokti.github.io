@@ -1,0 +1,125 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+.header {
+  position: relative;
+  background-image: url('../img/background/header-bg.jpg');
+  @include base-style-for-bg;
+  overflow: hidden;
+  &__arrow-right,
+  &__arrow-left {
+    position: absolute;
+    top: 3.7rem;
+    z-index: 5;
+  }
+  &__arrow-right { right: 7.3rem; }
+  &__arrow-left { right: 11.7rem; }
+  &__arrow-bottom {  
+    position: absolute;
+    bottom: 4.6rem;
+    left: 20.6rem;
+    z-index: 5;
+  }
+  &-left {
+    width: 16.7rem;
+    border-right: .1rem solid rgba( #fff, .25);
+    min-height: 1017px;
+    &__nav { padding-top: 11.4rem; }
+    &__search { margin-top: 3rem; }
+    &-date {
+      padding-top: 2.9rem;
+      padding-left: 3px;
+
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      &__number {
+        font-weight: 800;
+        font-size: 7.2rem;
+        line-height: 6.4rem;
+      }
+      &__description {
+        padding-top: 7px;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 1.4px;
+      }
+    }
+    &-location {
+      padding-top: 2.6rem;
+      &__name {
+        padding-left: .9rem;
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: center;
+        letter-spacing: 1.05px;
+        color: #fff;
+      }
+    }
+  }
+  &-right {
+    .subtitle--transparent {
+      margin-right: -.8rem;
+    }
+    &-map {
+      position: absolute;
+      top: -.2rem;
+      right: -.7rem;
+    }
+    &__bottom { 
+      position: absolute;
+      right: 0;
+      bottom: 4rem;
+      text-align: right;
+      padding-right: 8rem; 
+     
+    }
+    &-location-slider { margin-bottom: 2.7rem; }
+    &-description { 
+      margin-bottom: 1rem; 
+      &__arrow-left {
+        display: inline-block;
+        transform: translateY(10px);
+      }
+    }
+    &-line {
+      padding-top: 3.9rem;
+      &-item {
+        width: 20rem;
+        border-top: .4rem solid #fff;
+        margin-left: 3.6rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        &--number {
+          font-weight: 800;
+          font-size: 2.4rem;
+        }
+        &--location {
+          font-weight: 300;
+          font-size: 1.6rem;
+        }
+        &.active { border-color: $color-by-hover; }
+      }
+    }
+  }
+}
+
+.header-right-map-south-north { display: block; }
+.header-right-map-south { display: none; }
+.header-right-map-east { display: none; }
+.header-right-map-west { display: none; }
+
+.header-map-stroke {
+  stroke-dasharray: 600px;
+  stroke-dashoffset: 600px;
+}
+
+.header-right-map-east { 
+  stroke-dasharray: 824px;
+  stroke-dashoffset: 820px;
+}
+

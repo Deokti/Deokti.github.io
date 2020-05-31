@@ -1,0 +1,17 @@
+@keyframes showRoadOnMap {
+  100% { stroke-dashoffset: -4; }
+}
+.showRoadOnMap { animation: showRoadOnMap 4s infinite; }
+
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem)
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+.fadeInDown { animation: fadeInDown 1.5s infinite; }

@@ -1,0 +1,30 @@
+// Подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;800&display=swap');
+
+// Базовые файлы для подключения
+@import './base/bootstrap-reboot.min';
+@import './base/slick';
+@import './base/library-flex';
+@import './base/transition';
+@import './base/animations';
+
+html { font-size: 10px; }
+body { font-family: 'Fira Sans', sans-serif; }
+
+
+// Подклчение одиночных элементов
+@import './elements/logo';
+@import './elements/nav';
+@import './elements/search';
+
+// Подключение повторяющихся элементов
+@import './repeats/title';
+@import './repeats/subtitle';
+@import './repeats/arrow';
+@import './repeats/button';
+
+// Подключение секций
+@import './sections/header';
+
+
+.header-right-location-slider-container { width: 944px; }

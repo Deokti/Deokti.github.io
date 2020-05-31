@@ -1,0 +1,10 @@
+@import '../base/variables';
+
+.search {
+  width: 100%;
+  border: none;
+  background: transparent;
+  &:hover {
+    svg { fill: $color-by-hover; }
+  }
+}

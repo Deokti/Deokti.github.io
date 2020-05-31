@@ -1,0 +1,36 @@
+.subtitle {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  &--transparent {
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 7.3px;
+    line-height: 32px;
+    opacity: 0.5;
+    font-weight: 300;
+    z-index: 2;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      width: 8rem;
+      height: 0.1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -10rem;
+      z-index: 1;
+    }
+  }
+  &--main {
+    display: block;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 65px;
+  }
+  &--large {
+    line-height: 110px;
+    font-size: 80px;
+    letter-spacing: -0.7px;
+  }
+}

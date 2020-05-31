@@ -1,0 +1,28 @@
+.logo {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+  &:hover {
+    .logo--img { transform: translateY(-.5rem) }
+  }
+  &--additionally {
+    pointer-events: none;
+    position: absolute;
+    left: -17px;
+    top: 1px;
+    z-index: -1;
+
+    font-weight: 800;
+    font-size: 20rem;
+    line-height: 156px;
+    color: #fff;
+    opacity: .07;
+    width: 40.5rem;
+    text-transform: uppercase;
+  }
+  &--img {
+    display: block;
+    margin-left: -.2rem;
+    margin-top: -.2rem;
+  }
+}
