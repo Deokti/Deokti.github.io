@@ -21,6 +21,7 @@
     z-index: 5;
   }
   &-left {
+    margin-right: auto;
     width: 16.7rem;
     border-right: .1rem solid rgba( #fff, .25);
     min-height: 1017px;
@@ -108,6 +109,8 @@
   }
 }
 
+
+
 .header-right-map-south-north { display: block; }
 .header-right-map-south { display: none; }
 .header-right-map-east { display: none; }
@@ -118,8 +121,7 @@
   stroke-dashoffset: 600px;
 }
 
-.header-right-map-east { 
+.header-right-map-east.header-map-stroke {
   stroke-dasharray: 824px;
   stroke-dashoffset: 820px;
 }
-
