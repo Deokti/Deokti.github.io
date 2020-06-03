@@ -38,7 +38,8 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1",
-    "swiper": "^5.4.1"
+    "classlist-polyfill": "^1.2.0",
+    "fetch-polyfill": "^0.8.2",
+    "slick-carousel": "^1.8.1"
   }
 }

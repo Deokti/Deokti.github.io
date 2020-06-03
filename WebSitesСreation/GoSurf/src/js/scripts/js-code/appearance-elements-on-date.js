@@ -1,3 +1,6 @@
+// import '../../polyfills/classList';
+import 'classlist-polyfill';
+
 const appearanceElementsOnDate = ({
   triggerSelectors,
   getSlickSlideFromActiveSlide = '.slick-slide.slick-active',
@@ -17,6 +20,8 @@ const appearanceElementsOnDate = ({
       const subtitleData = subtitle.getAttribute(dataAttribute);
       const dotsLocation = document.querySelectorAll(classDotsLocation);
       const nameLocation = document.querySelectorAll(classNameLocation);
+      console.log(dotsLocation);
+      console.log(nameLocation);
 
 
       maps.forEach((map) => map.style.display = 'none');

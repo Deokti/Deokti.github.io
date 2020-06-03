@@ -1,3 +1,5 @@
+import 'fetch-polyfill';
+
 const httpService = () => ({
   async get(url) {
     try {
