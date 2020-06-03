@@ -125,3 +125,11 @@
   stroke-dasharray: 824px;
   stroke-dashoffset: 820px;
 }
+.dots-location-active {
+  stroke: $color-by-hover;
+  stroke-width: .5rem;
+}
+.name-location {
+  opacity: 0;
+  &-active { opacity: 1; }
+}

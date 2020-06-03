@@ -77,6 +77,7 @@ gulp.task('npm-start-build', () => gulp.src('./src/js/script.js')
     output: {
       filename: 'script.js',
     },
+    devtool: false,
     module: {
       rules: [
         {

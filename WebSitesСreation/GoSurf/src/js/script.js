@@ -20,5 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dataAttribute: 'data-line-and-dots',
     classMaps: '.header-map',
     classForBottomLine: '.header-right-line-item',
+    classDotsLocation: '.dots-location',
+    classNameLocation: '.name-location',
   });
 });
