@@ -20,9 +20,6 @@ const appearanceElementsOnDate = ({
       const subtitleData = subtitle.getAttribute(dataAttribute);
       const dotsLocation = document.querySelectorAll(classDotsLocation);
       const nameLocation = document.querySelectorAll(classNameLocation);
-      console.log(dotsLocation);
-      console.log(nameLocation);
-
 
       maps.forEach((map) => map.style.display = 'none');
       bottomLine.forEach((line) => line.classList.remove('active'));

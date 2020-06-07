@@ -1,7 +1,9 @@
 .subtitle {
+  position: relative;
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 0;
+  z-index: 7;
   &--transparent {
     position: relative;
     font-size: 22px;
@@ -22,6 +24,7 @@
       z-index: 1;
     }
   }
+  &-right { text-align: right; }
   &--main {
     display: block;
     font-weight: 800;
