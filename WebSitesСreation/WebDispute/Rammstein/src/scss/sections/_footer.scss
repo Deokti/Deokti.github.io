@@ -1,0 +1,18 @@
+.footer {
+    margin-top: -22px;
+
+    min-height: 75px;
+    background: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        padding-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #AFAFAF;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}

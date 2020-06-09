@@ -1,0 +1,50 @@
+@media screen and (max-width: 880px) {
+    .button_small {
+        width: 173px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    /* CONTACTS */
+    .contacts {
+        padding: 41px 0 70px 0;
+    } 
+    .contacts__wrapper {
+        padding-top: 35px;
+    }
+    .contacts-address {
+        justify-content: unset;
+    }
+    .contacts-address__inner {
+        padding-right: 127px;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    .contacts-details__title,
+    .contacts-details__join {
+        font-size: 28px;
+    }
+    .contacts-details__subtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contacts-address__place,
+    .contacts-address__phone,
+    .contacts-address__email {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contacts-details__contact {
+        padding-left: 110px;
+    }
+    .contacts-address__item_two,
+    .contacts-address__item_four {
+        padding-top: 20px;
+    }
+    /* CONTACTS */
+
+    .gallery__item {
+        height: 375px;
+    }
+}

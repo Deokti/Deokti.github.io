@@ -1,0 +1,48 @@
+@media screen and (max-width: 655px) {
+    /* SERVICES */
+    .services {
+        min-height: 704px;
+    }
+    .services-list {
+        padding-top: 15px;
+        max-width: 100%;
+        margin: 0;
+    }
+    .services-list__item {
+        font-size: 30px;
+        padding-bottom: 8px;
+        width: 100%;
+    }
+    .services-right {
+        padding: 0;
+        width: 100%;
+        padding: 40px 40px 0;
+    }
+    /* SERVICES */
+
+
+    /* CONTACTS */
+    .contacts-address__place,
+    .contacts-address__phone,
+    .contacts-address__email,
+    .contacts-details__subtitle {
+        font-size: 15px;
+    }
+    .contacts-details__title, 
+    .contacts-details__join {
+        font-size: 25px;
+    }
+    .social-fix-width {
+        width: 155px;
+    }
+    .social-contacts-paddings li {
+        margin-top: -4px;
+    }
+    /* CONTACTS */
+
+    .gallery__item {
+        height: 255px;
+        margin-bottom: 20px;
+    }
+
+}

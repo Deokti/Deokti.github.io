@@ -1,0 +1,22 @@
+.social-hover {
+   transition: all .3s ease-in-out;
+}
+
+.social {
+   li {
+      padding-left: 15px;
+      &:hover {
+         .social-hover {
+            fill: #fff;
+         }
+      }
+   }
+}
+
+.social-contacts-paddings {
+   li {
+      padding-left: 0;
+      margin-top: -7px;
+      padding-right: 15px;
+   }
+}

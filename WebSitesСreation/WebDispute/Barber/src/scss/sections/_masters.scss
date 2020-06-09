@@ -1,0 +1,116 @@
+.masters {
+    background: #1A1A1A;
+    padding: 54px 0 70px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    &__wrapper {
+        padding-top: 80px;
+    }
+    &-content {
+        &__item {
+            display: none;
+            &_one {
+                display: flex;
+            }
+        }
+        &__border {
+            position: relative;
+            width: 430px;
+            height: 430px;
+            padding: 16px;
+
+            margin-left: -3px;
+            margin-top: -2px;
+            overflow: hidden;
+            &::after { 
+                position: absolute;
+                content: '';
+                width: 425px;
+                height: 425px;
+                border-radius: 50%;
+                border: 3px dashed #f1403b;
+                left: 2px;
+                top: 1px;
+                pointer-events: none;
+
+                animation-name: transformRotate;
+                animation-duration: 5s;
+                animation-iteration-count: 1;
+
+            }
+        }
+        &__img {
+            border-radius: 50%;
+            width: 100%;
+        }
+        &__description {
+            padding-left: 61px;
+            padding-top: 57px;
+        }
+        &__title, 
+        &__subtitle,
+        &__detailed {
+            text-transform: capitalize;
+        }
+        &__title {
+            font-size: 26px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: -5px;
+        }
+        &__subtitle {
+            font-size: 22px;
+            color: #F1403B;
+            font-weight: 400;
+        }
+        &__detailed {
+            padding-top: 13px;
+            font-size: 20px;
+            color: #fff;
+            li {
+                position: relative;
+                padding-left: 14px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 6px;
+                    height: 0.5px;
+                    background-color: #fff;
+                    top: 50%;
+                    left: 3px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    &-tabs {
+        position: relative;
+        left: 457px;
+        margin-top: -176px;
+        width: 680px;
+        &__item {
+            cursor: pointer;
+            width: 155px;
+            margin: 0 6px;
+            transition: all .3s ease-in-out;
+            opacity: .5;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            img {
+                width: 100%;
+                border-radius: 50%;
+                pointer-events: none;
+            }
+            &_active {
+                opacity: 1;
+                border-radius: 50%;
+                border: 1px dashed #F1403B;
+                padding: 3px;
+            }
+        }
+    }
+}

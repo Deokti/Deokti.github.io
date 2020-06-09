@@ -1,0 +1,108 @@
+.button {
+    display: block;
+    width: 404px;
+    height: 80px;
+    background: #F1403B;
+    border: none;
+
+    font-size: 30px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background: #A01E1A;
+    }
+    &_header {
+        margin-top: 35px;
+    }
+    &_small {
+        font-family: 'Bebas Neue Bold';
+        width: 189px;
+        height: 79px;
+        font-size: 30px;
+    }
+    &_contacts {
+        margin-top: 68px;
+    }
+    &_form {
+        margin-top: 29px;
+        width: 350px;
+        height: 69px;
+        font-size: 32px;
+    }
+    &_thank {
+        margin-top: 28px;
+        width: 314px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+.button-arrow {
+    position: absolute;
+    border: none;
+    background: transparent;
+    left: -38px;
+    top: 61%;
+    transform: translateY(-50%);
+    &_next {
+        left: auto;
+        right: -38px;
+        transform: rotate(180deg) translate(1px, 19px);
+    }
+}
+
+.tns-nav {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+// Образщаемся к круглым элементам навигации
+// слайцдера через атрибут
+button[aria-controls=tns1] {
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #F1403B;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.tns-nav-active {
+    background: #F1403B !important;
+}
+
+.button-top {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 50px;
+    border: none;
+    background: transparent;
+    transform: rotate(180deg) translateY(20px);
+    transition: all .3s ease-in-out;
+    z-index: 0;
+    svg {
+        transition: all .3s ease-in-out;
+        width: 100%;
+        opacity: .5;
+        path {
+            fill: #F1403B;
+        }
+    }
+    &:hover {
+        svg {
+            opacity: 1;
+        }
+    }
+    &_active {
+        transform: rotate(180deg) translateY(0);
+        pointer-events: all;
+        opacity: 1;
+        z-index: 888;
+    }
+}

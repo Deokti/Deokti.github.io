@@ -1,0 +1,85 @@
+// Стрелочка в мобильном разрешении
+// Вначле отключена, на 530 влюкчается
+.mobile-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+
+.arrow-slick,
+.arrow-gallery-bg,
+.arrow-models,
+.arrow-top {
+    background: none;
+    border: none;
+    &:hover {
+        svg {
+            path {
+                transition: all .3s ease;
+                fill: #55A5FF;
+            }
+        }
+    }
+}
+
+// Стрелки, которые находятся
+// во второй секции у слайдера
+.arrow-slick {
+    position: absolute;
+    right: -2px;
+    bottom: 45px;
+    z-index: 100;
+    &_prev {
+        transform: translateY(-50px);
+    }
+    &_next {
+        transform: rotate(180deg);
+    }
+}
+
+// Стрелки, которые находястя
+// в третьей секции, галерея
+.arrow-gallery-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    right: 125px;
+    bottom: 109px;
+    z-index: 30;
+    &_next {
+        transform: rotate(180deg);
+    }
+    &_prev {
+        transform: translateY(-50px);
+    }
+    &_tablet {
+        display: none;
+    }
+}
+
+// Стрелчки, которые находятся
+// в секции "Другие модели"
+.arrow-models {
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+    &_next {
+        transform: rotate(180deg) translate(-2px, -2px);
+    }
+    &_prev {
+        right: auto;
+        left: 0;
+    }
+}
+
+// Стрелка, которая находится
+// в последней секции, и которая
+// отправляет в самый вверх страницы
+.arrow-top {
+    position: absolute;
+    bottom: 7px;
+    right: -3px;
+    transform: rotate(90deg);
+}

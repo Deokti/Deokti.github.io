@@ -1,0 +1,67 @@
+// Прелоадер
+@import 'base/preloader';
+
+
+// Базовые файлы для подключения
+@import 'base/bootstrap-reboot.min';
+@import 'base/tiny-slider';
+@import 'base/fonts';
+@import 'base/animate';
+@import 'base/lightgallery.min';
+
+
+body {
+    font-family: 'Bebas Neue Bold';
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+// Подключение стилей, 
+// которые отвечают за 
+// некоторые стили
+@import 'repeats/style-elements';
+
+// Повторяющиеся элементы, 
+// или единичные 
+@import 'repeats/social';
+@import 'repeats/navigations';
+@import 'repeats/buttons';
+@import 'repeats/title';
+@import 'repeats/modal';
+
+
+// Секции
+@import 'sections/header';
+@import 'sections/services';
+@import 'sections/masters';
+@import 'sections/reviews';
+@import 'sections/gallery';
+@import 'sections/contacts';
+@import 'sections/footer';
+
+
+// Медия запросы
+@import 'media/media1920';
+@import 'media/media1700';
+@import 'media/media1300';
+@import 'media/media1200';
+@import 'media/media1110';
+@import 'media/media1030';
+@import 'media/media960';
+@import 'media/media930';
+@import 'media/media880';
+@import 'media/media768';
+@import 'media/media740';
+@import 'media/media700';
+@import 'media/media655';
+@import 'media/media630';
+@import 'media/media595';
+@import 'media/media580';
+@import 'media/media440';
+@import 'media/media340';
+@import 'media/media320';

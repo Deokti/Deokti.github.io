@@ -1,0 +1,79 @@
+@import '../base/mixins';
+
+.button {
+  display: flex;
+  position: relative;
+  width: 277px;
+  height: 80px;
+  font-weight: 800;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  &:hover { 
+    color: #fff;
+    text-decoration: none; 
+    .button-left {
+      &::before { opacity: 1; transform: translateY(-50%);  }
+      &::after { opacity: 1; transform: translateX(0); }
+    }
+  }
+  &-center { 
+    display: flex; 
+    align-items: center; 
+  }
+  &-left {
+    padding-left: .2rem;
+    position: relative;
+    width: 109px;
+    z-index: 2;
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      background-color: #4AF6CD;
+      width: 100%;
+      height: 50%;
+      z-index: -1;
+    }
+    &::before { 
+      transform: translateY(50%);
+      opacity: 0;
+      
+    }
+    &::after {
+      bottom: 0;
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+  &-right {
+    position: relative;
+    width: 168px;
+    background-color: #4AF6CD;
+    padding-left: 1.7rem;
+    z-index: 5;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      width: 2rem;
+      height: 0.2rem;
+      background-color: #fff;
+      left: -1rem;
+      z-index: 3;
+    }
+    &::after {
+      width: 2.4rem;
+      height: 2rem;
+      right: 2rem;
+      background-image: url('../img/icons/right-arrow.svg');
+      @include base-style-for-bg;
+    }
+  }
+}

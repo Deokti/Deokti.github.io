@@ -1,0 +1,64 @@
+// Загрузка прелоадера
+@import 'repeats/preloader';
+
+
+// Базовые файлы для подключения
+@import 'base/bootstrap-reboot.min';
+@import 'base//vegas.min';
+@import 'base/slick';
+@import 'base/mixins';
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1139px; //1110px + 15 с левой стороны и 15 с правой =
+    padding: 0 22px; // 15
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+// Подключение повторяющихся элементов
+// или единичных, которые стоит вынести
+@import 'repeats/logo';
+@import 'repeats/hamburgers';
+@import 'repeats/progress-bar';
+@import 'repeats/buttons';
+@import 'repeats/arrows';
+@import 'repeats/title.scss';
+
+
+// Подключение секций
+@import 'sections/header';
+@import 'sections/about';
+@import 'sections/gallery';
+@import 'sections/models';
+@import 'sections/contacts';
+
+
+// Подключение повторяющихся элементов
+// или единичных, которые стоит вынести
+@import 'repeats/popup';
+
+
+// Изминение значений бэкграунта на экранах
+@import 'media/media1365';
+@import 'media/media1280';
+@import 'media/media1100';
+@import 'media/media1030';
+@import 'media/media900';
+@import 'media/media840';
+@import 'media/media820';
+@import 'media/media780';
+@import 'media/media730';
+@import 'media/media710';
+@import 'media/media620';
+@import 'media/media530';
+@import 'media/media440';
+@import 'media/media360';

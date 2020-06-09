@@ -1,0 +1,67 @@
+.tickets {
+    position: relative;
+
+    
+    &_dekstop {
+        min-height: 899px;
+        padding: 109px 0 0 0;
+        background-image: url('../img/tickets/tickets-bg.jpg');
+        @include base-code-background;
+        background-position: 0 -1px;
+        background-size: cover;
+    
+        margin-top: -63px;
+        z-index: 20;
+    }
+    &__wrapper {
+        position: relative;
+        margin-top: 51px;
+
+        display: flex;
+        justify-content: space-around;
+    }
+    &__left {
+        margin-left: -31px;
+    }
+    &__right {
+        margin-right: -42px;
+    }
+    &-item {
+        width: 361px;
+        &__img {
+            width: 100%;
+        }
+        &__title {
+            margin-top: 31px;
+
+            font-family: 'ReiseReise', sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 29px;
+            text-align: center;
+            color: #C7C7C7;
+            &:first-child {
+                margin-left: -39px;
+            }
+            &:last-child {
+                margin-left: -11px;
+            }
+            span {
+                display: block;
+            }
+        }
+        &_left {
+            .tickets-item__title {
+                margin-left: -36px;
+            }
+        }
+        &_right {
+            .tickets-item__title {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+.tickets_mobile {
+    display: none;
+}

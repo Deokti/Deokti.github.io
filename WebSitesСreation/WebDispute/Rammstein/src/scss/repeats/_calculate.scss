@@ -1,0 +1,77 @@
+.calculate {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    &-item {
+        display: none;
+        position: absolute;
+        font-family: 'ReiseReise', sans-serif;
+        font-weight: 400;
+
+        width: 920px;
+        height: 604px;
+        background: #292929;
+
+        padding-top: 20px;
+        &__close {
+            cursor: pointer;
+            position: absolute;
+            right: 25px;
+            top: 17px;
+        }
+        &__title {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 41px;
+            text-align: center;
+            color: #C1C1C1;
+            span {
+                display: block;
+            }
+        }
+        &__places {
+            margin-top: 20px;
+            padding-left: 110px;
+            margin-bottom: 0;
+            list-style: none;
+        }
+        &__place,
+        &__number,
+        &__price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #292929;
+            background: linear-gradient(0deg, #797979, #797979), linear-gradient(0deg, #646464, #646464), #646464;
+        }
+        &__place {
+            position: relative;
+            width: 439px;
+            height: 129px;
+            margin-bottom: 45px;
+
+            font-size: 56px;
+        }
+        &__number {
+            position: absolute;
+            width: 130px;
+            height: 81px;
+
+            right: -160px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &__final {
+            margin-top: 61px;
+            display: flex;
+            justify-content: center;
+        }
+        &__price {
+            width: 260px;
+            height: 78px;
+            font-size: 56px;
+            margin-right: 28px;
+        }
+    }
+}

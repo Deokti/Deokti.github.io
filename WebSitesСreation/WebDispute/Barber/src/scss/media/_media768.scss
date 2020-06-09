@@ -1,0 +1,157 @@
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+
+
+    /* HEADER */
+    .social_svg-min {
+        li {
+            padding-left: 10px;
+            svg {
+                width: 15px;
+            }
+        }
+    }
+    .header-contact {
+        padding-left: 21px;
+    }
+    .header-contact__mail {
+        &::before {
+            width: 15px;
+            height: 11px;
+            top: 2px;
+            left: -20px;
+        }
+    }
+    .header-contact__phone {
+        &::before {
+            width: 13px;
+            height: 13px;
+            top: 2px;
+            left: 17px;
+        }
+    }
+
+    .navigations__hamburger {
+        right: 40px;
+    }
+    .navigations__mobile {
+        padding: 0 40px 50px;
+    }
+
+    .button_large {
+        width: 344px;
+        height: 60px;
+        font-size: 22px;
+    }
+    .button_header {
+        margin-top: 42px;
+    }
+    
+
+    .header {
+        min-height: 700px;
+        background-position: -610px 0;
+    }
+    .header-content__title {
+        padding-top: 5px;
+        font-size: 54px;
+        line-height: 45px;
+    }
+    .header-content__subtitle {
+        font-size: 26px;
+    }
+    /* HEADER */
+
+
+    .title {
+        font-size: 30px;
+        text-align: center;
+        &::before {
+            bottom: 10px;
+            left: auto;
+        }
+    }
+
+    /* SERVICES */
+    .services {
+        min-height: 704px;
+    }
+    .services-list {
+        padding-top: 15px;
+        max-width: 570px;
+        margin: 0 auto;
+    }
+    .services-list__item {
+        font-size: 30px;
+        padding-bottom: 8px;
+        width: 100%;
+    }
+    .masters-tabs {
+        width: 100%;
+    }
+    .services-right {
+        padding: 0;
+        width: 100%;
+        padding: 40px 40px 15px;
+    }
+    .masters-tabs__item {
+        margin: 0;
+    }
+    .masters-tabs__inner {
+        justify-content: space-between;
+    }
+    /* SERVICES */
+
+
+    /* REVIEWS */
+    .reviews {
+        padding: 43px 0 85px 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .reviews__wrapper {
+        padding-top: 25px;
+    }
+    .reviews-items__item {
+        width: 572px;
+        min-height: 193px;
+        padding: 28px 0 23px 32px;
+    }
+    .reviews-items__name {
+        font-size: 20px;
+    }
+    .reviews-items__rating {
+        font-size: 17px;
+    }
+    .reviews-items__description {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .button-arrow {
+        svg {
+            width: 13px;
+            height: 30px;
+        }
+    }
+    /* REVIEWS */
+
+    .contacts-details__join {
+        padding-top: 0;
+    }
+    .button_contacts {
+        margin-top: 45px;
+    }
+
+    .gallery__item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .gallery__item {
+        height: 310px;
+        margin-bottom: 40px;
+    }
+}

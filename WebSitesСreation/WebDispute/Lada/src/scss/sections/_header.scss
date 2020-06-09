@@ -1,0 +1,101 @@
+.header {
+    min-height: 758px;
+    padding: 31px 0 20px 0;
+    background-image: url('../img/header/header-full-bg.jpg');
+    @include style-base-bg;
+    &__wrapper {
+        position: relative;
+    }
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__main-title {
+        font-weight: 700; 
+        font-size: 144px;
+        color: #44404E;
+        text-align: center;
+        line-height: 153px;
+        margin-bottom: 0;
+        opacity: 1;
+        span {
+            opacity: 0;
+            transition: all 1.5s ease-in-out;
+        }
+        .fade {
+            opacity: .5;
+            color: #44404E;
+        }
+    }
+    &-content {
+        &__menu {
+            margin-top: 80px;
+
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            li {
+                display: block;
+                font-weight: 300;
+                font-size: 24px;
+                color: #E6F0F5;
+                margin-bottom: 12px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #E6F0F5;
+                    z-index: 80;
+                    span {
+                        opacity: .9;
+                        pointer-events: none;
+                        transition: all .3s ease;
+                    }
+                    .fade {
+                        pointer-events: none;
+                        opacity: 1;
+                        color: #0A5EBD;
+                        font-weight: 600;
+                    }
+                    .show {
+                        pointer-events: none;
+                        color: #E6F0F5;
+                        font-weight: 300;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &-characteristic {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        &__item {
+            color: #E6F0F5;
+            &_volume-engine {
+                margin-left: 22px;
+            }
+            &_power {
+                margin-left: -16px;
+            }
+            &_acceleration {
+                margin-left: 23px;
+            }
+        }
+        &__title {
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 13px;
+        }
+        &__description {
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+    }
+}

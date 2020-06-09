@@ -7,7 +7,21 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <title>GoSurf</title>
 </head>
-<body>
+<body class="hide-scroll-bar">
+  <!-- Прелоадер -->
+  <div class="transition-loader">
+    <div class="transition-loader-inner">
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+      <label></label>
+    </div>
+  </div>
+  <!-- Прелоадер -->
+
+
   <!-- Секции header -->
   <header class="header">
     <div class="header__wrapper d-flex j-content-between">
@@ -219,7 +233,7 @@
       </span>
     </h2>
 
-    <div class="surf__wrapper">
+    <section class="surf__wrapper">
       <h3 class="subtitle subtitle-right surf__subtitle" data-line-and-dots="north">
         <span class="subtitle--transparent">Current location</span>
         <span class="subtitle--main">California | USA</span>
@@ -549,11 +563,78 @@
           </li>
           <!-- 8 -->
         </ul>
-
       </div>
-  <!-- Секция surf, в которой находится большая карта с показом вод -->
 
-
+      <div class="surf-cards">
+        <ul class="surf-cards-items ul-none">
+          <li class="surf-cards-item surf-cards-item--1">
+            <h5 class="surf-cards-item__title">Malibu Beach</h5>
+            <span class="surf-cards-item__description">California | USA</span>
+            <a href="#" class="button">
+              <span class="button-center button-left button-transparent">View</span> 
+              <span class="button-center button-right button-background">Surf</span>
+            </a>
+          </li>
+          <li class="surf-cards-item surf-cards-item--2">
+            <h5 class="surf-cards-item__title">Airlie Beach</h5>
+            <span class="surf-cards-item__description">Queensland | Australia</span>
+            <a href="#" class="button">
+              <span class="button-center button-left button-transparent">View</span> 
+              <span class="button-center button-right button-background">Surf</span>
+            </a>
+          </li>
+          <li class="surf-cards-item surf-cards-item--3">
+            <h5 class="surf-cards-item__title">Cloud Nine</h5>
+            <span class="surf-cards-item__description">Siargao | Philippines</span>
+            <a href="#" class="button">
+              <span class="button-center button-left button-transparent">View</span> 
+              <span class="button-center button-right button-background">Surf</span>
+            </a>
+          </li>
+          <li class="surf-cards-item surf-cards-item--4">
+            <h5 class="surf-cards-item__title">Vieux Boucau</h5>
+            <span class="surf-cards-item__description">Hossegor | France</span>
+            <a href="#" class="button">
+              <span class="button-center button-left button-transparent">View</span> 
+              <span class="button-center button-right button-background">Surf</span>
+            </a>
+          </li>
+          <li class="surf-cards-item surf-cards-item--1">
+            <h5 class="surf-cards-item__title">Malibu Beach</h5>
+            <span class="surf-cards-item__description">California | USA</span>
+            <a href="#" class="button">
+              <span class="button-center button-left button-transparent">View</span> 
+              <span class="button-center button-right button-background">Surf</span>
+            </a>
+          </li>
+          <li class="surf-cards-item surf-cards-item--2">
+            <h5 class="surf-cards-item__title">Airlie Beach</h5>
+            <span class="surf-cards-item__description">Queensland | Australia</span>
+            <a href="#" class="button">
+              <span class="button-center button-left button-transparent">View</span> 
+              <span class="button-center button-right button-background">Surf</span>
+            </a>
+          </li>
+          <li class="surf-cards-item surf-cards-item--3">
+            <h5 class="surf-cards-item__title">Cloud Nine</h5>
+            <span class="surf-cards-item__description">Siargao | Philippines</span>
+            <a href="#" class="button">
+              <span class="button-center button-left button-transparent">View</span> 
+              <span class="button-center button-right button-background">Surf</span>
+            </a>
+          </li>
+          <li class="surf-cards-item surf-cards-item--4">
+            <h5 class="surf-cards-item__title">Vieux Boucau</h5>
+            <span class="surf-cards-item__description">Hossegor | France</span>
+            <a href="#" class="button">
+              <span class="button-center button-left button-transparent">View</span> 
+              <span class="button-center button-right button-background">Surf</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Секция surf, в которой находится большая карта с показом вод -->
 
   <script src="./js/script.js"></script>
 </body>

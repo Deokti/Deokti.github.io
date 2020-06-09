@@ -1,0 +1,19 @@
+@media screen and (max-width: 1300px) {
+    /* MASTERS */
+    .masters-tabs {
+        left: 400px;
+    }
+    .jBox-image-pointer-prev {
+        left: -45px;
+    }
+    .jBox-image-pointer-next {
+        right: -45px;
+    }
+    /* MASTERS */
+
+    .button-top_active {
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}

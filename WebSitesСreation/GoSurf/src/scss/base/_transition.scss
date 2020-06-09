@@ -4,6 +4,10 @@
 .arrow svg,
 .header-right-line-item,
 .nav-link,
-.nav-link svg {
+.nav-link svg,
+.button-left,
+.button-left::after,
+.button-left::before,
+.surf-cards-item::before {
   transition: all .3s ease-in;
 }

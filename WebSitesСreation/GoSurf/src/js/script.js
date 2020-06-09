@@ -1,10 +1,19 @@
+import preloader from './scripts/js-code/preloader';
+
 import sliderForLocationName from './scripts/slider/slider-for-location-name';
 import appearanceElementsOnDate from './scripts/js-code/appearance-elements-on-date';
 import learnWhichBrowserOpen from './scripts/js-code/add-class-based-browser';
 import learnCurrentDate from './scripts/js-code/current-date';
 import currentLocaiton from './scripts/js-code/current-location';
+import sliderForWorldMap from './scripts/slider/slider-for-world-maps';
 
 document.addEventListener('DOMContentLoaded', () => {
+  preloader({
+    getBody: 'body',
+    getPreloader: '.transition-loader',
+    showSrollBar: 'show-sroll-bar',
+  });
+
   learnCurrentDate();
   currentLocaiton();
   learnWhichBrowserOpen({
@@ -23,4 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
     classDotsLocation: '.dots-location',
     classNameLocation: '.name-location',
   });
+  sliderForWorldMap();
 });

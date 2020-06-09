@@ -1,0 +1,31 @@
+.form {
+    &__name,
+    &__phone {
+        width: 270px;
+        height: 70px;
+        background: #FFF8F5;
+        border: 1px solid #981515;
+        
+        padding: 0 9px;
+
+        font-size: 25px;
+        color: #000000;
+        &::placeholder {
+            font-size: 25px;
+            color: #000000;
+        }
+    }
+    &__phone {
+        position: relative;
+        left: 26px;
+    }
+    &_contact {
+        padding-top: 43px;
+        margin-right: 73px;
+
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+}

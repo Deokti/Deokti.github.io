@@ -3,12 +3,13 @@
 
 .surf {
   background-color: $base-background-color;
-  // min-height: 1951px;
   padding: 16.1rem 0 10rem 0;
-  &__subtitle { margin-top: -6rem; }
+  &__subtitle { 
+    padding-right: 8rem;
+    margin-top: -6rem; 
+  }
   &__wrapper {
     position: relative;
-    padding-right: 8rem;
     z-index: 5;
     &::after {
       content: '';
@@ -23,18 +24,32 @@
       z-index: 1;
     }
   }
+  &-world-map,
+  &-container-dots { 
+    max-width: 135rem;
+    min-height: 63.4rem;
+  }
+
+  &-container-dots {
+    .draggable { min-height: 63.4rem; }
+    .slick-current {
+      .surf-dot-item { display: flex; }
+      .surf-dot { 
+        &::before { top: -1.1rem; }
+      }
+    }
+  }
+  &-container-dots .slick-slide { width: 16.2rem!important; }
+
   &-world-map {
     margin-top: -4.5rem;
-    position: relative;
-    max-width: 119.9rem;
-    min-height: 63.4rem;
     background-image: url('../img/surf/world-map-dots.svg');
     @include base-style-for-bg;
     background-size: contain;
   }
   &-dot {
-    position: absolute;
-    width: 2.4rem;
+    position: relative;
+    width: 2.4rem!important;
     height: 2.4rem;
     color: $color-by-hover;
     background: currentColor;
@@ -55,10 +70,11 @@
     }
     &-item {
       position: absolute;
-      top: -234px;
-      left: -123px; 
+      top: -23.4rem;
+      left: -12.3rem; 
 
-      display: flex;
+      // display: flex;
+      display: none;
       flex-direction: column;
       justify-content: space-between;
 
@@ -67,7 +83,7 @@
       padding: 26px 34px 31px 31px;
       background: rgba($color: #000000, $alpha: .7);
       border-radius: .6rem;
-      display: none;
+      z-index: 5;
       &-header {
         display: flex;
         justify-content: space-between;
@@ -123,42 +139,105 @@
       }
     }
     &--1 {
-      top: 52%;
-      left: .5%;
+      top: 33rem;
+      left: 6.1rem;
       .surf-dot-item { left: -2rem; }
     }
     &--2 {
-      top: 45.8%;
-      left: 12.8%; 
+      top: 29rem;
+      left: 4.6rem;
     }
     &--3 {
-      top: 50.1%;
-      left: 29.4%;
+      top: 31.8rem;
+      left: 8.4rem;
     }
     &--4 {
-      top: 78.7%;
-      left: 35.6%;
+      top: 49.9rem;
+      left: 0.4rem;
     }
     &--5 {
-      top: 33.6%;
-      left: 45.2%;
+      top: 24rem;
+      left: -5rem;
     }
     &--6 {
-      top: 87%;
-      left: 54.01%;
+      top: 55.1rem;
+      left: -10.7rem;
     }
     &--7 {
-      top: 62.2%;
-      left: 67.3%;
+      top: 39.4rem;
+      left: -11rem;
     }
     &--8 {
-      left: 91.3%;
-      top: 78.7%;  
-    }
-    &-actvie {
-      &::before { top: -1.1rem; }
-      .surf-dot-item { display: flex; }
+      top: 49.9rem;
+      left: 1.6rem;
+      .surf-dot-item { left: -17rem; }
     }
   }
+  &-cards {
+    padding-top: 8.5rem;
+    &-item {
+      position: relative;
+      height: 75rem;
+      padding: 7.2rem 0 0 4rem;
 
+      display: flex!important;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include base-style-for-bg;
+      &--1 { background-image: url('../img/surf/cards/malibu-beach.jpg'); }
+      &--2 { background-image: url('../img/surf/cards/airline-beach.jpg'); }
+      &--3 { background-image: url('../img/surf/cards/cloud-nine.jpg'); }
+      &--4 { background-image: url('../img/surf/cards/vieux-boucau.jpg'); }
+      z-index: 4;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(#1C2121, .85);
+        z-index: -1;
+      }
+      &__title {
+        width: 24rem;
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 3.6rem;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      &__description {
+        width: 0;
+        height: 0;
+        white-space: nowrap;
+        position: absolute;
+        left: 4rem;
+        bottom: 9rem;
+        font-size: 1.8rem;
+        letter-spacing: .8rem;
+        text-transform: uppercase;
+        color: #fff;
+        transform: rotate(-90deg);
+      }
+    }
+
+    .slick-slide:nth-child(4n + 1) {
+      .surf-cards-item { margin-top: 3.2rem; }
+    }
+    .slick-slide:nth-child(4n + 3) {
+      .surf-cards-item { margin-top: 8.0rem; }
+    }
+    .slick-current {
+      .surf-cards-item::before { opacity: 0; }
+    }
+  }
+  &__arrow-left,
+  &__arrow-right {
+    position: absolute;
+    top: -3.2rem;
+  }
+  &__arrow-right { right: 7.3rem; }
+  &__arrow-left { right: 11.7rem; }
 }
