@@ -109,12 +109,8 @@
   }
 }
 
-
-
-.header-right-map-south-north { display: block; }
-.header-right-map-south { display: none; }
-.header-right-map-east { display: none; }
-.header-right-map-west { display: none; }
+.header-map { display: none; }
+.header-map.header-map-active { display: block; }
 
 .header-map-stroke {
   stroke-dasharray: 600px;

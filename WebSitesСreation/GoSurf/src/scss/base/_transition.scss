@@ -8,6 +8,8 @@
 .button-left,
 .button-left::after,
 .button-left::before,
-.surf-cards-item::before {
+.surf-cards-item::before,
+.surf-dot,
+.surf-dot::before {
   transition: all .3s ease-in;
 }

@@ -33,7 +33,7 @@
   &-container-dots {
     .draggable { min-height: 63.4rem; }
     .slick-current {
-      .surf-dot-item { display: flex; }
+      .surf-dot-item { display: flex; transform: rotateX(0); }
       .surf-dot { 
         &::before { top: -1.1rem; }
       }
@@ -48,6 +48,7 @@
     background-size: contain;
   }
   &-dot {
+    transition: all .3s;
     position: relative;
     width: 2.4rem!important;
     height: 2.4rem;
@@ -201,7 +202,7 @@
         z-index: -1;
       }
       &__title {
-        width: 24rem;
+        flex-grow: 1;
         font-weight: 800;
         font-size: 4rem;
         line-height: 3.6rem;

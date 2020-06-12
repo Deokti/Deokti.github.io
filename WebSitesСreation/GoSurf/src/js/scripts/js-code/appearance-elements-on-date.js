@@ -1,35 +1,45 @@
 // import '../../polyfills/classList';
 import 'classlist-polyfill';
 
+// Функция, которая проходится по массиву элементов,
+// удаляя какой-то класс
+
+// При нажатии на стрелку для переключения активного слайда,
+// происходит вычисление дата-атрибута subtitle, который находится внутри slcik.
+// Некоторые из элементов - это массивы, первый элемент которого - сам элемент, а второй класс, который нужно добавить
 const appearanceElementsOnDate = ({
   triggerSelectors,
   getSlickSlideFromActiveSlide = '.slick-slide.slick-active',
   dataAttribute,
-  classMaps,
-  classForBottomLine,
-  classDotsLocation,
-  classNameLocation,
+  classMaps = [],
+  classForBottomLine = [],
+  classDotsLocation = [],
+  classNameLocation = [],
 } = {}) => {
   const triggers = document.querySelectorAll(triggerSelectors);
-  const maps = document.querySelectorAll(classMaps);
-  const bottomLine = document.querySelectorAll(classForBottomLine);
+  const maps = document.querySelectorAll(classMaps[0]);
+  const bottomLine = document.querySelectorAll(classForBottomLine[0]);
 
   triggers.forEach((trigger) => {
     trigger.addEventListener('click', () => {
       const subtitle = document.querySelectorAll(getSlickSlideFromActiveSlide)[0].childNodes[0].childNodes[0];
       const subtitleData = subtitle.getAttribute(dataAttribute);
-      const dotsLocation = document.querySelectorAll(classDotsLocation);
-      const nameLocation = document.querySelectorAll(classNameLocation);
+      const dotsLocation = document.querySelectorAll(classDotsLocation[0]);
+      const nameLocation = document.querySelectorAll(classNameLocation[0]);
 
-      maps.forEach((map) => map.style.display = 'none');
-      bottomLine.forEach((line) => line.classList.remove('active'));
-      dotsLocation.forEach((dots) => dots.classList.remove('dots-location-active'));
-      nameLocation.forEach((name) => name.classList.remove('name-location-active'));
-      document.querySelector(`${classMaps}[${dataAttribute}="${subtitleData}"]`).style.display = 'block';
-      document.querySelector(`${classForBottomLine}[${dataAttribute}="${subtitleData}"]`).classList.add('active');
-      document.querySelector(`${classDotsLocation}[${dataAttribute}="${subtitleData}"]`).classList.add('dots-location-active');
-      document.querySelector(`${classNameLocation}[${dataAttribute}="${subtitleData}"]`).classList.add('name-location-active');
+      const goArrayDeleteClass = (array, deleteClass) => array.forEach((item) => item.classList.remove(deleteClass));
+      goArrayDeleteClass(maps, classMaps[1]);
+      goArrayDeleteClass(bottomLine, classForBottomLine[1]);
+      goArrayDeleteClass(dotsLocation, classDotsLocation[1]);
+      goArrayDeleteClass(nameLocation, classNameLocation[1]);
+
+      const goElementAddClass = (element, addClass) => document.querySelector(`${element}[${dataAttribute}="${subtitleData}"]`).classList.add(addClass);
+      goElementAddClass(classMaps[0], classMaps[1]);
+      goElementAddClass(classForBottomLine[0], classForBottomLine[1]);
+      goElementAddClass(classDotsLocation[0], classDotsLocation[1]);
+      goElementAddClass(classNameLocation[0], classNameLocation[1]);
     });
   });
 };
+
 export default appearanceElementsOnDate;

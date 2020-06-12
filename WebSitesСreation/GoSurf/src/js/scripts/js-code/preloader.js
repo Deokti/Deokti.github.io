@@ -3,7 +3,7 @@ const preloader = ({
   getPreloader,
   showSrollBar,
 }) => {
-  window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
     const body = document.querySelector(getBody);
     const preload = document.querySelector(getPreloader);
     preload.style.display = 'none';
