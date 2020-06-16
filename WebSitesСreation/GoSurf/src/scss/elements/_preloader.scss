@@ -1,55 +1,39 @@
-.transition-loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #2196f3;
-  z-index: 999;
+$rectCount: 5;
+$animationDuration: 1.2s;
+$delayRange: 0.4s;
+
+@keyframes sk-wave-stretch-delay {
+  0%, 40%, 100% { transform: scaleY(0.4); }
+  20% { transform: scaleY(1.0); }
 }
 
-.transition-loader-inner {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #FFF;
-  text-align: center;
-  width: 100%;
-  label {
-    font-size: 1em;
-    margin: 0 20px;
-    padding: 1%;
-    opacity: 0;
+.sk {
+  &-wave {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1d1f20;
+    z-index: 999;
+  }
+  &-rect {
+    background-color: #337ab7;
+    height: 25%;
+    width: 2%;
     display: inline-block;
-    background-color: #fff;
-    border-radius: 50%;
+    margin: 0 .5%;
+    animation: sk-wave-stretch-delay $animationDuration infinite ease-in-out;
+  }
+  &-wave--none {
+    display: none;
+    pointer-events: none;
   }
 }
-
-$key-frames-ms: 600ms, 500ms, 400ms, 300ms, 200ms, 100ms; 
-
-@each $current-ms in $key-frames-ms {
-    $i: index($key-frames-ms, $current-ms);
-    .transition-loader-inner label:nth-child(#{$i}) {
-      animation: loader 3s $current-ms infinite ease-in-out;
-    }   
+@for $i from 1 through $rectCount {
+  .sk-rect-#{$i} { animation-delay: - $animationDuration + $delayRange / ($rectCount - 1) * ($i - 1); }
 }
 
-@keyframes loader {
-  0% {
-    opacity: 0;
-    transform: translateX(-300px) scale(1);
-  }
-  33% {
-    opacity: 1;
-    transform: translateX(0px) scale(2);
-  }
-  66% {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(300px) scale(2);
-  }
-}
