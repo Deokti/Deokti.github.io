@@ -25,6 +25,13 @@
     }
   }
   &-right { text-align: right; }
+  &-left { 
+    text-align: left; 
+    .subtitle--transparent::before {
+      right: -10rem;
+      left: auto;
+    }
+  }
   &--main {
     display: block;
     font-weight: 800;

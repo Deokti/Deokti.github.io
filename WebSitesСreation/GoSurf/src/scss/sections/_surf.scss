@@ -33,7 +33,10 @@
   &-container-dots {
     .draggable { min-height: 63.4rem; }
     .slick-current {
-      .surf-dot-item { display: flex; transform: rotateX(0); }
+      .surf-dot-item { 
+        display: flex; 
+        transform: rotateX(0); 
+      }
       .surf-dot { 
         &::before { top: -1.1rem; }
       }
@@ -175,7 +178,7 @@
     }
   }
   &-cards {
-    padding-top: 8.5rem;
+    padding-top: 10.5rem;
     &-item {
       position: relative;
       height: 75rem;
@@ -231,13 +234,15 @@
       .surf-cards-item { margin-top: 8.0rem; }
     }
     .slick-current {
-      .surf-cards-item::before { opacity: 0; }
+      .surf-cards-item::before { opacity: .5; }
+      .surf-cards__button { opacity: 1; }
     }
+    &__button { opacity: 0; }
   }
   &__arrow-left,
   &__arrow-right {
     position: absolute;
-    top: -3.2rem;
+    top: -5.2rem;
   }
   &__arrow-right { right: 7.3rem; }
   &__arrow-left { right: 11.7rem; }

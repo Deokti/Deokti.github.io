@@ -16,6 +16,7 @@ const http = httpService();
 const currentLocaiton = () => {
   const currentLocation = document.querySelector('.current-location');
   http.get('https://json.geoiplookup.io').then((currentIp) => {
+    console.log(currentIp);
     const city = currentIp.city ? currentIp.city : 'California';
     currentLocation.textContent = city;
   });

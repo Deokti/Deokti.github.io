@@ -1,0 +1,60 @@
+@import '../base/mixins';
+
+.travel {
+  padding: 19.4rem 0 10rem 0;
+  &__title { 
+    .title--main { right: 11.4rem; }
+  }
+  &__arrow-right,
+  &__arrow-left { 
+    position: absolute;
+    bottom: -4.1rem;
+    right: -.3rem;
+    opacity: .25;
+  }
+  &__arrow-left {
+    right: 4rem;
+  }
+  &-container-slider { 
+    position: relative; 
+    padding-top: 5rem;
+  }
+  &__subtitle { padding-right: 7.7rem; }
+  &-shore-images {
+    width: 1115px;
+    height: 780px;
+    margin-top: -18.9rem;
+    margin-left: -.3rem;
+    &-item {
+      background-image: url('../img/travel/image-shores/shore-airline-beach.png');
+      width: 100%;
+      height: 100%;
+      @include base-style-for-bg;
+    }
+  }
+
+  &-airline {
+    margin-top: -10.8rem;
+    &--padding { padding-left: 13rem; }
+    &-logo { 
+      display: inline-block;
+      padding-left: 1.4rem; 
+      padding-bottom: 1.1rem;
+    }
+  }
+  &-planes {
+    position: absolute;
+    width: 90rem;
+    height: 30rem;
+    overflow: hidden;
+    right: 0;
+    bottom: -9.1rem;
+    &-item {
+      position: absolute;
+      right: -66px;
+      bottom: 0;
+      display: none;
+      &:first-child { display: block; }
+    }
+  }
+}

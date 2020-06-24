@@ -1,7 +1,7 @@
 @keyframes showRoadOnMap {
   100% { stroke-dashoffset: -4; }
 }
-.showRoadOnMap { animation: showRoadOnMap 4s infinite; }
+.showRoadOnMap { animation: showRoadOnMap 4s 1; }
 
 
 @keyframes fadeInDown {
@@ -29,4 +29,29 @@
 }
 .fadeDotsItemBottomToTop {
   animation: fadeDotsItemBottomToTop .3s; 
+}
+
+@keyframes thePlaneFliesAway {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100rem, -20rem);
+  }
+}
+.thePlaneFliesAway {
+  animation: thePlaneFliesAway 3s infinite;
+}
+
+@keyframes planeArrives {
+  0% {
+    transform: translate(100rem, 20rem);
+   
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.planeArrives {
+  animation: planeArrives 3s infinite;
 }

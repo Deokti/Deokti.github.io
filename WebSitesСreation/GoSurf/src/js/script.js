@@ -2,14 +2,17 @@ import $ from 'jquery';
 import preloader from './scripts/js-code/preloader';
 
 import sliderForLocationName from './scripts/slider/slider-for-location-name';
-import appearanceElementsOnDateAutoplay from './scripts/js-code/appearance-elements-on-date';
+import appearanceElementsOnDateAutoplay from './scripts/js-code/change-active-element-based-data-attribute-in-header';
 import learnWhichBrowserOpen from './scripts/js-code/add-class-based-browser';
 import learnCurrentDate from './scripts/js-code/current-date';
 import currentLocaiton from './scripts/js-code/current-location';
 import sliderForWorldMap from './scripts/slider/slider-for-world-maps';
 import smoothScrollingLink from './scripts/js-code/smooth-scrolling-link';
-import 'slick-carousel';
+import changeNameLocationBasedActiveSlide from './scripts/js-code/change-name-location-based-active-slide';
+import sliderToSwitchShores from './scripts/slider/slider-to-switch-shores';
+import changeElementBasedDataAttributeInTravelAutoplay from './scripts/js-code/change-element-based-data-attribute-in-travel';
 
+import 'slick-carousel';
 
 document.addEventListener('DOMContentLoaded', () => {
   smoothScrollingLink('.header-left__nav-item a[href]');
@@ -39,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Слайдер для названия мест в хедере
-  sliderForLocationName();
+  sliderForLocationName('.header-right-location-slider-container');
 
   // Активируется функция при каждом переключении слайдера,
   // в том числе при автоплее
@@ -55,5 +58,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Слайдер во сторой секции SURF
-  sliderForWorldMap();
+  sliderForWorldMap('.surf-container-dots', '.surf-cards-items');
+  // Код срабатывает в тот момент, когда переключается активно-текущий слайд
+  $('.surf-cards-items').on('afterChange', () => {
+    changeNameLocationBasedActiveSlide();
+  });
+
+  // Слайдер для переключения берега в секции Travel
+  sliderToSwitchShores('.travel .subtitle-slider-container-shore');
+  $('.travel .subtitle-slider-container-shore').on('beforeChange', () => {
+    changeElementBasedDataAttributeInTravelAutoplay.beforeDepartupe();
+  });
+  $('.travel .subtitle-slider-container-shore').on('afterChange', () => {
+    changeElementBasedDataAttributeInTravelAutoplay.afterDeparture();
+  });
 });

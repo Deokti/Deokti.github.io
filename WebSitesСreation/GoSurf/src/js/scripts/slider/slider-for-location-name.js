@@ -1,14 +1,16 @@
 import $ from 'jquery';
+import getLink from '../js-code/_get-link';
+import timeAttiplay from './return-time-autoplay';
 import 'slick-carousel';
 
-function sliderForLocationName() {
-  $('.header-right-location-slider-container').slick({
+function sliderForLocationName(link) {
+  $(getLink(link)).slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 3700,
+    autoplaySpeed: timeAttiplay,
     speed: 200,
     draggable: false,
     appendArrows: '.header__wrapper',
