@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import getLink from '../js-code/_get-link';
+import { getLink } from '../js-code/_get-link';
 import timeAttiplay from './return-time-autoplay';
 import 'slick-carousel';
 

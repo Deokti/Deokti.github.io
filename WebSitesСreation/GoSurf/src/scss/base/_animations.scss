@@ -55,3 +55,22 @@
 .planeArrives {
   animation: planeArrives 3s infinite;
 }
+
+
+@keyframes airlineFliesAway {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes airlineArrives {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

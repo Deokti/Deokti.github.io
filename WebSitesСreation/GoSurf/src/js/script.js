@@ -2,15 +2,15 @@ import $ from 'jquery';
 import preloader from './scripts/js-code/preloader';
 
 import sliderForLocationName from './scripts/slider/slider-for-location-name';
-import appearanceElementsOnDateAutoplay from './scripts/js-code/change-active-element-based-data-attribute-in-header';
-import learnWhichBrowserOpen from './scripts/js-code/add-class-based-browser';
-import learnCurrentDate from './scripts/js-code/current-date';
-import currentLocaiton from './scripts/js-code/current-location';
+import appearanceElementsOnDateAutoplay from './scripts/js-code/header/change-active-element-based-data-attribute-in-header';
+import learnWhichBrowserOpen from './scripts/js-code/header/add-class-based-browser';
+import learnCurrentDate from './scripts/js-code/header/current-date';
+import currentLocaiton from './scripts/js-code/header/current-location';
 import sliderForWorldMap from './scripts/slider/slider-for-world-maps';
 import smoothScrollingLink from './scripts/js-code/smooth-scrolling-link';
-import changeNameLocationBasedActiveSlide from './scripts/js-code/change-name-location-based-active-slide';
+import changeNameLocationBasedActiveSlide from './scripts/js-code/section-surf/change-name-location-based-active-slide';
 import sliderToSwitchShores from './scripts/slider/slider-to-switch-shores';
-import changeElementBasedDataAttributeInTravelAutoplay from './scripts/js-code/change-element-based-data-attribute-in-travel';
+import changeElementBasedDataAttributeInTravelAutoplay from './scripts/js-code/section-travel/change-element-based-data-attribute-in-travel';
 
 import 'slick-carousel';
 
