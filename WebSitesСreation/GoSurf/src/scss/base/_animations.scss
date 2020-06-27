@@ -31,6 +31,8 @@
   animation: fadeDotsItemBottomToTop .3s; 
 }
 
+
+// Анизмация для появления самолёта в секции Travel
 @keyframes thePlaneFliesAway {
   0% {
     transform: translate(0, 0);
@@ -42,7 +44,6 @@
 .thePlaneFliesAway {
   animation: thePlaneFliesAway 3s infinite;
 }
-
 @keyframes planeArrives {
   0% {
     transform: translate(100rem, 20rem);
@@ -52,11 +53,10 @@
     transform: translate(0, 0);
   }
 }
-.planeArrives {
-  animation: planeArrives 3s infinite;
-}
 
 
+// Анимация для появления текста с авиокомпаниией
+// и логотипом в секции Trravel
 @keyframes airlineFliesAway {
   0% {
     transform: translateX(-100%);
@@ -65,7 +65,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes airlineArrives {
   0% {
     transform: translateX(0);
@@ -74,3 +73,53 @@
     transform: translateX(-100%);
   }
 }
+
+// Анимация для появления картинки с местом
+// в секции Travel
+@keyframes hideImageInTravel {
+  0% {
+    opacity: 1;
+    // transform: scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    // transform: scale(0) rotate(180deg);
+  }
+}
+@keyframes showImageInTravel {
+  0% {
+    opacity: 0;
+    // transform: scale(0) rotate(180deg);
+  }
+  100% {
+    opacity: 1;
+    // transform: scale(1) rotate(360deg);
+  }
+}
+
+
+// Анимация для изминения цены и остальной информации
+// о полёте в место, которое было выбрано на слайдере
+// Для нормального функциюонирования 
+// на сам элемент был добавлен transform-origin: 7rem (70px);
+@keyframes startToggleInformationAboutFly {
+  0% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+} 
+@keyframes finishToggleInformationAboutFly {
+  0% {
+    opacity: 0;
+    transform: rotate(90deg);
+    
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+} 

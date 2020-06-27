@@ -71,7 +71,7 @@ gulp.task('npm-start-dev', () => gulp.src('./src/js/script.js')
   .pipe(browserSync.stream()));
 
 
-gulp.task('npm-start-build', () => gulp.src('./src/js/script.js')
+gulp.task('npm-build', () => gulp.src('./src/js/script.js')
   .pipe(webpack({
     mode: 'production',
     output: {

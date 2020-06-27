@@ -4,6 +4,8 @@ import { getLink, getLinks } from '../_get-link';
 const changeElementBasedDataAttributeInTravelAutoplay = {
   planes: getLinks('.travel-planes-item'),
   airlinesSubtitleData: getLinks('.subtitle-data-container .subtitle--main'),
+  travelShoreImagesItem: getLinks('.travel-shore-images-item'),
+  travelFlightItemDescription: getLinks('.travel-flight-container .travel-flight-item-description'),
   animationLength: '.6s',
 
   getSubtitle() {
@@ -11,34 +13,68 @@ const changeElementBasedDataAttributeInTravelAutoplay = {
     return subtitle.getAttribute('data-shore');
   },
 
-  beforeDepartupe() {
-    getLink(`.subtitle-data-container .subtitle--main[data-shore="${this.getSubtitle()}"]`).style.cssText = `
+  getItemAndAddStyles({ classElements, animationName }) {
+    return getLink(`${classElements}[data-shore="${this.getSubtitle()}"]`).style.cssText = `
       display: block;
-     -webkit-animation: airlineArrives ${this.animationLength} 1;
-      animation: airlineArrives ${this.animationLength} 1;
+      -webkit-animation: ${animationName} ${this.animationLength} 1;
+      animation: ${animationName} ${this.animationLength} 1;
     `;
+  },
+  getItemsAndAddStyles({ classElements, animationName }) {
+    return getLinks(`${classElements}[data-shore="${this.getSubtitle()}"]`)
+      .forEach((item) => item.style.cssText = `
+        display: block;
+        -webkit-animation: ${animationName} ${this.animationLength} 1;
+        animation: ${animationName} ${this.animationLength} 1;`);
+  },
 
-    getLink(`.travel-planes-item[data-shore="${this.getSubtitle()}"]`).style.cssText = `
-      display: block;
-      -webkit-animation: thePlaneFliesAway ${this.animationLength} 1;
-      animation: thePlaneFliesAway ${this.animationLength} 1;
-    `;
+  iterateArrAndAddStyle(transferGetElement) {
+    return transferGetElement.forEach((item) => item.style.display = 'none');
+  },
+
+  beforeDepartupe() {
+    this.getItemAndAddStyles({
+      classElements: '.travel-planes-item',
+      animationName: 'thePlaneFliesAway',
+    });
+    this.getItemAndAddStyles({
+      classElements: '.subtitle-data-container .subtitle--main',
+      animationName: 'airlineArrives',
+    });
+    this.getItemAndAddStyles({
+      classElements: '.travel-shore-images-item',
+      animationName: 'hideImageInTravel',
+    });
+
+    this.getItemsAndAddStyles({
+      classElements: '.travel-flight-container .travel-flight-item-description',
+      animationName: 'startToggleInformationAboutFly',
+    });
   },
 
   afterDeparture() {
-    this.planes.forEach((plane) => plane.style.display = 'none');
-    this.airlinesSubtitleData.forEach((ariline) => ariline.style.display = 'none');
+    this.iterateArrAndAddStyle(this.planes);
+    this.iterateArrAndAddStyle(this.airlinesSubtitleData);
+    this.iterateArrAndAddStyle(this.travelShoreImagesItem);
+    this.iterateArrAndAddStyle(this.travelFlightItemDescription);
 
-    getLink(`.travel-planes-item[data-shore="${this.getSubtitle()}"]`).style.cssText = `
-      display: block;
-      -webkit-animation: planeArrives ${this.animationLength} 1;
-      animation: planeArrives ${this.animationLength} 1;
-    `;
-    getLink(`.subtitle-data-container .subtitle--main[data-shore="${this.getSubtitle()}"]`).style.cssText = `
-      display: block;
-      -webkit-animation: airlineFliesAway ${this.animationLength} 1;
-      animation: airlineFliesAway ${this.animationLength} 1;
-   `;
+    this.getItemAndAddStyles({
+      classElements: '.travel-planes-item',
+      animationName: 'planeArrives',
+    });
+    this.getItemAndAddStyles({
+      classElements: '.subtitle-data-container .subtitle--main',
+      animationName: 'airlineFliesAway',
+    });
+    this.getItemAndAddStyles({
+      classElements: '.travel-shore-images-item',
+      animationName: 'showImageInTravel',
+    });
+
+    this.getItemsAndAddStyles({
+      classElements: '.travel-flight-container .travel-flight-item-description',
+      animationName: 'finishToggleInformationAboutFly',
+    });
   },
 };
 
