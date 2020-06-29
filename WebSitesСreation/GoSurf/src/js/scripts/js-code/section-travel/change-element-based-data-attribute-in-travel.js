@@ -1,81 +1,69 @@
 import 'classlist-polyfill';
-import { getLink, getLinks } from '../_get-link';
+import { getLinks } from '../_get-link';
+import { getItemAndAddStyles, getItemsAndAddStyles } from './get-item-and-add-styles';
 
-const changeElementBasedDataAttributeInTravelAutoplay = {
-  planes: getLinks('.travel-planes-item'),
-  airlinesSubtitleData: getLinks('.subtitle-data-container .subtitle--main'),
-  travelShoreImagesItem: getLinks('.travel-shore-images-item'),
-  travelFlightItemDescription: getLinks('.travel-flight-container .travel-flight-item-description'),
-  animationLength: '.6s',
 
-  getSubtitle() {
-    const subtitle = document.querySelector('.travel .slick-slide.slick-current').querySelector('.subtitle--main');
-    return subtitle.getAttribute('data-shore');
-  },
+const changeElementBasedDataAttributeInTravelAutoplay = () => {
+  const planes = getLinks('.travel-planes-item');
+  const airlinesSubtitleData = getLinks('.subtitle-data-container .subtitle--main');
+  const travelShoreImagesItem = getLinks('.travel-shore-images-item');
+  const travelFlightItemDescription = getLinks('.travel-flight-container .travel-flight-item-description');
 
-  getItemAndAddStyles({ classElements, animationName }) {
-    return getLink(`${classElements}[data-shore="${this.getSubtitle()}"]`).style.cssText = `
-      display: block;
-      -webkit-animation: ${animationName} ${this.animationLength} 1;
-      animation: ${animationName} ${this.animationLength} 1;
-    `;
-  },
-  getItemsAndAddStyles({ classElements, animationName }) {
-    return getLinks(`${classElements}[data-shore="${this.getSubtitle()}"]`)
-      .forEach((item) => item.style.cssText = `
-        display: block;
-        -webkit-animation: ${animationName} ${this.animationLength} 1;
-        animation: ${animationName} ${this.animationLength} 1;`);
-  },
+  const iterateArrAndAddStyle = (transferGetElement) => transferGetElement.forEach((item) => item.style.display = 'none');
 
-  iterateArrAndAddStyle(transferGetElement) {
-    return transferGetElement.forEach((item) => item.style.display = 'none');
-  },
-
-  beforeDepartupe() {
-    this.getItemAndAddStyles({
+  // До того, как слайдер переключился
+  const beforeDepartupe = () => {
+    getItemAndAddStyles({
       classElements: '.travel-planes-item',
       animationName: 'thePlaneFliesAway',
     });
-    this.getItemAndAddStyles({
+    getItemAndAddStyles({
       classElements: '.subtitle-data-container .subtitle--main',
       animationName: 'airlineArrives',
     });
-    this.getItemAndAddStyles({
+    getItemAndAddStyles({
       classElements: '.travel-shore-images-item',
       animationName: 'hideImageInTravel',
     });
 
-    this.getItemsAndAddStyles({
+    getItemsAndAddStyles({
       classElements: '.travel-flight-container .travel-flight-item-description',
       animationName: 'startToggleInformationAboutFly',
     });
-  },
+  };
 
-  afterDeparture() {
-    this.iterateArrAndAddStyle(this.planes);
-    this.iterateArrAndAddStyle(this.airlinesSubtitleData);
-    this.iterateArrAndAddStyle(this.travelShoreImagesItem);
-    this.iterateArrAndAddStyle(this.travelFlightItemDescription);
+  // После и во время того как слайдер переключается (преключился)
+  const afterDeparture = () => {
+    iterateArrAndAddStyle(planes);
+    iterateArrAndAddStyle(airlinesSubtitleData);
+    iterateArrAndAddStyle(travelShoreImagesItem);
+    iterateArrAndAddStyle(travelFlightItemDescription);
 
-    this.getItemAndAddStyles({
+    getItemAndAddStyles({
       classElements: '.travel-planes-item',
       animationName: 'planeArrives',
     });
-    this.getItemAndAddStyles({
+    getItemAndAddStyles({
       classElements: '.subtitle-data-container .subtitle--main',
       animationName: 'airlineFliesAway',
     });
-    this.getItemAndAddStyles({
+    getItemAndAddStyles({
       classElements: '.travel-shore-images-item',
       animationName: 'showImageInTravel',
     });
 
-    this.getItemsAndAddStyles({
+    getItemsAndAddStyles({
       classElements: '.travel-flight-container .travel-flight-item-description',
       animationName: 'finishToggleInformationAboutFly',
     });
-  },
+  };
+
+  return {
+    beforeDepartupe,
+    afterDeparture,
+  };
 };
 
-export default changeElementBasedDataAttributeInTravelAutoplay;
+const animationForItemsInTravel = changeElementBasedDataAttributeInTravelAutoplay();
+
+export default animationForItemsInTravel;

@@ -10,7 +10,7 @@ import sliderForWorldMap from './scripts/slider/slider-for-world-maps';
 import smoothScrollingLink from './scripts/js-code/smooth-scrolling-link';
 import changeNameLocationBasedActiveSlide from './scripts/js-code/section-surf/change-name-location-based-active-slide';
 import sliderToSwitchShores from './scripts/slider/slider-to-switch-shores';
-import changeElementBasedDataAttributeInTravelAutoplay from './scripts/js-code/section-travel/change-element-based-data-attribute-in-travel';
+import animationForItemsInTravel from './scripts/js-code/section-travel/change-element-based-data-attribute-in-travel';
 
 import 'slick-carousel';
 
@@ -66,10 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Слайдер для переключения берега в секции Travel
   sliderToSwitchShores('.travel .subtitle-slider-container-shore');
+
   $('.travel .subtitle-slider-container-shore').on('beforeChange', () => {
-    changeElementBasedDataAttributeInTravelAutoplay.beforeDepartupe();
+    animationForItemsInTravel.beforeDepartupe();
   });
   $('.travel .subtitle-slider-container-shore').on('afterChange', () => {
-    changeElementBasedDataAttributeInTravelAutoplay.afterDeparture();
+    animationForItemsInTravel.afterDeparture();
   });
 });
