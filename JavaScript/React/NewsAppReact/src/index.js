@@ -1,4 +1,9 @@
-import NewsServices from './services/_news-services';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-new NewsServices().topHeadlines()
-  .then(response => console.log(response));
+import App from './components/App/App';
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);

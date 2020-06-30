@@ -1,0 +1,18 @@
+@import './bootstrap-reboot.min.scss';
+@import './library-flex.scss';
+@import './transition.scss';
+@import './variables.scss';
+
+
+html { font-size: 10px; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  background-color: $global-bg;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
