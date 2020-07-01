@@ -13,22 +13,19 @@ export default class NewsLinksLinst extends Component {
     { name: 'business', label: 'Бизнес' }
   ]
 
-
-
-  onClickCategory = (event) => {
-    event.preventDefault()
-    const category = event.target.dataset.category;
+  fdsadsa = (event) => {
+    event.preventDefault();
     
-    this.props.onCategory(category)
+    this.props.onCategory(event.target.dataset.category);
   };
 
-  render() {
+  render() {    
     const createButtons = this.categoryLinks.map(({name, label}) => {
       return (
         <li className="nav-item" key={name}>
           <a href={name} 
             data-category={name} 
-            onClick={this.onClickCategory}
+            onClick={this.fdsadsa}
             className="nav-link">{label}</a>
         </li>
       );

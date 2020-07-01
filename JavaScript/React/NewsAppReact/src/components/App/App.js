@@ -10,16 +10,22 @@ export default class App extends Component {
     category: 'general',
   }
 
-  onSelectedCategpry = (category) => {
-    
-    console.log(this.state.category)
+  onCategory = (newCategory) => {
+    this.setState(({category}) => {
+      return {
+        category: newCategory
+      }
+    });
+    console.log(newCategory)
   };
 
   render() {
+    const { category } = this.state;
+
     return (
       <React.Fragment>
-        <HeaderApp onSelectedCategpry={this.onSelectedCategpry} />
-        <NewsContent currentCategory={this.state.category} />
+        <HeaderApp onCategory={this.onCategory} />
+        <NewsContent category={category} />
       </React.Fragment>
     )
   }

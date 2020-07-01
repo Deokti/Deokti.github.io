@@ -9,9 +9,9 @@ export default class HeaderApp extends Component {
   
 
   render() {
+    const { onCategory } = this.props;
+
     return (
-
-
       <header className='header'>
         <div className='container'>
           <div className="header__wrapper d-flex a-item-center">
@@ -20,7 +20,7 @@ export default class HeaderApp extends Component {
 
             {/* Навигация отдельно в item-list */}
             <nav className="nav m-auto">
-              <NewsLinksLinst onCategory={this.props.onSelectedCategpry} />
+              <NewsLinksLinst onCategory={onCategory} />
             </nav>
 
 

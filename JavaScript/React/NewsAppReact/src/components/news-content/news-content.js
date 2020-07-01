@@ -15,9 +15,9 @@ export default class NewsContent extends Component {
 
 
   newsItems() {
-    const { currentCategory } = this.props;
+    const { category } = this.props;
  
-    this.newsServices.topHeadlines(currentCategory)
+    this.newsServices.topHeadlines(category)
       .then(newsList => this.setState({ 
         newsList,
         loading: false
