@@ -15,10 +15,11 @@ export default class NewsLinksLinst extends Component {
 
   fdsadsa = (event) => {
     event.preventDefault();
-    
     this.props.onCategory(event.target.dataset.category);
   };
 
+
+  
   render() {    
     const createButtons = this.categoryLinks.map(({name, label}) => {
       return (

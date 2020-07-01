@@ -11,12 +11,9 @@ export default class App extends Component {
   }
 
   onCategory = (newCategory) => {
-    this.setState(({category}) => {
-      return {
-        category: newCategory
-      }
-    });
+    this.setState({category: newCategory})
     console.log(newCategory)
+    console.log(this.state)
   };
 
   render() {
