@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-import './news-links-list.scss';
+import NewsLinksItem from '../news-links-item';
 
-export default class NewsLinksLinst extends Component {
+import './news-links.scss';
 
+export default class NewsLinks extends Component {
   categoryLinks = [
     { name: 'general', label: 'Общие' },
     { name: 'sports', label: 'Спорт' },
@@ -13,29 +14,25 @@ export default class NewsLinksLinst extends Component {
     { name: 'business', label: 'Бизнес' }
   ]
 
-  fdsadsa = (event) => {
-    event.preventDefault();
-    this.props.onCategory(event.target.dataset.category);
-  };
-
-
   
-  render() {    
+  render() {
+    const { onChangeCategory } = this.props;
+
     const createButtons = this.categoryLinks.map(({name, label}) => {
       return (
-        <li className="nav-item" key={name}>
-          <a href={name} 
-            data-category={name} 
-            onClick={this.fdsadsa}
-            className="nav-link">{label}</a>
+        <li className="nav-item" key={name} onClick={() => onChangeCategory(name)}>
+          <NewsLinksItem 
+            name={name} 
+            label={label} 
+          />
         </li>
-      );
+      )
     });
 
-    return (
+    return(
       <ul className="nav-list d-flex ul-none a-item-center">
-         {createButtons}
+        {createButtons}
       </ul>
     );
   }
-};
+}

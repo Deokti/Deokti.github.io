@@ -1,28 +1,59 @@
 import React, { Component } from 'react';
 
-import HeaderApp from '../header-app';
+import NewsLinks from '../news-links';
+import SearchNewsButtons from '../search-news-buttons';
 import NewsContent from '../news-content';
 
 import '../gloval-style/style.scss';
+import './App.scss';
 
 export default class App extends Component {
   state = {
     category: 'general',
   }
 
-  onCategory = (newCategory) => {
-    this.setState({category: newCategory})
-    console.log(newCategory)
+
+  componentDidUpdate = () => {
+    
+  }
+
+  onChangeCategory = (category) => {
+    this.setState((state) => {
+      return { category } 
+    });
+    console.log(category)
     console.log(this.state)
-  };
+  }
 
   render() {
     const { category } = this.state;
 
     return (
       <React.Fragment>
-        <HeaderApp onCategory={this.onCategory} />
-        <NewsContent category={category} />
+        <header className='header'>
+          <div className='container'>
+            <div className="header__wrapper d-flex a-item-center">
+              <h1 className="header-title"><a className="header-title-link" href="./index.html">НОВОСТИ</a></h1>
+
+               {/* Навигация отдельно в item-list */}
+               <nav className="nav m-auto">
+                  <NewsLinks onChangeCategory={(name) => this.onChangeCategory(name)} />
+               </nav>
+
+              {/* Обрамляем часть секции для переноса в правую сторону */}
+              <div className="detailed-container d-flex">
+                <SearchNewsButtons />
+              </div>
+            </div>
+
+          </div>
+        </header>
+
+        <section className="news">
+          <div className="container">
+            <NewsContent category={category}  />
+          </div>
+        </section>
       </React.Fragment>
     )
   }

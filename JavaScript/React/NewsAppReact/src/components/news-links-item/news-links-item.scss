@@ -1,11 +1,8 @@
 @import '../gloval-style/variables.scss';
 
 .nav {
-  &-item { 
-      padding-right: 2.7rem; 
-      &:last-child {padding-right: 0;} 
-  }
   &-link { 
+      cursor: pointer;
       color: $color-text; 
       text-decoration: none;
       position: relative;
@@ -27,8 +24,8 @@
   }
 }
 
-.nav-link-active {
-  color: $active-color!important;
-  font-weight: 600;
-  &::before { width: 100%; }
-}
+// .nav-link-active {
+//   color: $active-color!important;
+//   font-weight: 600;
+//   &::before { width: 100%; }
+// }

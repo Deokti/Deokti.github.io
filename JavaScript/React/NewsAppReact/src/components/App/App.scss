@@ -5,11 +5,11 @@
   background-color: $header-bg;
   padding: 9px 0;
   &__wrapper {
-      position: relative;
-      a { 
-        color: $color-text; 
-        &:hover { text-decoration: none; }
-      }
+    position: relative;
+    a { 
+      color: $color-text; 
+      &:hover { text-decoration: none; }
+    }
   }
   &-title { margin-bottom: 0; }
   &-title-link {
@@ -17,5 +17,5 @@
     font-weight: 600;
     margin: 0;
     &:hover { color: rgba($color: $active-color, $alpha: .5); }
-}
+  }
 }

@@ -1,7 +1,8 @@
 const httpService = {
   async get(url) {
     try {
-      const response = await fetch(url);
+      const request = new Request(url);
+      const response = await fetch(request);
       return response.json();
     } catch(error) {
       throw new Error(`
