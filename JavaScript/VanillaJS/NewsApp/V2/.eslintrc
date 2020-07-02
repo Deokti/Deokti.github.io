@@ -52,6 +52,8 @@
             }
         ],
         "array-callback-return": 0,
-        "consistent-return": 0 // Нужно будет проверить, что это такое
+        "consistent-return": 0, // Нужно будет проверить, что это такое
+        "import/prefer-default-export": 0,
+        "no-return-assign": 0
     }
 }
