@@ -13,7 +13,6 @@ class ApiWorkingMethods {
   async TopHeadlines(category = 'general') {
     const getDataFromServer = await http
       .get(`${this.NEWS_URL}/top-headlines?country=ru&category=${category}&pageSize=100&apiKey=${this.API_KEY}`);
-    console.log(getDataFromServer);
     return getDataFromServer;
   }
 

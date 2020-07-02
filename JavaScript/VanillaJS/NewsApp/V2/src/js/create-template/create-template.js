@@ -22,7 +22,7 @@ const createTemplate = ({
   const checkAutor = author === null ? (source.name || source.id) : author;
   const limitAuthor = checkAutor ? checkAutor.substring(0, 25) : 'Источник неизвестен';
 
-  const toogleImg = urlToImage || '../../img/news-img.jpg';
+  const toogleImg = urlToImage || './img/news-img.jpg';
   // <!-- Структура одной новости -->
   return `
     
