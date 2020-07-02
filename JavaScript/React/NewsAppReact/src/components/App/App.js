@@ -13,21 +13,20 @@ export default class App extends Component {
   }
 
 
-  componentDidUpdate = () => {
+  // componentDidUpdate = () => {
     
-  }
+  // }
 
-  onChangeCategory = (category) => {
-    this.setState((state) => {
-      return { category } 
+  onChangeCategory(category) {
+    this.setState({category}, () => {
+      this.getCategory()
     });
-    console.log(category)
     console.log(this.state)
   }
 
-  render() {
-    const { category } = this.state;
+  getCategory = () => this.state.category;
 
+  render() {
     return (
       <React.Fragment>
         <header className='header'>
@@ -51,7 +50,7 @@ export default class App extends Component {
 
         <section className="news">
           <div className="container">
-            <NewsContent category={category}  />
+            <NewsContent category={this.state.category} />
           </div>
         </section>
       </React.Fragment>

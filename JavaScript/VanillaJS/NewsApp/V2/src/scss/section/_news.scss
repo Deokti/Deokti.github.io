@@ -67,12 +67,16 @@
             min-height: 24.4rem;
             .news-item__img {
                 display: block;
-                width: 26.3rem;
+                width: 50%;
                 position: static;
                 visibility: visible;
                 pointer-events: all;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
             }
             .news-item__template {
+                width: 50%;
                 padding-top: 2.7rem;
                 padding-left: 1.6rem;
                 padding-right: 1rem;
