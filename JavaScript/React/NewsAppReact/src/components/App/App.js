@@ -33,7 +33,6 @@ export default class App extends Component {
           <div className='container'>
             <div className="header__wrapper d-flex a-item-center">
               <h1 className="header-title"><a className="header-title-link" href="./index.html">НОВОСТИ</a></h1>
-
                {/* Навигация отдельно в item-list */}
                <nav className="nav m-auto">
                   <NewsLinks onChangeCategory={(name) => this.onChangeCategory(name)} />
