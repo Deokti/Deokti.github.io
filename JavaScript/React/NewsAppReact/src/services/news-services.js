@@ -7,7 +7,7 @@ export default class NewsServices {
     this.URL = config.API_URL;
   }
 
-  async topHeadlines(category = 'general') {
+  async topHeadlines(category) {
     const response = await httpService.get(`${this.URL}/top-headlines?country=ru&category=${category}&pageSize=100&apiKey=${this.KEY}`);
     if (response.status === 'ok') {
       // console.log(response)

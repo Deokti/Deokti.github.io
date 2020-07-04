@@ -18,13 +18,9 @@ export default class App extends Component {
   // }
 
   onChangeCategory(category) {
-    this.setState({category}, () => {
-      this.getCategory()
-    });
-    console.log(this.state)
+    this.setState({category});
+    console.log('Получаено в setState:', this.state);
   }
-
-  getCategory = () => this.state.category;
 
   render() {
     return (
@@ -35,7 +31,10 @@ export default class App extends Component {
               <h1 className="header-title"><a className="header-title-link" href="./index.html">НОВОСТИ</a></h1>
                {/* Навигация отдельно в item-list */}
                <nav className="nav m-auto">
-                  <NewsLinks onChangeCategory={(name) => this.onChangeCategory(name)} />
+                  <NewsLinks 
+                    onChangeCategory={(name) => this.onChangeCategory(name)} 
+                    checkCurrentCategory={this.state.category}
+                  />
                </nav>
 
               {/* Обрамляем часть секции для переноса в правую сторону */}

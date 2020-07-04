@@ -2,30 +2,23 @@
 
 .nav {
   &-link { 
-      cursor: pointer;
-      color: $color-text; 
-      text-decoration: none;
-      position: relative;
-      font-size: 1.6rem; 
-      &::before {
-          content: '';
-          position: absolute;
-          height: .2rem;
-          width: 0;
-          left: 0;
-          bottom: -.7rem;
-          background-color: $active-color;
-      }
-      &:not(.nav-link-active):hover {
-          color: $active-color;
-          &::before { width: 45%; }
-      } 
-      &-active { color: $active-color; }
+    cursor: pointer;
+    color: $color-text; 
+    text-decoration: none;
+    position: relative;
+    font-size: 1.6rem; 
+    &::before {
+        content: '';
+        position: absolute;
+        height: .2rem;
+        width: 0;
+        left: 0;
+        bottom: -.7rem;
+        background-color: $active-color;
+    }
+    &:not(.nav-link-active):hover {
+        color: $active-color;
+        &::before { width: 45%; }
+    } 
   }
 }
-
-// .nav-link-active {
-//   color: $active-color!important;
-//   font-weight: 600;
-//   &::before { width: 100%; }
-// }

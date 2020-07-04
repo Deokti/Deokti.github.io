@@ -2,10 +2,10 @@ import React from 'react';
 
 import './news-links-item.scss';
 
-const NewsLinksItem = ({name, label}) => {
+const NewsLinksItem = ({name, label, activeClass}) => {
   return (
     <span 
-      className="nav-link" 
+      className={activeClass}   
       data-cetegory={name}>
       {label}
     </span>

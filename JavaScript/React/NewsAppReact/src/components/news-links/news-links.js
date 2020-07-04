@@ -16,12 +16,17 @@ export default class NewsLinks extends Component {
 
   
   render() {
-    const { onChangeCategory } = this.props;
-
+    const { onChangeCategory, checkCurrentCategory } = this.props;
+ 
     const createButtons = this.categoryLinks.map(({name, label}) => {
+      const addClassOfActive = checkCurrentCategory === name ? 
+      'nav-link-active' : '';
+
+
       return (
         <li className="nav-item" key={name} onClick={() => onChangeCategory(name)}>
           <NewsLinksItem 
+            activeClass={`nav-link ${addClassOfActive}`}
             name={name} 
             label={label} 
           />
