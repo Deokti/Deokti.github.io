@@ -27,7 +27,7 @@ export default class NewsContent extends Component {
       .then(newsList => this.setState({ 
         newsList,
         loading: false,
-        paddingRight: '0px'
+        paddingRight: 0
       }
     ));
   }
@@ -47,9 +47,11 @@ export default class NewsContent extends Component {
 
     const viewLoading = loading ? <Loading /> : null;
     const viewNews = !viewLoading ? <RenderOfOneNewsItem array={newsList} /> : null;
-
+    document.body.style.paddingRight = `${paddingRight}px`;
+   
     return (
       <ul style={{paddingRight}} className="news__wrapper ul-none d-flex j-content-between a-item-center flex-wrap">
+
         {viewLoading}
         {viewNews}
       </ul>

@@ -19,7 +19,7 @@ const RenderOfOneNewsItem = ({array}) => {
 
     return (
       <li className='news-item' key={id++}>
-        <div className="news-item__img" style={{backgroundImage: "url(" + checkUrlToImage + ")"}}></div>
+        <div className="news-item__img" style={{backgroundImage: `url("${checkUrlToImage}")`}}></div>
         <div className="news-item__template">
           <ul className="news-item__information ul-none d-flex">
             <li className="news-item__person news-item__date">{publishedAt}</li>
@@ -36,7 +36,7 @@ const RenderOfOneNewsItem = ({array}) => {
                   {_limitCounterCharacters(title, 'title')}
               </a>
             </h2> 
-            <p className="news-item__description">{_limitCounterCharacters(description, 'description')}</p>
+            <p className="news-item__description">{_limitCounterCharacters(description, 'description')}...</p>
           </div>
         </div>
       </li>

@@ -6,10 +6,10 @@
   padding-top: 4rem; 
   &-item {
     color: $color-text;
-    width: 36.8rem;
+    width: 32.2%;
     min-height: 18.9rem;
     background-color: $news-color-bg;
-    padding: 2.3rem 1.6rem;
+    padding: 2.1rem 1.6rem;
     margin-bottom: 2rem;
     &__img {
       width: 0;
@@ -52,8 +52,8 @@
       line-height: 25px;
       color: $color-text;
       &:hover {
-          text-decoration: none;
-          color: $active-color;
+        text-decoration: none;
+        color: $active-color;
       }
     }
     &__description {
@@ -68,11 +68,10 @@
     &.news-item-image {
       display: flex;
       padding: 0;
-      width: 56rem;
+      width: 49.1%;
       min-height: 24.4rem;
       .news-item__img {
         display: block;
-        // width: 26.3rem;
         width: 50%;
         position: static;
         visibility: visible;
@@ -82,10 +81,10 @@
       }
       .news-item__template {
         width: 50%;
-        padding-top: 2.7rem;
+        padding-top: 2rem;
         padding-left: 1.6rem;
         padding-right: 1rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1.2rem;
       }
     }
   }

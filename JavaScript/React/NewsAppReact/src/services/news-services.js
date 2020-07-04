@@ -9,10 +9,7 @@ export default class NewsServices {
 
   async topHeadlines(category) {
     const response = await httpService.get(`${this.URL}/top-headlines?country=ru&category=${category}&pageSize=100&apiKey=${this.KEY}`);
-    if (response.status === 'ok') {
-      // console.log(response)
-      return response.articles.map(this._transformNews);
-    }
+    if (response.status === 'ok') return response.articles.map(this._transformNews);
     else throw new Error(`
       EN: Error! Server status in topHeadlines: ${response.status}, 
       RU: Ошибка! Статус сервера в topHeadlines: ${response.status}`)

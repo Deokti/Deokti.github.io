@@ -22,7 +22,6 @@ export default class NewsLinks extends Component {
       const addClassOfActive = checkCurrentCategory === name ? 
       'nav-link-active' : '';
 
-
       return (
         <li className="nav-item" key={name} onClick={() => onChangeCategory(name)}>
           <NewsLinksItem 

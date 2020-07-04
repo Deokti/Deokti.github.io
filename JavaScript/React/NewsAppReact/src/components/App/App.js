@@ -13,13 +13,8 @@ export default class App extends Component {
   }
 
 
-  // componentDidUpdate = () => {
-    
-  // }
-
   onChangeCategory(category) {
     this.setState({category});
-    console.log('Получаено в setState:', this.state);
   }
 
   render() {
