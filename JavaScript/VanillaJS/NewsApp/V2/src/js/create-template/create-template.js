@@ -25,7 +25,6 @@ const createTemplate = ({
   const toogleImg = urlToImage || './img/news-img.jpg';
   // <!-- Структура одной новости -->
   return `
-    
     <li class="news-item">
         <div style="background-image: url('${toogleImg}');" alt="img" class="news-item__img"></div>
         <div class="news-item__template">

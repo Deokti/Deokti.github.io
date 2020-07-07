@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import NewsLinks from '../news-links';
-import SearchNewsButtons from '../search-news-buttons';
+import NewsSearch from '../news-search';
 import NewsContent from '../news-content';
 
 import '../gloval-style/style.scss';
@@ -34,7 +34,7 @@ export default class App extends Component {
 
               {/* Обрамляем часть секции для переноса в правую сторону */}
               <div className="detailed-container d-flex">
-                <SearchNewsButtons />
+                <NewsSearch />
               </div>
             </div>
 

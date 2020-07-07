@@ -1,7 +1,7 @@
 import { httpService } from './http-service';
 import { config } from './config-services';
 
-export default class NewsServices {
+export default class Services {
   constructor() {
     this.KEY = config.API_KEY;
     this.URL = config.API_URL;
@@ -9,6 +9,7 @@ export default class NewsServices {
 
   async topHeadlines(category) {
     const response = await httpService.get(`${this.URL}/top-headlines?country=ru&category=${category}&pageSize=100&apiKey=${this.KEY}`);
+    console.log(response)
     if (response.status === 'ok') return response.articles.map(this._transformNews);
     else throw new Error(`
       EN: Error! Server status in topHeadlines: ${response.status}, 

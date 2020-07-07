@@ -3,7 +3,9 @@ import React from 'react';
 import _limitCounterCharacters from './_limitCounterCharacters';
 import defaultImage from '../../images/news-img.jpg';
 
-const RenderOfOneNewsItem = ({array}) => {
+import './render-template-one-news.scss';
+
+const RenderTemplateOneNews = ({array}) => {
   if (!array) return false;
   let id = 0;
 
@@ -44,4 +46,4 @@ const RenderOfOneNewsItem = ({array}) => {
   });
 };
 
-export default RenderOfOneNewsItem;
+export default RenderTemplateOneNews;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import NewsServices from '../../services/news-services';
-import RenderOfOneNewsItem from './render-of-one-news-item';
+import Services from '../../services/services';
+import RenderTemplateOneNews from '../render-template-one-news';
 import Loading from '../loading';
 import calculateScrollSize from '../calculate-scroll-size';
 
@@ -9,12 +9,12 @@ import './news-content.scss';
 
 
 export default class NewsContent extends Component {
-  newsServices = new NewsServices();
+  services = new Services();
 
   state = {
     newsList: null,
     loading: true,
-    paddingRight: calculateScrollSize(),
+    paddingRight: 0,
   }
 
   newsItems() {
@@ -23,7 +23,7 @@ export default class NewsContent extends Component {
     const { category } = this.props;
     if (!category) return false;
  
-    this.newsServices.topHeadlines(category)
+    this.services.topHeadlines(category)
       .then(newsList => this.setState({ 
         newsList,
         loading: false,
@@ -46,12 +46,11 @@ export default class NewsContent extends Component {
     const { newsList, loading, paddingRight } = this.state;
 
     const viewLoading = loading ? <Loading /> : null;
-    const viewNews = !viewLoading ? <RenderOfOneNewsItem array={newsList} /> : null;
+    const viewNews = !viewLoading ? <RenderTemplateOneNews array={newsList} /> : null;
     document.body.style.paddingRight = `${paddingRight}px`;
    
     return (
       <ul style={{paddingRight}} className="news__wrapper ul-none d-flex j-content-between a-item-center flex-wrap">
-
         {viewLoading}
         {viewNews}
       </ul>

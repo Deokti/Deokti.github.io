@@ -1,6 +1,6 @@
 const cssStyle = (element, styles = {}) => {
   Object.keys(styles)
-    .map((style) => element.style[style] = styles[style]);
+    .map((key) => element.style[key] = styles[key]);
 };
 
 export default cssStyle;
