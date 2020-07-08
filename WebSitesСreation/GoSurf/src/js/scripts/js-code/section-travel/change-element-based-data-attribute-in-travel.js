@@ -5,7 +5,7 @@ import { getItemAndAddStyles, getItemsAndAddStyles } from './get-item-and-add-st
 
 const changeElementBasedDataAttributeInTravelAutoplay = () => {
   const planes = getLinks('.travel-planes-item');
-  const airlinesSubtitleData = getLinks('.subtitle-data-container .subtitle--main');
+  const airlinesSubtitleData = getLinks('.subtitle-travel-container .subtitle--main');
   const travelShoreImagesItem = getLinks('.travel-shore-images-item');
   const travelFlightItemDescription = getLinks('.travel-flight-container .travel-flight-item-description');
 
@@ -18,7 +18,7 @@ const changeElementBasedDataAttributeInTravelAutoplay = () => {
       animationName: 'thePlaneFliesAway',
     });
     getItemAndAddStyles({
-      classElements: '.subtitle-data-container .subtitle--main',
+      classElements: '.subtitle-travel-container .subtitle--main',
       animationName: 'airlineArrives',
     });
     getItemAndAddStyles({
@@ -44,7 +44,7 @@ const changeElementBasedDataAttributeInTravelAutoplay = () => {
       animationName: 'planeArrives',
     });
     getItemAndAddStyles({
-      classElements: '.subtitle-data-container .subtitle--main',
+      classElements: '.subtitle-travel-container .subtitle--main',
       animationName: 'airlineFliesAway',
     });
     getItemAndAddStyles({

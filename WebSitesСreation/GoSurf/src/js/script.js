@@ -11,6 +11,8 @@ import smoothScrollingLink from './scripts/js-code/smooth-scrolling-link';
 import changeNameLocationBasedActiveSlide from './scripts/js-code/section-surf/change-name-location-based-active-slide';
 import sliderToSwitchShores from './scripts/slider/slider-to-switch-shores';
 import animationForItemsInTravel from './scripts/js-code/section-travel/change-element-based-data-attribute-in-travel';
+import createRating from './scripts/js-code/section-sleep/create-rating';
+import sliderToSwitchSleep from './scripts/slider/slider-to-switch-sleep';
 
 import 'slick-carousel';
 
@@ -73,4 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.travel .subtitle-slider-container-shore').on('afterChange', () => {
     animationForItemsInTravel.afterDeparture();
   });
+
+  // Инициализация функции,
+  // которая расчитывает рейтинг исходя из даты,
+  // и возвращает столько же звёздочек
+  createRating();
+
+  // Инициализация слайдера в секции Sleep
+  sliderToSwitchSleep('.subtitle-slider-container-sleep');
 });

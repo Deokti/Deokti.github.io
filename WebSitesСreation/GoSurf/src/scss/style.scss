@@ -31,10 +31,14 @@ body {
 @import './repeats/arrow';
 @import './repeats/button';
 
+// Повторящиеся стили в секциях
+@import './repeats/travel-and-sleep';
+
 // Подключение секций
 @import './sections/header';
 @import './sections/surf';
 @import './sections/travel';
+@import './sections/sleep';
 
 
 .header-right-location-slider-container { width: 944px; }

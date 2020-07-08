@@ -5,30 +5,8 @@
   &__title { 
     .title--main { right: 11.4rem; }
   }
-  &__arrow-right,
-  &__arrow-left { 
-    position: absolute;
-    bottom: -4.1rem;
-    right: -.3rem;
-    opacity: .25;
-  }
-  &__arrow-left {
-    right: 4rem;
-  }
-  &-container-slider { 
-    position: relative; 
-    padding-top: 5rem;
-  }
-  &__subtitle { padding-right: 7.7rem; }
   &-shore-images {
-    max-width: 111.5rem;
-    height: 78rem;
-    margin-top: -18.9rem;
-    margin-left: -.3rem;
     &-item {
-      width: 100%;
-      height: 100%;
-      @include base-style-for-bg;
       display: none;
       &:first-child { display: block; }
       &--1 { background-image: url('../img/travel/image-shores/shore-airline-beach.png'); }
@@ -43,7 +21,6 @@
   }
   &-airline {
     margin-top: -10.8rem;
-    &--padding { padding-left: 13rem; }
     .subtitle--main { 
       display: none;
       &:first-child { display: block; }
@@ -54,72 +31,11 @@
       padding-bottom: 1.1rem;
     }
   }
-  &-planes {
-    position: absolute;
-    width: 90rem;
-    height: 30rem;
-    overflow: hidden;
-    right: 0;
-    bottom: -9.1rem;
-    &-item {
-      position: absolute;
-      right: -66px;
-      bottom: 0;
-      display: none;
-      &:first-child { display: block; }
-      &--3, 
-      &--5 { bottom: 8rem; }
-    }
+  &-planes-item {
+    display: none;
+    &:first-child { display: block; }
+    &--3, 
+    &--5 { bottom: 8rem; }
   }
-  &-flight {
-    padding-top: 11rem;
-    padding-left: 13rem;
-    padding-right: 13rem;
-    &-item {
-      position: relative;
-      display: flex;
-      min-height: 20rem;
-      width: 23%;
-      &:last-child { width: 15%; }
-      &-title {
-        position: absolute;
-        width: 20rem;
-        height: 0;
-        text-align: right;
-        left: -10.5rem;
-        top: 9.2rem;
-        white-space: nowrap;
-        transform: rotate(-90deg);
-
-        margin: 0;
-        font-size: 1.8rem;
-        letter-spacing: .8rem;
-        color: rgba(#fff, .5);
-        text-transform: uppercase;
-        font-weight: 300;
-      }
-      &-description {
-        transform-origin: 7rem;
-        display: block;
-        padding-left: 4rem;
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 36px;
-        text-transform: uppercase;
-        color: #fff;
-        display: none;
-        &:first-child { display: block; }
-      }
-    }
-    &__pricing-detailed {
-      display: block;
-      font-size: 1.4rem;
-      font-weight: 300;
-      text-align: right;
-      letter-spacing: .525rem;
-      text-transform: uppercase;
-      opacity: 0.75;
-    }
-  }
-  &__button { margin-top: 5.3rem; }
+  // &-flight {}
 }
