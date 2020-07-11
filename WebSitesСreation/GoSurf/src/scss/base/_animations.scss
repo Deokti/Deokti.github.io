@@ -77,24 +77,12 @@
 // Анимация для появления картинки с местом
 // в секции Travel
 @keyframes hideImageInTravel {
-  0% {
-    opacity: 1;
-    // transform: scale(1) rotate(0deg);
-  }
-  100% {
-    opacity: 0;
-    // transform: scale(0) rotate(180deg);
-  }
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 @keyframes showImageInTravel {
-  0% {
-    opacity: 0;
-    // transform: scale(0) rotate(180deg);
-  }
-  100% {
-    opacity: 1;
-    // transform: scale(1) rotate(360deg);
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 
@@ -123,3 +111,9 @@
     transform: rotate(0);
   }
 } 
+
+// Анимация для гомака и остальных элементов в секции Sleep
+@keyframes startAnimationRight {
+  0% { transform: translateX(0); }
+  100% { transform: translate(100%, 30%); }
+}

@@ -16,3 +16,4 @@ const smoothScrollingLink = (getLinks) => {
 };
 
 export default smoothScrollingLink;
+// addAnimationStartAndTheEnd

@@ -10,9 +10,9 @@ import sliderForWorldMap from './scripts/slider/slider-for-world-maps';
 import smoothScrollingLink from './scripts/js-code/smooth-scrolling-link';
 import changeNameLocationBasedActiveSlide from './scripts/js-code/section-surf/change-name-location-based-active-slide';
 import sliderToSwitchShores from './scripts/slider/slider-to-switch-shores';
-import animationForItemsInTravel from './scripts/js-code/section-travel/change-element-based-data-attribute-in-travel';
 import createRating from './scripts/js-code/section-sleep/create-rating';
 import sliderToSwitchSleep from './scripts/slider/slider-to-switch-sleep';
+import { addAnimationStartAndTheEnd } from './scripts/js-code/section-travel-and-sleep/add-animation-start-and-the-end';
 
 import 'slick-carousel';
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Активируется функция при каждом переключении слайдера,
   // в том числе при автоплее
-  $('.header-right-location-slider-container').on('afterChange', (event, slick, currentSlide) => {
+  $('.header-right-location-slider-container').on('afterChange', () => {
     appearanceElementsOnDateAutoplay({
       getSlickSlideFromActiveSlide: '.slick-slide.slick-active',
       dataAttribute: 'data-line-and-dots',
@@ -69,12 +69,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Слайдер для переключения берега в секции Travel
   sliderToSwitchShores('.travel .subtitle-slider-container-shore');
 
-  $('.travel .subtitle-slider-container-shore').on('beforeChange', () => {
-    animationForItemsInTravel.beforeDepartupe();
+  const addSectionTravelAnimation = addAnimationStartAndTheEnd({
+    firstMainImage: ['.travel-planes-item', 'thePlaneFliesAway', 'planeArrives'],
+    descriptionBottomSubtitle: ['.subtitle-travel-container .subtitle--main', 'airlineArrives', 'airlineFliesAway'],
+    additionalBackground: ['.travel-shore-images-item', 'hideImageInTravel', 'showImageInTravel'],
+    detailedInormationAboutDifferentThings: [
+      '.travel-flight-container .travel-flight-item-description',
+      'startToggleInformationAboutFly',
+      'finishToggleInformationAboutFly',
+    ],
+    pathAndNameDataAttribute: ['.travel .slick-slide.slick-current', 'data-shore'],
   });
-  $('.travel .subtitle-slider-container-shore').on('afterChange', () => {
-    animationForItemsInTravel.afterDeparture();
-  });
+  $('.travel .subtitle-slider-container-shore').on('beforeChange', () => addSectionTravelAnimation.beforeDepartupe());
+  $('.travel .subtitle-slider-container-shore').on('afterChange', () => addSectionTravelAnimation.afterDeparture());
 
   // Инициализация функции,
   // которая расчитывает рейтинг исходя из даты,
@@ -83,4 +90,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Инициализация слайдера в секции Sleep
   sliderToSwitchSleep('.subtitle-slider-container-sleep');
+  // Иницадизацизация функции для добавления анимации
+  const addSectionSleepAnimation = addAnimationStartAndTheEnd({
+    firstMainImage: ['.sleep-night-item', 'startAnimationRight', 'planeArrives'],
+    descriptionBottomSubtitle: ['.subtitle-sleep-container .subtitle--main', 'airlineArrives', 'airlineFliesAway'],
+    additionalBackground: ['.sleep-shore-images-item', 'hideImageInTravel', 'showImageInTravel'],
+    detailedInormationAboutDifferentThings: [
+      '.sleep-flight-container .sleep-flight-item-description',
+      'startToggleInformationAboutFly',
+      'finishToggleInformationAboutFly',
+    ],
+    pathAndNameDataAttribute: ['.sleep .slick-slide.slick-current', 'data-sleep'],
+  });
+  $('.subtitle-slider-container-sleep').on('afterChange', () => addSectionSleepAnimation.afterDeparture());
+  $('.subtitle-slider-container-sleep').on('beforeChange', () => {
+    addSectionSleepAnimation.beforeDepartupe();
+  });
 });

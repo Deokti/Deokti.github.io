@@ -2,12 +2,27 @@
   padding: 5rem 0 5rem 0;
   &-shore-images-item {
     &--1 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
+    &--2 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
+    &--3 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
+    &--4 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
+    &--5 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
+    &--6 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
+    &--7 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
+    &--8 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
+    display: none;
+    &:first-child { display: block; }
   }
-  &-night-item { right: 0; }
+  &-night-item { 
+    right: 0; 
+    display: none;
+    &:first-child { display: block; }
+  }
   &-rating-create {
     padding-left: 1.7rem;
-    &-item {
-      margin: 0 -1.7rem;
-    }
+    &-item {  margin: 0 -1.7rem; }
+  }
+  .subtitle--main {
+    display: none;
+    &:first-child { display: block; }
   }
 }
