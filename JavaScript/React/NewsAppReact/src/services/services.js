@@ -7,21 +7,13 @@ export default class Services {
     this.URL = config.API_URL;
   }
 
-  async topHeadlines(category) {
-    const response = await httpService.get(`${this.URL}/top-headlines?country=ru&category=${category}&pageSize=100&apiKey=${this.KEY}`);
-    console.log(response)
+  async topHeadlines(category, country) {
+    const response = await httpService.get(`${this.URL}/top-headlines?country=${country}&category=${category}&pageSize=100&apiKey=${this.KEY}`);
+    // console.log(response)
     if (response.status === 'ok') return response.articles.map(this._transformNews);
     else throw new Error(`
       EN: Error! Server status in topHeadlines: ${response.status}, 
       RU: Ошибка! Статус сервера в topHeadlines: ${response.status}`)
-  }
-
-  async everything(query) {
-    const responseQuery = await httpService.get(`${this.URL}/everything?q=${query}&pageSize=100&apiKey=${this.KEY}`);
-    if (responseQuery.status === 'ok') return responseQuery.articles;
-    else throw new Error(`
-      EN: Error! Server status in everything: ${responseQuery.status}, 
-      RU: Ошибка! Статус сервера в everything: ${responseQuery.status}`)
   }
 
   _transformNews = (newsList) => {

@@ -20,10 +20,10 @@ export default class NewsContent extends Component {
   newsItems() {
     this.setState({ paddingRight: calculateScrollSize() });
 
-    const { category } = this.props;
+    const { category, countrySelector } = this.props;
     if (!category) return false;
  
-    this.services.topHeadlines(category)
+    this.services.topHeadlines(category, countrySelector)
       .then(newsList => this.setState({ 
         newsList,
         loading: false,
@@ -34,7 +34,8 @@ export default class NewsContent extends Component {
 
   componentDidMount() { this.newsItems(); }
   componentWillUpdate(prevProps) {
-    if (this.props.category !== prevProps.category) {
+    if ((this.props.category !== prevProps.category) || 
+        (this.props.countrySelector !== prevProps.countrySelector)) {
       setTimeout(() => {
         this.setState({ loading: true })
         this.newsItems();

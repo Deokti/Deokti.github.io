@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import NewsLinks from '../news-links';
-import NewsSearch from '../news-search';
+import CountrySelection from '../country-selection';
 import NewsContent from '../news-content';
 
 import '../gloval-style/style.scss';
@@ -10,14 +10,15 @@ import './App.scss';
 export default class App extends Component {
   state = {
     category: 'general',
+    countrySelector: 'ru',
   }
 
-
-  onChangeCategory(category) {
-    this.setState({category});
-  }
+  onChangeCategory(category) { this.setState({ category }); }
+  onChangeCountry(country) { this.setState({ countrySelector: country })}
 
   render() {
+    const { category, countrySelector } = this.state;
+
     return (
       <React.Fragment>
         <header className='header'>
@@ -28,13 +29,14 @@ export default class App extends Component {
                <nav className="nav m-auto">
                   <NewsLinks 
                     onChangeCategory={(name) => this.onChangeCategory(name)} 
-                    checkCurrentCategory={this.state.category}
+                    checkCurrentCategory={category}
+                    // checkCurrentCountry
                   />
                </nav>
 
               {/* Обрамляем часть секции для переноса в правую сторону */}
               <div className="detailed-container d-flex">
-                <NewsSearch />
+                <CountrySelection onChangeCountry={(name) => this.onChangeCountry(name)} />
               </div>
             </div>
 
@@ -43,7 +45,10 @@ export default class App extends Component {
 
         <section className="news">
           <div className="container">
-            <NewsContent category={this.state.category} />
+            <NewsContent 
+              category={category}
+              countrySelector={countrySelector} 
+            />
           </div>
         </section>
       </React.Fragment>
