@@ -13,6 +13,7 @@ import sliderToSwitchShores from './scripts/slider/slider-to-switch-shores';
 import createRating from './scripts/js-code/section-sleep/create-rating';
 import sliderToSwitchSleep from './scripts/slider/slider-to-switch-sleep';
 import { addAnimationStartAndTheEnd } from './scripts/js-code/section-travel-and-sleep/add-animation-start-and-the-end';
+import sliderForSurbiardSubtitle from './scripts/slider/slider-for-surbiard-subtitle';
 
 import 'slick-carousel';
 
@@ -86,7 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Инициализация функции,
   // которая расчитывает рейтинг исходя из даты,
   // и возвращает столько же звёздочек
-  createRating();
+  createRating({
+    getSubtitleRating: '.sleep-rating .subtitle-sleep-container .subtitle--main',
+    getRatingCreate: '.sleep-rating-create',
+    getDataRating: 'data-create-rating',
+    addClass: 'sleep-rating-create-item'
+  });
 
   // Инициализация слайдера в секции Sleep
   sliderToSwitchSleep('.subtitle-slider-container-sleep');
@@ -106,4 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.subtitle-slider-container-sleep').on('beforeChange', () => {
     addSectionSleepAnimation.beforeDepartupe();
   });
+
+  // Секция Shop
+  createRating({
+    getSubtitleRating: '.shop-left-rating-container',
+    getRatingCreate: '.shop-rating-create',
+    getDataRating: 'data-create-rating',
+    addClass: 'shop-rating-create-item'
+  });
+  sliderForSurbiardSubtitle('.subtitle-shop-container');
 });

@@ -1,5 +1,5 @@
 .sleep {
-  padding: 5rem 0 5rem 0;
+  padding: 23rem 0 5rem 0;
   &-shore-images-item {
     &--1 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
     &--2 { background-image: url('../img/sleep/hotel-left-bg/australia-auberge.png'); }
@@ -19,10 +19,18 @@
   }
   &-rating-create {
     padding-left: 1.7rem;
-    &-item {  margin: 0 -1.7rem; }
+    &-item { margin: 0 -1.56rem; }
   }
   .subtitle--main {
     display: none;
     &:first-child { display: block; }
   }
+  &__title .title--main {
+    right: 3.8rem;
+    top: .7rem;
+  }
+  &-rating {
+    margin-top: -11.1rem;
+  }
+  
 }

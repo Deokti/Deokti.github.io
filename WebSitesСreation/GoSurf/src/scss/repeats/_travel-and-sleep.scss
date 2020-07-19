@@ -1,15 +1,27 @@
 .sleep__arrow-right,
 .travel__arrow-right,
 .sleep__arrow-left, 
-.travel__arrow-left {
+.travel__arrow-left,
+.shop__arrow-right,
+.shop__arrow-left {
   position: absolute;
   bottom: -4.1rem;
   right: -.3rem;
   opacity: .25;
 }
+.shop__arrow-right,
+.shop__arrow-left {
+  bottom: auto;
+  top: 4rem;
+  right: 8rem;
+}
 .travel__arrow-left,
 .sleep__arrow-left {
   right: 4rem;
+}
+
+.shop__arrow-left {
+  right: 12rem;
 }
 
 .sleep-night,
@@ -26,7 +38,9 @@
     bottom: 0;
   }
 }
-
+.sleep-night {
+  bottom: -1.1rem;
+}
 
 .travel-container-slider,
 .sleep-container-slider {
@@ -56,6 +70,10 @@
     height: 100%;
     @include base-style-for-bg;
   }
+}
+.sleep-shore-images {
+  margin-top: -18.5rem;
+  margin-left: -.9rem;
 }
 
 .detailed-info {

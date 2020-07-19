@@ -54,6 +54,7 @@
     background-color: #4AF6CD;
     padding-left: 1.7rem;
     z-index: 5;
+    &-lessened { width: 40%; }
     &::before,
     &::after {
       content: '';
