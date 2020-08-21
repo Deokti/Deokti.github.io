@@ -25,6 +25,7 @@ body {
 @import './elements/nav';
 @import './elements/search';
 @import './elements/plus-minus';
+@import './elements/hamburger';
 
 // Подключение повторяющихся элементов
 @import './repeats/title';
@@ -44,3 +45,11 @@ body {
 
 
 .header-right-location-slider-container { width: 944px; }
+
+// Медия-запросы
+@import './media/media1320.scss';
+@import './media/media1150.scss';
+@import './media/media960.scss';
+@import './media/media700.scss';
+@import './media/media630.scss';
+@import './media/media420.scss';

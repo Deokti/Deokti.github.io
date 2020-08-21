@@ -1,0 +1,77 @@
+@import '../base/variables';
+
+@media screen and (max-width: 960px) {
+  .header-left-mobile {
+    pointer-events: none;
+    opacity: 0;
+
+    border-right: none;
+    background-color: $base-background-color;
+    width: 100%;
+    z-index: 10;
+  }
+  .nav-mobile {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+  .nav-list-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-link-mobile {
+    flex-direction: row;
+  }
+  .logo {
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    opacity: 0;
+  }
+
+  .hamburger {
+    left: 2rem;
+    top: 3rem;
+    opacity: 1;
+    pointer-events: all;
+  }
+  .header__arrow-bottom {
+    left: 2rem;
+  }
+
+  .header-left {
+    min-height: 810px;
+  }
+
+  .header-right__bottom {
+    .subtitle--large {
+      font-size: 5rem;
+      line-height: 60px;
+    }
+    .subtitle--transparent {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+    }
+
+    .subtitle--main {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  .header-right-description__arrow-left {
+    display: none;
+  }
+  .header-right__bottom {
+    bottom: 1rem;
+    padding-right: 4rem;
+  }
+  .header-right-location-slider {
+    margin-bottom: 2rem;
+  }
+  .header-right-description { margin-bottom: 0; }
+}

@@ -1,0 +1,14 @@
+@media screen and (max-width: 1320px) {
+  .header-right__bottom {
+    .subtitle--large {
+      font-size: 6.5rem;
+    }
+  }
+  .header-right-line {
+    justify-content: flex-end;
+  }
+  .header-right-line-item {
+    margin-left: 2rem;
+    width: 18rem;
+  }
+}

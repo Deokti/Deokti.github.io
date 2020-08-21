@@ -1,0 +1,30 @@
+@import '../base/variables';
+
+@media screen and (max-width: 420px) {
+  .header-right-map svg {
+    transform: scale(.46)
+  }
+  .header-right-map {
+    top: -13.4rem;
+    right: -21.7rem;
+  }
+  .header-left {
+    min-height: 570px;
+  }
+  .header-right__bottom{
+    padding-right: 1.2rem;
+  }
+  .header__arrow-bottom  {
+    left: 1.2rem;
+    bottom: 2.5rem;
+  }
+  .header__arrow-right, .header__arrow-left {
+    top: 0.7rem;
+  }
+  .header__arrow-right {
+    right: 0.5rem;
+  }
+  .header__arrow-left {
+    right: 3.5rem;
+  }
+}
