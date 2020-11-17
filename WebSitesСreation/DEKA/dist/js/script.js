@@ -90,10 +90,52 @@
 /*!**************************!*\
   !*** ./src/js/script.js ***!
   \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _scripts_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scripts/hamburger */ "./src/js/scripts/hamburger.js");
 
+document.addEventListener('DOMContentLoaded', function () {
+  Object(_scripts_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
+});
+
+/***/ }),
+
+/***/ "./src/js/scripts/hamburger.js":
+/*!*************************************!*\
+  !*** ./src/js/scripts/hamburger.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var navigationShow = function navigationShow(nav) {
+  return nav.classList.add('nav__table');
+};
+
+var navigationHive = function navigationHive(nav) {
+  return nav.classList.remove('nav__table');
+};
+
+var behaviorHamburgerOnClick = function behaviorHamburgerOnClick() {
+  var hamburger = document.getElementById('hamburger');
+  var nav = document.querySelector('.nav');
+  hamburger.addEventListener('click', function () {
+    if (hamburger.classList.contains('active')) {
+      hamburger.classList.remove('active');
+      navigationHive(nav);
+      return false;
+    }
+
+    hamburger.classList.add('active');
+    navigationShow(nav);
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (behaviorHamburgerOnClick);
 
 /***/ })
 

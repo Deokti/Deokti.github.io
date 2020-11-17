@@ -1,5 +1,8 @@
 .call__phone,
 .button,
-.nav__link {
+.nav__link,
+.hamburger-item,
+.hamburger-item::before,
+.hamburger-item::after {
   transition: all .2s ease;
 }

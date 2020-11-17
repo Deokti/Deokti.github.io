@@ -1,0 +1,16 @@
+@media screen and (max-width: 550px) {
+  .promo__offer-image {
+    width: 470px;
+    left: -120px;
+    top: -220px;
+  }
+
+  .promo__offer {
+    max-width: 440px;
+    max-height: 440px;
+  }
+
+  .promo__offer-information {
+    padding-top: 50px;
+  }
+}

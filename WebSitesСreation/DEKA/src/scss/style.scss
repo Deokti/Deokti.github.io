@@ -10,8 +10,8 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  padding: 0 10px;
+  max-width: 1220px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -19,6 +19,20 @@ body {
 @import './repeats/button';
 @import './repeats/call';
 
+// Подключение одиночных стилей
+@import './elements/hamburger';
+
 // Подлюкние секций
 @import './sections/header';
 @import './sections/promo';
+
+
+// Подключение медиа-запросов
+@import './media/media-1120';
+@import './media/media-1060';
+@import './media/media-1000';
+@import './media/media-940';
+@import './media/media-640';
+@import './media/media-550';
+@import './media/media-480';
+@import './media/media-320';

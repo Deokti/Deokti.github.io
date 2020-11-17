@@ -1,0 +1,11 @@
+@media screen and (max-width: 1000px) {
+  .promo__wrapper {
+    flex-direction: column;
+  }
+  .promo__information {
+    max-width: 100%;
+  }
+  .promo__information-description {
+    padding-top: 10px;
+  }
+}
