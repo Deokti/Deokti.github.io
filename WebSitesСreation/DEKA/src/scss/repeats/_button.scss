@@ -1,0 +1,13 @@
+.button {
+  padding: 10px 28px;
+  border-radius: 89px;
+  border: none;
+  background-color: #52B153;
+  
+  font-size: 14px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #FFFFFF;
+  &:hover {
+    background-color: darken($color: #52B153, $amount: 10);
+  }
+}

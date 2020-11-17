@@ -1,0 +1,24 @@
+// Базовые файлы для подключения
+@import 'base/bootstrap-reboot.min';
+@import './base/transition';
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+// Подключение вовторяющихся стилей
+@import './repeats/button';
+@import './repeats/call';
+
+// Подлюкние секций
+@import './sections/header';
+@import './sections/promo';
