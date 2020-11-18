@@ -39,9 +39,11 @@ body {
 @import './sections/advantages';
 
 @import './sections/feedback';
+@import './sections/guarantee';
 
 
 // Подключение медиа-запросов
+@import './media/media-1280';
 @import './media/media-1160';
 @import './media/media-1120';
 @import './media/media-1100';

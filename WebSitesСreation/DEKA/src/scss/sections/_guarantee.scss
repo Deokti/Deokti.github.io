@@ -1,0 +1,25 @@
+.guarantee {
+  &__bottom {
+    padding-top: 60px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 134.9%;
+    text-align: center;
+    color: #000000;
+  }
+  &__text--block {
+    display: block;
+  }
+  &__list {
+    padding-top: 40px;
+  }
+  &__item-inner {
+    max-width: 277px;
+  }
+  &__item-image {
+    width: 100%;
+  }
+  
+}
