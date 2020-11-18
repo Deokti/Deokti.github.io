@@ -1,17 +1,27 @@
 @media screen and (max-width: 480px) {
   .promo__offer-image {
-    width: 237px;
-    left: -100px;
-    top: -55px;
+    width: 224px;
+    left: auto;
+    right: -50px;
+    top: 40px;
+    transform: rotateY(-180deg);
   }
   .promo__offer {
     max-width: 100%;
     border-radius: 0;
+    overflow: hidden;
   }
   .promo__offer-information {
     margin: 0 auto;
   }
 
-  
-
+  .send__subtitle {
+    font-size: 12px;
+  }
+  .send__limitation {
+    font-size: 16px;
+  }
+  .send__title {
+    font-size: 20px;
+  }
 }

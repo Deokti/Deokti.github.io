@@ -25,11 +25,12 @@ body {
 // Подлюкние секций
 @import './sections/header';
 @import './sections/promo';
+@import './sections/send';
 
 
 // Подключение медиа-запросов
 @import './media/media-1120';
-@import './media/media-1060';
+@import './media/media-1100';
 @import './media/media-1000';
 @import './media/media-940';
 @import './media/media-640';
