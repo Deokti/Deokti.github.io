@@ -26,13 +26,16 @@ body {
 @import './sections/header';
 @import './sections/promo';
 @import './sections/send';
+@import './sections/cards';
 
 
 // Подключение медиа-запросов
+@import './media/media-1160';
 @import './media/media-1120';
 @import './media/media-1100';
 @import './media/media-1000';
 @import './media/media-940';
+@import './media/media-760';
 @import './media/media-640';
 @import './media/media-550';
 @import './media/media-480';

@@ -3,6 +3,7 @@
 .nav__link,
 .hamburger-item,
 .hamburger-item::before,
-.hamburger-item::after {
+.hamburger-item::after,
+.cards__item {
   transition: all .2s ease;
 }
