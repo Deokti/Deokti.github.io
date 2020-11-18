@@ -15,9 +15,16 @@ body {
   margin: 0 auto;
 }
 
+.ul-style-none {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 // Подключение вовторяющихся стилей
 @import './repeats/button';
 @import './repeats/call';
+@import './repeats/title';
 
 // Подключение одиночных стилей
 @import './elements/hamburger';
@@ -27,6 +34,7 @@ body {
 @import './sections/promo';
 @import './sections/send';
 @import './sections/cards';
+@import './sections/advantages';
 
 
 // Подключение медиа-запросов
@@ -35,6 +43,7 @@ body {
 @import './media/media-1100';
 @import './media/media-1000';
 @import './media/media-940';
+@import './media/media-880';
 @import './media/media-760';
 @import './media/media-640';
 @import './media/media-550';

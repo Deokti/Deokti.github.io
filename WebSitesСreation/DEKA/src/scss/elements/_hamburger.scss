@@ -1,20 +1,17 @@
 .hamburger {
   position: relative;
-  padding-left: 0;
-  margin-bottom: 0;
   width: 40px;
   height: 40px; 
-  list-style: none;
   color: #52B153;
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: absolute;
-    top: -100%;
-    visibility: hidden;
-    overflow: hidden;
-    pointer-events: none;
+  top: -100%;
+  visibility: hidden;
+  overflow: hidden;
+  pointer-events: none;
   &.active {
     .hamburger-item {
       background-color: transparent;

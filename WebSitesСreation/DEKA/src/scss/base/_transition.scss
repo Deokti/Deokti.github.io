@@ -4,6 +4,10 @@
 .hamburger-item,
 .hamburger-item::before,
 .hamburger-item::after,
-.cards__item {
+.cards__item,
+.advantages__item,
+.advantages__item-header,
+.advantages__item-title,
+.advantages__item-text {
   transition: all .2s ease;
 }
