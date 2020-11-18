@@ -1,5 +1,6 @@
 // Базовые файлы для подключения
-@import 'base/bootstrap-reboot.min';
+@import './base/bootstrap-reboot.min';
+@import './base/slick';
 @import './base/transition';
 
 
@@ -25,6 +26,7 @@ body {
 @import './repeats/button';
 @import './repeats/call';
 @import './repeats/title';
+@import './repeats/arrow';
 
 // Подключение одиночных стилей
 @import './elements/hamburger';
@@ -35,6 +37,8 @@ body {
 @import './sections/send';
 @import './sections/cards';
 @import './sections/advantages';
+
+@import './sections/feedback';
 
 
 // Подключение медиа-запросов
