@@ -6,4 +6,33 @@
     width: 48%;
   }
 
+  .contacts__content-requisites {
+    display: none;
+  }
+
+  .contacts__content {
+    top: auto;
+    height: 390px;
+    padding: 20px 20px;
+    bottom: 0;
+  }
+  .contacts__title {
+    font-size: 22px;
+  }
+  .contacts__content-company {
+    padding-top: 5px;
+  }
+  .contacts__content-description {
+    padding-top: 10px;
+  }
+
+  .feedback__item-description {
+    font-size: 16px;
+  }
+  .feedback__item-title {
+    font-size: 18px;
+  }
+  .feedback__item-content {
+    max-width: 440px;
+  }
 }

@@ -1,0 +1,28 @@
+.footer {
+  min-height: 123px;
+  background-color: #FFF1E7;
+  padding: 25px 0;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 35px;
+  }
+  &__information-item {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+  }
+  &__privacy-policy {
+    &:hover {
+      text-decoration: none;
+      color: #52b153;
+    }
+  }
+  &__item {
+    margin: 0 10px;
+  }
+}

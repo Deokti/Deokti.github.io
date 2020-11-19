@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DEKA</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@300;400;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="./img/favicone-16x16.png" type="image/x-icon" sizes="16x16">
+  <title>DEKA</title>
 </head>
 
 <body>
@@ -18,7 +19,9 @@
 
         <div class="header__wrapper">
           <div class="header__logo">
-            <img src="./img/logo.svg" alt="Deka" class="header__logo-image">
+            <a href="#">
+              <img src="./img/logo.svg" alt="Deka" class="header__logo-image">
+            </a>
             <span class="header__description header__logo-description">Работаем с 1981 года в 120 странах мира</span>
           </div>
 
@@ -779,10 +782,124 @@
           </ul>
         </div>
 
-
       </div>
     </div>
   </section>
+
+  <section class="send send--box-shadow">
+    <div class="container">
+      <h3 class="send__title">
+        Пожалуй, ещё никогда европейское медицинское
+        лазерное оборудование не было таким доступным:
+      </h3>
+      <span class="send__request">ОСТАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ 40% СКИДКУ!</span>
+      <form class="form send__form">
+        <label class="send__label">
+          <input type="text" class="send__input" placeholder="Имя:" required>
+        </label>
+        <label class="send__label">
+          <input type="tel" class="send__input" placeholder="Тел.: +7 (___)___ ____" required>
+        </label>
+        <label class="send__label">
+          <input type="email" class="send__input" placeholder="E-mail:" required>
+        </label>
+        <button class="button button-form button-form-tablet">
+          <span class="button--inner">
+            Приобрести с
+            <span class="button--size-18">
+              <span class="button--important">40%</span> скидкой!
+            </span>
+          </span>
+        </button>
+      </form>
+
+      <span class="send__subtitle">
+        Нажимая на кнопку «Приобрести с 40% скидкой!», вы даете согласие на обработку своих персональных данных
+      </span>
+      <span class="send__limitation">ПРЕДЛОЖЕНИЕ ДЕЙСТВИТЕЛЬНО ТОЛЬКО до
+        <span class="change-time">15 ноября</span></span>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="contacts__map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8979.486666429635!2d37.537664561259454!3d55.760731509861145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bd6d98fdff5%3A0x2317d406d0669a55!2z0KjQvNC40YLQvtCy0YHQutC40Lkg0L_RgC3QtCwgMTYsINCc0L7RgdC60LLQsCwgMTIzMTAw!5e0!3m2!1sru!2sru!4v1605729681313!5m2!1sru!2sru"
+        width="100%" height="100%" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="contacts__content">
+      <h5 class="contacts__title">
+        ЖДЕМ ВАС В ЦЕНТРЕ МОСКВЫ
+      </h5>
+
+      <div class="contacts__content-company">
+        <h5 class="contacts__content-title">Компания ДЕКА в России</h5>
+
+        <ul class="contacts__content-list ul-style-none">
+          <li class="contacts__content-item">
+            Адрес: 123100, г. Москва, Шмитовский проезд д.16,стр.1
+          </li>
+          <li class="contacts__content-item">
+            Контактные телефоны:
+            <a href="tel:+74952294043" class="contacts__content-contact">+7 (495) 229-40-43</a>
+            <a href="tel:+88005054320" class="contacts__content-contact modifier-block">8-800-505-43-20</a>
+          </li>
+          <li class="contacts__content-item">
+            E-mail:
+            <a href="mailto:info@dekalaser.ru" class="contacts__content-contact">info@dekalaser.ru</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contacts__content-requisites">
+        <h5 class="contacts__content-title">Реквизиты:</h5>
+        <ul class="contacts__content-list ul-style-none">
+          <li class="contacts__content-item">ООО ”Дека Рус” </li>
+          <li class="contacts__content-item">
+            Юридический адрес: 123100, г. Москва, Шмитовский проезд д.16,стр.1
+          </li>
+          <li class="contacts__content-item">
+            ОГРН: 1097746360689
+          </li>
+        </ul>
+      </div>
+
+      <div class="contacts__content-description">
+        <p class="contacts__content-text">
+          До офиса можно добраться от метро «1905 года» последний вагон из центра, далее на общественном транспорте:
+          автобус 12, троллейбусы: 18, 54
+          ост. "Красногвардейский бульвар"
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <ul class="footer__list ul-style-none">
+          <li class="footer__item call footer__call">
+            <a href="tel:+88005054320" class="call__phone">8 (800) 505-43-20</a>
+            <span class="header__description call__free">Бесплатно по России</span>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__logo logo-link">
+              <img src="./img/logo.svg" alt="Deka" class="footer__logo-image">
+            </a>
+          </li>
+          <li class="footer__item footer__information">
+            <p class="footer__information-item">Все права защищены © 2020</p>
+            <a href="#" class="footer__information-item footer__privacy-policy">Политика конфиденциальности</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
 
   <script src="./js/script.js"></script>
 </body>

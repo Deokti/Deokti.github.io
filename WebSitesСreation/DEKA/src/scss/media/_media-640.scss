@@ -34,4 +34,17 @@
   .title--table {
     font-size: 25px;
   }
+
+  .feedback__item-image {
+    position: absolute;
+    left: -100%;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  .feedback__item-content {
+    max-width: 100%;
+  }
+  .feedback__item-author {
+    font-size: 16px;
+  }
 }

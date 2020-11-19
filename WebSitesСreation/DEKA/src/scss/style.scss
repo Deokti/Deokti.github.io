@@ -22,6 +22,10 @@ body {
   margin-bottom: 0;
 }
 
+.modifier-block {
+  display: block;
+}
+
 // Подключение вовторяющихся стилей
 @import './repeats/button';
 @import './repeats/call';
@@ -40,9 +44,12 @@ body {
 
 @import './sections/feedback';
 @import './sections/guarantee';
+@import './sections/contacts';
+@import './sections/footer';
 
 
 // Подключение медиа-запросов
+@import './media/media-1480';
 @import './media/media-1280';
 @import './media/media-1160';
 @import './media/media-1120';
@@ -54,4 +61,6 @@ body {
 @import './media/media-640';
 @import './media/media-550';
 @import './media/media-480';
+@import './media/media-410';
+@import './media/media-350';
 @import './media/media-320';

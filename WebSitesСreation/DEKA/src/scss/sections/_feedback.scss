@@ -1,6 +1,8 @@
 .feedback {
   &__wrapper {
     padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   &__item-inner {
     display: flex;
@@ -41,7 +43,7 @@
     display: block;
   }
   &__item-image {
-    max-width: 380px;
+    max-width: 310px;
     img {
       width: 100%;
     }
