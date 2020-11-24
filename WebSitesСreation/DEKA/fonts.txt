@@ -1,2 +1,0 @@
-Montserrat: 300, 400, 500, 700;
-Montserrat Alternates: 400;
