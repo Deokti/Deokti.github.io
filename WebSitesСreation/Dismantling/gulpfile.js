@@ -66,6 +66,11 @@ gulp.task('fonts', () => gulp.src('src/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
   .pipe(browserSync.stream()));
 
+gulp.task('video', () => gulp.src('src/video/**/*')
+  .pipe(gulp.dest('dist/video'))
+  .pipe(browserSync.stream()));
+
+
 
 gulp.task('watch', () => {
   // следит за файлами по данной дериктории, и если в них происзошло изменение, запускаются нужные задачи
@@ -75,7 +80,8 @@ gulp.task('watch', () => {
   gulp.watch('./src/js/**/*.js').on('change', gulp.parallel('js'));
   gulp.watch('./src/img/**/*').on('change', gulp.parallel('img'));
   gulp.watch('./src/fonts/**/*').on('change', gulp.parallel('fonts'));
+  gulp.watch('./src/video/**/*').on('change', gulp.parallel('video'));
 });
 
 // запускает паралельно несколько задач
-gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', 'img', 'fonts', 'css', 'js'))
+gulp.task('default', gulp.parallel('watch', 'browser-sync', 'scss', 'htmlmin', 'img', 'fonts', 'css', 'js', 'video'))

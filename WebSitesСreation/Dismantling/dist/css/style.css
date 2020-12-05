@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'Spaceland';
-  src: url("../../fonts/Spaceland-Ten.otf") format("truetype");
+  src: url("../fonts/Spaceland-Ten.otf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -1216,7 +1216,7 @@ body {
   left: -6.2rem;
   width: 43rem;
   height: 3.3rem;
-  background-image: url("../../img/icons/technic-icon.svg");
+  background-image: url("../img/icons/technic-icon.svg");
 }
 
 .header-top {
@@ -1238,7 +1238,7 @@ body {
   left: -4.2rem;
   width: 3.2rem;
   height: 3.2rem;
-  background-image: url("../../img/icons/map-icon.svg");
+  background-image: url("../img/icons/map-icon.svg");
 }
 
 .header__city:hover .header__city-list {
