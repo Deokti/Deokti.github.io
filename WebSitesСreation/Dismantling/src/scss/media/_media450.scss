@@ -1,0 +1,64 @@
+@media screen and (max-width: 450px) {
+  .header-content__info {
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+  }
+
+  .header__title--89 {
+    font-size: 3.9rem;
+    line-height: 3.9rem;
+  }
+
+  .header__title--63 {
+    font-size: 3rem;
+    line-height: 3rem;
+    max-width: 29rem;
+  }
+
+  .header-form__send {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .header-form__input {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .header-content {
+    padding-top: 2rem;
+  }
+
+  .header__insta-photo-item {
+    overflow: hidden;
+    width: 10rem;
+    height: 12rem;
+  }
+
+  .header__insta-photo-item img {
+    max-width: 9rem;
+    padding-top: .5rem;
+  }
+
+  .header__call {
+    flex-direction: column;
+
+    .button {
+      padding: .8rem .6rem;
+    }
+  }
+
+  .header__phone {
+    text-align: center;
+  }
+
+  .header__logo {
+    max-width: 10rem;
+  }
+
+  .header__dismantling {
+    max-width: 12rem;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}

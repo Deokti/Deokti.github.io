@@ -1,0 +1,33 @@
+@media screen and (max-width: 885px) {
+
+  .header-content,
+  .header-top {
+    flex-wrap: wrap;
+  }
+
+  .header-content,
+  .header__insta,
+  .header-top {
+    justify-content: center;
+  }
+
+  .header-content {
+    padding-top: 7rem;
+  }
+
+  .header__info {
+    margin-left: 8rem;
+  }
+
+  .header__call {
+    margin-top: 2rem;
+  }
+
+  .header-form {
+    margin-top: 3rem;
+  }
+
+  .header__insta {
+    margin: 0 auto;
+  }
+}
