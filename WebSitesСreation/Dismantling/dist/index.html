@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Демонтаж</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+
+      <!-- HEADER-TOP -->
+      <div class="header-top">
+        <div class="logo header__logo">
+          <img src="./img/logo.svg" alt="Демонтаж" class="header__logo-img">
+        </div>
+
+        <div class="header__info">
+          <div class="header__dismantling">
+            Коммерческий и частный
+            демонтаж зданий и сооружений
+          </div>
+          <div class="header__city">
+            <span class="header__city-title">Выберите свой город:</span>
+            <span class="header__city-your">Челябинск</span>
+            <ul class="header__city-list ul-style-none">
+              <li class="header__city-item service">Челябинск</li>
+              <li class="header__city-item service">Екатеринбург</li>
+              <li class="header__city-item service">Тюмень</li>
+              <li class="header__city-item service">Казань</li>
+              <li class="header__city-item service">Омск</li>
+              <li class="header__city-item">Москва</li>
+              <li class="header__city-item">Санкт-Петербург</li>
+              <li class="header__city-item">Новосибирск</li>
+              <li class="header__city-item">Нижний Новгород</li>
+              <li class="header__city-item">Самара</li>
+              <li class="header__city-item">Ростов-на-Дону</li>
+              <li class="header__city-item">Уфа</li>
+              <li class="header__city-item">Красноярск</li>
+              <li class="header__city-item">Воронеж</li>
+              <li class="header__city-item">Пермь</li>
+              <li class="header__city-item">Волгоград</li>
+              <li class="header__city-item">Краснодар</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__call">
+          <div class="header__phone">
+            <span class="header__phone-title">Быстро перезвоним</span>
+            <a href="tel:+79999999999" class="header__phone-tel">+7 (999) 999-99-99</a>
+          </div>
+          <button class="button button--green">Заказать звонок</button>
+        </div>
+      </div>
+
+      <!-- HEADER-CONTENT -->
+      <div class="header-content">
+        <div class="header__left">
+          <h1 class="header__title">
+            <span class="header__title--89">Демонтажные работы</span>
+            <span class="header__title--63">
+              Сносим здания и сооружения
+              <span class="header__title--important">от 3-х дней</span> с утилизацией
+            </span>
+          </h1>
+          <p class="header-content__info">
+            Промышленные, административные и жилые объекты из бетона, плит, кирпича, металла и т.д.
+          </p>
+
+          <!-- STORIES -->
+          <div class="header__insta">
+            <div class="header__insta-video" id="stories"></div>
+            <ul class="header__insta-photo-list ul-style-none">
+              <li class="header__insta-photo-item">
+                <img src="./img/header/certificate.png" alt="Сертификат">
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="header-form">
+          <div class="header-form__wrapper">
+            <h2 class="header-form__title">
+              <span class="form__title__title-main">Рассчитать стоимость демонтажа за 30 секунд!</span>
+              <span class="header-form__title-description">Просто выберите подходящий вариант:</span>
+            </h2>
+
+            <div class="header-form__content">
+              <!-- OBJECT-TYPE -->
+              <div class="header-form__inner">
+                <h3 class="header-form__question">Тип объекта демонтажа?</h3>
+                <div class="header-form__response">
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="object-type">
+                    <span>Жилое</span>
+                  </label>
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="object-type">
+                    <span>Промышленное</span>
+                  </label>
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="object-type">
+                    <span>Административное</span>
+                  </label>
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="object-type">
+                    <span>Другое</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- material-type -->
+              <div class="header-form__inner">
+                <h3 class="header-form__question">Из какого материала объект?</h3>
+                <div class="header-form__response">
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="material-type">
+                    <span>Металл</span>
+                  </label>
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="material-type">
+                    <span>Бетон</span>
+                  </label>
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="material-type">
+                    <span>Кирпич</span>
+                  </label>
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="material-type">
+                    <span>Другое</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- cleaning  -->
+              <div class="header-form__inner">
+                <h3 class="header-form__question">Требуется уборка и утилизация после демонтажа?</h3>
+                <div class="header-form__response">
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="cleaning">
+                    <span>Да</span>
+                  </label>
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="cleaning">
+                    <span>Нет</span>
+                  </label>
+                  <label class="header-form__label">
+                    <input type="radio" class="header-form__checkbox" name="cleaning">
+                    <span>Не знаю</span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="header-form__send">
+              <label class="header-form__input">
+                <input type="text" class="header-form__input-write">
+                <span class="header-form__input-placeholder">Ваш телефон</span>
+              </label>
+              <button class="button button-form button--orange">УЗНАТЬ СТОИМОСТЬ СЕЙЧАС</button>
+            </div>
+
+            <p class="header-form__detailed">
+              или позвоните нам сами: +7 (999) 999-99-99
+              на связи 24 часа в сутки, без выходных
+            </p>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </header>
+
+  <script src="./js/libs/zuck.min.js"></script>
+  <script src="./js/scripts/header-input.js"></script>
+  <script src="./js/scripts/zuck.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+// Базовые файлы для подключения
+@import './base/fonts';
+@import './base/bootstrap-reboot.min';
+@import './base/zuck.min';
+@import './base/global';
+@import './base/slick';
+@import './base/transition';
+
+// Подключение вовторяющихся стилей
+@import './repeats/button';
+@import './repeats/title';
+
+// Подключение одиночных стилей
+
+
+// Подлючение секций
+@import './sections/header';
+
+// Подключение медиа-запросов
