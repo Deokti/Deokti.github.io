@@ -215,7 +215,7 @@
 
     max-width: 50.1rem;
     width: 100%;
-    min-height: 45.8rem;
+    min-height: auto;
     background: rgba($color: #fff, $alpha: .7);
     backdrop-filter: blur(34px);
     border-radius: 1rem;
@@ -344,7 +344,6 @@
         &:focus {
           outline: none;
           border: .1rem solid rgba(34, 34, 34, 0.3);
-          border-right: none;
         }
 
         &:focus+.header-form__input-placeholder {

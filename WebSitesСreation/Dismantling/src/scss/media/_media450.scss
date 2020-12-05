@@ -1,7 +1,7 @@
 @media screen and (max-width: 450px) {
   .header-content__info {
-    font-size: 1.9rem;
-    line-height: 1.9rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
   }
 
   .header__title--89 {
@@ -31,13 +31,42 @@
 
   .header__insta-photo-item {
     overflow: hidden;
-    width: 10rem;
-    height: 12rem;
+    max-width: 8rem;
+    max-height: 8rem;
+    height: 100%;
+    width: 100%;
+    margin-top: -4.4rem;
+    margin-left: 1rem
+  }
+
+  .header .stories.carousel .story>.item-link>.item-preview {
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+  }
+
+  .header .stories.carousel .story>.item-link>.item-preview::before {
+    opacity: 0;
+  }
+
+  .header__insta-photo-item::before {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .header__insta-photo-item::after {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .header__insta-photo-item::before,
+  .header__insta-photo-item::after {
+    transform: translate(-50%, -50%);
   }
 
   .header__insta-photo-item img {
-    max-width: 9rem;
-    padding-top: .5rem;
+    max-width: 8rem;
+    padding-top: 0;
   }
 
   .header__call {
@@ -57,8 +86,55 @@
   }
 
   .header__dismantling {
-    max-width: 12rem;
+    max-width: 10rem;
     font-size: 1rem;
     line-height: 1rem;
+  }
+
+  .header-form {
+    margin-top: 0rem;
+  }
+
+  .header-form__title {
+    line-height: 0;
+  }
+
+  .form__title__title-main {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+
+  .header-form__content {
+    padding-top: 1rem;
+  }
+
+  .form__title-description {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .header-form__question {
+    font-size: 1.4rem;
+  }
+
+  .header-form__label span {
+    font-size: 1rem;
+    padding: .4rem .7rem;
+  }
+
+  .header-form__label:not(:last-child) {
+    margin-right: .1rem;
+  }
+
+  .header-form::before,
+  .header-form::after {
+    top: -2.2rem;
+  }
+
+  .header-form__send {
+    .button-form {
+      padding: 5% 1%;
+    }
   }
 }
