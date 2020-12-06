@@ -41,4 +41,40 @@
   .header__insta-photo-item img {
     max-width: 10rem;
   }
+
+  .service__item-bottom {
+    padding: 1.2rem 0.5rem;
+    padding-right: 1rem;
+  }
+
+  .service__item-title {
+    font-size: 2.2rem;
+    line-height: 1.7rem;
+  }
+
+  .service__item-top {
+    width: 40%;
+  }
+
+  .service__item-bottom {
+    width: 60%;
+  }
+
+
+  .service__item-el,
+  .service__item-detailed {
+    font-size: 1.4rem;
+  }
+
+  .service__button {
+    padding-top: 0;
+  }
+
+  .service {
+    padding: 4rem 0;
+  }
+
+  .service__wrapper {
+    padding-top: 2rem;
+  }
 }
