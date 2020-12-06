@@ -199,6 +199,10 @@
     color: #fff;
     text-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.43), 0 0 4.8rem #000406;
 
+    &--important {
+      color: #FF681D;
+    }
+
     &--89 {
       font-size: 8.9rem;
     }
@@ -325,58 +329,7 @@
     }
 
     &__input {
-      position: relative;
-      margin-bottom: 0;
-      max-width: 22rem;
-      width: 100%;
-
-      &-write,
-      &-placeholder {
-        font-size: 1.4rem;
-      }
-
-      &-write {
-        height: 5rem;
-        width: 100%;
-        border: none;
-        padding: 1rem 1.5rem;
-        border-radius: .4rem;
-
-        &:focus {
-          outline: none;
-          border: .1rem solid rgba(34, 34, 34, 0.3);
-        }
-
-        &:focus+.header-form__input-placeholder {
-          opacity: 0;
-        }
-
-        &.placeholder-hide+.header-form__input-placeholder {
-          opacity: 0;
-
-        }
-      }
-
-      &-placeholder {
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: block;
-        color: rgba(34, 34, 34, 0.4);
-
-        &::before {
-          content: '';
-          position: absolute;
-          background-image: url('../img/icons/phone-icon.svg');
-          width: 0.6rem;
-          height: 0.6rem;
-          left: -1rem;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-      }
+      max-width: 23rem;
     }
 
     &__detailed {

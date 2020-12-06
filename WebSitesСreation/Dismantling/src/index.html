@@ -160,9 +160,9 @@
             </div>
 
             <div class="header-form__send">
-              <label class="header-form__input">
-                <input type="text" class="header-form__input-write">
-                <span class="header-form__input-placeholder">Ваш телефон</span>
+              <label class="phone-input header-form__input ">
+                <input type="text" class="phone-input__input header-form__input-write">
+                <span class="phone-input__placeholder header-form__input-placeholder">Ваш телефон</span>
               </label>
               <button class="button button-form button--orange button--weight-600">УЗНАТЬ СТОИМОСТЬ СЕЙЧАС</button>
             </div>
@@ -560,16 +560,63 @@
 
         </ul>
 
+      </div>
+    </div>
+  </section>
 
+  <!-- COSTING -->
+  <section class="costing">
+    <div class="container">
 
+      <div class="costing-top">
+        <h2 class="title costing__title">
+          <span class="title-main title-main--left">
+            КАК ПОНЯТЬ, <br> СКОЛЬКО СТОИТ ДЕМОНТАЖ?
+          </span>
+        </h2>
+        <div class="costing__image">
+          <img src="./img/costing/man-1.png" alt="man">
+        </div>
+      </div>
 
+      <div class="costing-bottom">
+        <div class="costing__info">
+          <h5 class="costing-bottom__title">
+            <span class="costing--important">МЫ ПОМОЖЕМ.</span>
+            ПРИГОТОВЬТЕСЬ ОТВЕТИТЬ НА 4 ВОПРОСА
+          </h5>
+          <ul class="costing__list ul-style-none">
+            <li class="costing__item">Расположение объекта демонтажа?</li>
+            <li class="costing__item">Тип объекта (жилое, промышленное, административное и т.д.)?</li>
+            <li class="costing__item">Из какого материала объект (металл, кирпич, ЖБ-плиты, дерево и т.д.?</li>
+            <li class="costing__item">Примерные или точные размеры (ширины-высота-длина)?</li>
+          </ul>
+        </div>
+
+        <form class="costing__form">
+          <p class="costing__consultation">
+            Консультация онлайн
+            и расчет сметы <span class="costing__consultation-important">за 5 минут</span>
+          </p>
+          <label class="phone-input costing__phone-input">
+            <input type="text" class="phone-input__input">
+            <span class="phone-input__placeholder">Ваш телефон</span>
+          </label>
+          <button class="button button--weight-600 button--orange button-form costing__button">
+            Узнать стоимость
+          </button>
+          <p class="costing__detailed">
+            или позвоните нам сами: <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+            на связи 24 часа в сутки, без выходных
+          </p>
+        </form>
       </div>
     </div>
   </section>
 
 
   <script src="./js/libs/zuck.min.js"></script>
-  <script src="./js/scripts/header-input.js"></script>
+  <script src="./js/scripts/phone-input.js"></script>
   <script src="./js/scripts/zuck.js"></script>
   <script src="./js/scripts/player.js"></script>
 </body>

@@ -1,0 +1,124 @@
+.costing {
+  padding-top: 11rem;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    max-width: 140rem;
+    background-color: #fff;
+    padding: 1rem 3.7rem;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 121.8rem;
+      height: 302px;
+      background-image: url('../img/costing/bg-mask.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: -5rem;
+      top: -2.7rem;
+      z-index: -1;
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+      color: #222222;
+    }
+  }
+
+  &--important {
+    display: block;
+    color: #F9641B;
+  }
+
+  &__image {
+    max-width: 48rem;
+    margin-top: -15rem;
+    margin-right: 3rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    position: relative;
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    color: rgba(34, 34, 34, 0.7);
+    margin-left: 2.4rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      left: -2.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../img/icons/question-icon.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__detailed {
+    font-size: 1.2rem;
+    color: rgba(34, 34, 34, 0.7);
+    max-width: 20rem;
+    margin-top: 1rem;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: rgba(34, 34, 34, 0.7);
+      border-bottom: .1rem dashed rgba(34, 34, 34, 0.7);
+
+      &:hover {
+        border-bottom-style: solid;
+      }
+    }
+  }
+
+  &__form {
+    margin-right: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  &__consultation {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    max-width: 20rem;
+    color: #000000;
+
+    &-important {
+      font-weight: 600;
+    }
+  }
+
+  &__phone-input,
+  &__button {
+    margin-top: 2rem;
+    width: 26rem;
+  }
+}
