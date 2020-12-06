@@ -97,19 +97,19 @@
                 <h3 class="header-form__question">Тип объекта демонтажа?</h3>
                 <div class="header-form__response">
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="object-type">
+                    <input type="radio" class="header-form__checkbox" name="object-type" required>
                     <span>Жилое</span>
                   </label>
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="object-type">
+                    <input type="radio" class="header-form__checkbox" name="object-type" required>
                     <span>Промышленное</span>
                   </label>
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="object-type">
+                    <input type="radio" class="header-form__checkbox" name="object-type" required>
                     <span>Административное</span>
                   </label>
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="object-type">
+                    <input type="radio" class="header-form__checkbox" name="object-type" required>
                     <span>Другое</span>
                   </label>
                 </div>
@@ -120,19 +120,19 @@
                 <h3 class="header-form__question">Из какого материала объект?</h3>
                 <div class="header-form__response">
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="material-type">
+                    <input type="radio" class="header-form__checkbox" name="material-type" required>
                     <span>Металл</span>
                   </label>
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="material-type">
+                    <input type="radio" class="header-form__checkbox" name="material-type" required>
                     <span>Бетон</span>
                   </label>
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="material-type">
+                    <input type="radio" class="header-form__checkbox" name="material-type" required>
                     <span>Кирпич</span>
                   </label>
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="material-type">
+                    <input type="radio" class="header-form__checkbox" name="material-type" required>
                     <span>Другое</span>
                   </label>
                 </div>
@@ -143,15 +143,15 @@
                 <h3 class="header-form__question">Требуется уборка и утилизация после демонтажа?</h3>
                 <div class="header-form__response">
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="cleaning">
+                    <input type="radio" class="header-form__checkbox" name="cleaning" required>
                     <span>Да</span>
                   </label>
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="cleaning">
+                    <input type="radio" class="header-form__checkbox" name="cleaning" required>
                     <span>Нет</span>
                   </label>
                   <label class="header-form__label">
-                    <input type="radio" class="header-form__checkbox" name="cleaning">
+                    <input type="radio" class="header-form__checkbox" name="cleaning" required>
                     <span>Не знаю</span>
                   </label>
                 </div>
@@ -164,24 +164,74 @@
                 <input type="text" class="header-form__input-write">
                 <span class="header-form__input-placeholder">Ваш телефон</span>
               </label>
-              <button class="button button-form button--orange">УЗНАТЬ СТОИМОСТЬ СЕЙЧАС</button>
+              <button class="button button-form button--orange button--weight-600">УЗНАТЬ СТОИМОСТЬ СЕЙЧАС</button>
             </div>
 
             <p class="header-form__detailed">
-              или позвоните нам сами: +7 (999) 999-99-99
+              или позвоните нам сами: <a href="tel:+79999999999">+7 (999) 999-99-99</a>
               на связи 24 часа в сутки, без выходных
             </p>
           </div>
         </form>
 
       </div>
-
     </div>
   </header>
+
+  <!-- COMPANY  -->
+  <section class="company">
+    <div class="container">
+      <h2 class="title">
+        <span class="title-main">ЭТО ВИДЕО О НАШЕЙ КОМПАНИИ</span>
+        <span class="title--description">Быстро и понятно, без лишних слов!</span>
+      </h2>
+
+      <div class="company__wrapper">
+
+        <!-- COMPANY__VIDEO -->
+        <div class="company__video">
+          <video poster="video/poster.jpg" preload="none" id="video-player">
+            <source src="video/2.mp4" type="video/mp4">
+          </video>
+          <div class="company__video-controller" id="video-controll" data-video-play="false">
+            <span class="company__video-image"></span>
+          </div>
+        </div>
+
+        <!-- COMPANY__DESCRIPTION -->
+        <div class="company__description">
+
+          <ul class="company__list ul-style-none">
+            <li class="company__item company__item--1">У нас люди, знания, опыт, техника</li>
+            <li class="company__item company__item--2">Техническая и юридическая подготовка</li>
+            <li class="company__item company__item--3">Работаем с 2014 года</li>
+          </ul>
+
+          <div class="company__buttons">
+            <button class="button button--orange button-form button-large company__button">
+              <span class="button-icon button--paperclip">Отправить ТЗ на расчет</span>
+            </button>
+            <button class="button button--orange button-form button-large">
+              <span class="button-icon button--online">Консультация онлайн</span>
+            </button>
+          </div>
+
+          <p class="company__convenient-schedule">
+            Выберите удобный для себя способ, мы на связи 24/7
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 
   <script src="./js/libs/zuck.min.js"></script>
   <script src="./js/scripts/header-input.js"></script>
   <script src="./js/scripts/zuck.js"></script>
+  <script src="./js/scripts/player.js"></script>
 </body>
 
 </html>

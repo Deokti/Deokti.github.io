@@ -1024,7 +1024,7 @@ html {
 }
 
 body {
-  font-family: 'PF Din Text Cond Pro';
+  font-family: 'PF Din Text Cond Pro', sans-serif;
   font-weight: 400;
 }
 
@@ -1160,11 +1160,17 @@ body {
 }
 
 .button-form {
-  width: 100%;
-  font-weight: 600;
   font-size: 1.6rem;
-  padding: 3% 1%;
+  padding: 1.3rem 1rem;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
+}
+
+.button-large {
+  padding: 1.3rem 3.9rem;
+}
+
+.button--weight-600 {
+  font-weight: 600;
 }
 
 .button--orange {
@@ -1182,6 +1188,69 @@ body {
 
 .button--green:hover {
   background: linear-gradient(0deg, rgba(12, 198, 123, 0) 1.59%, #00D881 92.15%), #0CC67B;
+}
+
+.button-icon {
+  position: relative;
+}
+
+.button-icon::before {
+  content: '';
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button--paperclip::before {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("../../img/icons/paperclip-icon.svg");
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1.5rem;
+}
+
+.button--online::before {
+  width: 0.7rem;
+  height: 0.7rem;
+  background: #0CC67B;
+  box-shadow: 0px 0px 7px rgba(12, 198, 123, 0.57);
+  border-radius: 50%;
+  right: -.7rem;
+  top: -.4rem;
+}
+
+.title {
+  text-align: center;
+  color: #000000;
+}
+
+.title-main {
+  display: block;
+  position: relative;
+  font-family: 'Spaceland', sans-serif;
+  font-weight: 600;
+  font-size: 6.3rem;
+  line-height: 6.3rem;
+}
+
+.title-main::before {
+  content: '';
+  position: absolute;
+  top: -1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7.7rem;
+  height: .6rem;
+  background: #FF681D;
+  border-radius: 3rem;
+}
+
+.title--description {
+  font-family: 'PF Din Text Cond Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
 }
 
 .header {
@@ -1342,7 +1411,7 @@ body {
 }
 
 .header__phone-tel {
-  font-family: 'Spaceland';
+  font-family: 'Spaceland', sans-serif;
   font-weight: 600;
   font-size: 3rem;
   line-height: 3rem;
@@ -1367,7 +1436,7 @@ body {
   border-radius: .5rem;
   padding: .5rem 1.4rem;
   max-width: 59.3rem;
-  font-family: 'Spaceland';
+  font-family: 'Spaceland', sans-serif;
   font-weight: 600;
   font-size: 3.2rem;
   line-height: 3.2rem;
@@ -1375,7 +1444,7 @@ body {
 }
 
 .header__title {
-  font-family: 'Spaceland';
+  font-family: 'Spaceland', sans-serif;
   max-width: 61rem;
   font-weight: 700;
   line-height: 3rem;
@@ -1446,7 +1515,7 @@ body {
 }
 
 .header-form__title {
-  font-family: 'Spaceland';
+  font-family: 'Spaceland', sans-serif;
   font-weight: 600;
   font-size: 3.1rem;
   line-height: 3rem;
@@ -1463,7 +1532,7 @@ body {
 }
 
 .header-form__question {
-  font-family: 'PF Din Text Cond Pro';
+  font-family: 'PF Din Text Cond Pro', sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
   color: #222222;
@@ -1491,8 +1560,9 @@ body {
   width: .1rem;
   height: .1rem;
   opacity: 0;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header-form__checkbox:checked + span {
@@ -1566,6 +1636,16 @@ body {
   max-width: 20rem;
   margin: 0 auto;
   margin-top: 1rem;
+}
+
+.header-form__detailed a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.7);
+  border-bottom: 0.1rem dashed rgba(34, 34, 34, 0.7);
+}
+
+.header-form__detailed a:hover {
+  border-bottom-style: solid;
 }
 
 .header__insta {
@@ -1646,6 +1726,126 @@ body {
 .header .stories.carousel .story > .item-link > .info {
   font-size: 1.6rem;
   color: #000000;
+}
+
+.company {
+  padding: 8rem 0;
+}
+
+.company__wrapper {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company__video {
+  position: relative;
+  max-width: 69.8rem;
+  width: 100%;
+  height: auto;
+  border-radius: .5rem;
+}
+
+.company__video video {
+  cursor: pointer;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: .5rem;
+}
+
+.company__video video:focus {
+  outline: none;
+}
+
+.company__video-controller {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.company__video-none {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.company__video-image {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../img/icons/video-play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.company__description {
+  padding-top: 5rem;
+}
+
+.company__list {
+  padding-left: 13rem;
+}
+
+.company__item {
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #222222;
+  max-width: 20rem;
+}
+
+.company__item:not(:last-child) {
+  margin-bottom: 8.7rem;
+}
+
+.company__item::before {
+  content: '';
+  position: absolute;
+  left: -10rem;
+  top: 50%;
+  width: 9.3rem;
+  height: 9.3rem;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.company__item--1::before {
+  background-image: url("../img/company/1.png");
+}
+
+.company__item--2::before {
+  background-image: url("../img/company/2.png");
+}
+
+.company__item--3::before {
+  background-image: url("../img/company/3.png");
+}
+
+.company__buttons {
+  padding-top: 7rem;
+}
+
+.company__button {
+  margin-right: 1rem;
+}
+
+.company__convenient-schedule {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: rgba(34, 34, 34, 0.5);
 }
 
 @media screen and (max-width: 1150px) {

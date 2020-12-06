@@ -1,0 +1,32 @@
+.title {
+  text-align: center;
+  color: #000000;
+
+  &-main {
+    display: block;
+    position: relative;
+    font-family: 'Spaceland', sans-serif;
+    font-weight: 600;
+    font-size: 6.3rem;
+    line-height: 6.3rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -1.4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 7.7rem;
+      height: .6rem;
+      background: #FF681D;
+      border-radius: 3rem;
+    }
+  }
+
+  &--description {
+    font-family: 'PF Din Text Cond Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
