@@ -2060,6 +2060,7 @@ body {
 }
 
 .costing-bottom {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -2099,7 +2100,7 @@ body {
 }
 
 .costing__image {
-  max-width: 48rem;
+  min-width: 44rem;
   margin-top: -15rem;
   margin-right: 3rem;
 }
@@ -2108,10 +2109,15 @@ body {
   width: 100%;
 }
 
+.costing__info {
+  padding-right: 2rem;
+}
+
 .costing__item {
   position: relative;
   font-size: 2.2rem;
-  line-height: 3.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 1rem;
   color: rgba(34, 34, 34, 0.7);
   margin-left: 2.4rem;
 }
@@ -2291,6 +2297,13 @@ body {
     padding: 1.3rem 1.2%;
     width: 100%;
   }
+  .costing__image {
+    min-width: 35rem;
+  }
+  .costing__item {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+  }
 }
 
 @media screen and (max-width: 885px) {
@@ -2320,6 +2333,36 @@ body {
   }
   .company__item {
     max-width: 10rem;
+  }
+  .costing {
+    padding-top: 7rem;
+  }
+  .costing-top,
+  .costing-bottom {
+    flex-direction: column;
+  }
+  .costing-bottom {
+    align-items: center;
+  }
+  .costing__form {
+    margin-right: 0;
+    margin-top: 3rem;
+  }
+  .costing-bottom__title {
+    text-align: center;
+  }
+  .costing__image {
+    margin: 0 auto;
+  }
+  .costing__title {
+    margin: 0 auto;
+  }
+  .costing__title span {
+    text-align: center;
+  }
+  .costing__title span::before {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -2402,6 +2445,27 @@ body {
     max-width: 30rem;
     width: 100%;
   }
+  .costing {
+    padding-top: 0;
+  }
+  .costing-bottom {
+    margin-top: -4rem;
+  }
+  .costing__image {
+    max-width: 30rem;
+    min-width: auto;
+    margin-top: -1rem;
+  }
+  .costing-top {
+    padding: 0;
+  }
+  .costing-bottom {
+    padding: 0;
+    padding-left: 1rem;
+  }
+  .costing__list {
+    padding-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -2463,6 +2527,11 @@ body {
   }
   .service__wrapper {
     padding-top: 2rem;
+  }
+  .costing__item {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin-bottom: 0;
   }
 }
 

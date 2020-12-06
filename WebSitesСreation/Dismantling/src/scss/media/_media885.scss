@@ -34,4 +34,43 @@
   .company__item {
     max-width: 10rem;
   }
+
+  .costing {
+    padding-top: 7rem;
+  }
+
+  .costing-top,
+  .costing-bottom {
+    flex-direction: column;
+  }
+
+  .costing-bottom {
+    align-items: center;
+  }
+
+  .costing__form {
+    margin-right: 0;
+    margin-top: 3rem;
+  }
+
+  .costing-bottom__title {
+    text-align: center;
+  }
+
+  .costing__image {
+    margin: 0 auto;
+  }
+
+  .costing__title {
+    margin: 0 auto;
+  }
+
+  .costing__title span {
+    text-align: center;
+  }
+
+  .costing__title span::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
