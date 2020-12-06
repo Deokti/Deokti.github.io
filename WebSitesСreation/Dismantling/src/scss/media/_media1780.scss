@@ -1,0 +1,10 @@
+@media screen and (max-width: 1780px) {
+  .service {
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+}

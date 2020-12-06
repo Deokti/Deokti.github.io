@@ -1,0 +1,16 @@
+@media screen and (max-width: 1080px) {
+  .header__title--89 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+  }
+
+  .header__title--63 {
+    display: block;
+    font-size: 4.1rem;
+    line-height: 4.1rem;
+  }
+
+  .header__city {
+    display: none;
+  }
+}

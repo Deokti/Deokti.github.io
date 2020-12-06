@@ -1,5 +1,33 @@
 .service {
+  position: relative;
   padding: 7rem 0;
+  z-index: 1;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  &::before {
+    background-image: url('../img/secvice/bg/bg-1.png');
+    width: 54rem;
+    height: 80rem;
+    left: 0;
+    top: -280px;
+  }
+
+  &::after {
+    background-image: url('../img/secvice/bg/bg-2.png');
+    width: 38rem;
+    height: 43rem;
+    bottom: 20.5rem;
+    right: 0;
+  }
 
   &__wrapper {
     padding-top: 6rem;

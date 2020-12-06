@@ -1,0 +1,83 @@
+@media screen and (max-width: 550px) {
+  .header__logo {
+    max-width: 17rem;
+  }
+
+  .header__dismantling {
+    max-width: 16rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .header .container {
+    padding: 0;
+  }
+
+  .header-top,
+.header__left {
+    padding: 0 2rem;
+  }
+
+  .header-form {
+    max-width: 100%;
+  }
+
+  .header__insta-photo-item {
+    margin-left: 2rem;
+  }
+
+  .header__insta-photo-item::before {
+    width: 10.1rem;
+    height: 10.1rem;
+  }
+
+  .header__insta-photo-item::after {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+
+  .header__insta-photo-item img {
+    max-width: 10rem;
+  }
+
+  .service__item-bottom {
+    padding: 1.2rem 0.5rem;
+    padding-right: 1rem;
+  }
+
+  .service__item-title {
+    font-size: 2.2rem;
+    line-height: 1.7rem;
+  }
+
+  .service__item-top {
+    width: 40%;
+  }
+
+  .service__item-bottom {
+    width: 60%;
+  }
+
+  .service__item-el,
+.service__item-detailed {
+    font-size: 1.4rem;
+  }
+
+  .service__button {
+    padding-top: 0;
+  }
+
+  .service {
+    padding: 4rem 0;
+  }
+
+  .service__wrapper {
+    padding-top: 2rem;
+  }
+
+  .costing__item {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin-bottom: 0;
+  }
+}

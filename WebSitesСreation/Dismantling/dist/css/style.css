@@ -1868,7 +1868,34 @@ body {
 }
 
 .service {
+  position: relative;
   padding: 7rem 0;
+  z-index: 1;
+}
+
+.service::before, .service::after {
+  content: '';
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.service::before {
+  background-image: url("../img/secvice/bg/bg-1.png");
+  width: 54rem;
+  height: 80rem;
+  left: 0;
+  top: -280px;
+}
+
+.service::after {
+  background-image: url("../img/secvice/bg/bg-2.png");
+  width: 38rem;
+  height: 43rem;
+  bottom: 20.5rem;
+  right: 0;
 }
 
 .service__wrapper {
@@ -2175,6 +2202,12 @@ body {
 .costing__phone-input, .costing__button {
   margin-top: 2rem;
   width: 26rem;
+}
+
+@media screen and (max-width: 1780px) {
+  .service::after, .service::before {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1250px) {
