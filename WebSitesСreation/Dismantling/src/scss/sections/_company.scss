@@ -11,7 +11,7 @@
     position: relative;
     max-width: 69.8rem;
     width: 100%;
-    height: auto;
+    height: 52.8rem;
     border-radius: .5rem;
 
     video {
@@ -59,6 +59,7 @@
 
   &__description {
     padding-top: 5rem;
+    padding-left: 2rem;
   }
 
   &__list {

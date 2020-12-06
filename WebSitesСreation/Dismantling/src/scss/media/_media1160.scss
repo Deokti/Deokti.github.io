@@ -1,0 +1,26 @@
+@media screen and (max-width: 1160px) {
+  .header__title--89 {
+    font-size: 7.9rem;
+    line-height: 7.9rem;
+  }
+
+  .header__title--63 {
+    font-size: 5.3rem;
+    line-height: 5.3rem;
+  }
+
+  .company__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .company__button {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .company__description {
+    max-width: 40rem;
+    width: 100%;
+  }
+}

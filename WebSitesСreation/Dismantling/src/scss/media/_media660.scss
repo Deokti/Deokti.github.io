@@ -1,0 +1,37 @@
+@media screen and (max-width: 660px) {
+  .company__list {
+    display: none;
+  }
+
+  .company__description {
+    padding-top: 0;
+  }
+
+  .company__buttons {
+    padding-top: 2rem;
+  }
+
+  .company__video {
+    max-width: 37rem;
+    height: 19.6rem;
+  }
+
+  .title-main {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+
+  .title--description {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .company__buttons {
+    align-items: center;
+  }
+
+  .company__buttons button {
+    max-width: 30rem;
+    width: 100%;
+  }
+}
