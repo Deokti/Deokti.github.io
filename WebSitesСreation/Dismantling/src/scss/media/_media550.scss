@@ -83,4 +83,26 @@
     line-height: 2.1rem;
     margin-bottom: 0;
   }
+
+  .information-bottom__item {
+    padding-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .information-bottom {
+    .slick-dots {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      max-width: 23rem;
+
+      li {
+        margin: 0 1rem;
+      }
+
+      button {
+        width: 13px;
+        height: 12px;
+      }
+    }
+  }
 }

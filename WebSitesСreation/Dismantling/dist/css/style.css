@@ -1388,12 +1388,17 @@ body {
   transform: translateX(12rem);
 }
 
+.slick-slide:focus {
+  outline: none;
+}
+
 .information-bottom .slick-dots {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 0;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .information-bottom .slick-dots li {
@@ -2394,8 +2399,8 @@ body {
 
 .information-bottom__item {
   max-width: 59rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .information-bottom__item img {
@@ -2419,6 +2424,9 @@ body {
   __item-list,
   __item-detailed {
     padding: 0 1.7rem 0 3rem;
+  }
+  .information-bottom__item {
+    margin-bottom: 1rem;
   }
 }
 
@@ -2656,6 +2664,13 @@ body {
   .service__item-info {
     transition: padding .2s ease;
   }
+  .information-bottom .slick-dots {
+    margin-top: 1rem;
+  }
+  .information-bottom .slick-dots button {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -2792,6 +2807,22 @@ body {
     font-size: 1.6rem;
     line-height: 2.1rem;
     margin-bottom: 0;
+  }
+  .information-bottom__item {
+    padding-right: 1rem;
+    margin-bottom: 0;
+  }
+  .information-bottom .slick-dots {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    max-width: 23rem;
+  }
+  .information-bottom .slick-dots li {
+    margin: 0 1rem;
+  }
+  .information-bottom .slick-dots button {
+    width: 13px;
+    height: 12px;
   }
 }
 

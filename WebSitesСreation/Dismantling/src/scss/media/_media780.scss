@@ -61,4 +61,15 @@
   .service__item-info {
     transition: padding .2s ease;
   }
+
+  .information-bottom {
+    .slick-dots {
+      margin-top: 1rem;
+
+      button {
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    }
+  }
 }

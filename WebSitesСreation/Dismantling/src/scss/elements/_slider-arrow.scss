@@ -24,3 +24,7 @@
     transform: translateX(12rem);
   }
 }
+
+.slick-slide:focus {
+  outline: none;
+}
