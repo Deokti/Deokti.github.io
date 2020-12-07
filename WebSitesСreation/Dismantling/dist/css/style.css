@@ -1497,7 +1497,7 @@ body {
   color: rgba(34, 34, 34, 0.7);
 }
 
-.header__city-item.service {
+.header__city-item--active {
   color: #222222;
   font-weight: 600;
 }
