@@ -1,10 +1,38 @@
+@import '../base/animate';
+
 .button {
+  position: relative;
   border: none;
   padding: 1.5rem 2rem;
   border-radius: .4rem;
   color: #fff;
   font-size: 1.3rem;
   text-transform: uppercase;
+
+  &--blick {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+
+    &::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      width: 3rem;
+      height: 30rem;
+      left: -4rem;
+      top: -15rem;
+      animation: animateBlick 4s infinite;
+      animation-delay: 0.05s;
+      background: #fff;
+      background-color: rgba(255, 255, 255, 0.5);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    }
+  }
 
   &:focus {
     outline: none;
@@ -15,7 +43,6 @@
     padding: 1.3rem 1rem;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
   }
-
 
   &-large {
     padding: 1.3rem 3.9rem;

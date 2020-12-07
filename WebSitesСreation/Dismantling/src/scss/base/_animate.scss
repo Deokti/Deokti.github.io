@@ -1,0 +1,9 @@
+@keyframes animateBlick {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+
+  100% {
+    transform: translateX(100rem) rotate(45deg);
+  }
+}

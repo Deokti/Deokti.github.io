@@ -1,9 +1,0 @@
-@media screen and (max-width: 400px) {
-  .company__video {
-    height: 14.6rem;
-  }
-
-  .company__buttons button {
-    width: 26rem;
-  }
-}
