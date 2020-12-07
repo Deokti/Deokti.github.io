@@ -73,4 +73,19 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .map {
+    .container {
+      padding-right: 0;
+    }
+  }
+
+  .map__wrapper {
+    background-size: cover;
+  }
+
+  .map__list {
+    left: 0;
+    top: 10rem;
+  }
 }

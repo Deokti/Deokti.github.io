@@ -1,0 +1,55 @@
+.map {
+  padding-top: 10rem;
+
+  &__wrapper {
+    position: relative;
+    background-image: url('../img/map/bg-map.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 60.6rem;
+
+  }
+
+  &__title {
+    margin-top: -4rem;
+  }
+
+  &__list {
+    position: absolute;
+    left: 5rem;
+    top: 6rem;
+    max-width: 18.3rem;
+    width: 100%;
+    padding: 1.8rem 0 1.8rem 3rem;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 0 6.3rem rgba(255, 104, 29, 0.16);
+    backdrop-filter: blur(10px);
+
+    border-radius: 1rem;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: #222222;
+
+    &::before {
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      width: 0.6rem;
+      height: 0.6rem;
+      background-color: #FF681D;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -1.3rem;
+    }
+
+    &--active {
+      font-weight: 700;
+    }
+  }
+}

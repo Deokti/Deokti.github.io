@@ -105,4 +105,26 @@
       }
     }
   }
+
+  .map {
+    padding-top: 4rem;
+  }
+
+  .map__list {
+    left: 0;
+    top: 3rem;
+  }
+
+  .map__wrapper {
+    min-height: 40rem;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+  }
+
+  .footer__privacy-policy {
+    margin: 3rem 0;
+    border-bottom: 1px solid #fff;
+  }
 }

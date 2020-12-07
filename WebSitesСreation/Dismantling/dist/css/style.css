@@ -2408,6 +2408,101 @@ body {
   border-radius: .5rem;
 }
 
+.map {
+  padding-top: 10rem;
+}
+
+.map__wrapper {
+  position: relative;
+  background-image: url("../img/map/bg-map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 60.6rem;
+}
+
+.map__title {
+  margin-top: -4rem;
+}
+
+.map__list {
+  position: absolute;
+  left: 5rem;
+  top: 6rem;
+  max-width: 18.3rem;
+  width: 100%;
+  padding: 1.8rem 0 1.8rem 3rem;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 0 6.3rem rgba(255, 104, 29, 0.16);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+.map__item {
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: #222222;
+}
+
+.map__item::before {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #FF681D;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1.3rem;
+}
+
+.map__item--active {
+  font-weight: 700;
+}
+
+.footer {
+  min-height: 15.3rem;
+  background-color: #222222;
+  padding: 3rem 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__privacy-policy {
+  display: block;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.footer__privacy-policy:hover {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dashed #fff;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+}
+
+.footer__item:last-child {
+  margin-left: 2rem;
+}
+
+.footer__name {
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1780px) {
   .service::after, .service::before {
     display: none;
@@ -2610,6 +2705,16 @@ body {
   .costing__title span::before {
     left: 50%;
     transform: translateX(-50%);
+  }
+  .map .container {
+    padding-right: 0;
+  }
+  .map__wrapper {
+    background-size: cover;
+  }
+  .map__list {
+    left: 0;
+    top: 10rem;
   }
 }
 
@@ -2823,6 +2928,23 @@ body {
   .information-bottom .slick-dots button {
     width: 13px;
     height: 12px;
+  }
+  .map {
+    padding-top: 4rem;
+  }
+  .map__list {
+    left: 0;
+    top: 3rem;
+  }
+  .map__wrapper {
+    min-height: 40rem;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .footer__privacy-policy {
+    margin: 3rem 0;
+    border-bottom: 1px solid #fff;
   }
 }
 
