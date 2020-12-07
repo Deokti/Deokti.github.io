@@ -1968,12 +1968,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #fff;
   transform: translateY(100%);
   padding-bottom: 1rem;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .service__item-info--1, .service__item-info--2 {
@@ -2031,7 +2031,6 @@ body {
 }
 
 .service__button {
-  padding-top: 2rem;
   max-width: 26rem;
   margin: 0 auto;
   text-align: center;
@@ -2043,7 +2042,7 @@ body {
 }
 
 .service__item-detailed {
-  padding-top: .5rem;
+  padding-top: .1rem;
   font-size: 1.6rem;
   line-height: 1.9rem;
   color: #fff;
@@ -2446,6 +2445,9 @@ body {
   .service__item-list,
   .service__item-detailed {
     padding: 0 1.7rem 0 1.2rem;
+  }
+  .service__item-info {
+    transition: padding .2s ease;
   }
 }
 
