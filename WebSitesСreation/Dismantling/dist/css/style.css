@@ -1144,7 +1144,8 @@ body {
 .header__city-list,
 .button,
 .service__item,
-.service__item-info {
+.service__item-info,
+.slider-arrow svg path {
   transition: all .2s ease;
 }
 
@@ -1360,6 +1361,62 @@ body {
   left: -1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.slider-arrow {
+  position: absolute;
+  bottom: -1.2rem;
+  border: none;
+  background-color: transparent;
+  width: auto;
+  left: 50%;
+}
+
+.slider-arrow:focus {
+  outline: none;
+}
+
+.slider-arrow:hover svg path:first-child {
+  fill: #d85818;
+}
+
+.slider-arrow-left {
+  transform: rotateY(180deg) translateX(17rem);
+}
+
+.slider-arrow-right {
+  transform: translateX(12rem);
+}
+
+.information-bottom .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.information-bottom .slick-dots li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.information-bottom .slick-dots li.slick-active button {
+  background-color: #FF681D;
+  border: none;
+}
+
+.information-bottom .slick-dots button {
+  font-size: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  background-color: transparent;
+}
+
+.information-bottom .slick-dots button:focus {
+  outline: none;
 }
 
 .header {
@@ -2322,6 +2379,28 @@ body {
   line-height: 2.1rem;
   color: rgba(34, 34, 34, 0.7);
   margin-bottom: 0;
+}
+
+.information-bottom {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.information-bottom__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.information-bottom__item {
+  max-width: 59rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.information-bottom__item img {
+  width: 100%;
+  border-radius: .5rem;
 }
 
 @media screen and (max-width: 1780px) {
