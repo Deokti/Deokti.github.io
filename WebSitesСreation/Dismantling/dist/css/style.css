@@ -2194,13 +2194,13 @@ body {
 }
 
 .costing-bottom {
-  margin-top: 2rem;
+  margin-top: -8.6rem;
   display: flex;
   justify-content: space-between;
   position: relative;
   max-width: 140rem;
   background-color: #fff;
-  padding: 1rem 3.7rem;
+  padding: 2rem 5.7rem;
   box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   overflow: hidden;
@@ -2211,13 +2211,13 @@ body {
   content: '';
   position: absolute;
   width: 121.8rem;
-  height: 302px;
+  height: 40rem;
   background-image: url("../img/costing/bg-mask.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  right: -5rem;
-  top: -2.7rem;
+  right: -3rem;
+  top: -5.1rem;
   z-index: -1;
 }
 
@@ -2311,6 +2311,71 @@ body {
   width: 26rem;
 }
 
+.technic {
+  padding: 9rem 0;
+}
+
+.technic__wrapper {
+  padding-top: 7rem;
+}
+
+.technic__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.technic__item {
+  max-width: 27rem;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.technic__image {
+  max-width: 26.7rem;
+}
+
+.technic__image img {
+  width: 100%;
+}
+
+.technic__name, .technic__description {
+  padding-left: 2rem;
+}
+
+.technic__name {
+  margin-top: 2rem;
+  position: relative;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #000000;
+}
+
+.technic__name::before {
+  content: '';
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background: #FF681D;
+  border-radius: 1rem;
+  top: -1.5rem;
+  transform: rotate(-45deg);
+  left: -4.4rem;
+}
+
+.technic__description {
+  display: block;
+  padding-top: 0.5rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: rgba(34, 34, 34, 0.7);
+}
+
 .information {
   padding: 7rem 0;
 }
@@ -2388,7 +2453,7 @@ body {
 
 .information-bottom {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 9rem;
 }
 
 .information-bottom__list {
@@ -2409,7 +2474,7 @@ body {
 }
 
 .map {
-  padding-top: 10rem;
+  padding-top: 13rem;
 }
 
 .map__wrapper {
@@ -2523,6 +2588,9 @@ body {
   .information-bottom__item {
     margin-bottom: 1rem;
   }
+  .technic__item {
+    max-width: 25rem;
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -2566,6 +2634,9 @@ body {
   }
   .header__city {
     display: none;
+  }
+  .technic__list {
+    justify-content: center;
   }
 }
 
@@ -2846,6 +2917,9 @@ body {
     max-width: 17rem;
     margin: 0 auto;
   }
+  .technic__item {
+    max-width: 19rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -3064,6 +3138,9 @@ body {
   .company__video-image {
     width: 9rem;
     height: 9rem;
+  }
+  .technic__item {
+    max-width: 27rem;
   }
 }
 

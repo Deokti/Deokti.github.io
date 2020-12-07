@@ -1,0 +1,65 @@
+.technic {
+  padding: 9rem 0;
+
+  &__wrapper {
+    padding-top: 7rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 27rem;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  &__image {
+    max-width: 26.7rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__name,
+  &__description {
+    padding-left: 2rem;
+  }
+
+  &__name {
+    margin-top: 2rem;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #000000;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      background: #FF681D;
+      border-radius: 1rem;
+      top: -1.5rem;
+      transform: rotate(-45deg);
+      left: -4.4rem;
+    }
+  }
+
+  &__description {
+    display: block;
+    padding-top: 0.5rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: rgba(34, 34, 34, 0.7);
+  }
+}
