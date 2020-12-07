@@ -61,4 +61,27 @@
   .costing__list {
     padding-top: 1rem;
   }
+
+  .information-top__list {
+    justify-content: initial;
+  }
+
+  .information-top__item {
+    max-width: 100%;
+    margin: 0 0 2rem 1rem;
+  }
+
+  .information-top__description {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  .information-top {
+    padding-top: 3rem;
+  }
+
+  .information__title {
+    max-width: 17rem;
+    margin: 0 auto;
+  }
 }

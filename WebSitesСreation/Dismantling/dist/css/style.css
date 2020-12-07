@@ -2249,6 +2249,81 @@ body {
   width: 26rem;
 }
 
+.information {
+  padding: 7rem 0;
+}
+
+.information-top {
+  padding-top: 7rem;
+}
+
+.information-top__list {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 4rem;
+}
+
+.information-top__item {
+  max-width: 33rem;
+  background-color: #fff;
+  margin: 0 1rem 5rem 1rem;
+}
+
+.information-top__title {
+  position: relative;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.3rem;
+  color: #000000;
+}
+
+.information-top__title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5rem;
+  width: 4rem;
+  height: 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information-top__title--1::before {
+  background-image: url("../img/information/information-icon/1.svg");
+}
+
+.information-top__title--2::before {
+  background-image: url("../img/information/information-icon/2.svg");
+}
+
+.information-top__title--3::before {
+  background-image: url("../img/information/information-icon/3.svg");
+}
+
+.information-top__title--4::before {
+  background-image: url("../img/information/information-icon/4.svg");
+}
+
+.information-top__title--5::before {
+  background-image: url("../img/information/information-icon/5.svg");
+}
+
+.information-top__title--6::before {
+  background-image: url("../img/information/information-icon/6.svg");
+}
+
+.information-top__description {
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: rgba(34, 34, 34, 0.7);
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1780px) {
   .service::after, .service::before {
     display: none;
@@ -2291,6 +2366,9 @@ body {
   }
   .service__list {
     justify-content: center;
+  }
+  .information-top__item {
+    max-width: 25rem;
   }
 }
 
@@ -2381,6 +2459,10 @@ body {
   .costing__item {
     font-size: 1.9rem;
     line-height: 2.2rem;
+  }
+  .information-top__item {
+    max-width: 40%;
+    margin: 0 3rem 5rem 1rem;
   }
 }
 
@@ -2546,6 +2628,24 @@ body {
   }
   .costing__list {
     padding-top: 1rem;
+  }
+  .information-top__list {
+    justify-content: initial;
+  }
+  .information-top__item {
+    max-width: 100%;
+    margin: 0 0 2rem 1rem;
+  }
+  .information-top__description {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+  .information-top {
+    padding-top: 3rem;
+  }
+  .information__title {
+    max-width: 17rem;
+    margin: 0 auto;
   }
 }
 
