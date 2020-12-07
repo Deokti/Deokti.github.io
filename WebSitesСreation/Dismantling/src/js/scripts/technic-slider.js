@@ -1,7 +1,7 @@
 const addTechnicLiser = () => {
   $('.technic-slider').slick({
     centerMode: true,
-    centerPadding: '100px 0 0',
+    centerPadding: '40px 0 0',
     arrows: false
   });
 }

@@ -2,6 +2,7 @@
 .button,
 .service__item,
 .service__item-info,
-.slider-arrow svg path {
+.slider-arrow svg path,
+.forms__label-checkbox::before {
   transition: all .2s ease;
 }

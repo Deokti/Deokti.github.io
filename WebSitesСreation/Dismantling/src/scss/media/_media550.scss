@@ -127,4 +127,36 @@
     margin: 3rem 0;
     border-bottom: 1px solid #fff;
   }
+
+  .popup__input-text,
+  .popup__input-file {
+    height: 6.7rem;
+  }
+
+  .popup__body {
+    max-width: 36rem;
+    padding: 2rem 2rem;
+  }
+
+  .popup__title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .popup__close {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .popup__input-text:not(:last-child) {
+    margin-bottom: 1.4rem;
+  }
+
+  .popup .button {
+    margin-top: 1.5rem;
+  }
+
+  .popup__input-file {
+    margin-bottom: 1.4rem;
+  }
 }

@@ -27,8 +27,8 @@
           </div>
           <div class="header__city">
             <span class="header__city-title">Выберите свой город:</span>
-            <span class="header__city-your">Челябинск</span>
-            <ul class="header__city-list ul-style-none">
+            <span class="header__city-your" data-list="city">Челябинск</span>
+            <ul class="header__city-list ul-style-none" data-list="сities">
               <li class="header__city-item header__city-item--active">Челябинск</li>
               <li class="header__city-item header__city-item--active">Екатеринбург</li>
               <li class="header__city-item header__city-item--active">Тюмень</li>
@@ -55,7 +55,7 @@
             <span class="header__phone-title">Быстро перезвоним</span>
             <a href="tel:+79999999999" class="header__phone-tel">+7 (999) 999-99-99</a>
           </div>
-          <button class="button button--green">
+          <button class="button button--green" data-event="request-call">
             <span class="button--blick"></span>
             Заказать звонок
           </button>
@@ -162,16 +162,16 @@
 
             </div>
 
-            <div class="header-form__send">
+            <form class="header-form__send">
               <label class="phone-input header-form__input ">
-                <input type="text" class="phone-input__input header-form__input-write">
+                <input type="text" class="phone-input__input header-form__input-write" required>
                 <span class="phone-input__placeholder header-form__input-placeholder">Ваш телефон</span>
               </label>
               <button class="button button-form button--orange button--weight-600">
                 <span class="button--blick"></span>
                 УЗНАТЬ СТОИМОСТЬ СЕЙЧАС
               </button>
-            </div>
+            </form>
 
             <p class="header-form__detailed">
               или позвоните нам сами: <a href="tel:+79999999999">+7 (999) 999-99-99</a>
@@ -214,11 +214,11 @@
           </ul>
 
           <div class="company__buttons">
-            <button class="button button--orange button-form button-large company__button">
+            <button class="button button--orange button-form button-large company__button" data-event="attach-file">
               <span class="button--blick"></span>
               <span class="button-icon button--paperclip">Отправить ТЗ на расчет</span>
             </button>
-            <button class="button button--orange button-form button-large">
+            <button class="button button--orange button-form button-large" data-event="consultate">
               <span class="button--blick"></span>
               <span class="button-icon button--online">Консультация онлайн</span>
             </button>
@@ -268,7 +268,7 @@
                 С расположением внутри города или в пром. зонах.
               </p>
               <div class="service__button">
-                <button class="button button--orange button--weight-600">
+                <button class="button button--orange button--weight-600" data-event="get-calculation">
                   <span class="button--blick"></span>
                   Получить расчет под ключ
                 </button>
@@ -304,7 +304,7 @@
                 Подготовка ППР и ПОР для выполнения работ
               </p>
               <div class="service__button">
-                <button class="button button--orange button--weight-600">
+                <button class="button button--orange button--weight-600" data-event="get-calculation">
                   <span class="button--blick"></span>
                   Получить расчет под ключ
                 </button>
@@ -342,7 +342,7 @@
                 Сохранение материалов, резка металла, складирование.
               </p>
               <div class="service__button">
-                <button class="button button--orange button--weight-600">
+                <button class="button button--orange button--weight-600" data-event="get-calculation">
                   <span class="button--blick"></span>
                   Получить расчет под ключ
                 </button>
@@ -379,7 +379,7 @@
                 Демонтаж железобетонные конструкции с рециклингом.
               </p>
               <div class="service__button">
-                <button class="button button--orange button--weight-600">
+                <button class="button button--orange button--weight-600" data-event="get-calculation">
                   <span class="button--blick"></span>
                   Получить расчет под ключ
                 </button>
@@ -416,7 +416,7 @@
                 Полна уборка и вывоз с утилизацией
               </p>
               <div class="service__button">
-                <button class="button button--orange button--weight-600">
+                <button class="button button--orange button--weight-600" data-event="get-calculation">
                   <span class="button--blick"></span>
                   Получить расчет под ключ
                 </button>
@@ -453,7 +453,7 @@
                 Снесем любые строения из кирпича с последующей утилизацией
               </p>
               <div class="service__button">
-                <button class="button button--orange button--weight-600">
+                <button class="button button--orange button--weight-600" data-event="get-calculation">
                   <span class="button--blick"></span>
                   Получить расчет под ключ
                 </button>
@@ -490,7 +490,7 @@
                 Демонтаж оборудования, стен, перегородок.
               </p>
               <div class="service__button">
-                <button class="button button--orange button--weight-600">
+                <button class="button button--orange button--weight-600" data-event="get-calculation">
                   <span class="button--blick"></span>
                   Получить расчет под ключ
                 </button>
@@ -527,7 +527,7 @@
                 Механический или комбинированные демонтаж
               </p>
               <div class="service__button">
-                <button class="button button--orange button--weight-600">
+                <button class="button button--orange button--weight-600" data-event="get-calculation">
                   <span class="button--blick"></span>
                   Получить расчет под ключ
                 </button>
@@ -553,7 +553,7 @@
               </h4>
             </div>
 
-            <div class="service__item-info service__item-info--9">
+            <div class="service__item-info service__item-info--9" data-event="get-calculation">
               <ul class="service__item-list ul-style-none">
                 <li class="service__item-el">Градирни</li>
                 <li class="service__item-el">Элеваторы</li>
@@ -616,7 +616,7 @@
             и расчет сметы <span class="costing__consultation-important">за 5 минут</span>
           </p>
           <label class="phone-input costing__phone-input">
-            <input type="text" class="phone-input__input">
+            <input type="text" class="phone-input__input" required>
             <span class="phone-input__placeholder">Ваш телефон</span>
           </label>
           <button class="button button--weight-600 button--orange button-form costing__button">
@@ -818,6 +818,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
@@ -842,14 +843,112 @@
     </div>
   </footer>
 
+  <!-- POPUP -->
+
+  <!-- POPUP-CONSULTATE -->
+  <div class="popup popup-consultate">
+    <form class="popup__body">
+      <span class="popup__close"></span>
+      <h4 class="popup__title">
+        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+        ПО ДЕМОНТАЖУ В ОНЛАЙН РЕЖИМЕ
+      </h4>
+      <span class="popup__subtitle">Просто заполните форму ниже</span>
+
+      <div class="popup__content">
+        <input type="text" class="popup__input-text" placeholder="Имя" required>
+        <input type="text" class="popup__input-text" placeholder="Телефон" required>
+        <button class="button button--popup button--orange button--shadow">Консультация</button>
+        <label class="popup__label">
+          <input type="checkbox" class="popup__label-check" checked>
+          <span class="popup__label-checkbox"></span>
+          <span class="popup__label-text">Cогласен на обработку персональных данных</span>
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <!-- POPUP-COSTING -->
+  <div class="popup popup-costing">
+    <form class="popup__body">
+      <span class="popup__close"></span>
+      <h4 class="popup__title">
+        УЗНАТЬ СТОИМОСТЬ ДЕМОНТАЖА ЖИЛЫХ И АДМИНИСТРАТИВНЫХ ЗДАНИЙ
+      </h4>
+      <span class="popup__subtitle">Просто заполните форму ниже</span>
+
+      <div class="popup__content">
+        <input type="text" class="popup__input-text" placeholder="Имя" required>
+        <input type="text" class="popup__input-text" placeholder="Телефон" required>
+        <button class="button button--popup button--orange button--shadow">Получить расчет под ключ</button>
+        <label class="popup__label">
+          <input type="checkbox" class="popup__label-check" checked>
+          <span class="popup__label-checkbox"></span>
+          <span class="popup__label-text">Cогласен на обработку персональных данных</span>
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <!-- POPUP-CALL -->
+  <div class="popup popup-call">
+    <form class="popup__body">
+      <span class="popup__close"></span>
+      <h4 class="popup__title">
+        БЫСТРО ПЕРЕЗВОНИМ
+      </h4>
+      <span class="popup__subtitle">Просто заполните форму ниже</span>
+
+      <div class="popup__content">
+        <input type="text" class="popup__input-text" placeholder="Телефон" required>
+        <button class="button button--popup button--green button--shadow">Заказать звонок</button>
+        <label class="popup__label">
+          <input type="checkbox" class="popup__label-check" checked>
+          <span class="popup__label-checkbox popup__label-checkbox--green"></span>
+          <span class="popup__label-text">Cогласен на обработку персональных данных</span>
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <!-- POPUP-FILE -->
+  <div class="popup popup-file">
+    <form class="popup__body">
+      <span class="popup__close"></span>
+      <h4 class="popup__title">
+        ПРИКРЕПИТЕ ФАЙЛ
+      </h4>
+      <span class="popup__subtitle">Просто заполните форму ниже</span>
+
+      <div class="popup__content">
+        <label class="popup__input-file">
+          <input type="file" placeholder="Телефон" required>
+          <span>Прикрепить</span>
+        </label>
+        <input type="text" class="popup__input-text" placeholder="Телефон" required>
+        <button class="button button--popup button--orange button--shadow">отправить</button>
+        <label class="popup__label">
+          <input type="checkbox" class="popup__label-check" checked>
+          <span class="popup__label-checkbox"></span>
+          <span class="popup__label-text">Cогласен на обработку персональных данных</span>
+        </label>
+      </div>
+    </form>
+  </div>
+
+
+
+
   <script src="./js/libs/jquery-3.5.1.min.js"></script>
   <script src="./js/libs/slick.min.js"></script>
+  <script src="./js/libs/zuck.min.js"></script>
+  <script src="./js/scripts/select-city.js"></script>
   <script src="./js/scripts/information-slider.js"></script>
   <script src="./js/scripts/technic-slider.js"></script>
-  <script src="./js/libs/zuck.min.js"></script>
   <script src="./js/scripts/phone-input.js"></script>
   <script src="./js/scripts/zuck.js"></script>
   <script src="./js/scripts/player.js"></script>
+  <script src="./js/scripts/popup-status-control.js"></script>
 </body>
 
 </html>

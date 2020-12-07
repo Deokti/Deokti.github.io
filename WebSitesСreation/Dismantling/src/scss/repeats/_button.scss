@@ -48,6 +48,12 @@
     padding: 1.3rem 3.9rem;
   }
 
+  &--popup {
+    display: block;
+    width: 100%;
+    font-size: 3rem;
+  }
+
   &--weight-600 {
     font-weight: 600;
   }
@@ -56,6 +62,10 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #F9641B;
     box-shadow: 0px 22px 44px rgba(249, 100, 27, 0.24), inset 0px 0px 5px rgba(255, 255, 255, 0.38);
 
+    &.button--shadow {
+      box-shadow: 0px 22px 44px -12px rgba(255, 104, 29, 0.75);
+    }
+
     &:hover {
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #F9641B;
     }
@@ -63,6 +73,10 @@
 
   &--green {
     background: linear-gradient(95.33deg, rgba(12, 198, 123, 0) 1.59%, #00D881 92.15%), #0CC67B;
+
+    &.button--shadow {
+      box-shadow: 0px 22px 44px -12px rgba(12, 198, 123, 0.75);
+    }
 
     &:hover {
       background: linear-gradient(0deg, rgba(12, 198, 123, 0) 1.59%, #00D881 92.15%), #0CC67B;

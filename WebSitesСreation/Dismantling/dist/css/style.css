@@ -1145,7 +1145,8 @@ body {
 .button,
 .service__item,
 .service__item-info,
-.slider-arrow svg path {
+.slider-arrow svg path,
+.forms__label-checkbox::before {
   transition: all .2s ease;
 }
 
@@ -1218,6 +1219,12 @@ body {
   padding: 1.3rem 3.9rem;
 }
 
+.button--popup {
+  display: block;
+  width: 100%;
+  font-size: 3rem;
+}
+
 .button--weight-600 {
   font-weight: 600;
 }
@@ -1227,12 +1234,20 @@ body {
   box-shadow: 0px 22px 44px rgba(249, 100, 27, 0.24), inset 0px 0px 5px rgba(255, 255, 255, 0.38);
 }
 
+.button--orange.button--shadow {
+  box-shadow: 0px 22px 44px -12px rgba(255, 104, 29, 0.75);
+}
+
 .button--orange:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #F9641B;
 }
 
 .button--green {
   background: linear-gradient(95.33deg, rgba(12, 198, 123, 0) 1.59%, #00D881 92.15%), #0CC67B;
+}
+
+.button--green.button--shadow {
+  box-shadow: 0px 22px 44px -12px rgba(12, 198, 123, 0.75);
 }
 
 .button--green:hover {
@@ -1309,6 +1324,218 @@ body {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.8rem;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.active {
+  display: flex;
+}
+
+.popup__close {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.popup__close::before, .popup__close::after {
+  content: '';
+  position: absolute;
+  width: .2rem;
+  height: 100%;
+  background-color: #000;
+}
+
+.popup__close::before {
+  transform: rotate(45deg);
+}
+
+.popup__close::after {
+  transform: rotate(-45deg);
+}
+
+.popup__body {
+  padding: 6rem 7rem;
+  max-width: 55.1rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5.1rem rgba(255, 104, 29, 0.28);
+  -webkit-backdrop-filter: blur(23px);
+  backdrop-filter: blur(23px);
+  border-radius: .5rem;
+}
+
+.popup__title {
+  font-family: 'Spaceland', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #000;
+}
+
+.popup__subtitle {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: #000000;
+}
+
+.popup__content {
+  padding-top: 2.5rem;
+}
+
+.popup__input-text, .popup__input-file {
+  display: block;
+  width: 100%;
+  height: 8.7rem;
+  border: none;
+  font-size: 1.8rem;
+  padding: 1rem 6rem;
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.popup__input-text {
+  background: #fff;
+  border-radius: .5rem;
+}
+
+.popup__input-text:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.popup__input-text:focus {
+  outline: none;
+  border: 0.1rem solid rgba(34, 34, 34, 0.5);
+}
+
+.popup__input-file {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 0.1rem solid rgba(34, 34, 34, 0.3);
+  border-radius: .5rem;
+}
+
+.popup__input-file input {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  visibility: hidden;
+}
+
+.popup__input-file span {
+  position: relative;
+}
+
+.popup__input-file span::before {
+  content: '';
+  position: absolute;
+  width: 1.9rem;
+  height: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1.9rem;
+  background-image: url("../img/icons/paperclip-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.popup__label {
+  padding-top: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup__label-check {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  visibility: hidden;
+}
+
+.popup__label-check:checked + .popup__label-checkbox::before {
+  opacity: 1;
+}
+
+.popup__label-checkbox {
+  position: relative;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: #ffff;
+  border-radius: .2rem;
+}
+
+.popup__label-checkbox::before {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: .8rem;
+  background-image: url("../img/icons/forms-check-orange-icon.svg");
+  left: .2rem;
+  top: -.1rem;
+  opacity: 0;
+}
+
+.popup__label-checkbox--green::before {
+  background-image: url("../img/icons/forms-check-green-icon.svg");
+}
+
+.popup__label-text {
+  padding-left: .5rem;
+  font-size: 1.2rem;
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.popup-consultate {
+  display: none;
+}
+
+.popup-costing {
+  display: none;
+}
+
+.popup-call {
+  display: none;
+}
+
+.popup-call .popup__input-text {
+  margin-bottom: 0;
+}
+
+.popup-file {
+  display: none;
+}
+
+.popup-file .popup__input-text {
+  margin-bottom: 0;
+}
+
+.popup .button {
+  margin-top: 3rem;
 }
 
 .phone-input {
@@ -2336,7 +2563,7 @@ body {
 }
 
 .technic__image {
-  max-width: 26.7rem;
+  max-width: 100%;
 }
 
 .technic__image img {
@@ -2463,7 +2690,7 @@ body {
 }
 
 .information-bottom__item {
-  max-width: 59rem;
+  max-width: 100%;
   padding-right: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -2847,6 +3074,10 @@ body {
     width: 1.4rem;
     height: 1.4rem;
   }
+  .popup__body {
+    max-width: 45.1rem;
+    padding: 3rem 4rem;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -3020,6 +3251,31 @@ body {
     margin: 3rem 0;
     border-bottom: 1px solid #fff;
   }
+  .popup__input-text,
+  .popup__input-file {
+    height: 6.7rem;
+  }
+  .popup__body {
+    max-width: 36rem;
+    padding: 2rem 2rem;
+  }
+  .popup__title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .popup__close {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  .popup__input-text:not(:last-child) {
+    margin-bottom: 1.4rem;
+  }
+  .popup .button {
+    margin-top: 1.5rem;
+  }
+  .popup__input-file {
+    margin-bottom: 1.4rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -3139,8 +3395,20 @@ body {
     width: 9rem;
     height: 9rem;
   }
+  .technic__wrapper {
+    padding-top: 3rem;
+  }
+  .technic,
+  .information {
+    padding: 4rem 0;
+  }
+  .information-bottom {
+    padding-top: 3rem;
+  }
   .technic__item {
-    max-width: 27rem;
+    max-width: 100%;
+    margin: 0;
+    padding-right: 1rem;
   }
 }
 
@@ -3150,5 +3418,29 @@ body {
   }
   .company__buttons button {
     width: 26rem;
+  }
+  .popup__body {
+    max-width: 26rem;
+    padding: 2rem 2rem;
+  }
+  .popup__title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .popup__subtitle {
+    font-size: 1.2rem;
+  }
+  .popup__input-text,
+  .popup__input-file {
+    height: 5rem;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+  }
+  .popup .button--popup {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+  .popup__label {
+    padding-top: 1rem;
   }
 }

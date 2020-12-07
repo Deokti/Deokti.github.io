@@ -6,4 +6,35 @@
   .company__buttons button {
     width: 26rem;
   }
+
+
+  .popup__body {
+    max-width: 26rem;
+    padding: 2rem 2rem;
+  }
+
+  .popup__title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .popup__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .popup__input-text,
+  .popup__input-file {
+    height: 5rem;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+  }
+
+  .popup .button--popup {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  .popup__label {
+    padding-top: 1rem;
+  }
 }

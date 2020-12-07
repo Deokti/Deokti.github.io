@@ -147,7 +147,22 @@
     height: 9rem;
   }
 
+  .technic__wrapper {
+    padding-top: 3rem;
+  }
+
+  .technic,
+  .information {
+    padding: 4rem 0;
+  }
+
+  .information-bottom {
+    padding-top: 3rem;
+  }
+
   .technic__item {
-    max-width: 27rem;
+    max-width: 100%;
+    margin: 0;
+    padding-right: 1rem;
   }
 }
