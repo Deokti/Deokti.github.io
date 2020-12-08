@@ -171,4 +171,14 @@
   .popup__input-file {
     margin-bottom: 1.4rem;
   }
+
+  .costing__info {
+    padding: 0 3rem;
+  }
+
+  .costing-bottom::after {
+    right: -4rem;
+    top: auto;
+    bottom: -5rem;
+  }
 }

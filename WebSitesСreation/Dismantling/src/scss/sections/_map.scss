@@ -2,14 +2,23 @@
   padding-top: 8rem;
 
   &__wrapper {
+    margin-top: 5rem;
     position: relative;
-    background-image: url('../img/map/bg-map.jpg');
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 60.6rem;
 
+    iframe {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__title {

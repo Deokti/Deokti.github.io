@@ -72,11 +72,6 @@
     transform: translate(-50%, -50%);
   }
 
-  .header__insta-photo-item img {
-    max-width: 8rem;
-    padding-top: 0;
-  }
-
   .header__call {
     flex-direction: column;
 
@@ -178,5 +173,4 @@
   .company {
     padding-top: 6rem;
   }
-
 }
