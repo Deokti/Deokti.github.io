@@ -48,9 +48,22 @@
     line-height: 3rem;
   }
 
+  .company {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .container {
+      padding: 0;
+    }
+  }
+
   .company__wrapper {
     flex-direction: column;
     align-items: center;
+  }
+
+  .company__video {
+    // margin-left: 1.3rem;
   }
 
   .company__video {
@@ -60,7 +73,7 @@
 
   .company__description {
     max-width: 100%;
-    padding-left: 0;
+    padding-right: 0;
   }
 
   .company__list {

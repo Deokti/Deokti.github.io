@@ -1651,6 +1651,92 @@ body {
   outline: none;
 }
 
+.privacy-policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.privacy-policy.active {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.privacy-policy__wrapper {
+  overflow-y: auto;
+  border-radius: 4px;
+  max-width: 800px;
+  max-height: 90%;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.privacy-policy__title {
+  font-size: 25px;
+}
+
+.privacy-policy__body-title {
+  font-size: 20px;
+}
+
+.privacy-policy__body-description {
+  font-size: 18px;
+}
+
+.privacy-policy__list {
+  padding-top: 10px;
+  padding-left: 15px;
+  list-style: upper-roman;
+}
+
+.privacy-policy__item {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.privacy-policy__close {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+.privacy-policy__close::before, .privacy-policy__close::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #b3b3b3;
+}
+
+.privacy-policy__close::before {
+  transform: rotate(45deg);
+}
+
+.privacy-policy__close::after {
+  transform: rotate(-45deg);
+}
+
+.privacy-policy__close:hover::before, .privacy-policy__close:hover::after {
+  background-color: #fff;
+}
+
 .header {
   min-height: 91rem;
   background-image: url("../img/header/header-background.jpg");
@@ -1833,7 +1919,7 @@ body {
   background: linear-gradient(90deg, rgba(255, 96, 17, 0.65) 0%, rgba(255, 104, 29, 0) 97.22%);
   border-radius: .5rem;
   padding: .5rem 1.4rem;
-  max-width: 59.3rem;
+  max-width: 55rem;
   font-family: 'Spaceland', sans-serif;
   font-weight: 600;
   font-size: 3.2rem;
@@ -2002,6 +2088,7 @@ body {
 }
 
 .header__insta {
+  margin-top: 2rem;
   display: flex;
   align-items: center;
 }
@@ -2009,9 +2096,27 @@ body {
 .header__insta-photo-item {
   position: relative;
   z-index: 1;
+  margin-top: -4rem;
+  margin-left: 1rem;
 }
 
-.header__insta-photo-item::before, .header__insta-photo-item::after {
+.header__insta-photo-item span {
+  display: block;
+  font-size: 1.6rem;
+  color: #000000;
+  text-align: center;
+}
+
+.header__insta-photo-img {
+  max-width: 9rem;
+}
+
+.header__insta-photo-img img {
+  max-width: 100%;
+  transform: translateX(0.2rem);
+}
+
+.header__insta-photo-img::before, .header__insta-photo-img::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -2021,21 +2126,22 @@ body {
   z-index: -1;
 }
 
-.header__insta-photo-item::after {
-  width: 10.5rem;
-  height: 10.5rem;
+.header__insta-photo-img::after {
+  width: 7.5rem;
+  height: 7.5rem;
   background-color: #FF681D;
 }
 
-.header__insta-photo-item::before {
-  width: 12.1rem;
-  height: 12.1rem;
+.header__insta-photo-img::before {
+  width: 9rem;
+  height: 9rem;
   border: .4rem solid #FF681D;
 }
 
 .header .stories.carousel .story {
   width: 10rem;
-  height: 12rem;
+  height: 14rem;
+  white-space: initial;
 }
 
 .header .stories.carousel .story > .item-link > .item-preview {
@@ -2079,6 +2185,7 @@ body {
 .header .stories.carousel .story > .item-link > .info {
   font-size: 1.6rem;
   color: #000000;
+  max-width: 6rem;
 }
 
 .company {
@@ -2088,14 +2195,13 @@ body {
 .company__wrapper {
   padding-top: 4rem;
   display: flex;
-  justify-content: space-between;
 }
 
 .company__video {
   position: relative;
   max-width: 69.8rem;
   width: 100%;
-  height: 52.8rem;
+  height: 46rem;
   border-radius: .5rem;
 }
 
@@ -2142,8 +2248,9 @@ body {
 }
 
 .company__description {
-  padding-top: 5rem;
-  padding-left: 2rem;
+  background: rgba(34, 34, 34, 0.03);
+  border-radius: 5px;
+  padding: 5rem 2rem;
 }
 
 .company__list {
@@ -2206,6 +2313,7 @@ body {
   position: relative;
   padding: 7rem 0;
   z-index: 1;
+  background: rgba(34, 34, 34, 0.03);
 }
 
 .service::before, .service::after {
@@ -2273,6 +2381,10 @@ body {
 
 .service__item-top {
   position: relative;
+}
+
+.service__item-top, .service__item-bottom {
+  pointer-events: none;
 }
 
 .service__item-image {
@@ -2421,7 +2533,7 @@ body {
 }
 
 .costing-bottom {
-  margin-top: -8.6rem;
+  margin-top: -4rem;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -2464,6 +2576,7 @@ body {
   min-width: 44rem;
   margin-top: -15rem;
   margin-right: 3rem;
+  max-width: 44rem;
 }
 
 .costing__image img {
@@ -2540,6 +2653,7 @@ body {
 
 .technic {
   padding: 9rem 0;
+  background: rgba(34, 34, 34, 0.03);
 }
 
 .technic__wrapper {
@@ -2680,7 +2794,9 @@ body {
 
 .information-bottom {
   position: relative;
+  background: rgba(34, 34, 34, 0.03);
   padding-top: 9rem;
+  padding-bottom: 6rem;
 }
 
 .information-bottom__list {
@@ -2701,7 +2817,7 @@ body {
 }
 
 .map {
-  padding-top: 13rem;
+  padding-top: 8rem;
 }
 
 .map__wrapper {
@@ -2755,7 +2871,6 @@ body {
 }
 
 .footer {
-  min-height: 15.3rem;
   background-color: #222222;
   padding: 3rem 0;
 }
@@ -2793,6 +2908,10 @@ body {
   font-weight: 400;
   color: #fff;
   font-size: 1.2rem;
+}
+
+.footer__link:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1780px) {
@@ -2906,6 +3025,13 @@ body {
     font-size: 3rem;
     line-height: 3rem;
   }
+  .company {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .company .container {
+    padding: 0;
+  }
   .company__wrapper {
     flex-direction: column;
     align-items: center;
@@ -2916,7 +3042,7 @@ body {
   }
   .company__description {
     max-width: 100%;
-    padding-left: 0;
+    padding-right: 0;
   }
   .company__list {
     display: flex;
@@ -2951,6 +3077,15 @@ body {
   .header-top {
     flex-wrap: wrap;
   }
+  .header {
+    background-position: -50rem 0rem;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .header__title span {
+    margin: 0 auto;
+  }
   .header-content,
   .header__insta,
   .header-top {
@@ -2967,9 +3102,6 @@ body {
   }
   .header-form {
     margin-top: 3rem;
-  }
-  .header__insta {
-    margin: 0 auto;
   }
   .company__item {
     max-width: 10rem;
@@ -3032,7 +3164,7 @@ body {
     box-shadow: none;
     transform: translateY(0);
   }
-  .service__item:hover .service__item-info {
+  .service__item.service__item--active .service__item-info {
     width: 100%;
     height: auto;
     padding: 1.7rem 0;
@@ -3086,6 +3218,8 @@ body {
   }
   .company__description {
     padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 3rem;
   }
   .company__buttons {
     padding-top: 2rem;
@@ -3162,6 +3296,10 @@ body {
     font-size: 1.4rem;
     line-height: 1.4rem;
   }
+  .header {
+    background-position: -78rem 0rem;
+    padding-bottom: 0;
+  }
   .header .container {
     padding: 0;
   }
@@ -3179,12 +3317,18 @@ body {
     width: 10.1rem;
     height: 10.1rem;
   }
+  .header__title {
+    text-align: left;
+  }
+  .header__title span {
+    margin-left: 0;
+  }
+  .header-form__label span {
+    padding: .6rem 1rem;
+  }
   .header__insta-photo-item::after {
     width: 8.5rem;
     height: 8.5rem;
-  }
-  .header__insta-photo-item img {
-    max-width: 10rem;
   }
   .service__item-bottom {
     padding: 1.2rem 0.5rem;
@@ -3279,6 +3423,9 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .header {
+    background-position: -71rem -18rem;
+  }
   .header-content__info {
     font-size: 1.6rem;
     line-height: 1.6rem;
@@ -3303,18 +3450,20 @@ body {
   .header-content {
     padding-top: 2rem;
   }
-  .header__insta-photo-item {
-    overflow: hidden;
+  .header__insta-photo-img {
     max-width: 8rem;
-    max-height: 8rem;
-    height: 100%;
-    width: 100%;
-    margin-top: -4.4rem;
-    margin-left: 1rem;
+  }
+  .header__insta-photo-img::before {
+    width: 8rem;
+    height: 8rem;
+  }
+  .header__insta-photo-img::after {
+    width: 6.7rem;
+    height: 6.7rem;
   }
   .header .stories.carousel .story > .item-link > .item-preview {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
     margin: 0 auto;
   }
   .header .stories.carousel .story > .item-link > .item-preview::before {
@@ -3375,8 +3524,8 @@ body {
     font-size: 1.4rem;
   }
   .header-form__label span {
-    font-size: 1rem;
-    padding: .4rem .7rem;
+    font-size: 1.4rem;
+    padding: .6rem .9rem;
   }
   .header-form__label:not(:last-child) {
     margin-right: .1rem;
@@ -3389,7 +3538,8 @@ body {
     padding: 5% 1%;
   }
   .company {
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .company__video-image {
     width: 9rem;
@@ -3409,6 +3559,9 @@ body {
     max-width: 100%;
     margin: 0;
     padding-right: 1rem;
+  }
+  .company {
+    padding-top: 6rem;
   }
 }
 
@@ -3442,5 +3595,9 @@ body {
   }
   .popup__label {
     padding-top: 1rem;
+  }
+  .header-form__label span {
+    font-size: 1.2rem;
+    padding: .6rem .37rem;
   }
 }

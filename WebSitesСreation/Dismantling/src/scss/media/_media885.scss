@@ -5,6 +5,18 @@
     flex-wrap: wrap;
   }
 
+  .header {
+    background-position: -50rem 0rem;
+  }
+
+  .header__title {
+    text-align: center;
+
+    span {
+      margin: 0 auto;
+    }
+  }
+
   .header-content,
   .header__insta,
   .header-top {
@@ -25,10 +37,6 @@
 
   .header-form {
     margin-top: 3rem;
-  }
-
-  .header__insta {
-    margin: 0 auto;
   }
 
   .company__item {

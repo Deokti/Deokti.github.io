@@ -11,16 +11,18 @@
     overflow: visible;
     border-radius: .5rem;
 
-
     &:hover {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+
+
+    &.service__item--active {
       .service__item-info {
         width: 100%;
         height: auto;
         padding: 1.7rem 0;
       }
-
-      box-shadow: none;
-      transform: translateY(0);
     }
   }
 

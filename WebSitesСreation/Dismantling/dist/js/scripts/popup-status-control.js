@@ -33,7 +33,8 @@ function popupStatusControl(selector, closeSelector, triggerSelector) {
   trigger.forEach((item) => item.addEventListener('click', open));
   closePopup.addEventListener('click', close);
 }
-popupStatusControl('.popup-call', '.popup__close', 'button[data-event=request-call]');
-popupStatusControl('.popup-file', '.popup__close', 'button[data-event=attach-file]');
-popupStatusControl('.popup-consultate', '.popup__close', 'button[data-event=consultate]');
-popupStatusControl('.popup-costing', '.popup__close', 'button[data-event=get-calculation');
+popupStatusControl('.popup-call', '.popup-call .popup__close', 'button[data-event=request-call]');
+popupStatusControl('.popup-file', '.popup-file .popup__close', 'button[data-event=attach-file]');
+popupStatusControl('.popup-consultate', '.popup-consultate .popup__close', 'button[data-event=consultate]');
+popupStatusControl('.popup-costing', '.popup-costing .popup__close', 'button[data-event=get-calculation');
+popupStatusControl('.privacy-policy', '.privacy-policy__close', '.footer__privacy-policy');

@@ -1,4 +1,8 @@
 @media screen and (max-width: 450px) {
+  .header {
+    background-position: -71rem -18rem;
+  }
+
   .header-content__info {
     font-size: 1.6rem;
     line-height: 1.6rem;
@@ -29,19 +33,23 @@
     padding-top: 2rem;
   }
 
-  .header__insta-photo-item {
-    overflow: hidden;
+  .header__insta-photo-img {
     max-width: 8rem;
-    max-height: 8rem;
-    height: 100%;
-    width: 100%;
-    margin-top: -4.4rem;
-    margin-left: 1rem
+  }
+
+  .header__insta-photo-img::before {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .header__insta-photo-img::after {
+    width: 6.7rem;
+    height: 6.7rem;
   }
 
   .header .stories.carousel .story>.item-link>.item-preview {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
     margin: 0 auto;
   }
 
@@ -119,8 +127,8 @@
   }
 
   .header-form__label span {
-    font-size: 1rem;
-    padding: .4rem .7rem;
+    font-size: 1.4rem;
+    padding: .6rem .9rem;
   }
 
   .header-form__label:not(:last-child) {
@@ -139,7 +147,8 @@
   }
 
   .company {
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .company__video-image {
@@ -165,4 +174,9 @@
     margin: 0;
     padding-right: 1rem;
   }
+
+  .company {
+    padding-top: 6rem;
+  }
+
 }

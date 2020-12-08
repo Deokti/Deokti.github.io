@@ -10,6 +10,9 @@
   }
 
   .header {
+    background-position: -78rem 0rem;
+    padding-bottom: 0;
+
     .container {
       padding: 0;
     }
@@ -33,14 +36,23 @@
     height: 10.1rem;
   }
 
+  .header__title {
+    text-align: left;
+
+    span {
+      margin-left: 0;
+    }
+  }
+
+  .header-form__label span {
+    padding: .6rem 1rem;
+  }
+
   .header__insta-photo-item::after {
     width: 8.5rem;
     height: 8.5rem;
   }
 
-  .header__insta-photo-item img {
-    max-width: 10rem;
-  }
 
   .service__item-bottom {
     padding: 1.2rem 0.5rem;

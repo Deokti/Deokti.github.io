@@ -2,6 +2,7 @@
   position: relative;
   padding: 7rem 0;
   z-index: 1;
+  background: rgba(34, 34, 34, 0.03);
 
   &::before,
   &::after {
@@ -71,6 +72,11 @@
 
   &__item-top {
     position: relative;
+  }
+
+  &__item-top,
+  &__item-bottom {
+    pointer-events: none;
   }
 
   &__item-image {
