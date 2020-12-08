@@ -2823,10 +2823,7 @@ body {
 .map__wrapper {
   margin-top: 5rem;
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 60.6rem;
+  min-height: 63rem;
 }
 
 .map__wrapper iframe {
