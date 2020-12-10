@@ -56,7 +56,7 @@
     box-shadow: 0 0 4.5rem rgba(0, 0, 0, 0.09);
     border-radius: .5rem;
 
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     margin-left: .5rem;
     margin-right: .5rem;
 
@@ -103,7 +103,7 @@
   }
 
   &__item-info {
-    padding: 1.7rem 0;
+    padding: 1rem 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -111,11 +111,17 @@
     height: 100%;
     color: #fff;
     transform: translateY(100%);
-    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8.5rem;
 
-    &--1,
+    &--1 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/secvice/1.jpg');
+    }
+
     &--2 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/secvice/1-2.jpg');
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/secvice/2.jpg');
     }
 
     &--3 {
@@ -175,7 +181,7 @@
   }
 
   &__button {
-    max-width: 26rem;
+    width: 26rem;
     margin: 0 auto;
     text-align: center;
     margin-top: 1rem;
