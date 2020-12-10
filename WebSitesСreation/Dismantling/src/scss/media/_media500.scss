@@ -1,0 +1,126 @@
+@media screen and (max-width: 500px) {
+  .header {
+    background-image: url('../img/header/header-mobile-background.jpg');
+    background-position: top center;
+    padding-top: 2rem;
+  }
+
+  .header__logo {
+    max-width: 15rem;
+  }
+
+  .header__call {
+    flex-direction: column;
+
+    .button {
+      padding: .8rem .6rem;
+    }
+  }
+
+  .header__dismantling {
+    max-width: 12rem;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+  }
+
+  .header-content__info {
+    max-width: 35rem;
+  }
+
+  .header-content {
+    padding-top: 2rem;
+  }
+
+
+  .header-content {
+    justify-content: left;
+  }
+
+  .header-form {
+    margin-top: 1rem;
+  }
+
+  .header-form__send {
+    flex-direction: column;
+  }
+
+  #zuck-modal-content .story-viewer .head {
+    top: 1rem;
+    left: 2.5rem;
+    transform: translateX(0);
+  }
+
+  #zuck-modal-content .story-viewer .head .left {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 15px;
+    margin: 15px 0;
+  }
+
+  #zuck-modal-content .story-viewer.with-back-button .head .left .item-preview {
+    display: none;
+  }
+
+  #zuck-modal-content .story-viewer .head .left .info {
+    display: none;
+  }
+
+  .header-form {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .header-form__send {
+
+    label,
+    button {
+      max-width: 35rem;
+    }
+
+    button {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .header-form__content {
+    padding-top: 0;
+  }
+
+  .header-form__label:not(:last-child) {
+    margin-right: .8rem;
+  }
+
+  .header-form__label span {
+    padding: .8rem 1.2rem;
+  }
+
+  .header__left {
+    width: 100%;
+  }
+
+  .header__insta-photo-img {
+    max-width: 8rem;
+  }
+
+  .header__insta {
+    align-items: flex-end;
+  }
+
+  .header__insta-photo-img img {
+    transform: translateX(0.2rem) translateY(.2rem);
+  }
+
+  .header .stories.carousel .story {
+    height: 11rem;
+  }
+
+  .header .stories.carousel .story>.item-link>.info,
+  .header__insta-photo-item span {
+    font-size: 1.3rem;
+    max-width: 100%;
+  }
+
+  .header__insta-photo-item span {
+    transform: translateY(.3rem);
+  }
+}

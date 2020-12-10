@@ -1,0 +1,9 @@
+@media screen and (max-width: 480px) {
+  .header-form__label:not(:last-child) {
+    margin-right: 0.4rem;
+  }
+
+  .header-form__label span {
+    padding: .8rem 1rem;
+  }
+}

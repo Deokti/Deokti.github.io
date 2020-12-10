@@ -1,13 +1,4 @@
 @media screen and (max-width: 450px) {
-  .header {
-    background-position: -71rem -18rem;
-  }
-
-  .header-content__info {
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-  }
-
   .header__title--89 {
     font-size: 3.9rem;
     line-height: 3.9rem;
@@ -29,12 +20,12 @@
     margin-bottom: 1rem;
   }
 
-  .header-content {
-    padding-top: 2rem;
+  .header .stories.carousel .story {
+    height: 10rem;
   }
 
   .header__insta-photo-img {
-    max-width: 8rem;
+    max-width: 7rem;
   }
 
   .header__insta-photo-img::before {
@@ -72,30 +63,8 @@
     transform: translate(-50%, -50%);
   }
 
-  .header__call {
-    flex-direction: column;
-
-    .button {
-      padding: .8rem .6rem;
-    }
-  }
-
   .header__phone {
     text-align: center;
-  }
-
-  .header__logo {
-    max-width: 10rem;
-  }
-
-  .header__dismantling {
-    max-width: 10rem;
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-
-  .header-form {
-    margin-top: 0rem;
   }
 
   .header-form__title {
@@ -122,23 +91,16 @@
   }
 
   .header-form__label span {
-    font-size: 1.4rem;
-    padding: .6rem .9rem;
+    font-size: 1.3rem;
   }
 
   .header-form__label:not(:last-child) {
-    margin-right: .1rem;
+    margin-right: .4rem;
   }
 
   .header-form::before,
   .header-form::after {
     top: -2.2rem;
-  }
-
-  .header-form__send {
-    .button-form {
-      padding: 5% 1%;
-    }
   }
 
   .company {
@@ -164,13 +126,43 @@
     padding-top: 3rem;
   }
 
-  .technic__item {
-    max-width: 100%;
-    margin: 0;
-    padding-right: 1rem;
-  }
-
   .company {
     padding-top: 6rem;
+  }
+
+  .technic__item {
+    margin-bottom: 1rem;
+    max-width: 17rem;
+    min-height: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .technic__name {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  .technic__description {
+    font-size: 1.4rem;
+    font-size: 1.5rem;
+  }
+
+  .technic {
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    .container {
+      padding: 0;
+    }
+  }
+
+  .header-content__info {
+    font-size: 2rem;
+    max-width: 31rem;
+    line-height: 2rem;
+  }
+
+  .header-form {
+    margin-top: 0.5rem;
   }
 }

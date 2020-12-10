@@ -111,4 +111,35 @@
     max-width: 40%;
     margin: 0 3rem 5rem 1rem;
   }
+
+
+
+
+  #zuck-modal-content .story-viewer .head {
+    margin: 0 auto;
+    top: 1rem;
+    left: 2.5rem;
+    transform: translateX(0);
+  }
+
+  #zuck-modal-content .story-viewer .head .left .info {
+    order: 1;
+    padding-right: 4rem;
+  }
+
+  .story-viewer.with-back-button .head .left .item-preview {
+    order: 2;
+  }
+
+  #zuck-modal-content .story-viewer .head .left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 15px;
+    margin: 15px 0;
+  }
+
+  #zuck-modal-content .story-viewer .head .left>.back {
+    height: auto;
+  }
 }

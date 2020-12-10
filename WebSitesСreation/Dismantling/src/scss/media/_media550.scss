@@ -128,7 +128,7 @@
   }
 
   .map__wrapper {
-    min-height: 40rem;
+    min-height: 41rem;
   }
 
   .footer__wrapper {
@@ -180,5 +180,17 @@
     right: -4rem;
     top: auto;
     bottom: -5rem;
+  }
+
+  .map__interactive {
+    pointer-events: none;
+  }
+
+  .map__list {
+    top: 0;
+  }
+
+  .map__item {
+    font-size: 1.4rem;
   }
 }

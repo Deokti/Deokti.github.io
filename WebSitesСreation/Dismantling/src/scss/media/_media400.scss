@@ -39,16 +39,12 @@
   }
 
   .header-form__label span {
-    font-size: 1.2rem;
-    padding: .6rem .37rem;
+    font-size: 1.4rem;
+    padding: .6rem .7rem;
   }
 
   .costing-bottom::after {
     right: -11rem;
-  }
-
-  .phone-input__input {
-    background-color: rgba($color: #000, $alpha: .02);
   }
 
   .header .stories.carousel .story {
@@ -57,5 +53,21 @@
 
   .header__insta-photo-item {
     margin-left: 1rem;
+  }
+
+  .header__logo {
+    max-width: 12rem;
+  }
+
+  .header__dismantling {
+    max-width: 10rem;
+  }
+
+  .header-form__label span {
+    font-size: 1.2rem;
+  }
+
+  .header-content__info {
+    margin-top: 0;
   }
 }
