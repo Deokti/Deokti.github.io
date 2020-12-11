@@ -9,9 +9,11 @@ function popupStatusControl(selector, closeSelector, triggerSelector, changeSeri
   const trigger = document.querySelectorAll(triggerSelector);
 
   const changePopupTitleInService = (event) => {
+    // Path для Firefox
+    const path = event.path || (event.composedPath && event.composedPath());
     const stateTitle = 'УЗНАТЬ СТОИМОСТЬ ДЕМОНТАЖА';
 
-    const curentServiceItem = event.path[4];
+    const curentServiceItem = path[4];
     const getServiceTitle = curentServiceItem.querySelector('.service__item-title').textContent.trim();
     const skipFirstWord = (getServiceTitle.split(' ').slice(1).join(' ')).trim();
     const popupTitle = popup.querySelector('.popup__title');

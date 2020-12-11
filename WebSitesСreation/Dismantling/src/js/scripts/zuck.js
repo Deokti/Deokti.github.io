@@ -25,23 +25,32 @@ const stories = new Zuck('stories', {
   },
   stories: [
     Zuck.buildTimelineItem(
-      "stories-video-1", // id
-      "./img/video/video-photo-1.jpg", // image
+      // id - нужен обязательно
+      "stories-video-1",
+      // при открытии видео в левом стороне есть картинка - это за неё и отвечает
+      "./img/video/video-photo-1.png", //  
+      // Название под картинков 
       "Инженер проекта",
       "",
       timestamp(),
       [
-        ["dismantling", "video", 0, "./video/1.mp4", "./img/video/video-photo-1.jpg", '', true, true, timestamp()],
+        // dismantling1 - это id, 
+        // 'video' - какой тип показывать, видео или картинка
+        // "./video/1.mp4" путь к видео которое будет показываться
+        // "./img/video/video-photo-1.png" - влияет только в некоторых случаях, но лучше пусь будет
+        // true, true - разницы между true и false не заметил
+        // timestamp() - время 
+        ["dismantling1", "video", 0, "./video/1.mp4", "./img/video/video-photo-1.png", '', true, true, timestamp()],
       ]
     ),
     Zuck.buildTimelineItem(
       "stories-video-2",
-      "./img/video/video-photo-2.jpg", // image
+      "./img/video/video-photo-2.png", // image
       "Парк техники",
       "",
       timestamp(),
       [
-        ["dismantling", "video", 0, "./video/2.mp4", "./img/video/video-photo-2.jpg", '', true, true, timestamp()],
+        ["dismantling2", "video", 0, "./video/2.mp4", "./img/video/video-photo-2.png", '', true, true, timestamp()],
       ]
     ),
   ]

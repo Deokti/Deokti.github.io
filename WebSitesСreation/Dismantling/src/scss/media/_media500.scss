@@ -23,9 +23,6 @@
     line-height: 1.3rem;
   }
 
-  .header-content__info {
-    max-width: 35rem;
-  }
 
   .header-content {
     padding-top: 2rem;
@@ -122,5 +119,11 @@
 
   .header__insta-photo-item span {
     transform: translateY(.3rem);
+  }
+
+  .header-content__info {
+    font-size: 2.2rem;
+    max-width: 34rem;
+    line-height: 2rem;
   }
 }

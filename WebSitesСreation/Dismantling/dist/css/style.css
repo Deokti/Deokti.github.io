@@ -1372,6 +1372,7 @@ body {
 }
 
 .popup__body {
+  position: relative;
   padding: 3rem;
   max-width: 55.1rem;
   width: 100%;
@@ -3530,9 +3531,6 @@ body {
     font-size: 1.4rem;
     line-height: 1.3rem;
   }
-  .header-content__info {
-    max-width: 35rem;
-  }
   .header-content {
     padding-top: 2rem;
   }
@@ -3604,6 +3602,11 @@ body {
   }
   .header__insta-photo-item span {
     transform: translateY(0.3rem);
+  }
+  .header-content__info {
+    font-size: 2.2rem;
+    max-width: 34rem;
+    line-height: 2rem;
   }
 }
 
@@ -3806,5 +3809,19 @@ body {
   }
   .header-content__info {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header-form__label span {
+    font-size: 1rem;
+    padding: .6rem .7rem;
+  }
+  .header__dismantling {
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+  }
+  .header__logo {
+    max-width: 10rem;
   }
 }
