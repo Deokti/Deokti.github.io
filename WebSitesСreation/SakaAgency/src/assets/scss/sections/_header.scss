@@ -1,0 +1,62 @@
+@import '../../scss/base/variables';
+
+.header {
+  padding-top: 16px;
+
+  color: $PureWhite;
+}
+
+.header__list {
+  margin-right: 44px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.header__title {
+  margin: 0;
+
+  letter-spacing: 1px;
+
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+
+  a {
+    text-decoration: none;
+
+    color: $PureWhite;
+  }
+}
+
+.header__item {
+  &:not(:last-child) {
+    margin-right: 46px;
+  }
+}
+
+.header__link {
+  position: relative;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 0;
+    height: 2px;
+
+    content: '';
+
+    transition: all 0.3s ease;
+
+    background-color: $PureWhite;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

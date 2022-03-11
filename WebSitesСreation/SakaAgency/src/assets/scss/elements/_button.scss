@@ -1,0 +1,24 @@
+@import '../base/variables';
+
+.button {
+  padding: 13px 32px;
+
+  transition: all 0.3s ease;
+
+  text-transform: capitalize;
+
+  color: $PureWhite;
+
+  border: none;
+  border-radius: 10px;
+  background: $Secondary;
+
+  font-size: 18px;
+
+  font-weight: 700;
+  line-height: 27px;
+
+  &:hover {
+    background-color: $Primary;
+  }
+}
