@@ -1,0 +1,47 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.promo {
+  margin-top: 64px;
+
+  color: $PureWhite;
+}
+
+.promo__wrapper {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 686px;
+  padding-bottom: 98px;
+
+  border-radius: 20px;
+  background-image: url('../images/promo-bg.jpg');
+
+  @include background-base;
+}
+
+.promo__inner {
+  margin-top: auto;
+}
+
+.promo__title {
+  margin-bottom: 19px;
+
+  letter-spacing: 2px;
+
+  font-size: 61px;
+  font-weight: 800;
+  line-height: 92px;
+}
+
+.promo__subtitle {
+  max-width: 775px;
+
+  letter-spacing: 1px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
+}
