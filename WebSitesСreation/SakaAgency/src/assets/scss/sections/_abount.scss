@@ -1,0 +1,68 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.about {
+  padding-top: 160px;
+  padding-bottom: 50px;
+
+  color: $PureWhite;
+}
+
+.about__list {
+  margin-top: 51px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.about__item {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+.about__icon {
+  display: block;
+
+  width: 70px;
+  height: 70px;
+  margin-right: 30px;
+
+  border-radius: 100%;
+  background: $ContentBG;
+
+  background-image: url('../images/icons/10+.svg');
+
+  background-size: auto !important;
+
+  @include background-base;
+}
+
+.about__item--2 .about__icon {
+  background-image: url('../images/icons/payment.svg');
+}
+
+.about__item--3 .about__icon {
+  background-image: url('../images/icons/world.svg');
+}
+
+.about__item--4 .about__icon {
+  background-image: url('../images/icons/money.svg');
+}
+
+.about__title {
+  text-transform: capitalize;
+
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.about__description {
+  max-width: 440px;
+
+  text-transform: capitalize;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}
